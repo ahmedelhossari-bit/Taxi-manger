@@ -41,7 +41,7 @@ jobs:
               'input':{'field':'S','loc':{'name':'Wien Hbf','type':'ALL'},'maxLoc':10}
           })
           locations=result['match']['locL']
-          stations=[s for s in locations if s.get('type')=='S']
+                    station={'type':'S','extId':'8103000'}
           print('STATIONS:',json.dumps(stations,ensure_ascii=False))
           station=next((s for s in stations if s.get('name') in ('Wien Hbf','Wien Hauptbahnhof')),None)
           if not station:

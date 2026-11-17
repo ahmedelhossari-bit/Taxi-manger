@@ -1101,6 +1101,8 @@ q('tmTraffic').onclick=()=>info('Live traffic · external official sources (not 
 document.querySelectorAll('#proNav button').forEach(el=>{if(el!==b)el.addEventListener('click',()=>{s.classList.add('prohidden');trafficOn=false;previousSample=null;paintTraffic();if(watch!==null){navigator.geolocation.clearWatch(watch);watch=null;position=null}})});
 b.onclick=async()=>{document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));s.classList.remove('prohidden');window.scrollTo(0,0);try{await ready();map.invalidateSize();locate()}catch(e){status('Map unavailable: '+e.message)}};
 const gps=q('gpsMap');if(gps)gps.onclick=()=>b.click();
+const quick=document.createElement('button');quick.id='taxiMapQuick';quick.textContent='🗺 TAXI PRO Maps · Adresse';quick.style.cssText='position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));right:12px;z-index:9000;background:#d8b575;color:#151515;border:1px solid #e5c78e;border-radius:22px;padding:12px 16px;font-weight:700;box-shadow:0 3px 12px #0008;width:auto;max-width:85%';document.body.append(quick);quick.onclick=()=>{b.click();q('tmAddress').scrollIntoView({block:'center'});};
+
 })();
 
 </script>

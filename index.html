@@ -26,7 +26,7 @@
 </section>
 <section>
 <h2>🚕 تسجيل مشوار</h2>
-<input id="fare" type="number" inputmode="decimal" placeholder="قيمة المشوار باليورو">
+<input id="fare" type="text" inputmode="decimal" autocomplete="off" placeholder="قيمة المشوار باليورو">
 <input id="time" type="time">
 <input id="area" placeholder="المنطقة (اختياري)">
 <button class="green" onclick="add('trips')">حفظ المشوار</button>
@@ -34,7 +34,7 @@
 <section>
 <h2>💳 المصاريف</h2>
 <select id="category"><option>أكل وشرب</option><option>بنزين</option><option>غسيل العربية</option><option>ركن وغرامات</option><option>شخصية</option><option>أخرى</option></select>
-<input id="expense" type="number" inputmode="decimal" placeholder="المبلغ">
+<input id="expense" type="text" inputmode="decimal" autocomplete="off" placeholder="المبلغ">
 <button onclick="add('expenses')">حفظ المصروف</button>
 </section>
 <section><h2>📊 التحليل اليومي</h2><div id="analysis"></div><div id="chart"></div></section>
@@ -43,10 +43,10 @@
 <section><h2>📋 سجل اليوم</h2><div id="history"></div></section>
 <section>
 <h2>⚙️ الإعدادات</h2>
-<label>الهدف اليومي €</label><input id="target" type="number">
-<label>إيجار العربية أسبوعياً €</label><input id="rent" type="number">
-<label>البنزين المتوقع يومياً €</label><input id="fuel" type="number">
-<label>الالتزامات الشهرية €</label><input id="fixed" type="number">
+<label>الهدف اليومي €</label><input id="target" type="text" inputmode="decimal" autocomplete="off">
+<label>إيجار العربية أسبوعياً €</label><input id="rent" type="text" inputmode="decimal" autocomplete="off">
+<label>البنزين المتوقع يومياً €</label><input id="fuel" type="text" inputmode="decimal" autocomplete="off">
+<label>الالتزامات الشهرية €</label><input id="fixed" type="text" inputmode="decimal" autocomplete="off">
 <button onclick="settings()">حفظ الإعدادات</button>
 </section>
 <section><h2>💾 النسخ الاحتياطي</h2>
@@ -66,8 +66,9 @@ let db;
 try{db=JSON.parse(localStorage.getItem('taxiV4'))}catch(e){}
 db=db||{trips:[],expenses:[],shifts:{},settings:{target:250,rent:600,fuel:20,fixed:1256}};
 function save(){try{localStorage.setItem('taxiV4',JSON.stringify(db))}catch(e){alert('تعذر الحفظ')}render()}
+function taxiMoney(value){const s=String(value).trim().replace(/[٠-٩۰-۹]/g,d=>String(d.charCodeAt(0)-(d.charCodeAt(0)>=1776?1776:1632))).replace(/[،٫,]/g,'.');return /^(?:\d+(?:\.\d{0,2})?|\.\d{1,2})$/.test(s)?Math.round(Number(s)*100)/100:NaN;}
 function add(type){
-let el=$(type==='trips'?'fare':'expense'),amount=Number(el.value);
+let el=$(type==='trips'?'fare':'expense'),amount=taxiMoney(el.value);
 if(!Number.isFinite(amount)||amount<=0)return alert('اكتب مبلغ صحيح');
 db[type].push({date:date(),amount,time:type==='trips'?$('time').value||clock():clock(),area:$('area').value,category:$('category').value});
 el.value='';$('time').value='';$('area').value='';save()
@@ -91,7 +92,7 @@ return Math.max(0,((s.end||Date.now())-s.start-s.breaks.reduce((v,b)=>v+b[1]-b[0
 }
 function duration(h){let m=Math.round(h*60);return Math.floor(m/60)+' ساعة '+m%60+' دقيقة'}
 function settings(){
-let v={};for(let k of ['target','rent','fuel','fixed']){v[k]=Number($(k).value);if(!Number.isFinite(v[k])||v[k]<0||k==='target'&&!v[k])return alert('راجع الأرقام')}
+let v={};for(let k of ['target','rent','fuel','fixed']){v[k]=taxiMoney($(k).value);if(!Number.isFinite(v[k])||v[k]<0||k==='target'&&!v[k])return alert('راجع الأرقام')}
 db.settings=v;save()
 }
 function removeItem(t,i){if(confirm('حذف التسجيل؟')){db[t].splice(i,1);save()}}

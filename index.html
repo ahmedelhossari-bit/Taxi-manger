@@ -742,3 +742,69 @@ setInterval(liveEvents,300000);
 })();
 </script>
 <script src="./taxi-v13.js?v=13"></script>
+<script>
+(()=>{
+const dict=[
+['إجمالي الدخل','Total revenue','Gesamtumsatz'],
+['المتبقي للهدف','Remaining to target','Bis zum Tagesziel'],
+['صافي اليوم قبل الالتزامات الشخصية','Net income before personal expenses','Netto vor privaten Ausgaben'],
+['المشاوير','Trips','Fahrten'],
+['العمل الفعلي','Actual working time','Effektive Arbeitszeit'],
+['متوسط المشوار','Average fare','Durchschnittlicher Fahrpreis'],
+['المصاريف','Expenses','Ausgaben'],
+['الوقت المتوقع لتحقيق الهدف','Estimated time to target','Geschätzte Zeit bis zum Ziel'],
+['غير متاح','Unavailable','Nicht verfügbar'],
+['الصافي بعد التكاليف','Net after costs','Netto nach Kosten'],
+['متوسط الساعة','Hourly average','Stundendurchschnitt'],
+['ساعات العمل','Working hours','Arbeitsstunden'],
+['بداية الشغل','Start shift','Schicht starten'],
+['نهاية الشغل','End of shift','Schichtende'],
+['تسجيل مشوار','Add trip','Fahrt erfassen'],
+['حفظ المشوار','Save trip','Fahrt speichern'],
+['التحليل اليومي','Daily analysis','Tagesanalyse'],
+['الإدارة المالية','Financial management','Finanzverwaltung'],
+['التقويم الشهري','Monthly calendar','Monatskalender'],
+['SMART SHIFT','SMART SHIFT','SCHICHTPLANER'],
+['WORKING TIME','WORKING TIME','ARBEITSZEIT'],
+['الدخل','Revenue','Umsatz'],
+['الأسبوع','Week','Woche'],
+['الشهر','Month','Monat'],
+['دقيقة','min','Min.'],
+['ساعة','h','Std.']
+];
+dict.sort((a,b)=>b[0].length-a[0].length);
+const cache=new WeakMap();
+let style=document.createElement('style');
+style.textContent='#tp13bar button{width:auto!important;flex:0 0 auto!important;font-size:13px!important}#tp13bar span{flex:1;text-align:center}html[dir=ltr] #proNav{direction:ltr!important}html[dir=rtl] #proNav{direction:rtl!important}';
+document.head.append(style);
+function update(){
+let lang='ar';
+try{lang=JSON.parse(localStorage.getItem('taxipro.profile.v13')||'{}').lang||'ar'}catch(e){}
+document.documentElement.lang=lang;
+document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+document.body.dir=document.documentElement.dir;
+let ix=lang==='en'?1:lang==='de'?2:0;
+let w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+let n;
+while(n=w.nextNode()){
+let p=n.parentElement;
+if(!p||p.closest('script,style,input,textarea,option,select,#history,#tp13settings,#tp13welcome,.leaflet-container')||p.isContentEditable)continue;
+let old=cache.get(n);
+let source=old&&n.data===old.last?old.source:n.data;
+let out=source;
+if(ix){
+for(let r of dict)out=out.split(r[0]).join(r[ix]);
+}
+if(out!==n.data)n.data=out;
+cache.set(n,{source,last:out});
+}
+let day=document.getElementById('day');
+if(day&&day.value&&day.nextElementSibling?.tagName==='H3'){
+let label=new Date(day.value+'T12:00:00').toLocaleDateString(lang==='ar'?'ar-EG':lang==='de'?'de-AT':'en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+if(day.nextElementSibling.textContent!==label)day.nextElementSibling.textContent=label;
+}
+}
+update();
+setInterval(update,500);
+})();
+</script>

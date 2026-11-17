@@ -1,0 +1,54 @@
+name: TAXI PRO Railway Radar
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  railway:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch railway data
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.parse, datetime, time
+          base = 'https://v6.oebb.transport.rest/api'
+          stations = ['Wien Hauptbahnhof','Wien Westbahnhof','Wien Meidling','Wien Mitte','Flughafen Wien']
+          def get(path):
+              req = urllib.request.Request(base+path, headers={'Accept':'application/json','User-Agent':'TaxiPro/1.0'})
+              with urllib.request.urlopen(req,timeout=30) as r:
+                  return json.load(r)
+          result = {'source':'OEBB via transport.rest','updated':datetime.datetime.now(datetime.timezone.utc).isoformat(),'stations':[]}
+          for name in stations:
+              try:
+                  loc = get('/locations?'+urllib.parse.urlencode({'query':name,'results':5}))
+                  stop = next(x for x in loc if x.get('id') and x.get('type') in ('stop','station'))
+                  sid = urllib.parse.quote(str(stop['id']),safe='')
+                  board = get('/stops/'+sid+'/departures?duration=90&results=40')
+                  rows = board['departures']
+                  alerts = []
+                  for d in rows:
+                      delay = d.get('delay')
+                      cancelled = bool(d.get('cancelled'))
+                      if cancelled or (isinstance(delay,(int,float)) and delay>=600):
+                          alerts.append({'train':(d.get('line') or {}).get('name'),'direction':d.get('direction'),'delay':None if delay is None else round(delay/60),'cancelled':cancelled,'planned':d.get('plannedWhen'),'expected':d.get('when')})
+                  result['stations'].append({'name':name,'resolved':stop.get('name'),'status':'OK','alerts':alerts})
+              except Exception as e:
+                  result['stations'].append({'name':name,'status':'ERROR','error':str(e),'alerts':[]})
+              time.sleep(2)
+          if not any(s['status']=='OK' for s in result['stations']):
+              raise RuntimeError(str(result))
+          with open('railway.json','w',encoding='utf-8') as f:
+              json.dump(result,f,ensure_ascii=False,indent=2)
+          PY
+      - name: Save railway data
+        run: |
+          git config user.name "TAXI PRO Railway"
+          git config user.email "railway@users.noreply.github.com"
+          git add railway.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update railway radar"
+          git pull --rebase
+          git push

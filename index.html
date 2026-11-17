@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 1.9 · Smooth Navigation</div>
+<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 2.0 · Map Restore</div>
 
 <h1>🚕 Taxi Manager</h1>
 <section>
@@ -1065,7 +1065,7 @@ async function ready(){
 if(map)return map;if(init)return init;
 init=(async()=>{if(!document.querySelector('link[href*="leaflet.css"]')){const css=document.createElement('link');css.rel='stylesheet';css.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';document.head.append(css)}
 if(!window.L)await new Promise((ok,no)=>{const el=document.createElement('script');el.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';el.onload=ok;el.onerror=no;document.head.append(el)});
-map=L.map('tmMap').setView([48.2082,16.3738],13);L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png',{subdomains:'abcd',maxZoom:20,attribution:'© OpenStreetMap contributors © CARTO'}).addTo(map);map.createPane('tpLabels');map.getPane('tpLabels').style.zIndex=350;map.getPane('tpLabels').style.pointerEvents='none';L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png',{subdomains:'abcd',maxZoom:20,pane:'tpLabels',attribution:'© CARTO'}).addTo(map);return map})();
+map=L.map('tmMap').setView([48.2082,16.3738],13);const base=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);base.on('tileerror',()=>status('Map tiles temporarily unavailable'));return map})();
 try{return await init}catch(e){init=null;throw e}}
 
 let routeOutline=null;let navigating=false,navSteps=[],navIndex=0,spoken='',lastFix=null,navGeo=[],lastReroute=0,taxiMarker=null,navProgress=0;
@@ -1078,7 +1078,7 @@ body.tpDriving #taxiMapPro > :not(#tmMap):not(#tpNavBanner):not(#tpNavFooter){di
 body.tpDriving #tmMap{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;border-radius:0!important}
 body.tpDriving #tpNavBanner{position:absolute!important;top:calc(env(safe-area-inset-top,0px) + 12px)!important;left:12px;right:12px;z-index:1001!important;background:#12533b!important;box-shadow:0 4px 18px #0005;text-align:center}
 body.tpDriving #tpNavFooter{display:flex!important;position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);left:12px;right:12px;z-index:1001;gap:8px;background:#18231f;padding:8px;border-radius:14px}
-body.tpDriving #tpNavFooter button{margin:0;flex:1;min-width:0}
+body.tpDriving #tpNavFooter button{margin:0;flex:1;min-width:0;font-size:13px;padding:12px 5px}body.tpDriving #tpNavBanner{box-sizing:border-box}
 body.tpDriving #taxiMapQuick,body.tpDriving #tpMenu{display:none!important}
 body.tpDriving #tmMap .leaflet-top{top:125px}
 body.tpDriving #tmMap .leaflet-bottom{bottom:76px}
@@ -1096,8 +1096,8 @@ function paintVoice(){const t=voiceOn?nt('🔊 صوت','🔊 Sound','🔊 Ton'):
 paintVoice();new MutationObserver(paintVoice).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 function say(t){if(!voiceOn||!window.speechSynthesis||!window.SpeechSynthesisUtterance)return;const u=new SpeechSynthesisUtterance(t);u.lang={ar:'ar',en:'en-GB',de:'de-AT'}[navLang()];const voices=window.speechSynthesis.getVoices();const v=voices.find(x=>x.lang.toLowerCase()===u.lang.toLowerCase())||voices.find(x=>x.lang.toLowerCase().startsWith(navLang()));if(v)u.voice=v;window.speechSynthesis.cancel();window.speechSynthesis.speak(u)}
 function instruction(step){const m=step.maneuver||{},d=m.modifier||'',name=step.name?nt(' إلى ',' onto ',' auf ')+step.name:'';if(m.type==='arrive')return nt('ستصل إلى الوجهة','Arrive at your destination','Sie erreichen Ihr Ziel');if(/roundabout|rotary/.test(m.type))return nt('ادخل الدوار','Enter the roundabout','In den Kreisverkehr einfahren')+(m.exit?nt(' وخذ المخرج ',' and take exit ',' und nehmen Sie Ausfahrt ')+m.exit:'');if(d==='uturn')return nt('استدر للخلف','Make a U-turn','Bitte wenden');if(d.includes('right'))return nt('اتجه يميناً','Turn right','Rechts abbiegen')+name;if(d.includes('left'))return nt('اتجه يساراً','Turn left','Links abbiegen')+name;return nt('استمر للأمام','Continue straight','Geradeaus weiter')+name}
-let carBearing=null,lastCarPosition=null,carFrame=0,displayCar=null;
-function animateCar(target,heading){if(!taxiMarker)return;const from=displayCar||target;const started=performance.now();cancelAnimationFrame(carFrame);function frame(t){if(!taxiMarker)return;const f=Math.min(1,(t-started)/550),e=1-Math.pow(1-f,3);displayCar=[from[0]+(target[0]-from[0])*e,from[1]+(target[1]-from[1])*e];taxiMarker.setLatLng(displayCar);if(f<1)carFrame=requestAnimationFrame(frame)}carFrame=requestAnimationFrame(frame);if(Number.isFinite(heading)){if(carBearing===null)carBearing=heading;else carBearing+=((heading-carBearing+540)%360)-180;const child=taxiMarker.getElement()?.firstElementChild;if(child)child.style.transform='rotate('+carBearing+'deg)'}}
+let carBearing=null,lastCarPosition=null,carFrame=0,displayCar=null,angleOffset=0;try{angleOffset=Number(localStorage.getItem('tpCarAngle')||0)||0}catch(e){}const angleButton=button(footer,'↻ 0°',()=>{angleOffset=(angleOffset+90)%360;try{localStorage.setItem('tpCarAngle',String(angleOffset))}catch(e){}paintAngle()});function paintAngle(){angleButton.textContent='↻ '+angleOffset+'°';const child=taxiMarker?.getElement()?.firstElementChild;if(child)child.style.transform='rotate('+((carBearing||0)+angleOffset)+'deg)'}paintAngle();
+function animateCar(target,heading){if(!taxiMarker)return;const from=displayCar||target;const started=performance.now();cancelAnimationFrame(carFrame);function frame(t){if(!taxiMarker)return;const f=Math.min(1,(t-started)/550),e=1-Math.pow(1-f,3);displayCar=[from[0]+(target[0]-from[0])*e,from[1]+(target[1]-from[1])*e];taxiMarker.setLatLng(displayCar);if(f<1)carFrame=requestAnimationFrame(frame)}carFrame=requestAnimationFrame(frame);paintAngle();if(Number.isFinite(heading)){if(carBearing===null)carBearing=heading;else carBearing+=((heading-carBearing+540)%360)-180;paintAngle()}}
 function startNav(){if(!navSteps.length||!position)return; navigating=true;navIndex=0;navProgress=0;spoken='';banner.style.display='block';drivingLayout(true);map.setView(position,17);paintVoice();say(nt('بدأت الملاحة','Navigation started','Navigation gestartet'));tickNav(lastFix)}
 function tickNav(g){if(!navigating||!position||!navSteps.length||!g||g.coords.accuracy>40)return;
 if(!taxiMarker){taxiMarker=L.marker(position,{icon:L.divIcon({className:'taxipro-car-icon',html:'<div style="width:38px;height:48px;filter:drop-shadow(0 3px 3px #0005);transition:transform .4s"><svg viewBox="0 0 38 48" width="38" height="48"><rect x="8" y="2" width="22" height="44" rx="8" fill="#efbd50" stroke="#504025" stroke-width="2"/><rect x="11" y="10" width="16" height="9" rx="3" fill="#304251"/><rect x="11" y="32" width="16" height="7" rx="2" fill="#304251"/><rect x="10" y="21" width="18" height="10" rx="2" fill="#fff3c8"/><text x="19" y="28" text-anchor="middle" font-size="7" font-weight="bold" fill="#222">TAXI</text></svg></div>',iconSize:[38,48],iconAnchor:[19,24]}),zIndexOffset:1000}).addTo(map)}

@@ -895,3 +895,88 @@ new MutationObserver(draw).observe(document.documentElement,{attributes:true,att
 setInterval(()=>{if(!s.classList.contains('prohidden'))load()},60000);
 })();
 </script>
+<script>
+(()=>{
+function init(){
+const nav=document.getElementById('proNav');
+if(!nav||document.getElementById('tpMenu'))return;
+const css=document.createElement('style');
+css.textContent=`
+#proNav{display:none!important}
+body{padding-bottom:24px!important}
+#tpMenu{position:fixed;top:calc(env(safe-area-inset-top) + 12px);right:14px;z-index:9900;width:48px!important;height:48px;background:#171819;color:#d8b575;border:1px solid #685638;border-radius:12px;padding:0;font-size:26px;box-shadow:0 4px 18px #0008}
+#tpShade{position:fixed;inset:0;background:#0009;z-index:9901;display:none}
+#tpDrawer{position:fixed;top:0;right:0;bottom:0;width:min(85vw,340px);background:#141516;color:#d8b575;z-index:9902;padding:22px;box-sizing:border-box;overflow-y:auto;transform:translateX(105%);transition:transform .25s ease;box-shadow:0 0 30px #0007}
+#tpDrawer.open{transform:translateX(0)}
+#tpDrawer button{display:block;width:100%!important;margin:7px 0;padding:14px;background:#232426;color:#d8b575;border:1px solid #39352d;border-radius:10px;text-align:start;font-size:15px}
+#tpDrawer h2,#tpDrawer p{text-align:center}
+#tp13bar{margin-top:65px!important}
+`;
+document.head.append(css);
+const menu=document.createElement('button');
+menu.id='tpMenu';
+menu.textContent='☰';
+menu.setAttribute('aria-label','Menu');
+const shade=document.createElement('div');
+shade.id='tpShade';
+const drawer=document.createElement('aside');
+drawer.id='tpDrawer';
+drawer.setAttribute('aria-hidden','true');
+document.body.append(menu,shade,drawer);
+function close(){
+drawer.classList.remove('open');
+shade.style.display='none';
+drawer.setAttribute('aria-hidden','true');
+menu.setAttribute('aria-expanded','false');
+}
+function open(){
+drawer.replaceChildren();
+const lang=document.documentElement.lang.split('-')[0];
+const ix=lang==='ar'?0:lang==='de'?2:1;
+function add(tag,value){
+const el=document.createElement(tag);
+el.textContent=value;
+drawer.append(el);
+return el;
+}
+add('button','✕').onclick=close;
+add('h2','TAXI PRO');
+add('p','Ahmed Elhosary');
+add('p','Founder & Creator').style.fontSize='12px';
+const words=[
+['الرئيسية','Home','Startseite'],
+['التقويم','Calendar','Kalender'],
+['التحليل','Analytics','Statistik'],
+['المالية','Finance','Finanzen'],
+['الموقع','GPS','GPS'],
+['مواقف التاكسي','Taxi Stands','Taxistände'],
+['الحفلات','Events','Veranstaltungen'],
+['رادار المدينة','Live City Radar','Live-Radar']
+];
+const icons=['⌂','▦','▥','€','◎','🚕','♫','◉'];
+[...nav.querySelectorAll('button')].forEach((old,i)=>{
+const txt=old.textContent.trim();
+const isRadar=/radar|رادار/i.test(txt);
+const label=isRadar?words[7][ix]:i<7?words[i][ix]:txt;
+const el=add('button',(isRadar?'◉':icons[i]||'›')+'  '+label);
+el.onclick=()=>{close();old.click()};
+});
+const profile=document.querySelector('#tp13bar button');
+if(profile){
+add('button','⚙  '+['اللغة / الملف الشخصي','Language / Profile','Sprache / Profil'][ix]).onclick=()=>{close();profile.click()};
+}
+add('hr','');
+add('p','© 2026 TAXI PRO').style.fontSize='12px';
+shade.style.display='block';
+drawer.classList.add('open');
+drawer.setAttribute('aria-hidden','false');
+menu.setAttribute('aria-expanded','true');
+}
+menu.onclick=open;
+shade.onclick=close;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+else init();
+})();
+</script>

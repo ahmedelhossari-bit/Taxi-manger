@@ -136,6 +136,40 @@ function restore(){try{let b=JSON.parse($('backupData').value);if(!Array.isArray
 function loadSettings(){for(let k of ['target','rent','fuel','fixed'])$(k).value=db.settings[k]}
 $('day').value=today();loadSettings();render();setInterval(render,30000);
 </script>
+<script>
+(()=>{
+const root='https://znnrrfrykluzhkcrvboh.supabase.co',key='sb_publishable_EtPcLHtzk2hMFsYyER2csw_PMy36tCa';let token=null,verified=false,busy=false;
+const d=document.createElement('dialog');d.id='tpFounderDialog';d.style.cssText='width:min(92vw,440px);max-height:85dvh;overflow:auto;background:#1c1d20;color:#eee;border:1px solid #8b7148;border-radius:20px;padding:20px;z-index:30000';d.innerHTML='<button id="tpFClose" type="button">✕</button><h2 style="color:#d8b575">TAXI PRO · Founder</h2><form id="tpFLogin"><label>Email<input id="tpFEmail" type="email" autocomplete="email" required></label><label>Password<input id="tpFPassword" type="password" autocomplete="current-password" required></label><button type="submit">Sign in</button><p><a href="./founder.html" style="color:#d8b575">Set / reset password</a></p></form><div id="tpFAdmin" hidden><h3>Admin Dashboard</h3><p id="tpFCounts"></p><div id="tpFDrivers"></div><button id="tpFRefresh">Refresh</button><button id="tpFLogout">Sign out</button></div><p id="tpFStatus" role="status"></p><small>Founded by Ahmed Elhosary</small>';document.body.append(d);
+const q=x=>document.getElementById(x),msg=x=>q('tpFStatus').textContent=x;
+async function api(path,method='GET',body,t){const response=await fetch(root+path,{method,headers:{apikey:key,Authorization:'Bearer '+(t||key),'Content-Type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})});const j=await response.json().catch(()=>null);if(!response.ok)throw Error(j?.msg||j?.message||j?.error_description||'Request failed '+response.status);return j}
+function reset(){q('tpFWelcome')?.remove();token=null;verified=false;q('tpFLogin').hidden=false;q('tpFAdmin').hidden=true;q('tpFDrivers').replaceChildren();q('tpFCounts').textContent='';q('tpFPassword').value=''}
+async function check(t){if(await api('/rest/v1/rpc/current_user_is_founder','POST',{},t)!==true)throw Error('Founder access denied');}
+function founderWelcome(){
+const lang=document.documentElement.lang.split('-')[0],words={ar:['أهلاً بيك، مستر أحمد','مؤسس TAXI PRO'],en:['Welcome, Mr. Ahmed','Founder of TAXI PRO'],de:['Willkommen, Herr Ahmed','Gründer von TAXI PRO']},w=words[lang]||words.en;
+q('tpFWelcome')?.remove();
+if(!document.getElementById('tpFCinemaCSS')){const st=document.createElement('style');st.id='tpFCinemaCSS';st.textContent=`
+#tpFWelcome{position:relative;isolation:isolate;overflow:hidden;border:1px solid #685334;border-radius:20px;background:#08090b;text-align:center;padding:34px 12px;margin:16px 0;color:#e7c888}
+#tpFWelcome:before{content:'';position:absolute;inset:-45%;z-index:-1;background:radial-gradient(ellipse,#b78a393b 0%,transparent 48%);animation:tpDawn 2.8s ease-out both}
+.tpFCrown{font-size:32px;animation:tpDawn 1.5s .15s both;color:#e9c985}
+.tpFCinemaTitle{font-size:clamp(20px,5vw,30px);font-weight:600;line-height:1.5;display:block;margin:16px 0;color:#f5d895}
+.tpFCinemaTitle span{display:inline-block;white-space:pre;animation:tpAssemble 1.15s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--delay)}
+.tpFCinemaSub{font-size:12px;letter-spacing:1px;color:#b9a47e;animation:tpDawn 1.2s 1.3s both}
+.tpFBeam{height:1px;width:65%;margin:18px auto;background:linear-gradient(90deg,transparent,#f4cf83,transparent);animation:tpBeam 1.6s .8s both}
+@keyframes tpDawn{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes tpAssemble{from{opacity:0;filter:blur(9px);transform:translate(var(--dx),18px) scale(.88)}to{opacity:1;filter:blur(0);transform:translate(0,0) scale(1)}}
+@keyframes tpBeam{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){#tpFWelcome:before,#tpFWelcome *{animation:none!important}}
+`;document.head.append(st)}
+const el=document.createElement('div');el.id='tpFWelcome';el.setAttribute('role','status');el.dir=lang==='ar'?'rtl':'ltr';
+const crown=document.createElement('div');crown.className='tpFCrown';crown.textContent='♛';crown.setAttribute('aria-hidden','true');
+const h=document.createElement('strong');h.className='tpFCinemaTitle';h.setAttribute('aria-label',w[0]);const parts=lang==='ar'?w[0].split(/(\s+)/):Array.from(w[0]);parts.forEach((part,i)=>{const span=document.createElement('span');span.textContent=part;span.setAttribute('aria-hidden','true');span.style.setProperty('--delay',(.25+i*(lang==='ar'?.12:.045))+'s');span.style.setProperty('--dx',((i%2?1:-1)*(12+i%4*7))+'px');h.append(span)});
+const beam=document.createElement('div');beam.className='tpFBeam';const sub=document.createElement('div');sub.className='tpFCinemaSub';sub.textContent=w[1];el.append(crown,h,beam,sub);q('tpFAdmin').prepend(el);const intro=document.createElement('dialog');intro.style.cssText='position:fixed;inset:0;width:100%;max-width:none;height:100%;max-height:none;margin:0;border:0;background:#050506;color:#e7c888;padding:24px;box-sizing:border-box;overflow:hidden';const stage=document.createElement('div');stage.style.cssText='height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center';const reveal=el.cloneNode(true);reveal.removeAttribute('id');reveal.style.cssText='width:min(100%,480px);text-align:center;background:radial-gradient(ellipse,#b78a392b,transparent 70%);padding:32px 0';stage.append(reveal);intro.append(stage);document.body.append(intro);intro.showModal();let done=false;const finish=()=>{if(done)return;done=true;intro.close();intro.remove()};intro.addEventListener('click',finish);intro.addEventListener('cancel',e=>{e.preventDefault();finish()});setTimeout(finish,3200);
+} async function refresh(play=false){try{await check(token);const rows=await api('/rest/v1/driver_profiles?select=id,username,full_name,status&order=created_at.desc','GET',undefined,token);verified=true;q('tpFLogin').hidden=true;q('tpFAdmin').hidden=false;if(play||!q('tpFWelcome'))founderWelcome();q('tpFCounts').textContent=rows.length+' drivers · '+rows.filter(x=>x.status==='pending').length+' pending';const list=q('tpFDrivers');list.replaceChildren();for(const row of rows){const line=document.createElement('p');line.textContent=row.full_name+' (@'+row.username+') · '+row.status;list.append(line);for(const status of ['rejected','suspended']){const b=document.createElement('button');b.textContent=status==='rejected'?'Reject':'Suspend';b.onclick=async()=>{if(!confirm(status+' '+row.username+'?'))return;try{await check(token);await api('/rest/v1/driver_profiles?id=eq.'+encodeURIComponent(row.id),'PATCH',{status},token);await refresh()}catch(e){msg(e.message)}};list.append(b)}}msg('Founder verified · Approvals disabled until document review is ready.')}catch(e){reset();msg(e.message)}}
+q('tpFLogin').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;try{const s=await api('/auth/v1/token?grant_type=password','POST',{email:q('tpFEmail').value.trim(),password:q('tpFPassword').value});q('tpFPassword').value='';await check(s.access_token);token=s.access_token;await refresh(true)}catch(e){reset();msg(e.message)}finally{busy=false}};
+q('tpFRefresh').onclick=refresh;q('tpFLogout').onclick=async()=>{const t=token;reset();try{if(t)await api('/auth/v1/logout','POST',{},t)}catch(e){}msg('Signed out')};q('tpFClose').onclick=()=>d.close();d.addEventListener('close',()=>{q('tpFPassword').value=''});
+window.tpFounderMenu=(add,close,ix)=>{const label=verified?['لوحة الإدارة','Admin Dashboard','Admin-Bereich'][ix]:['دخول الحساب','Account sign in','Konto anmelden'][ix];add('button','♙  '+label).onclick=()=>{close();if(!d.open)d.showModal();if(token)refresh(true);else msg('')}};
+})();
+</script>
 </body>
 </html>
 <script>
@@ -946,6 +980,7 @@ return el;
 }
 add('button','✕').onclick=close;
 add('h2','TAXI PRO');
+add('p','V3.4').style.fontSize='10px';
 add('p','Ahmed Elhosary');
 add('p','Founder & Creator').style.fontSize='12px';
 const words=[
@@ -970,7 +1005,7 @@ const profile=document.querySelector('#tp13bar button');
 if(profile){
 add('button','⚙  '+['اللغة / الملف الشخصي','Language / Profile','Sprache / Profil'][ix]).onclick=()=>{close();profile.click()};
 }
-if(window.tpFounderMenu)window.tpFounderMenu(add,close,ix);
+if(window.tpFounderMenu)window.tpFounderMenu(add,close,ix);else add('button','♙  '+['دخول الحساب','Account sign in','Konto anmelden'][ix]).onclick=()=>{close();location.href='./founder.html'};
 add('hr','');
 add('p','© 2026 TAXI PRO').style.fontSize='12px';
 shade.style.display='block';
@@ -1179,37 +1214,3 @@ const quick=document.createElement('button');quick.id='taxiMapQuick';quick.textC
 
 </script>
 
-<script>
-(()=>{
-const root='https://znnrrfrykluzhkcrvboh.supabase.co',key='sb_publishable_EtPcLHtzk2hMFsYyER2csw_PMy36tCa';let token=null,verified=false,busy=false;
-const d=document.createElement('dialog');d.id='tpFounderDialog';d.style.cssText='width:min(92vw,440px);max-height:85dvh;overflow:auto;background:#1c1d20;color:#eee;border:1px solid #8b7148;border-radius:20px;padding:20px;z-index:30000';d.innerHTML='<button id="tpFClose" type="button">✕</button><h2 style="color:#d8b575">TAXI PRO · Founder</h2><form id="tpFLogin"><label>Email<input id="tpFEmail" type="email" autocomplete="email" required></label><label>Password<input id="tpFPassword" type="password" autocomplete="current-password" required></label><button type="submit">Sign in</button><p><a href="./founder.html" style="color:#d8b575">Set / reset password</a></p></form><div id="tpFAdmin" hidden><h3>Admin Dashboard</h3><p id="tpFCounts"></p><div id="tpFDrivers"></div><button id="tpFRefresh">Refresh</button><button id="tpFLogout">Sign out</button></div><p id="tpFStatus" role="status"></p><small>Founded by Ahmed Elhosary</small>';document.body.append(d);
-const q=x=>document.getElementById(x),msg=x=>q('tpFStatus').textContent=x;
-async function api(path,method='GET',body,t){const response=await fetch(root+path,{method,headers:{apikey:key,Authorization:'Bearer '+(t||key),'Content-Type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})});const j=await response.json().catch(()=>null);if(!response.ok)throw Error(j?.msg||j?.message||j?.error_description||'Request failed '+response.status);return j}
-function reset(){q('tpFWelcome')?.remove();token=null;verified=false;q('tpFLogin').hidden=false;q('tpFAdmin').hidden=true;q('tpFDrivers').replaceChildren();q('tpFCounts').textContent='';q('tpFPassword').value=''}
-async function check(t){if(await api('/rest/v1/rpc/current_user_is_founder','POST',{},t)!==true)throw Error('Founder access denied');}
-function founderWelcome(){
-const lang=document.documentElement.lang.split('-')[0],words={ar:['أهلاً بيك، مستر أحمد','مؤسس TAXI PRO'],en:['Welcome, Mr. Ahmed','Founder of TAXI PRO'],de:['Willkommen, Herr Ahmed','Gründer von TAXI PRO']},w=words[lang]||words.en;
-q('tpFWelcome')?.remove();
-if(!document.getElementById('tpFCinemaCSS')){const st=document.createElement('style');st.id='tpFCinemaCSS';st.textContent=`
-#tpFWelcome{position:relative;isolation:isolate;overflow:hidden;border:1px solid #685334;border-radius:20px;background:#08090b;text-align:center;padding:34px 12px;margin:16px 0;color:#e7c888}
-#tpFWelcome:before{content:'';position:absolute;inset:-45%;z-index:-1;background:radial-gradient(ellipse,#b78a393b 0%,transparent 48%);animation:tpDawn 2.8s ease-out both}
-.tpFCrown{font-size:32px;animation:tpDawn 1.5s .15s both;color:#e9c985}
-.tpFCinemaTitle{font-size:clamp(20px,5vw,30px);font-weight:600;line-height:1.5;display:block;margin:16px 0;color:#f5d895}
-.tpFCinemaTitle span{display:inline-block;white-space:pre;animation:tpAssemble 1.15s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--delay)}
-.tpFCinemaSub{font-size:12px;letter-spacing:1px;color:#b9a47e;animation:tpDawn 1.2s 1.3s both}
-.tpFBeam{height:1px;width:65%;margin:18px auto;background:linear-gradient(90deg,transparent,#f4cf83,transparent);animation:tpBeam 1.6s .8s both}
-@keyframes tpDawn{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
-@keyframes tpAssemble{from{opacity:0;filter:blur(9px);transform:translate(var(--dx),18px) scale(.88)}to{opacity:1;filter:blur(0);transform:translate(0,0) scale(1)}}
-@keyframes tpBeam{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
-@media(prefers-reduced-motion:reduce){#tpFWelcome:before,#tpFWelcome *{animation:none!important}}
-`;document.head.append(st)}
-const el=document.createElement('div');el.id='tpFWelcome';el.setAttribute('role','status');el.dir=lang==='ar'?'rtl':'ltr';
-const crown=document.createElement('div');crown.className='tpFCrown';crown.textContent='♛';crown.setAttribute('aria-hidden','true');
-const h=document.createElement('strong');h.className='tpFCinemaTitle';h.setAttribute('aria-label',w[0]);const parts=lang==='ar'?w[0].split(/(\s+)/):Array.from(w[0]);parts.forEach((part,i)=>{const span=document.createElement('span');span.textContent=part;span.setAttribute('aria-hidden','true');span.style.setProperty('--delay',(.25+i*(lang==='ar'?.12:.045))+'s');span.style.setProperty('--dx',((i%2?1:-1)*(12+i%4*7))+'px');h.append(span)});
-const beam=document.createElement('div');beam.className='tpFBeam';const sub=document.createElement('div');sub.className='tpFCinemaSub';sub.textContent=w[1];el.append(crown,h,beam,sub);q('tpFAdmin').prepend(el);const intro=document.createElement('dialog');intro.style.cssText='position:fixed;inset:0;width:100%;max-width:none;height:100%;max-height:none;margin:0;border:0;background:#050506;color:#e7c888;padding:24px;box-sizing:border-box;overflow:hidden';const stage=document.createElement('div');stage.style.cssText='height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center';const reveal=el.cloneNode(true);reveal.removeAttribute('id');reveal.style.cssText='width:min(100%,480px);text-align:center;background:radial-gradient(ellipse,#b78a392b,transparent 70%);padding:32px 0';stage.append(reveal);intro.append(stage);document.body.append(intro);intro.showModal();let done=false;const finish=()=>{if(done)return;done=true;intro.close();intro.remove()};intro.addEventListener('click',finish);intro.addEventListener('cancel',e=>{e.preventDefault();finish()});setTimeout(finish,3200);
-} async function refresh(play=false){try{await check(token);const rows=await api('/rest/v1/driver_profiles?select=id,username,full_name,status&order=created_at.desc','GET',undefined,token);verified=true;q('tpFLogin').hidden=true;q('tpFAdmin').hidden=false;if(play||!q('tpFWelcome'))founderWelcome();q('tpFCounts').textContent=rows.length+' drivers · '+rows.filter(x=>x.status==='pending').length+' pending';const list=q('tpFDrivers');list.replaceChildren();for(const row of rows){const line=document.createElement('p');line.textContent=row.full_name+' (@'+row.username+') · '+row.status;list.append(line);for(const status of ['rejected','suspended']){const b=document.createElement('button');b.textContent=status==='rejected'?'Reject':'Suspend';b.onclick=async()=>{if(!confirm(status+' '+row.username+'?'))return;try{await check(token);await api('/rest/v1/driver_profiles?id=eq.'+encodeURIComponent(row.id),'PATCH',{status},token);await refresh()}catch(e){msg(e.message)}};list.append(b)}}msg('Founder verified · Approvals disabled until document review is ready.')}catch(e){reset();msg(e.message)}}
-q('tpFLogin').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;try{const s=await api('/auth/v1/token?grant_type=password','POST',{email:q('tpFEmail').value.trim(),password:q('tpFPassword').value});q('tpFPassword').value='';await check(s.access_token);token=s.access_token;await refresh(true)}catch(e){reset();msg(e.message)}finally{busy=false}};
-q('tpFRefresh').onclick=refresh;q('tpFLogout').onclick=async()=>{const t=token;reset();try{if(t)await api('/auth/v1/logout','POST',{},t)}catch(e){}msg('Signed out')};q('tpFClose').onclick=()=>d.close();d.addEventListener('close',()=>{q('tpFPassword').value=''});
-window.tpFounderMenu=(add,close,ix)=>{const label=verified?['لوحة الإدارة','Admin Dashboard','Admin-Bereich'][ix]:['دخول الحساب','Account sign in','Konto anmelden'][ix];add('button','♙  '+label).onclick=()=>{close();if(!d.open)d.showModal();if(token)refresh(true);else msg('')}};
-})();
-</script>

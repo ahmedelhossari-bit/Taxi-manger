@@ -371,3 +371,33 @@ add=function(k){old.apply(this,arguments);if(k==='trips'){auto=true;q('time').va
 setInterval(()=>{if(auto)q('time').value=clockNow()},1000);
 })();
 </script>
+<style>
+#luxClock{text-align:center;color:#bbb;font-size:15px;direction:ltr}
+#luxRing{width:184px;height:184px;border-radius:50%;padding:7px;margin:15px auto;background:#343538}
+#luxInner{width:100%;height:100%;border-radius:50%;background:#17181b;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px}
+#luxTimer{font-size:30px;font-weight:700;color:#d8b575;direction:ltr;font-variant-numeric:tabular-nums}
+#luxMode,#luxRemain{font-size:11px;color:#aaa;direction:ltr}
+.luxgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.luxcell{background:#28292d;border-radius:12px;padding:12px 4px;text-align:center}
+.luxcell b{display:block;color:#d8b575;font-size:17px;margin-top:6px;direction:ltr}
+.luxcell small{color:#aaa;font-size:12px}
+#luxWarning{color:#ef8585;text-align:center;font-size:13px;padding:5px}
+#luxLog{font-size:12px;text-align:center;color:#aaa;padding:8px;line-height:1.7}
+</style>
+<script>
+(function(){
+if(document.getElementById('luxPanel'))return;
+const q=id=>document.getElementById(id);
+const status=q('status');
+const work=status.closest('section');
+let panel=document.createElement('div');
+panel.id='luxPanel';
+panel.innerHTML='<div id="luxClock"></div><div id="luxRing"><div id="luxInner"><div id="luxMode">READY TO START</div><div id="luxTimer">00:00:00</div><div id="luxRemain">STANDBY</div></div></div><div id="luxWarning"></div><div class="luxgrid"><div class="luxcell"><small>بداية الشغل</small><b id="luxStart">--:--</b></div><div class="luxcell"><small>العمل الفعلي</small><b id="luxWork">00:00:00</b></div><div class="luxcell"><small>إجمالي الراحة</small><b id="luxRest">00:00:00</b></div><div class="luxcell"><small>البريكات</small><b id="luxCount">0 / 2</b></div></div><div id="luxLog"></div>';
+work.querySelector('h2').textContent='SMART SHIFT';
+status.after(panel);
+status.style.display='none';
+setInterval(()=>{
+q('luxClock').textContent='VIENNA · '+new Date().toLocaleTimeString('en-GB',{timeZone:'Europe/Vienna',hour12:false});
+},1000);
+})();
+</script>

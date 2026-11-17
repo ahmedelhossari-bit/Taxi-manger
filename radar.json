@@ -1,6 +1,6 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-17T21:24:45.380675+00:00",
+  "updated": "2026-11-17T22:26:20.498439+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
@@ -195,51 +195,6 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 14,
-      "alertCause": "emergency medical services",
-      "reasonId": 9,
-      "reasonName": "Rettungseinsatz",
-      "name": "I20261117-0047",
-      "parentName": "I20261117-0047",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U3: Rettungseinsatz",
-      "description": "Linie U3: Unregelmäßige Intervalle in beiden Richtungen. Grund: Rettungseinsatz.",
-      "descriptionHTML": "<p>Linie U3:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Rettungseinsatz.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U3: Rettungseinsatz",
-            "descriptionPlain": "Linie U3: Unregelmäßige Intervalle in beiden Richtungen. Grund: Rettungseinsatz.",
-            "descriptionHtml": "<p>Linie U3:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Rettungseinsatz.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T21:07:00.000+0100",
-        "resume": "2026-11-17T21:07:00.000+0100",
-        "created": "2026-11-17T21:08:00.000+0100",
-        "lastUpdate": "2026-11-17T21:08:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "U3": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U3"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 303,
-          "lineName": "U3",
-          "vehicleType": "ptMetro"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
       "alertCauseId": 137,
       "alertCause": "miscellaneous",
       "reasonId": 14,
@@ -279,6 +234,96 @@
         {
           "lineId": 306,
           "lineName": "U6",
+          "vehicleType": "ptMetro"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 137,
+      "alertCause": "miscellaneous",
+      "reasonId": 14,
+      "reasonName": "Betriebsstörung",
+      "name": "I20261117-0051",
+      "parentName": "I20261117-0051",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U2: Betriebsstörung",
+      "description": "Linie U2: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
+      "descriptionHTML": "<p>Linie U2:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Betriebsstörung.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U2: Betriebsstörung",
+            "descriptionPlain": "Linie U2: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
+            "descriptionHtml": "<p>Linie U2:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Betriebsstörung.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-17T23:03:00.000+0100",
+        "resume": "2026-11-17T23:03:00.000+0100",
+        "created": "2026-11-17T23:04:00.000+0100",
+        "lastUpdate": "2026-11-17T23:04:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U2": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U2"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 302,
+          "lineName": "U2",
+          "vehicleType": "ptMetro"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261117-0052",
+      "parentName": "I20261117-0052",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U4: Schadhaftes Fahrzeug",
+      "description": "Die Linie U4 fährt derzeit in der Station Ober St. Veit in beiden Richtungen über Gleis 2 und fährt daher unregelmäßig. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Die Linie U4 fährt derzeit in der Station Ober St. Veit in beiden Richtungen über Gleis 2 und fährt daher unregelmäßig.</p><p>Grund: Schadhaftes Fahrzeug.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U4: Schadhaftes Fahrzeug",
+            "descriptionPlain": "Die Linie U4 fährt derzeit in der Station Ober St. Veit in beiden Richtungen über Gleis 2 und fährt daher unregelmäßig. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Die Linie U4 fährt derzeit in der Station Ober St. Veit in beiden Richtungen über Gleis 2 und fährt daher unregelmäßig.</p><p>Grund: Schadhaftes Fahrzeug.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-17T23:19:00.000+0100",
+        "resume": "2026-11-17T23:19:00.000+0100",
+        "created": "2026-11-17T23:20:00.000+0100",
+        "lastUpdate": "2026-11-17T23:20:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U4": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U4"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 304,
+          "lineName": "U4",
           "vehicleType": "ptMetro"
         }
       ]
@@ -381,29 +426,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1881-101",
-      "parentName": "R1881-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1881
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1884-101",
       "parentName": "R1884-101",
       "priority": "1",
@@ -419,52 +441,6 @@
       ],
       "relatedStops": [
         1884
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1883-101",
-      "parentName": "R1883-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1883
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1882-101",
-      "parentName": "R1882-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1882
       ]
     },
     {
@@ -542,21 +518,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2359-125",
-      "parentName": "R2359-125",
+      "name": "R1881-101",
+      "parentName": "R1881-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
       "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
+        "start": "2026-11-17T00:00:06.000+0100",
         "end": "2026-11-17T23:59:59.000+0100"
       },
       "relatedLines": [
-        "25"
+        "1"
       ],
       "relatedStops": [
-        2359
+        1881
       ]
     },
     {
@@ -565,21 +541,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2371-125",
-      "parentName": "R2371-125",
+      "name": "R1882-101",
+      "parentName": "R1882-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
       "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
+        "start": "2026-11-17T00:00:06.000+0100",
         "end": "2026-11-17T23:59:59.000+0100"
       },
       "relatedLines": [
-        "25"
+        "1"
       ],
       "relatedStops": [
-        2371
+        1882
       ]
     },
     {
@@ -588,21 +564,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2372-125",
-      "parentName": "R2372-125",
+      "name": "R1883-101",
+      "parentName": "R1883-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
       "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
+        "start": "2026-11-17T00:00:06.000+0100",
         "end": "2026-11-17T23:59:59.000+0100"
       },
       "relatedLines": [
-        "25"
+        "1"
       ],
       "relatedStops": [
-        2372
+        1883
       ]
     },
     {
@@ -772,8 +748,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2370-125",
-      "parentName": "R2370-125",
+      "name": "R2372-125",
+      "parentName": "R2372-125",
       "priority": "1",
       "owner": "WL",
       "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
@@ -786,7 +762,7 @@
         "25"
       ],
       "relatedStops": [
-        2370
+        2372
       ]
     },
     {
@@ -833,6 +809,75 @@
       ],
       "relatedStops": [
         2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2359-125",
+      "parentName": "R2359-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2359
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2370-125",
+      "parentName": "R2370-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2370
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2371-125",
+      "parentName": "R2371-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2371
       ]
     },
     {
@@ -902,69 +947,6 @@
       ],
       "relatedStops": [
         1199
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R500-101",
-      "parentName": "R500-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bhf. Hütteldorf\nÖBB-Ersatzbus für <80",
-      "description": "Bhf. Hütteldorf\nÖBB-Ersatzbus für <80",
-      "time": {
-        "start": "2026-11-17T05:00:22.000+0100",
-        "end": "2026-11-17T23:00:00.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        500
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R47-0",
-      "parentName": "R47-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Haltestelle\naufgelassen!\n\nStop closed!",
-      "description": "Haltestelle\naufgelassen!\n\nStop closed!",
-      "time": {
-        "start": "2026-11-17T15:00:22.000+0100",
-        "end": "2026-11-17T22:30:00.000+0100"
-      },
-      "relatedStops": [
-        47
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R17-0",
-      "parentName": "R17-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Haltestelle\naufgelassen!\n\nStop closed!",
-      "description": "Haltestelle\naufgelassen!\n\nStop closed!",
-      "time": {
-        "start": "2026-11-17T15:00:22.000+0100",
-        "end": "2026-11-17T22:30:00.000+0100"
-      },
-      "relatedStops": [
-        17
       ]
     },
     {

@@ -37,16 +37,7 @@ jobs:
                   raise RuntimeError(str(result))
               return result['res']
 
-          result=api('LocMatch',{
-              'input':{'field':'S','loc':{'name':'Wien Hbf','type':'ALL'},'maxLoc':10}
-          })
-          locations=result['match']['locL']
-                    station={'type':'S','extId':'8103000'}
-          print('STATIONS:',json.dumps(stations,ensure_ascii=False))
-          station=next((s for s in stations if s.get('name') in ('Wien Hbf','Wien Hauptbahnhof')),None)
-          if not station:
-              raise RuntimeError('Exact station not found')
-          print('SELECTED:',station.get('name'),station.get('extId'))
+          station={'type':'S','extId':'8103000'}
           now=datetime.now(ZoneInfo('Europe/Vienna'))
           for board in ['ARR','DEP']:
               result=api('StationBoard',{

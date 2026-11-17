@@ -823,3 +823,75 @@ characterData:true
 });
 })();
 </script>
+<script>
+(()=>{
+const nav=document.getElementById('proNav');
+if(!nav||document.getElementById('radarPro'))return;
+const s=document.createElement('section');
+s.id='radarPro';
+s.classList.add('prohidden');
+document.body.append(s);
+const b=document.createElement('button');
+b.textContent='◉ Radar';
+nav.append(b);
+let data=null,error=false,busy=false;
+const labels={
+ar:['رادار المدينة','آخر تحديث','تحديث الآن','بلاغات النقل العام','لا توجد بلاغات','تعذر تحديث البيانات','فرصة محتملة','النص الرسمي بالألمانية','البيانات قديمة'],
+en:['LIVE CITY RADAR','Last update','Refresh','Public transport alerts','No alerts','Update failed','Potential opportunity','Official German text','Data is stale'],
+de:['LIVE CITY RADAR','Letzte Aktualisierung','Aktualisieren','Verkehrsmeldungen','Keine Meldungen','Aktualisierung fehlgeschlagen','Potenzielle Chance','Offizieller Meldungstext','Daten sind veraltet']
+};
+function lang(){return document.documentElement.lang.split('-')[0]||'ar'}
+function draw(){
+let t=labels[lang()]||labels.en;
+s.replaceChildren();
+function add(parent,tag,value){
+let e=document.createElement(tag);
+e.textContent=value;
+parent.append(e);
+return e;
+}
+add(s,'h2',t[0]).style.color='#d8b575';
+add(s,'p','WIENER LINIEN');
+let r=add(s,'button',t[2]);
+r.onclick=load;
+if(error)add(s,'p',t[5]);
+if(!data)return;
+add(s,'p',t[1]+': '+new Date(data.updated).toLocaleString(lang(),{timeZone:'Europe/Vienna'}));
+if(Date.now()-Date.parse(data.updated)>900000)add(s,'p',t[8]).style.color='#ef9960';
+add(s,'h3',t[3]+' ('+data.events.length+')');
+if(!data.events.length)add(s,'p',t[4]);
+for(const e of data.events){
+let box=document.createElement('div');
+box.style.cssText='background:#242526;border:1px solid #454039;border-radius:14px;padding:15px;margin:12px 0';
+s.append(box);
+let tr=(e.languages||[]).find(x=>x[lang()]);
+tr=tr?tr[lang()]:null;
+add(box,'h3',tr?.title||e.title||'Traffic alert').style.color='#d8b575';
+add(box,'p',tr?.descriptionPlain||e.description||'');
+if(!tr&&lang()!=='de')add(box,'small',t[7]);
+if(String(e.priority)==='1')add(box,'p','● '+t[6]).style.color='#eab968';
+}
+add(s,'small','Source: Stadt Wien / Wiener Linien');
+}
+async function load(){
+if(busy)return;
+busy=true;
+try{
+let r=await fetch('https://raw.githubusercontent.com/ahmedelhossari-bit/Taxi-manger/main/radar.json?t='+Date.now(),{cache:'no-store'});
+if(!r.ok)throw Error('HTTP');
+let j=await r.json();
+if(!Array.isArray(j.events))throw Error('Invalid data');
+data=j;error=false;
+}catch(e){error=true}
+finally{busy=false;draw()}
+}
+b.onclick=()=>{
+document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));
+s.classList.remove('prohidden');
+draw();load();
+window.scrollTo(0,0);
+};
+new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+setInterval(()=>{if(!s.classList.contains('prohidden'))load()},60000);
+})();
+</script>

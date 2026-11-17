@@ -772,6 +772,17 @@ const dict=[
 ['دقيقة','min','Min.'],
 ['ساعة','h','Std.']
 ];
+dict.push(
+['إجمالي الراحة','Total break time','Gesamtpausenzeit'],
+['البريكات','Breaks','Pausen'],
+['استئناف الشيفت','Resume shift','Schicht fortsetzen'],
+['إنهاء الشيفت','End shift','Schicht beenden'],
+['العودة للشغل','Resume work','Weiterarbeiten'],
+['بداية الراحة','Start break','Pause starten'],
+['استراحة','Break','Pause'],
+['توقيت المشوار','Trip time','Fahrtzeit'],
+['المنطقة','Area','Gebiet']
+);
 dict.sort((a,b)=>b[0].length-a[0].length);
 const cache=new WeakMap();
 let style=document.createElement('style');

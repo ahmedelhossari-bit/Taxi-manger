@@ -135,3 +135,37 @@ $('day').value=today();loadSettings();render();setInterval(render,30000);
 </script>
 </body>
 </html>
+<script>
+(function(){
+const p=document.createElement('select');
+p.id='paymentMethod';
+['Cash','Visa','Uber','Bolt','Other'].forEach(k=>p.add(new Option(k,k)));
+document.getElementById('fare').after(p);
+const box=document.createElement('div');
+document.getElementById('summary').after(box);
+const info=document.createElement('div');
+document.getElementById('status').after(info);
+const oldAdd=add;
+add=function(k){
+const count=db.trips.length;
+oldAdd.apply(this,arguments);
+if(k==='trips'&&db.trips.length>count){
+db.trips[db.trips.length-1].payment=p.value;
+save();
+}
+update();
+};
+function update(){
+const d=document.getElementById('day').value;
+const trips=db.trips.filter(x=>x.date===d);
+box.innerHTML='<h3>طرق الدفع</h3>'+['Cash','Visa','Uber','Bolt','Other','غير محدد'].map(k=>'<p>'+k+': €'+trips.filter(x=>(x.payment||'غير محدد')===k).reduce((a,x)=>a+Number(x.amount),0).toFixed(2)+'</p>').join('');
+const s=db.shifts[d];
+const time=n=>n?new Date(n).toLocaleString('de-AT'):'—';
+info.innerHTML=s?'<p>بداية الشغل: '+time(s.start)+'</p><p>نهاية الشغل: '+time(s.end)+'</p>':'';
+}
+document.addEventListener('click',()=>setTimeout(update,100));
+document.getElementById('day').addEventListener('change',update);
+setInterval(update,1000);
+update();
+})();
+</script>

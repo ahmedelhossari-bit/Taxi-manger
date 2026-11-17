@@ -1,0 +1,181 @@
+{
+  "source": "OEBB SCOTTY",
+  "updated": "2026-11-17T19:48:32.159026+00:00",
+  "stations": [
+    {
+      "name": "Wien Hauptbahnhof",
+      "id": "8103000",
+      "status": "OK",
+      "alerts": [
+        {
+          "train": "S 60 (Zug-Nr. 26072)",
+          "board": "ARR",
+          "direction": "Bruck/Leitha Bahnhof",
+          "planned": "20:39",
+          "expected": "20:49",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "REX 8 (Zug-Nr. 2531)",
+          "board": "ARR",
+          "direction": "Bratislava hl.st.",
+          "planned": "20:46",
+          "expected": "21:14",
+          "delay": 28,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 132",
+          "board": "ARR",
+          "direction": "Trieste Centrale",
+          "planned": "21:07",
+          "expected": "21:19",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "EC 340",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "21:20",
+          "expected": "21:36",
+          "delay": 16,
+          "cancelled": false
+        }
+      ],
+      "records": 86,
+      "errors": []
+    },
+    {
+      "name": "Wien Westbahnhof",
+      "id": "8100003",
+      "status": "OK",
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1661)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "20:37",
+          "expected": "20:50",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "WB 79221",
+          "board": "ARR",
+          "direction": "Innsbruck Hbf",
+          "planned": "20:52",
+          "expected": "21:10",
+          "delay": 18,
+          "cancelled": false
+        }
+      ],
+      "records": 75,
+      "errors": []
+    },
+    {
+      "name": "Wien Meidling",
+      "id": "8100514",
+      "status": "OK",
+      "alerts": [
+        {
+          "train": "RJX 132",
+          "board": "ARR",
+          "direction": "Trieste Centrale",
+          "planned": "21:00",
+          "expected": "21:14",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 261",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "21:25",
+          "expected": "21:48",
+          "delay": 23,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19961",
+          "board": "ARR",
+          "direction": "Bregenz Bahnhof",
+          "planned": "21:25",
+          "expected": "21:48",
+          "delay": 23,
+          "cancelled": false
+        },
+        {
+          "train": "WB 1008",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "21:38",
+          "expected": "21:55",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 132",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "21:02",
+          "expected": "21:15",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 261",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "21:27",
+          "expected": "21:49",
+          "delay": 22,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19961",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "21:27",
+          "expected": "21:49",
+          "delay": 22,
+          "cancelled": false
+        },
+        {
+          "train": "WB 1008",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "21:40",
+          "expected": "21:56",
+          "delay": 16,
+          "cancelled": false
+        }
+      ],
+      "records": 127,
+      "errors": []
+    },
+    {
+      "name": "Wien Mitte",
+      "id": "8101949",
+      "status": "ERROR",
+      "alerts": [],
+      "records": 0,
+      "errors": [
+        "{'meth': 'StationBoard', 'err': 'LOCATION', 'errTxt': 'HCI Service: location missing or invalid', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}",
+        "{'meth': 'StationBoard', 'err': 'LOCATION', 'errTxt': 'HCI Service: location missing or invalid', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
+      ]
+    },
+    {
+      "name": "Flughafen Wien",
+      "id": "8101060",
+      "status": "ERROR",
+      "alerts": [],
+      "records": 0,
+      "errors": [
+        "{'meth': 'StationBoard', 'err': 'LOCATION', 'errTxt': 'HCI Service: location missing or invalid', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}",
+        "{'meth': 'StationBoard', 'err': 'LOCATION', 'errTxt': 'HCI Service: location missing or invalid', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
+      ]
+    }
+  ]
+}

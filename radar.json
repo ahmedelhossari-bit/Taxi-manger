@@ -1,6 +1,6 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-17T20:25:25.573507+00:00",
+  "updated": "2026-11-17T21:24:45.380675+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
@@ -199,54 +199,6 @@
       "alertCause": "emergency medical services",
       "reasonId": 9,
       "reasonName": "Rettungseinsatz",
-      "name": "I20261117-0045-F01",
-      "parentName": "I20261117-0045",
-      "priority": "1",
-      "owner": "WL",
-      "title": "49: Rettungseinsatz",
-      "description": "Linie 49: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 49: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "49: Rettungseinsatz",
-            "descriptionPlain": "Linie 49: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 49: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T20:16:00.000+0100",
-        "end": "2026-11-17T21:39:00.000+0100",
-        "created": "2026-11-17T20:31:00.000+0100",
-        "lastUpdate": "2026-11-17T21:21:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "49": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 149,
-          "lineName": "49",
-          "vehicleType": "ptTram"
-        }
-      ],
-      "relatedStops": [
-        1440
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 14,
-      "alertCause": "emergency medical services",
-      "reasonId": 9,
-      "reasonName": "Rettungseinsatz",
       "name": "I20261117-0047",
       "parentName": "I20261117-0047",
       "priority": "1",
@@ -287,6 +239,51 @@
       ]
     },
     {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 137,
+      "alertCause": "miscellaneous",
+      "reasonId": 14,
+      "reasonName": "Betriebsstörung",
+      "name": "I20261117-0050",
+      "parentName": "I20261117-0050",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U6: Betriebsstörung",
+      "description": "Linie U6: Unregelmäßige Intervalle in Richtung Siebenhirten. Grund: Betriebsstörung.",
+      "descriptionHTML": "<p>Linie U6:<br>Unregelmäßige Intervalle in Richtung Siebenhirten. <br><br>Grund: Betriebsstörung.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U6: Betriebsstörung",
+            "descriptionPlain": "Linie U6: Unregelmäßige Intervalle in Richtung Siebenhirten. Grund: Betriebsstörung.",
+            "descriptionHtml": "<p>Linie U6:<br>Unregelmäßige Intervalle in Richtung Siebenhirten. <br><br>Grund: Betriebsstörung.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-17T21:57:00.000+0100",
+        "resume": "2026-11-17T21:57:00.000+0100",
+        "created": "2026-11-17T21:58:00.000+0100",
+        "lastUpdate": "2026-11-17T21:58:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U6": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U6"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 306,
+          "lineName": "U6",
+          "vehicleType": "ptMetro"
+        }
+      ]
+    },
+    {
       "refTrafficInfoCategoryId": 3,
       "alertCauseId": 255,
       "alertCause": "undefined alert cause",
@@ -307,29 +304,6 @@
       ],
       "relatedStops": [
         2558
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R293-474",
-      "parentName": "R293-474",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
-      "description": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
-      "time": {
-        "start": "2026-11-17T00:00:04.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "74A"
-      ],
-      "relatedStops": [
-        293
       ]
     },
     {
@@ -361,6 +335,29 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R293-474",
+      "parentName": "R293-474",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
+      "description": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
+      "time": {
+        "start": "2026-11-17T00:00:04.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "74A"
+      ],
+      "relatedStops": [
+        293
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R401-101",
       "parentName": "R401-101",
       "priority": "1",
@@ -376,121 +373,6 @@
       ],
       "relatedStops": [
         401
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1884-101",
-      "parentName": "R1884-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1884
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1876-101",
-      "parentName": "R1876-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nKein Betrieb",
-      "description": "Gleisbauarbeiten\nKein Betrieb",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1876
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1883-101",
-      "parentName": "R1883-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1883
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1875-101",
-      "parentName": "R1875-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nKein Betrieb",
-      "description": "Gleisbauarbeiten\nKein Betrieb",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1875
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1882-101",
-      "parentName": "R1882-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1882
       ]
     },
     {
@@ -522,6 +404,121 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1884-101",
+      "parentName": "R1884-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1884
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1883-101",
+      "parentName": "R1883-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1883
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1882-101",
+      "parentName": "R1882-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1882
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1875-101",
+      "parentName": "R1875-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nKein Betrieb",
+      "description": "Gleisbauarbeiten\nKein Betrieb",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1875
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1876-101",
+      "parentName": "R1876-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nKein Betrieb",
+      "description": "Gleisbauarbeiten\nKein Betrieb",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1876
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R1880-101",
       "parentName": "R1880-101",
       "priority": "1",
@@ -537,6 +534,98 @@
       ],
       "relatedStops": [
         1880
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2359-125",
+      "parentName": "R2359-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2359
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2371-125",
+      "parentName": "R2371-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2371
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2372-125",
+      "parentName": "R2372-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2372
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2373-125",
+      "parentName": "R2373-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Züge halten\nDonaufelder Straße 175-177",
+      "description": "Züge halten\nDonaufelder Straße 175-177",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2373
       ]
     },
     {
@@ -683,6 +772,29 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2370-125",
+      "parentName": "R2370-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2370
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2343-125",
       "parentName": "R2343-125",
       "priority": "1",
@@ -721,121 +833,6 @@
       ],
       "relatedStops": [
         2343
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2359-125",
-      "parentName": "R2359-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2359
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2370-125",
-      "parentName": "R2370-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2370
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2371-125",
-      "parentName": "R2371-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2371
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2372-125",
-      "parentName": "R2372-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2372
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2373-125",
-      "parentName": "R2373-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Züge halten\nDonaufelder Straße 175-177",
-      "description": "Züge halten\nDonaufelder Straße 175-177",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2373
       ]
     },
     {
@@ -944,7 +941,7 @@
       "description": "Haltestelle\naufgelassen!\n\nStop closed!",
       "time": {
         "start": "2026-11-17T15:00:22.000+0100",
-        "end": "2026-11-17T22:00:00.000+0100"
+        "end": "2026-11-17T22:30:00.000+0100"
       },
       "relatedStops": [
         47
@@ -991,98 +988,6 @@
       ],
       "relatedStops": [
         49
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1375-149",
-      "parentName": "R1375-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "time": {
-        "start": "2026-11-17T20:30:26.000+0100",
-        "end": "2026-11-17T21:29:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1375
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1453-149",
-      "parentName": "R1453-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "time": {
-        "start": "2026-11-17T20:30:27.000+0100",
-        "end": "2026-11-17T21:29:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1453
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1452-149",
-      "parentName": "R1452-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "time": {
-        "start": "2026-11-17T20:30:27.000+0100",
-        "end": "2026-11-17T21:29:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1452
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1454-149",
-      "parentName": "R1454-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
-      "time": {
-        "start": "2026-11-17T20:30:27.000+0100",
-        "end": "2026-11-17T21:29:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1454
       ]
     },
     {

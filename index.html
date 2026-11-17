@@ -307,3 +307,67 @@ document.addEventListener('click',()=>setTimeout(draw,200));
 readDay();draw();bills();show('home');
 })();
 </script>
+<style>
+html{overflow-x:hidden;color-scheme:dark}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{padding:18px 12px 100px!important;margin:0 auto!important;max-width:600px;font-family:-apple-system,BlinkMacSystemFont,Arial!important;font-size:14px!important}
+section{width:100%!important;min-width:0!important;padding:14px!important;margin:10px 0!important;border-radius:20px!important;background:#1b1c20!important}
+h1{font-size:28px!important}
+h2{font-size:18px!important;margin:0 0 12px!important}
+h3{font-size:15px!important}
+input,select,textarea,button{box-sizing:border-box!important;width:100%;max-width:100%!important;min-width:0!important;margin:5px 0!important;padding:11px!important;font-size:15px!important;border-radius:12px!important}
+input[type=time],input[type=date]{display:block;width:100%!important;min-height:44px;appearance:none;-webkit-appearance:none}
+input[type=checkbox]{width:auto!important}
+button{min-height:44px;transition:transform .12s}
+button:active{transform:scale(.97)}
+button[hidden]{display:none!important}
+#income{font-size:40px!important;text-align:center;color:#d8b575!important}
+#proNav button{font-size:11px!important;padding:9px 2px!important}
+#summary{font-size:13px!important;line-height:1.6}
+</style>
+<style>
+#luxPay{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;direction:ltr}
+#luxPay button{background:#292a2e!important;color:#ccc!important;font-size:12px!important;padding:9px 0!important}
+#luxPay button.active{background:#d8b575!important;color:#111!important}
+#luxFields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#luxFields small{color:#aaa;font-size:12px}
+#luxFare{display:flex;align-items:center;justify-content:center;direction:ltr;color:#d8b575;font-size:30px;font-weight:700}
+#fare{background:transparent!important;border:0!important;color:#d8b575!important;font-size:32px!important;width:160px!important;text-align:center}
+</style>
+<script>
+(function(){
+if(document.getElementById('luxPay'))return;
+const q=id=>document.getElementById(id);
+const fare=q('fare'),pay=q('paymentMethod');
+let f=document.createElement('div');
+f.id='luxFare';f.textContent='€';
+fare.before(f);f.append(fare);
+fare.placeholder='0.00';
+let p=document.createElement('div');p.id='luxPay';
+pay.after(p);pay.style.display='none';
+function highlight(){
+Array.from(p.children).forEach(b=>b.classList.toggle('active',b.textContent===pay.value));
+}
+Array.from(pay.options).forEach(o=>{
+let b=document.createElement('button');
+b.type='button';b.textContent=o.value;
+b.onclick=()=>{pay.value=o.value;highlight()};
+p.append(b);
+});
+highlight();
+let fields=document.createElement('div');
+fields.id='luxFields';p.after(fields);
+[q('time'),q('area')].forEach((x,i)=>{
+let w=document.createElement('div'),l=document.createElement('small');
+l.textContent=i?'المنطقة':'توقيت المشوار';
+w.append(l,x);fields.append(w);
+});
+let auto=true;
+const clockNow=()=>new Date().toLocaleTimeString('en-GB',{timeZone:'Europe/Vienna',hour:'2-digit',minute:'2-digit',hour12:false});
+q('time').value=clockNow();
+q('time').addEventListener('input',()=>auto=false);
+let old=add;
+add=function(k){old.apply(this,arguments);if(k==='trips'){auto=true;q('time').value=clockNow()}};
+setInterval(()=>{if(auto)q('time').value=clockNow()},1000);
+})();
+</script>

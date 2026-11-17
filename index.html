@@ -805,6 +805,10 @@ if(day.nextElementSibling.textContent!==label)day.nextElementSibling.textContent
 }
 }
 update();
-setInterval(update,500);
+new MutationObserver(update).observe(document.body,{
+childList:true,
+subtree:true,
+characterData:true
+});
 })();
 </script>

@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <title>Taxi Manager</title>
 <style>
@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 2.1 · Heading-up Navigation</div>
+<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 2.2 · Safe Screen</div>
 
 <h1>🚕 Taxi Manager</h1>
 <section>
@@ -1077,14 +1077,16 @@ body.tpDriving{overflow:hidden!important}
 body.tpDriving #taxiMapPro{position:fixed!important;inset:0!important;width:100%!important;height:100dvh!important;margin:0!important;padding:0!important;border-radius:0!important;z-index:20000!important;background:#18231f!important;overflow:hidden!important}
 body.tpDriving #taxiMapPro > :not(#tmMap):not(#tpNavBanner):not(#tpNavFooter){display:none!important}
 body.tpDriving #tmMap{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;border-radius:0!important}
-body.tpDriving #tpNavBanner{position:absolute!important;top:calc(env(safe-area-inset-top,0px) + 12px)!important;left:12px;right:12px;z-index:1001!important;background:#12533b!important;box-shadow:0 4px 18px #0005;text-align:center}
-body.tpDriving #tpNavFooter{display:flex!important;position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);left:12px;right:12px;z-index:1001;gap:8px;background:#18231f;padding:8px;border-radius:14px}
+body.tpDriving #tpNavBanner{position:absolute!important;top:calc(max(env(safe-area-inset-top,0px),var(--tp-top-guard,0px)) + 12px)!important;left:12px;right:12px;z-index:1001!important;background:#12533b!important;box-shadow:0 4px 18px #0005;text-align:center}
+body.tpDriving #tpNavFooter{display:flex!important;position:absolute;bottom:calc(max(env(safe-area-inset-bottom,0px),var(--tp-bottom-guard,0px)) + 16px);left:12px;right:12px;z-index:1001;gap:8px;background:#18231f;padding:8px;border-radius:14px}
 body.tpDriving #tpNavFooter button{margin:0;flex:1;min-width:0;font-size:13px;padding:12px 5px}body.tpDriving #tpNavBanner{box-sizing:border-box}
 body.tpDriving #taxiMapQuick,body.tpDriving #tpMenu{display:none!important}
-body.tpDriving #tmMap .leaflet-top{top:125px}
-body.tpDriving #tmMap .leaflet-bottom{bottom:76px}
+body.tpDriving #tmMap .leaflet-top{top:calc(max(env(safe-area-inset-top,0px),var(--tp-top-guard,0px)) + 125px)}
+body.tpDriving #tmMap .leaflet-bottom{bottom:calc(max(env(safe-area-inset-bottom,0px),var(--tp-bottom-guard,0px)) + 76px)}
 `;document.head.append(navStyle);banner.id='tpNavBanner';navText.dir='rtl';const footer=document.createElement('div');footer.id='tpNavFooter';footer.style.display='none';s.append(footer);button(footer,'◎ Recenter',()=>{if(position)map.setView(position,17)});button(footer,'Exit / إنهاء',()=>stopNav());
-function drivingLayout(on){document.body.classList.toggle('tpDriving',on);requestAnimationFrame(()=>{if(map){map.invalidateSize();if(on&&position)map.setView(position,17)}})}
+function syncNavViewport(){const v=window.visualViewport;const ios=/iPhone|iPod|iPad/.test(navigator.userAgent);const top=Math.max(0,v?.offsetTop||0,ios?64:0);const bottom=Math.max(0,window.innerHeight-(v?.height||window.innerHeight)-(v?.offsetTop||0),ios?16:0);s.style.setProperty('--tp-top-guard',top+'px');s.style.setProperty('--tp-bottom-guard',bottom+'px');if(document.body.classList.contains('tpDriving')&&map)map.invalidateSize({pan:false})}
+window.addEventListener('resize',syncNavViewport);window.visualViewport?.addEventListener('resize',syncNavViewport);window.visualViewport?.addEventListener('scroll',syncNavViewport);
+function drivingLayout(on){document.body.classList.toggle('tpDriving',on);syncNavViewport();requestAnimationFrame(()=>{if(map){map.invalidateSize();if(on&&position)map.setView(position,17)}})}
 button(banner,'Stop navigation',()=>stopNav());
 function stopNav(){if(map?.setBearing)map.setBearing(0);viewBearing=null;drivingLayout(false);navigating=false;banner.style.display='none';cancelAnimationFrame(carFrame);displayCar=null;lastCarPosition=null;carBearing=null;if(taxiMarker){taxiMarker.remove();taxiMarker=null}if(window.speechSynthesis)window.speechSynthesis.cancel()}
 

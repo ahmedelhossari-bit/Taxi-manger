@@ -145,7 +145,7 @@ async function api(path,method='GET',body,t){const response=await fetch(root+pat
 function reset(){q('tpFWelcome')?.remove();token=null;verified=false;q('tpFLogin').hidden=false;q('tpFAdmin').hidden=true;q('tpFDrivers').replaceChildren();q('tpFCounts').textContent='';q('tpFPassword').value=''}
 async function check(t){if(await api('/rest/v1/rpc/current_user_is_founder','POST',{},t)!==true)throw Error('Founder access denied');}
 function founderWelcome(){
-const lang=document.documentElement.lang.split('-')[0],words={ar:['أهلاً بيك، مستر أحمد','مؤسس TAXI PRO'],en:['Welcome, Mr. Ahmed','Founder of TAXI PRO'],de:['Herzlich willkommen, Herr Ahmed','Gründer von TAXI PRO']},w=words[lang]||words.en;
+const lang=document.documentElement.lang.split('-')[0],words={ar:['أهلاً بيك، باشمهندس أحمد','مؤسس TAXI PRO'],en:['Welcome, Engineer Ahmed','Founder of TAXI PRO'],de:['Herzlich willkommen, Ingenieur Ahmed','Gründer von TAXI PRO']},w=words[lang]||words.en;
 q('tpFWelcome')?.remove();
 if(!document.getElementById('tpFCinemaCSS')){const st=document.createElement('style');st.id='tpFCinemaCSS';st.textContent=`
 #tpFWelcome{position:relative;isolation:isolate;overflow:hidden;border:1px solid #685334;border-radius:20px;background:#08090b;text-align:center;padding:34px 12px;margin:16px 0;color:#e7c888}
@@ -780,7 +780,7 @@ liveEvents();
 setInterval(liveEvents,300000);
 })();
 </script>
-<script src="./taxi-v13.js?v=36"></script>
+<script src="./taxi-v13.js?v=37"></script>
 <script>
 (()=>{
 const dict=[
@@ -980,7 +980,7 @@ return el;
 }
 add('button','✕').onclick=close;
 add('h2','TAXI PRO');
-add('p','V3.6').style.fontSize='10px';
+add('p','V3.7').style.fontSize='10px';
 add('p','Ahmed Elhosary');
 add('p','Founder & Creator').style.fontSize='12px';
 const words=[

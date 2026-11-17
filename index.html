@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 2.4 · Stability</div>
+<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 2.5 · Payment Fix</div>
 
 <h1>🚕 Taxi Manager</h1>
 <section>
@@ -349,14 +349,16 @@ fare.placeholder='0.00';
 let p=document.createElement('div');p.id='luxPay';
 pay.after(p);pay.style.display='none';
 function highlight(){
-Array.from(p.children).forEach(b=>b.classList.toggle('active',b.textContent===pay.value));
+Array.from(p.children).forEach(b=>b.classList.toggle('active',b.dataset.payment===pay.value));
 }
 Array.from(pay.options).forEach(o=>{
 let b=document.createElement('button');
-b.type='button';b.textContent=o.value;
+b.type='button';b.dataset.payment=o.value;b.textContent=o.value;
 b.onclick=()=>{pay.value=o.value;highlight()};
 p.append(b);
 });
+function paymentLabels(){const l=document.documentElement.lang||'ar';const labels={ar:{Cash:'نقدي',Visa:'بطاقة',Other:'أخرى'},en:{Cash:'Cash',Visa:'Visa',Other:'Other'},de:{Cash:'Bar',Visa:'Karte',Other:'Sonstige'}};for(const b of p.children){const t=labels[l]?.[b.dataset.payment]||b.dataset.payment;if(b.textContent!==t)b.textContent=t}highlight()}
+paymentLabels();new MutationObserver(paymentLabels).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 highlight();
 let fields=document.createElement('div');
 fields.id='luxFields';p.after(fields);
@@ -492,7 +494,7 @@ if(btn.pause)btn.pause.hidden=!active||paused;
 if(btn.resume)btn.resume.hidden=!paused;
 if(btn.end)btn.end.hidden=!active;
 let trips=db.trips.filter(t=>t.date===q('day').value);
-let html=['Cash','Visa','Uber','Bolt'].map(k=>'<div class="luxcell"><small>'+k+'</small><b>€'+trips.filter(t=>t.payment===k).reduce((a,t)=>a+Number(t.amount||0),0).toFixed(2)+'</b></div>').join('');
+const labels={ar:{Cash:'نقدي',Visa:'بطاقة'},de:{Cash:'Bar',Visa:'Karte'}}[document.documentElement.lang]||{};let html=['Cash','Visa','Uber','Bolt'].map(k=>'<div class="luxcell"><small>'+(labels[k]||k)+'</small><b>€'+trips.filter(t=>t.payment===k).reduce((a,t)=>a+Number(t.amount||0),0).toFixed(2)+'</b></div>').join('');
 if(totals.innerHTML!==html)totals.innerHTML=html;
 }
 let nav=q('proNav');
@@ -802,7 +804,7 @@ let w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
 let n;
 while(n=w.nextNode()){
 let p=n.parentElement;
-if(!p||p.closest('script,style,input,textarea,option,select,#history,#tp13settings,#tp13welcome,.leaflet-container')||p.isContentEditable)continue;
+if(!p||p.closest('script,style,input,textarea,option,select,#history,#tp13settings,#tp13welcome,#luxPay,#luxTotals,.leaflet-container')||p.isContentEditable)continue;
 let old=cache.get(n);
 let source=old&&n.data===old.last?old.source:n.data;
 let out=source;

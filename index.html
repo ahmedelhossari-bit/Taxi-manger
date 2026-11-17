@@ -970,6 +970,7 @@ const profile=document.querySelector('#tp13bar button');
 if(profile){
 add('button','⚙  '+['اللغة / الملف الشخصي','Language / Profile','Sprache / Profil'][ix]).onclick=()=>{close();profile.click()};
 }
+if(window.tpFounderMenu)window.tpFounderMenu(add,close,ix);
 add('hr','');
 add('p','© 2026 TAXI PRO').style.fontSize='12px';
 shade.style.display='block';
@@ -1176,4 +1177,19 @@ const quick=document.createElement('button');quick.id='taxiMapQuick';quick.textC
 
 })();
 
+</script>
+
+<script>
+(()=>{
+const root='https://znnrrfrykluzhkcrvboh.supabase.co',key='sb_publishable_EtPcLHtzk2hMFsYyER2csw_PMy36tCa';let token=null,verified=false,busy=false;
+const d=document.createElement('dialog');d.id='tpFounderDialog';d.style.cssText='width:min(92vw,440px);max-height:85dvh;overflow:auto;background:#1c1d20;color:#eee;border:1px solid #8b7148;border-radius:20px;padding:20px;z-index:30000';d.innerHTML='<button id="tpFClose" type="button">✕</button><h2 style="color:#d8b575">TAXI PRO · Founder</h2><form id="tpFLogin"><label>Email<input id="tpFEmail" type="email" autocomplete="email" required></label><label>Password<input id="tpFPassword" type="password" autocomplete="current-password" required></label><button type="submit">Sign in</button><p><a href="./founder.html" style="color:#d8b575">Set / reset password</a></p></form><div id="tpFAdmin" hidden><h3>Admin Dashboard</h3><p id="tpFCounts"></p><div id="tpFDrivers"></div><button id="tpFRefresh">Refresh</button><button id="tpFLogout">Sign out</button></div><p id="tpFStatus" role="status"></p><small>Founded by Ahmed Elhosary</small>';document.body.append(d);
+const q=x=>document.getElementById(x),msg=x=>q('tpFStatus').textContent=x;
+async function api(path,method='GET',body,t){const response=await fetch(root+path,{method,headers:{apikey:key,Authorization:'Bearer '+(t||key),'Content-Type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})});const j=await response.json().catch(()=>null);if(!response.ok)throw Error(j?.msg||j?.message||j?.error_description||'Request failed '+response.status);return j}
+function reset(){token=null;verified=false;q('tpFLogin').hidden=false;q('tpFAdmin').hidden=true;q('tpFDrivers').replaceChildren();q('tpFCounts').textContent='';q('tpFPassword').value=''}
+async function check(t){if(await api('/rest/v1/rpc/current_user_is_founder','POST',{},t)!==true)throw Error('Founder access denied');}
+async function refresh(){try{await check(token);const rows=await api('/rest/v1/driver_profiles?select=id,username,full_name,status&order=created_at.desc','GET',undefined,token);verified=true;q('tpFLogin').hidden=true;q('tpFAdmin').hidden=false;q('tpFCounts').textContent=rows.length+' drivers · '+rows.filter(x=>x.status==='pending').length+' pending';const list=q('tpFDrivers');list.replaceChildren();for(const row of rows){const line=document.createElement('p');line.textContent=row.full_name+' (@'+row.username+') · '+row.status;list.append(line);for(const status of ['rejected','suspended']){const b=document.createElement('button');b.textContent=status==='rejected'?'Reject':'Suspend';b.onclick=async()=>{if(!confirm(status+' '+row.username+'?'))return;try{await check(token);await api('/rest/v1/driver_profiles?id=eq.'+encodeURIComponent(row.id),'PATCH',{status},token);await refresh()}catch(e){msg(e.message)}};list.append(b)}}msg('Founder verified · Approvals disabled until document review is ready.')}catch(e){reset();msg(e.message)}}
+q('tpFLogin').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;try{const s=await api('/auth/v1/token?grant_type=password','POST',{email:q('tpFEmail').value.trim(),password:q('tpFPassword').value});q('tpFPassword').value='';await check(s.access_token);token=s.access_token;await refresh()}catch(e){reset();msg(e.message)}finally{busy=false}};
+q('tpFRefresh').onclick=refresh;q('tpFLogout').onclick=async()=>{const t=token;reset();try{if(t)await api('/auth/v1/logout','POST',{},t)}catch(e){}msg('Signed out')};q('tpFClose').onclick=()=>d.close();d.addEventListener('close',()=>{q('tpFPassword').value=''});
+window.tpFounderMenu=(add,close,ix)=>{const label=verified?['لوحة الإدارة','Admin Dashboard','Admin-Bereich'][ix]:['دخول الحساب','Account sign in','Konto anmelden'][ix];add('button','♙  '+label).onclick=()=>{close();if(!d.open)d.showModal();if(token)refresh();else msg('')}};
+})();
 </script>

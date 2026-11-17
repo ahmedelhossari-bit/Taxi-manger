@@ -957,8 +957,8 @@ const icons=['⌂','▦','▥','€','◎','🚕','♫','◉'];
 [...nav.querySelectorAll('button')].forEach((old,i)=>{
 const txt=old.textContent.trim();
 const isRadar=/radar|رادار/i.test(txt);
-const label=isRadar?words[7][ix]:i<7?words[i][ix]:txt;
-const el=add('button',(isRadar?'◉':icons[i]||'›')+'  '+label);
+const label=/railway/i.test(txt)?['رادار القطارات','Railway Radar','Bahnradar'][ix]:isRadar?words[7][ix]:i<7?words[i][ix]:txt;
+const el=add('button',(/railway/i.test(txt)?'🚆':isRadar?'◉':icons[i]||'›')+'  '+label);
 el.onclick=()=>{close();old.click()};
 });
 const profile=document.querySelector('#tp13bar button');
@@ -978,5 +978,47 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
 else init();
+})();
+</script>
+
+<script>
+(()=>{
+const nav=document.getElementById('proNav');
+if(!nav||document.getElementById('railwayPro'))return;
+const s=document.createElement('section');
+s.id='railwayPro';s.classList.add('prohidden');
+s.innerHTML='<h2 id="railTitle"></h2><p id="railStatus"></p><button id="railRefresh"></button><div id="railList"></div>';
+document.body.append(s);
+const b=document.createElement('button');b.textContent='🚆 Railway';nav.append(b);
+const q=id=>document.getElementById(id);
+let data=null,busy=false,failed=false;
+const tr=(ar,en,de)=>({ar,en,de}[document.documentElement.lang.split('-')[0]]||en);
+function node(tag,str,parent){const el=document.createElement(tag);el.textContent=str;parent.append(el);return el}
+function draw(){
+q('railTitle').textContent=tr('رادار القطارات','Railway Radar','Bahnradar');
+q('railRefresh').textContent=tr('تحديث','Refresh','Aktualisieren');
+const list=q('railList');list.replaceChildren();
+const age=data?Math.max(0,Math.floor((Date.now()-Date.parse(data.updated))/60000)):null;
+q('railStatus').textContent=(busy?tr('جاري التحديث…','Updating…','Aktualisiere…'):failed?tr('تعذر التحديث','Refresh failed','Aktualisierung fehlgeschlagen'):'ÖBB SCOTTY')+(data?' · '+new Date(data.updated).toLocaleString(undefined,{timeZone:'Europe/Vienna'})+' · '+age+' min'+(age>35?' ⚠ '+tr('بيانات قديمة','Stale data','Veraltete Daten'):''):'');
+if(!data)return;
+for(const st of [...data.stations].sort((a,b)=>Number(b.name==='Flughafen Wien')-Number(a.name==='Flughafen Wien'))){
+const card=node('div','',list);card.style.cssText='border:1px solid #514630;border-radius:14px;padding:14px;margin:12px 0;background:#191a1c';
+node('h3',(st.name==='Flughafen Wien'?'✈ ':'🚆 ')+st.name,card);
+node('p',st.status+' · '+st.records+' '+tr('رحلة مفحوصة','records checked','geprüfte Fahrten'),card).style.color=st.status==='OK'?'#8dc9a2':'#e8ad78';
+if(st.status==='ERROR'){node('p',tr('البيانات غير متاحة','Data unavailable','Daten nicht verfügbar'),card);continue}
+if(!st.alerts.length)node('p',tr('لا توجد تنبيهات في البيانات الحالية','No alerts in current data','Keine Meldungen in aktuellen Daten'),card);
+for(const a of st.alerts){
+const line=node('div','',card);line.style.cssText='padding:10px 0;border-top:1px solid #39352d';
+node('strong',a.train+' · '+(a.board==='ARR'?tr('وصول','Arrival','Ankunft'):tr('مغادرة','Departure','Abfahrt')),line);
+node('div',a.direction||'—',line);
+node('div',(a.planned||'—')+' → '+(a.expected||'—')+' · '+(a.cancelled?tr('ملغي','Cancelled','Ausfall'):'+'+a.delay+' min'),line).style.color=a.cancelled?'#ef8181':'#d8b575';
+}
+}
+}
+async function load(){if(busy)return;busy=true;draw();try{const res=await fetch('https://raw.githubusercontent.com/ahmedelhossari-bit/Taxi-manger/main/railway.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP');const j=await res.json();if(!Array.isArray(j.stations)||!Number.isFinite(Date.parse(j.updated)))throw Error('Invalid data');data=j;failed=false}catch(e){failed=true}finally{busy=false;draw()}}
+q('railRefresh').onclick=load;
+b.onclick=()=>{document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));s.classList.remove('prohidden');draw();load();window.scrollTo(0,0)};
+new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+setInterval(()=>{if(!s.classList.contains('prohidden'))load()},60000);
 })();
 </script>

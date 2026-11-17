@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Taxi Manager</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:16px;background:#101827;color:white;font:16px Arial}h1{text-align:center;color:#ffd54a}section{background:#1e293b;padding:16px;border-radius:18px;margin:14px 0}input,select,button,textarea{width:100%;padding:13px;margin:5px 0;border:0;border-radius:10px;font:inherit}input,select,textarea{background:#334155;color:white}button{background:#ffd54a;font-weight:bold;color:#101827}.green{background:#34d399}.red{background:#fb7185}.big{font-size:42px;color:#34d399;font-weight:bold}progress{width:100%;accent-color:#34d399}small{color:#b9c5d6}.bar{background:#34d399;height:10px;border-radius:8px}.line{padding:10px 0;border-bottom:1px solid #475569}
+</style>
+</head>
+<body>
+<h1>🚕 Taxi Manager</h1>
+<section>
+<input id="day" type="date" onchange="render()">
+<small>إجمالي الدخل</small><div class="big" id="income"></div>
+<progress id="progress" max="250"></progress>
+<div id="summary"></div>
+</section>
+<section>
+<h2>⏱ إدارة الشيفت</h2><p id="status"></p>
+<button class="green" onclick="shift('start')">بداية الشغل</button>
+<button onclick="shift('pause')">بداية الراحة</button>
+<button onclick="shift('resume')">نهاية الراحة</button>
+<button class="red" onclick="shift('end')">إنهاء الشغل</button>
+</section>
+<section>
+<h2>🚕 تسجيل مشوار</h2>
+<input id="fare" type="number" inputmode="decimal" placeholder="قيمة المشوار باليورو">
+<input id="time" type="time">
+<input id="area" placeholder="المنطقة (اختياري)">
+<button class="green" onclick="add('trips')">حفظ المشوار</button>
+</section>
+<section>
+<h2>💳 المصاريف</h2>
+<select id="category"><option>أكل وشرب</option><option>بنزين</option><option>غسيل العربية</option><option>ركن وغرامات</option><option>شخصية</option><option>أخرى</option></select>
+<input id="expense" type="number" inputmode="decimal" placeholder="المبلغ">
+<button onclick="add('expenses')">حفظ المصروف</button>
+</section>
+<section><h2>📊 التحليل اليومي</h2><div id="analysis"></div><div id="chart"></div></section>
+<section><h2>📈 الأسبوع والشهر</h2><div id="reports"></div></section>
+<section><h2>🧠 أفضل ساعات الشغل</h2><div id="best"></div></section>
+<section><h2>📋 سجل اليوم</h2><div id="history"></div></section>
+<section>
+<h2>⚙️ الإعدادات</h2>
+<label>الهدف اليومي €</label><input id="target" type="number">
+<label>إيجار العربية أسبوعياً €</label><input id="rent" type="number">
+<label>البنزين المتوقع يومياً €</label><input id="fuel" type="number">
+<label>الالتزامات الشهرية €</label><input id="fixed" type="number">
+<button onclick="settings()">حفظ الإعدادات</button>
+</section>
+<section><h2>💾 النسخ الاحتياطي</h2>
+<button onclick="backup()">نسخ البيانات</button>
+<textarea id="backupData" placeholder="بيانات النسخة الاحتياطية"></textarea>
+<button onclick="restore()">استرجاع البيانات</button>
+</section>
+<script>
+const $=id=>document.getElementById(id);
+function fmt(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+const today=()=>fmt(new Date());
+const clock=()=>new Date().toTimeString().slice(0,5);
+const money=n=>'€'+n.toFixed(2);
+const sum=a=>a.reduce((v,x)=>v+x.amount,0);
+const date=()=>$('day').value;
+let db;
+try{db=JSON.parse(localStorage.getItem('taxiV4'))}catch(e){}
+db=db||{trips:[],expenses:[],shifts:{},settings:{target:250,rent:600,fuel:20,fixed:1256}};
+function save(){try{localStorage.setItem('taxiV4',JSON.stringify(db))}catch(e){alert('تعذر الحفظ')}render()}
+function add(type){
+let el=$(type==='trips'?'fare':'expense'),amount=Number(el.value);
+if(!Number.isFinite(amount)||amount<=0)return alert('اكتب مبلغ صحيح');
+db[type].push({date:date(),amount,time:type==='trips'?$('time').value||clock():clock(),area:$('area').value,category:$('category').value});
+el.value='';$('time').value='';$('area').value='';save()
+}
+function shift(a){
+let d=date(),s=db.shifts[d],n=Date.now();
+if(a==='start'){
+if(d!==today()||s)return alert('اختار اليوم بدون شيفت سابق');
+if(Object.values(db.shifts).some(x=>!x.end))return alert('انهي الشيفت السابق أولا');
+db.shifts[d]={start:n,end:0,pause:0,breaks:[]}
+}else{
+if(!s||s.end)return alert('لا يوجد شيفت نشط');
+if(a==='pause'&&!s.pause)s.pause=n;
+if((a==='resume'||a==='end')&&s.pause){s.breaks.push([s.pause,n]);s.pause=0}
+if(a==='end')s.end=n
+}save()
+}
+function hours(d){
+let s=db.shifts[d];if(!s)return 0;
+return Math.max(0,((s.end||Date.now())-s.start-s.breaks.reduce((v,b)=>v+b[1]-b[0],0)-(s.pause?Date.now()-s.pause:0))/3600000)
+}
+function duration(h){let m=Math.round(h*60);return Math.floor(m/60)+' ساعة '+m%60+' دقيقة'}
+function settings(){
+let v={};for(let k of ['target','rent','fuel','fixed']){v[k]=Number($(k).value);if(!Number.isFinite(v[k])||v[k]<0||k==='target'&&!v[k])return alert('راجع الأرقام')}
+db.settings=v;save()
+}
+function removeItem(t,i){if(confirm('حذف التسجيل؟')){db[t].splice(i,1);save()}}
+function costs(t,e,ds){return sum(e)+ds.filter(d=>!e.some(x=>x.date===d&&x.category==='بنزين')).length*db.settings.fuel}
+function safe(s){let x=document.createElement('span');x.textContent=s||'';return x.innerHTML}
+function render(){
+let d=date(),s=db.settings,t=db.trips.filter(x=>x.date===d),e=db.expenses.filter(x=>x.date===d),n=sum(t),h=hours(d),r=h?n/h:0,sh=db.shifts[d],c=costs(t,e,sh||t.length?[d]:[]);
+$('income').textContent=money(n);
+$('progress').max=s.target;$('progress').value=n;
+$('summary').innerHTML='المتبقي للهدف: '+money(Math.max(0,s.target-n))+'<p>المشاوير: '+t.length+' | صافي اليوم قبل الالتزامات الشخصية: '+money(n-c-s.rent/7)+'</p><p>العمل الفعلي: '+duration(h)+' | '+money(r)+'/ساعة</p>';
+$('status').textContent=!sh?'لم يبدأ':sh.end?'انتهى':sh.pause?'☕ استراحة':'🟢 شغال';
+$('analysis').innerHTML='متوسط المشوار: '+money(t.length?n/t.length:0)+'<p>المصاريف: '+money(c)+'</p><p>الوقت المتوقع لتحقيق الهدف: '+(r?duration(Math.max(0,s.target-n)/r):'غير متاح')+'</p>';
+let hist=Array(24).fill(0);t.forEach(x=>hist[Number(x.time.slice(0,2))]+=x.amount);
+$('chart').innerHTML=hist.map((v,i)=>v?'<p>'+i+':00 — '+money(v)+'</p><div class="bar" style="width:'+v/Math.max(...hist)*100+'%"></div>':'').join('');
+let start=new Date(d+'T12:00:00');start.setDate(start.getDate()-(start.getDay()+6)%7);
+let end=new Date(start);end.setDate(end.getDate()+6);
+let month=d.slice(0,7),days=new Date(Number(d.slice(0,4)),Number(d.slice(5,7)),0).getDate();
+function report(label,f,rent,fixed){
+let a=db.trips.filter(x=>f(x.date)),b=db.expenses.filter(x=>f(x.date)),ds=[...new Set([...a.map(x=>x.date),...Object.keys(db.shifts).filter(f)])],wh=ds.reduce((v,x)=>v+hours(x),0);
+return '<h3>'+label+'</h3>الدخل: '+money(sum(a))+'<p>الصافي بعد التكاليف: '+money(sum(a)-costs(a,b,ds)-rent-fixed)+'</p>ساعات العمل: '+duration(wh)+'<p>متوسط الساعة: '+money(wh?sum(a)/wh:0)+'</p>'
+}
+$('reports').innerHTML=report('الأسبوع',x=>x>=fmt(start)&&x<=fmt(end),s.rent,0)+report('الشهر',x=>x.startsWith(month),s.rent*days/7,s.fixed);
+let revenue=Array(24).fill(0),exposure=Array(24).fill(0),weekday=new Date(d+'T12:00:00').getDay(),sample=0;
+for(let [key,v] of Object.entries(db.shifts)){
+if(!v.end||new Date(key+'T12:00:00').getDay()!==weekday)continue;
+sample++;
+for(let i=v.start;i<v.end;i+=60000){
+if(v.breaks.some(b=>i>=b[0]&&i<b[1]))continue;
+exposure[new Date(i).getHours()]+=Math.min(60000,v.end-i)/3600000
+}
+db.trips.filter(x=>x.date===key).forEach(x=>revenue[Number(x.time.slice(0,2))]+=x.amount)
+}
+let ranked=revenue.map((v,i)=>({i,h:exposure[i],r:exposure[i]?v/exposure[i]:0})).filter(x=>x.h>=2).sort((a,b)=>b.r-a.r);
+$('best').innerHTML=sample<3?'محتاج 3 شيفتات مكتملة على الأقل لنفس يوم الأسبوع.':('عدد الشيفتات: '+sample+ranked.slice(0,5).map(x=>'<p>'+x.i+':00 — '+money(x.r)+'/ساعة</p>').join('')+'<small>تقدير تاريخي وليس ضماناً للدخل. الأجرة محسوبة عند انتهاء المشوار.</small>');
+$('history').innerHTML=['trips','expenses'].map(k=>db[k].map((x,i)=>x.date===d?'<div class="line">'+safe(x.time)+' — '+money(x.amount)+' — '+safe(k==='trips'?x.area:x.category)+'<button class="red" onclick="removeItem(\''+k+'\','+i+')">حذف</button></div>':'').join('')).join('')
+}
+async function backup(){let t=JSON.stringify(db);$('backupData').value=t;try{await navigator.clipboard.writeText(t);alert('تم النسخ')}catch(e){$('backupData').select();alert('انسخ النص يدويا')}}
+function restore(){try{let b=JSON.parse($('backupData').value);if(!Array.isArray(b.trips)||!Array.isArray(b.expenses)||!b.shifts||!b.settings)throw Error();if(confirm('استبدال البيانات الحالية؟')){db=b;save();loadSettings()}}catch(e){alert('نسخة غير صالحة')}}
+function loadSettings(){for(let k of ['target','rent','fuel','fixed'])$(k).value=db.settings[k]}
+$('day').value=today();loadSettings();render();setInterval(render,30000);
+</script>
+</body>
+</html>

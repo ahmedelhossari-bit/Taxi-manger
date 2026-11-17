@@ -505,3 +505,31 @@ setInterval(update,1000);
 update();
 })();
 </script>
+<script>
+(function(){
+const q=id=>document.getElementById(id);
+if(q('luxRestart'))return;
+const b=document.createElement('button');
+b.id='luxRestart';
+b.textContent='▶ استئناف الشيفت';
+b.style.gridColumn='1 / -1';
+q('luxActions').append(b);
+function refresh(){
+const s=db.shifts[q('day').value];
+b.hidden=!(s&&s.end);
+}
+b.onclick=function(){
+let s=db.shifts[q('day').value];
+if(!s||!s.end)return;
+if(!confirm('هل تريد استئناف الشيفت؟'))return;
+s.breaks=s.breaks||[];
+s.breaks.push([s.end,Date.now()]);
+s.end=null;
+s.pause=null;
+save();
+refresh();
+};
+setInterval(refresh,1000);
+refresh();
+})();
+</script>

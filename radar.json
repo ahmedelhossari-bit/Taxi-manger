@@ -1,6 +1,6 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-17T18:12:33.012889+00:00",
+  "updated": "2026-11-17T19:25:55.956341+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
@@ -8,79 +8,181 @@
       "alertCause": "emergency medical services",
       "reasonId": 9,
       "reasonName": "Rettungseinsatz",
-      "name": "I20261117-0042",
-      "parentName": "I20261117-0042",
+      "name": "I20261117-0045",
+      "parentName": "I20261117-0045",
       "priority": "1",
       "owner": "WL",
-      "title": "U6: Rettungseinsatz",
-      "description": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Rettungseinsatz.",
-      "descriptionHTML": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Rettungseinsatz.</p>",
+      "title": "49: Rettungseinsatz",
+      "description": "Linie 49: Fahrtbehinderung in Richtung Hütteldorf, Bujattigasse. Voraussichtliche Dauer: 20:40 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Volkstheater U.",
+      "descriptionHTML": "<p>Linie 49:<br>Fahrtbehinderung in Richtung Hütteldorf, Bujattigasse.</p><p>Voraussichtliche Dauer: 20:40 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Volkstheater U.</p>",
       "languages": [
         {
           "de": {
-            "title": "U6: Rettungseinsatz",
-            "descriptionPlain": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Rettungseinsatz.",
-            "descriptionHtml": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Rettungseinsatz.</p>"
+            "title": "49: Rettungseinsatz",
+            "descriptionPlain": "Linie 49: Fahrtbehinderung in Richtung Hütteldorf, Bujattigasse. Voraussichtliche Dauer: 20:40 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Volkstheater U.",
+            "descriptionHtml": "<p>Linie 49:<br>Fahrtbehinderung in Richtung Hütteldorf, Bujattigasse.</p><p>Voraussichtliche Dauer: 20:40 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Volkstheater U.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-17T18:10:00.000+0100",
-        "resume": "2026-11-17T18:10:00.000+0100",
-        "created": "2026-11-17T18:10:00.000+0100",
-        "lastUpdate": "2026-11-17T18:10:00.000+0100"
+        "start": "2026-11-17T20:16:00.000+0100",
+        "created": "2026-11-17T20:16:00.000+0100",
+        "lastUpdate": "2026-11-17T20:16:00.000+0100"
       },
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "U6": "ptMetro"
+          "49": "ptTram"
         }
       },
       "relatedLines": [
-        "U6"
+        "49"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 306,
-          "lineName": "U6",
-          "vehicleType": "ptMetro"
+          "lineId": 149,
+          "lineName": "49",
+          "vehicleType": "ptTram"
+        }
+      ],
+      "relatedStops": [
+        1440
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 45,
+      "alertCause": "construction work",
+      "reasonId": 27,
+      "reasonName": "Gleisbauarbeiten",
+      "name": "I20261020-0029",
+      "parentName": "I20261020-0029",
+      "priority": "1",
+      "owner": "WL",
+      "title": "1: Gleisbauarbeiten",
+      "description": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
+      "descriptionHTML": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "1: Gleisbauarbeiten",
+            "descriptionPlain": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
+            "descriptionHtml": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-10-20T11:58:00.000+0200",
+        "end": "2026-12-05T01:00:00.000+0100",
+        "created": "2026-10-20T11:59:00.000+0200",
+        "lastUpdate": "2026-10-20T16:28:00.000+0200"
+      },
+      "location": "Stefan-Fadinger-Platz",
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "1": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 101,
+          "lineName": "1",
+          "vehicleType": "ptTram"
         }
       ]
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "I20260925-0011",
-      "parentName": "I20260925-0011",
+      "alertCauseId": 71,
+      "alertCause": "vehicle on the line",
+      "reasonId": 25,
+      "reasonName": "Falschparker",
+      "name": "I20261117-0044-F01",
+      "parentName": "I20261117-0044",
       "priority": "1",
       "owner": "WL",
-      "title": "26E: Gleisbauarbeiten",
-      "description": "Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen.",
-      "descriptionHTML": "<p>Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen. </p>",
+      "title": "77A: Falschparker",
+      "description": "Linie 77A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie 77A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "77A: Falschparker",
+            "descriptionPlain": "Linie 77A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie 77A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+          }
+        }
+      ],
       "time": {
-        "start": "2026-09-25T08:55:00.000+0200",
-        "end": "2026-12-12T23:55:00.000+0100",
-        "created": "2026-09-25T09:29:00.000+0200",
-        "lastUpdate": "2026-09-26T13:51:00.000+0200"
+        "start": "2026-11-17T19:38:00.000+0100",
+        "resume": "2026-11-17T20:03:00.000+0100",
+        "created": "2026-11-17T20:03:00.000+0100",
+        "lastUpdate": "2026-11-17T20:03:00.000+0100"
       },
-      "location": "Donaufelder",
+      "location": "Rabengasse 2",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "26E": "ptTram"
+          "77A": "ptBusCity"
         }
       },
       "relatedLines": [
-        "26E"
+        "77A"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 626,
-          "lineName": "26E",
-          "vehicleType": "ptBus"
+          "lineId": 477,
+          "lineName": "77A",
+          "vehicleType": "ptBusCity"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 67,
+      "alertCause": "roadway damage",
+      "reasonId": 28,
+      "reasonName": "Gleisschaden",
+      "name": "I20261117-0031",
+      "parentName": "I20261117-0031",
+      "priority": "1",
+      "owner": "WL",
+      "title": "2: Gleisschaden",
+      "description": "Linie 2: Umleitung in Richtung Friedrich-Engels-Platz zwischen Rathaus U und Parlament, U Volkstheater über die Reichsratsstraße. Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße. Voraussichtliche Dauer: 17:30 Uhr. Grund: Gleisschaden im Bereich Stadiongasse.",
+      "descriptionHTML": "<p><strong>Linie 2: </strong><br>Umleitung in Richtung Friedrich-Engels-Platz <br>zwischen Rathaus U und Parlament, U Volkstheater<br>über die Reichsratsstraße.<br>Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße.</p><p>Voraussichtliche Dauer: 17:30 Uhr.</p><p>Grund: Gleisschaden im Bereich Stadiongasse.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "2: Gleisschaden",
+            "descriptionPlain": "Linie 2: Umleitung in Richtung Friedrich-Engels-Platz zwischen Rathaus U und Parlament, U Volkstheater über die Reichsratsstraße. Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße. Voraussichtliche Dauer: 17:30 Uhr. Grund: Gleisschaden im Bereich Stadiongasse.",
+            "descriptionHtml": "<p><strong>Linie 2: </strong><br>Umleitung in Richtung Friedrich-Engels-Platz <br>zwischen Rathaus U und Parlament, U Volkstheater<br>über die Reichsratsstraße.<br>Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße.</p><p>Voraussichtliche Dauer: 17:30 Uhr.</p><p>Grund: Gleisschaden im Bereich Stadiongasse.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-17T16:04:00.000+0100",
+        "created": "2026-11-17T16:09:00.000+0100",
+        "lastUpdate": "2026-11-17T16:57:00.000+0100"
+      },
+      "location": "Stadiongasse",
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "2": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "2"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 102,
+          "lineName": "2",
+          "vehicleType": "ptTram"
         }
       ]
     },
@@ -149,370 +251,38 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 67,
-      "alertCause": "roadway damage",
-      "reasonId": 28,
-      "reasonName": "Gleisschaden",
-      "name": "I20261117-0031",
-      "parentName": "I20261117-0031",
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "I20260925-0011",
+      "parentName": "I20260925-0011",
       "priority": "1",
       "owner": "WL",
-      "title": "2: Gleisschaden",
-      "description": "Linie 2: Umleitung in Richtung Friedrich-Engels-Platz zwischen Rathaus U und Parlament, U Volkstheater über die Reichsratsstraße. Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße. Voraussichtliche Dauer: 17:30 Uhr. Grund: Gleisschaden im Bereich Stadiongasse.",
-      "descriptionHTML": "<p><strong>Linie 2: </strong><br>Umleitung in Richtung Friedrich-Engels-Platz <br>zwischen Rathaus U und Parlament, U Volkstheater<br>über die Reichsratsstraße.<br>Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße.</p><p>Voraussichtliche Dauer: 17:30 Uhr.</p><p>Grund: Gleisschaden im Bereich Stadiongasse.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "2: Gleisschaden",
-            "descriptionPlain": "Linie 2: Umleitung in Richtung Friedrich-Engels-Platz zwischen Rathaus U und Parlament, U Volkstheater über die Reichsratsstraße. Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße. Voraussichtliche Dauer: 17:30 Uhr. Grund: Gleisschaden im Bereich Stadiongasse.",
-            "descriptionHtml": "<p><strong>Linie 2: </strong><br>Umleitung in Richtung Friedrich-Engels-Platz <br>zwischen Rathaus U und Parlament, U Volkstheater<br>über die Reichsratsstraße.<br>Im Bereich Parlament, U Volkstheater halten die Züge in der Bedarfshaltestelle am Burgring nach der Bellariastraße.</p><p>Voraussichtliche Dauer: 17:30 Uhr.</p><p>Grund: Gleisschaden im Bereich Stadiongasse.</p>"
-          }
-        }
-      ],
+      "title": "26E: Gleisbauarbeiten",
+      "description": "Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen.",
+      "descriptionHTML": "<p>Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen. </p>",
       "time": {
-        "start": "2026-11-17T16:04:00.000+0100",
-        "created": "2026-11-17T16:09:00.000+0100",
-        "lastUpdate": "2026-11-17T16:57:00.000+0100"
+        "start": "2026-09-25T08:55:00.000+0200",
+        "end": "2026-12-12T23:55:00.000+0100",
+        "created": "2026-09-25T09:29:00.000+0200",
+        "lastUpdate": "2026-09-26T13:51:00.000+0200"
       },
-      "location": "Stadiongasse",
+      "location": "Donaufelder",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "2": "ptTram"
+          "26E": "ptTram"
         }
       },
       "relatedLines": [
-        "2"
+        "26E"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 102,
-          "lineName": "2",
-          "vehicleType": "ptTram"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 137,
-      "alertCause": "miscellaneous",
-      "reasonId": 14,
-      "reasonName": "Betriebsstörung",
-      "name": "I20261117-0041",
-      "parentName": "I20261117-0041",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U4: Betriebsstörung",
-      "description": "Linie U4: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
-      "descriptionHTML": "<p>Linie U4:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Betriebsstörung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U4: Betriebsstörung",
-            "descriptionPlain": "Linie U4: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
-            "descriptionHtml": "<p>Linie U4:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Betriebsstörung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T17:29:00.000+0100",
-        "resume": "2026-11-17T17:29:00.000+0100",
-        "created": "2026-11-17T17:31:00.000+0100",
-        "lastUpdate": "2026-11-17T17:31:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "U4": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U4"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 304,
-          "lineName": "U4",
-          "vehicleType": "ptMetro"
-        }
-      ],
-      "relatedStops": [
-        4419
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 60,
-      "alertCause": "heavy traffic",
-      "reasonId": 46,
-      "reasonName": "Verkehrsüberlastung",
-      "name": "I20261117-0034",
-      "parentName": "I20261117-0034",
-      "priority": "1",
-      "owner": "WL",
-      "title": "7A: Verkehrsüberlastung",
-      "description": "Linie 7A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-      "descriptionHTML": "<p>Linie 7A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "7A: Verkehrsüberlastung",
-            "descriptionPlain": "Linie 7A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-            "descriptionHtml": "<p>Linie 7A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T16:36:00.000+0100",
-        "end": "2026-11-17T19:10:00.000+0100",
-        "resume": "2026-11-17T16:36:00.000+0100",
-        "created": "2026-11-17T16:36:00.000+0100",
-        "lastUpdate": "2026-11-17T19:10:00.000+0100"
-      },
-      "status": "resolved",
-      "attributes": {
-        "relatedLineTypes": {
-          "7A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "7A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 407,
-          "lineName": "7A",
-          "vehicleType": "ptBusCity"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 60,
-      "alertCause": "heavy traffic",
-      "reasonId": 46,
-      "reasonName": "Verkehrsüberlastung",
-      "name": "I20261117-0033",
-      "parentName": "I20261117-0033",
-      "priority": "1",
-      "owner": "WL",
-      "title": "63A: Verkehrsüberlastung",
-      "description": "Linie 63A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-      "descriptionHTML": "<p>Linie 63A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "63A: Verkehrsüberlastung",
-            "descriptionPlain": "Linie 63A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-            "descriptionHtml": "<p>Linie 63A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T16:28:00.000+0100",
-        "end": "2026-11-17T19:10:00.000+0100",
-        "resume": "2026-11-17T16:28:00.000+0100",
-        "created": "2026-11-17T16:29:00.000+0100",
-        "lastUpdate": "2026-11-17T19:10:00.000+0100"
-      },
-      "status": "resolved",
-      "attributes": {
-        "relatedLineTypes": {
-          "63A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "63A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 463,
-          "lineName": "63A",
-          "vehicleType": "ptBusCity"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 71,
-      "alertCause": "vehicle on the line",
-      "reasonId": 45,
-      "reasonName": "Fahrzeug im Gleis",
-      "name": "I20261117-0040-F01",
-      "parentName": "I20261117-0040",
-      "priority": "1",
-      "owner": "WL",
-      "title": "25: Fahrzeug im Gleis",
-      "description": "Linie 25: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 25: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "25: Fahrzeug im Gleis",
-            "descriptionPlain": "Linie 25: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 25: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T17:06:00.000+0100",
-        "end": "2026-11-17T19:10:00.000+0100",
-        "resume": "2026-11-17T19:10:00.000+0100",
-        "created": "2026-11-17T17:34:00.000+0100",
-        "lastUpdate": "2026-11-17T19:10:00.000+0100"
-      },
-      "location": "Wagramer Straße",
-      "status": "resolved",
-      "attributes": {
-        "relatedLineTypes": {
-          "25": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 125,
-          "lineName": "25",
-          "vehicleType": "ptTram"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 45,
-      "alertCause": "construction work",
-      "reasonId": 27,
-      "reasonName": "Gleisbauarbeiten",
-      "name": "I20261020-0029",
-      "parentName": "I20261020-0029",
-      "priority": "1",
-      "owner": "WL",
-      "title": "1: Gleisbauarbeiten",
-      "description": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
-      "descriptionHTML": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "1: Gleisbauarbeiten",
-            "descriptionPlain": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
-            "descriptionHtml": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-10-20T11:58:00.000+0200",
-        "end": "2026-12-05T01:00:00.000+0100",
-        "created": "2026-10-20T11:59:00.000+0200",
-        "lastUpdate": "2026-10-20T16:28:00.000+0200"
-      },
-      "location": "Stefan-Fadinger-Platz",
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "1": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 101,
-          "lineName": "1",
-          "vehicleType": "ptTram"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 71,
-      "alertCause": "vehicle on the line",
-      "reasonId": 25,
-      "reasonName": "Falschparker",
-      "name": "I20261117-0032-F01",
-      "parentName": "I20261117-0032",
-      "priority": "1",
-      "owner": "WL",
-      "title": "D: Falschparker",
-      "description": "Linie D: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie D: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "D: Falschparker",
-            "descriptionPlain": "Linie D: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie D: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T16:25:00.000+0100",
-        "resume": "2026-11-17T16:28:00.000+0100",
-        "created": "2026-11-17T16:28:00.000+0100",
-        "lastUpdate": "2026-11-17T16:28:00.000+0100"
-      },
-      "location": "Porzellangasse 45",
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "D": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "D"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 136,
-          "lineName": "D",
-          "vehicleType": "ptTram"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 60,
-      "alertCause": "heavy traffic",
-      "reasonId": 46,
-      "reasonName": "Verkehrsüberlastung",
-      "name": "I20261117-0037",
-      "parentName": "I20261117-0037",
-      "priority": "1",
-      "owner": "WL",
-      "title": "4A: Verkehrsüberlastung",
-      "description": "Linie 4A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-      "descriptionHTML": "<p>Linie 4A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "4A: Verkehrsüberlastung",
-            "descriptionPlain": "Linie 4A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-            "descriptionHtml": "<p>Linie 4A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-17T16:53:00.000+0100",
-        "resume": "2026-11-17T16:53:00.000+0100",
-        "created": "2026-11-17T16:53:00.000+0100",
-        "lastUpdate": "2026-11-17T16:53:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "4A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "4A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 404,
-          "lineName": "4A",
-          "vehicleType": "ptBusCity"
+          "lineId": 626,
+          "lineName": "26E",
+          "vehicleType": "ptBus"
         }
       ]
     },
@@ -614,75 +384,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1881-101",
-      "parentName": "R1881-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1881
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1884-101",
-      "parentName": "R1884-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1884
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1883-101",
-      "parentName": "R1883-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1883
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1882-101",
       "parentName": "R1882-101",
       "priority": "1",
@@ -706,12 +407,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1875-101",
-      "parentName": "R1875-101",
+      "name": "R1881-101",
+      "parentName": "R1881-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nKein Betrieb",
-      "description": "Gleisbauarbeiten\nKein Betrieb",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
       "time": {
         "start": "2026-11-17T00:00:06.000+0100",
         "end": "2026-11-17T23:59:59.000+0100"
@@ -720,30 +421,7 @@
         "1"
       ],
       "relatedStops": [
-        1875
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1876-101",
-      "parentName": "R1876-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nKein Betrieb",
-      "description": "Gleisbauarbeiten\nKein Betrieb",
-      "time": {
-        "start": "2026-11-17T00:00:06.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1876
+        1881
       ]
     },
     {
@@ -775,6 +453,190 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1876-101",
+      "parentName": "R1876-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nKein Betrieb",
+      "description": "Gleisbauarbeiten\nKein Betrieb",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1876
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1875-101",
+      "parentName": "R1875-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nKein Betrieb",
+      "description": "Gleisbauarbeiten\nKein Betrieb",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1875
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1883-101",
+      "parentName": "R1883-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1883
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1884-101",
+      "parentName": "R1884-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "time": {
+        "start": "2026-11-17T00:00:06.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1884
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2373-127",
+      "parentName": "R2373-127",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linie 25 in\nTokiostraße benützen",
+      "description": "Linie 25 in\nTokiostraße benützen",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "27"
+      ],
+      "relatedStops": [
+        2373
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2378-627",
+      "parentName": "R2378-627",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Busse halten\nSatzingerweg 41",
+      "description": "Busse halten\nSatzingerweg 41",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2378
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-125",
+      "parentName": "R2343-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-626",
+      "parentName": "R2343-626",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2359-125",
       "parentName": "R2359-125",
       "priority": "1",
@@ -790,6 +652,29 @@
       ],
       "relatedStops": [
         2359
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2370-125",
+      "parentName": "R2370-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-17T00:00:07.000+0100",
+        "end": "2026-11-17T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2370
       ]
     },
     {
@@ -856,29 +741,6 @@
       },
       "relatedLines": [
         "25"
-      ],
-      "relatedStops": [
-        2373
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2373-127",
-      "parentName": "R2373-127",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linie 25 in\nTokiostraße benützen",
-      "description": "Linie 25 in\nTokiostraße benützen",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "27"
       ],
       "relatedStops": [
         2373
@@ -974,98 +836,6 @@
       ],
       "relatedStops": [
         2345
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2378-627",
-      "parentName": "R2378-627",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Busse halten\nSatzingerweg 41",
-      "description": "Busse halten\nSatzingerweg 41",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2378
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2370-125",
-      "parentName": "R2370-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2370
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-125",
-      "parentName": "R2343-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2343
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-626",
-      "parentName": "R2343-626",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "time": {
-        "start": "2026-11-17T00:00:07.000+0100",
-        "end": "2026-11-17T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2343
       ]
     },
     {
@@ -1221,6 +991,236 @@
       ],
       "relatedStops": [
         49
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1441-149",
+      "parentName": "R1441-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:16:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1441
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1486-149",
+      "parentName": "R1486-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:16:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1486
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1446-149",
+      "parentName": "R1446-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:16:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1446
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1444-149",
+      "parentName": "R1444-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:16:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1444
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1443-149",
+      "parentName": "R1443-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:16:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1443
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1442-149",
+      "parentName": "R1442-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:16:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1442
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1445-149",
+      "parentName": "R1445-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:16:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1445
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1447-149",
+      "parentName": "R1447-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:19:56.000+0100",
+        "end": "2026-11-17T21:19:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1447
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1448-149",
+      "parentName": "R1448-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:24:57.000+0100",
+        "end": "2026-11-17T21:24:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1448
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1449-149",
+      "parentName": "R1449-149",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "description": "Fahrtbehinderung\nwegen Polizeieinsatz",
+      "time": {
+        "start": "2026-11-17T20:24:57.000+0100",
+        "end": "2026-11-17T21:24:00.000+0100"
+      },
+      "relatedLines": [
+        "49"
+      ],
+      "relatedStops": [
+        1449
       ]
     },
     {

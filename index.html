@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 1.6 · Navigation</div>
+<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 1.7 · Fullscreen Navigation</div>
 
 <h1>🚕 Taxi Manager</h1>
 <section>
@@ -1070,11 +1070,24 @@ try{return await init}catch(e){init=null;throw e}}
 
 let navigating=false,navSteps=[],navIndex=0,spoken='',lastFix=null,navGeo=[],lastReroute=0,taxiMarker=null,navProgress=0;
 const banner=document.createElement('div');banner.style.cssText='display:none;position:sticky;top:0;z-index:800;background:#17251e;color:white;padding:14px;border-radius:12px;font-size:21px;font-weight:bold';q('tmMap').before(banner);
-const navText=document.createElement('div');banner.append(navText);button(banner,'Stop navigation',()=>stopNav());
-function stopNav(){navigating=false;banner.style.display='none';if(taxiMarker){taxiMarker.remove();taxiMarker=null}if(window.speechSynthesis)window.speechSynthesis.cancel()}
+const navText=document.createElement('div');banner.append(navText);const navStyle=document.createElement('style');navStyle.textContent=`
+body.tpDriving{overflow:hidden!important}
+body.tpDriving #taxiMapPro{position:fixed!important;inset:0!important;width:100%!important;height:100dvh!important;margin:0!important;padding:0!important;border-radius:0!important;z-index:20000!important;background:#18231f!important;overflow:hidden!important}
+body.tpDriving #taxiMapPro > :not(#tmMap):not(#tpNavBanner):not(#tpNavFooter){display:none!important}
+body.tpDriving #tmMap{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;border-radius:0!important}
+body.tpDriving #tpNavBanner{position:absolute!important;top:calc(env(safe-area-inset-top,0px) + 12px)!important;left:12px;right:12px;z-index:1001!important;background:#12533b!important;box-shadow:0 4px 18px #0005;text-align:center}
+body.tpDriving #tpNavFooter{display:flex!important;position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);left:12px;right:12px;z-index:1001;gap:8px;background:#18231f;padding:8px;border-radius:14px}
+body.tpDriving #tpNavFooter button{margin:0;flex:1;min-width:0}
+body.tpDriving #taxiMapQuick,body.tpDriving #tpMenu{display:none!important}
+body.tpDriving #tmMap .leaflet-top{top:125px}
+body.tpDriving #tmMap .leaflet-bottom{bottom:76px}
+`;document.head.append(navStyle);banner.id='tpNavBanner';navText.dir='rtl';const footer=document.createElement('div');footer.id='tpNavFooter';footer.style.display='none';s.append(footer);button(footer,'◎ Recenter',()=>{if(position)map.setView(position,17)});button(footer,'Exit / إنهاء',()=>stopNav());
+function drivingLayout(on){document.body.classList.toggle('tpDriving',on);requestAnimationFrame(()=>{if(map){map.invalidateSize();if(on&&position)map.setView(position,17)}})}
+button(banner,'Stop navigation',()=>stopNav());
+function stopNav(){drivingLayout(false);navigating=false;banner.style.display='none';if(taxiMarker){taxiMarker.remove();taxiMarker=null}if(window.speechSynthesis)window.speechSynthesis.cancel()}
 function say(t){if(!window.speechSynthesis||!window.SpeechSynthesisUtterance)return;const u=new SpeechSynthesisUtterance(t);u.lang='ar';window.speechSynthesis.cancel();window.speechSynthesis.speak(u)}
 function instruction(step){const m=step.maneuver||{},d=m.modifier||'',name=step.name?' إلى '+step.name:'';if(m.type==='arrive')return 'ستصل إلى الوجهة';if(/roundabout|rotary/.test(m.type))return 'ادخل الدوار'+(m.exit?' وخذ المخرج '+m.exit:'');if(d==='uturn')return 'استدر للخلف';if(d.includes('right'))return 'اتجه يميناً'+name;if(d.includes('left'))return 'اتجه يساراً'+name;return 'استمر للأمام'+name}
-function startNav(){if(!navSteps.length||!position)return; navigating=true;navIndex=0;navProgress=0;spoken='';banner.style.display='block';map.setView(position,17);say('بدأت الملاحة');tickNav(lastFix)}
+function startNav(){if(!navSteps.length||!position)return; navigating=true;navIndex=0;navProgress=0;spoken='';banner.style.display='block';drivingLayout(true);map.setView(position,17);say('بدأت الملاحة');tickNav(lastFix)}
 function tickNav(g){if(!navigating||!position||!navSteps.length||!g||g.coords.accuracy>40)return;
 if(!taxiMarker){taxiMarker=L.marker(position,{icon:L.divIcon({className:'taxipro-car-icon',html:'<div style="font-size:30px;line-height:38px;text-align:center;filter:drop-shadow(0 2px 3px #000)">🚕</div>',iconSize:[38,38],iconAnchor:[19,19]}),zIndexOffset:1000}).addTo(map)}else taxiMarker.setLatLng(position);
 const el=taxiMarker.getElement();if(el){el.style.transition='transform .6s linear';const child=el.firstElementChild;if(child&&Number.isFinite(g.coords.heading))child.style.transform='rotate('+g.coords.heading+'deg)'}
@@ -1085,7 +1098,7 @@ if(best<65)navProgress=Math.max(navProgress,bestI);
 while(navIndex<navSteps.length-1&&navSteps[navIndex+1].idx<=navProgress)navIndex++;
 const next=navSteps[Math.min(navIndex+1,navSteps.length-1)],ll=next.maneuver.location;let dist=map.distance(position,[ll[1],ll[0]]);if(next.maneuver.type==='arrive'&&dist<30){navText.textContent='وصلت إلى الوجهة';say('وصلت إلى الوجهة');navigating=false;return}
 let remaining=map.distance(position,navGeo[navProgress+1]||position);for(let i=navProgress+1;i<next.idx&&i<navGeo.length-1;i++)remaining+=map.distance(navGeo[i],navGeo[i+1]);if(next.idx<=navProgress)remaining=dist;
-const rounded=remaining>1000?(remaining/1000).toFixed(1)+' كم':Math.max(10,Math.round(remaining/10)*10)+' متر';const msg=instruction(next);navText.textContent=rounded+' · '+msg;const bucket=remaining<45?'now':remaining<220?'soon':remaining<550?'later':'';const key=navIndex+'-'+bucket;if(bucket&&spoken!==key){spoken=key;say('بعد '+rounded+'، '+msg)}
+const rounded=remaining>1000?(remaining/1000).toFixed(1)+' كم':Math.max(10,Math.round(remaining/10)*10)+' متر';const msg=instruction(next);navText.textContent=(msg.includes('يميناً')?'↱ ':msg.includes('يساراً')?'↰ ':'↑ ')+rounded+' · '+msg;const bucket=remaining<45?'now':remaining<220?'soon':remaining<550?'later':'';const key=navIndex+'-'+bucket;if(bucket&&spoken!==key){spoken=key;say('بعد '+rounded+'، '+msg)}
 }
 function locate(){
 if(!navigator.geolocation){status('GPS unavailable');return}

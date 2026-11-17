@@ -665,3 +665,40 @@ return originalFetch(input,options);
 };
 })();
 </script>
+<script>
+(function(){
+if(document.getElementById('eventPro'))return;
+let s=document.createElement('section');
+s.id='eventPro';
+s.style.display='none';
+s.innerHTML='<h2 style="color:#d8b575">VIENNA EVENTS</h2><p id="eventDate"></p><div id="eventList"></div>';
+document.body.append(s);
+let nav=document.getElementById('proNav');
+let b=document.createElement('button');
+b.textContent='♫ Events';
+nav.append(b);
+nav.style.overflowX='auto';
+b.onclick=()=>{
+document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));
+s.classList.remove('prohidden');
+s.style.display='block';
+window.scrollTo(0,0);
+};
+Array.from(nav.children).filter(x=>x!==b).forEach(x=>x.addEventListener('click',()=>s.style.display='none'));
+document.getElementById('eventDate').textContent=new Date().toLocaleDateString('de-AT',{timeZone:'Europe/Vienna',weekday:'long',day:'numeric',month:'long'});
+let venues=[['Staatsoper','wiener-staatsoper.at'],['Musikverein','spielplan.musikverein.at/spielplan'],['Burgtheater','burgtheater.at'],['Konzerthaus','konzerthaus.at'],['Volksoper','volksoper.at'],['Stadthalle','stadthalle.com'],['Ernst-Happel-Stadion','wien.gv.at/veranstaltungen'],['Ronacher','musicalvienna.at'],['Raimund Theater','musicalvienna.at']];
+venues.forEach(v=>{
+let d=document.createElement('div');
+d.style.cssText='background:#191919;border:1px solid #514529;border-radius:14px;padding:14px;margin:10px 0';
+d.innerHTML='<h3 style="color:#d8b575">'+v[0]+'</h3>';
+let a=document.createElement('button');
+a.textContent='Spielplan';
+a.onclick=()=>window.open('https://'+v[1],'_blank');
+let m=document.createElement('button');
+m.textContent='Navigation';
+m.onclick=()=>window.open('https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(v[0]+' Wien'),'_blank');
+d.append(a,m);
+document.getElementById('eventList').append(d);
+});
+})();
+</script>

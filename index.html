@@ -654,3 +654,14 @@ list.append(k);
 };
 })();
 </script>
+<script>
+(function(){
+const originalFetch=window.fetch.bind(window);
+window.fetch=function(input,options){
+if(typeof input==='string'&&input.includes('data.wien.gv.at/daten/geo')&&input.includes('TAXIOGD')){
+return originalFetch(new URL('./taxistands.json',location.href),options);
+}
+return originalFetch(input,options);
+};
+})();
+</script>

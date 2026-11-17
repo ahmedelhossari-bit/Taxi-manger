@@ -702,3 +702,42 @@ document.getElementById('eventList').append(d);
 });
 })();
 </script>
+<script>
+(function(){
+const list=document.getElementById('eventList');
+if(!list)return;
+async function liveEvents(){
+try{
+let r=await fetch('./events.json?t='+Date.now());
+if(!r.ok)throw Error('HTTP '+r.status);
+let data=await r.json();
+let day=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Vienna'}).format(new Date());
+list.textContent='';
+let events=data.events.filter(e=>e.date===day).sort((a,b)=>a.end.localeCompare(b.end));
+let info=document.createElement('p');
+info.textContent='LIVE EVENTS | '+events.length+' حفلات اليوم | آخر تحديث: '+new Date(data.updated).toLocaleString('de-AT',{timeZone:'Europe/Vienna'});
+list.append(info);
+events.forEach(e=>{
+let parts=e.end.split(':').map(Number);
+let mins=(parts[0]*60+parts[1]+1440-15)%1440;
+let arrival=String(Math.floor(mins/60)).padStart(2,'0')+':'+String(mins%60).padStart(2,'0');
+let d=document.createElement('div');
+d.style.cssText='background:#252629;border:1px solid #554a35;border-radius:15px;padding:15px;margin:12px 0';
+let h=document.createElement('h2');
+h.style.color='#d8b575';
+h.textContent=e.venue;
+let t=document.createElement('h2');
+t.textContent=e.start+' - '+e.end;
+let a=document.createElement('p');
+a.style.color='#75d39f';
+a.textContent='الوصول المقترح: '+arrival;
+d.append(h,t,a);
+list.append(d);
+});
+if(!events.length)list.append('لا توجد حفلات مسجلة اليوم');
+}catch(e){list.textContent='تعذر تحميل الحفلات: '+e.message;}
+}
+liveEvents();
+setInterval(liveEvents,300000);
+})();
+</script>

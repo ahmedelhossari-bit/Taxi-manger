@@ -7,7 +7,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Test OEBB Live Trains
+      - name: Analyse OEBB Live Trains
         run: |
           python3 - <<'PY'
           import json, urllib.request
@@ -37,20 +37,53 @@ jobs:
                   raise RuntimeError(str(result))
               return result['res']
 
-          station={'type':'S','extId':'8103000'}
+          def seconds(t):
+              if not t or not t.isdigit():
+                  return None
+              t=t.zfill(6)
+              h,m,s=int(t[-6:-4]),int(t[-4:-2]),int(t[-2:])
+              days=int(t[:-6] or 0)
+              return days*86400+h*3600+m*60+s
+
           now=datetime.now(ZoneInfo('Europe/Vienna'))
+          station={'type':'S','extId':'8103000'}
+          total=0
           for board in ['ARR','DEP']:
-              result=api('StationBoard',{
+              data=api('StationBoard',{
                   'type':board,
                   'stbLoc':station,
                   'date':now.strftime('%Y%m%d'),
                   'time':now.strftime('%H%M%S'),
-                  'maxJny':20,
-                  'dur':90
+                  'maxJny':60,
+                  'dur':120
               })
-              journeys=result.get('jnyL',[])
-              print('BOARD:',board,'TRAINS:',len(journeys))
-              print(json.dumps(journeys[:3],ensure_ascii=False,indent=2))
-              assert journeys, 'No journeys returned'
-          print('OEBB LIVE TRAINS SUCCESSFUL')
+              products=data.get('common',{}).get('prodL',[])
+              journeys=data.get('jnyL',[])
+              prefix='a' if board=='ARR' else 'd'
+              for j in journeys:
+                  stop=j.get('stbStop',{})
+                  ix=stop.get(prefix+'ProdX',j.get('prodX',-1))
+                  product=products[ix] if isinstance(ix,int) and 0<=ix<len(products) else {}
+                  planned=stop.get(prefix+'TimeS')
+                  actual=stop.get(prefix+'TimeR')
+                  p,a=seconds(planned),seconds(actual)
+                  delay=round((a-p)/60) if a is not None and p is not None else None
+                  cancelled=bool(stop.get(prefix+'Cncl') or j.get('isCncl') or j.get('isCancelled'))
+                  row={
+                      'station':'Wien Hauptbahnhof',
+                      'board':board,
+                      'train':product.get('name','Unknown'),
+                      'direction':j.get('dirTxt'),
+                      'planned':planned,
+                      'expected':actual,
+                      'delay_minutes':delay,
+                      'cancelled_flag':cancelled,
+                      'source_fields':list(stop.keys())
+                  }
+                  print(json.dumps(row,ensure_ascii=False))
+                  if p is not None:
+                      total+=1
+          print('PARSED TRAIN RECORDS:',total)
+          assert total>0,'No scheduled times parsed'
+          print('OEBB ANALYSIS SUCCESSFUL')
           PY

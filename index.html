@@ -75,11 +75,12 @@ if(!Number.isFinite(amount)||amount<=0)return alert('اكتب مبلغ صحيح'
 db[type].push({date:date(),amount,time:type==='trips'?$('time').value||clock():clock(),area:$('area').value,category:$('category').value});
 el.value='';$('time').value='';$('area').value='';save()
 }
+function openShiftDate(){return Object.keys(db.shifts).filter(k=>db.shifts[k]&&!db.shifts[k].end).sort().at(-1)}
 function shift(a){
 let d=date(),s=db.shifts[d],n=Date.now();
 if(a==='start'){
+const active=openShiftDate();if(active){$('day').value=active;$('day').dispatchEvent(new Event('change'));render();return alert('Open shift / Schicht offen: '+active)}
 if(d!==today()||s)return alert('اختار اليوم بدون شيفت سابق');
-if(Object.values(db.shifts).some(x=>!x.end))return alert('انهي الشيفت السابق أولا');
 db.shifts[d]={start:n,end:0,pause:0,breaks:[]}
 }else{
 if(!s||s.end)return alert('لا يوجد شيفت نشط');
@@ -134,7 +135,7 @@ $('history').innerHTML=['trips','expenses'].map(k=>db[k].map((x,i)=>x.date===d?'
 async function backup(){let t=JSON.stringify(db);$('backupData').value=t;try{await navigator.clipboard.writeText(t);alert('تم النسخ')}catch(e){$('backupData').select();alert('انسخ النص يدويا')}}
 function restore(){try{let b=JSON.parse($('backupData').value);if(!Array.isArray(b.trips)||!Array.isArray(b.expenses)||!b.shifts||!b.settings)throw Error();if(confirm('استبدال البيانات الحالية؟')){db=b;save();loadSettings()}}catch(e){alert('نسخة غير صالحة')}}
 function loadSettings(){for(let k of ['target','rent','fuel','fixed'])$(k).value=db.settings[k]}
-$('day').value=today();loadSettings();render();setInterval(render,30000);
+$('day').value=openShiftDate()||today();loadSettings();render();setInterval(render,30000);
 </script>
 <script>
 (()=>{
@@ -1019,7 +1020,7 @@ return el;
 }
 add('button','✕').onclick=close;
 add('h2','TAXI PRO');
-add('p','V4.4').style.fontSize='10px';
+add('p','V4.5').style.fontSize='10px';
 add('p','Ahmed Elhosary');
 add('p','Founder & Creator').style.fontSize='12px';
 const words=[
@@ -1265,3 +1266,5 @@ const quick=document.createElement('button');quick.id='taxiMapQuick';quick.textC
 
 
 <script>(()=>{const f=document.createElement('footer');f.id='tpBrandFooter';f.dir='ltr';f.textContent='Built by experience. Driven by intelligence.';f.style.cssText='text-align:center;font:italic 500 clamp(11px,3vw,14px)/1.5 system-ui;color:#d6b475;padding:22px 8px 28px;pointer-events:none';document.body.append(f);const css=document.createElement('style');css.textContent='body:has(#taxiMapPro .tpNavActive) #tpBrandFooter{display:none}';document.head.append(css)})();</script>
+
+<script>(()=>{const day=document.getElementById('day');const bar=document.createElement('div');bar.id='tpOpenShiftNotice';bar.style.cssText='margin:8px 0;padding:10px;border:1px solid #a98950;border-radius:12px;color:#d8b575';const label=document.createElement('p'),btn=document.createElement('button');bar.append(label,btn);day.insertAdjacentElement('afterend',bar);btn.onclick=()=>{day.value=openShiftDate()||today();day.dispatchEvent(new Event('change'));render()};function update(){const active=openShiftDate(),l=document.documentElement.lang||'ar',i=({ar:0,en:1,de:2})[l]??0;bar.hidden=!active||day.value===active;if(!active)return;const t=['شيفت مفتوح بتاريخ ','Open shift: ','Offene Schicht: '][i]+active,b=['الرجوع للشيفت المفتوح','Return to open shift','Zur offenen Schicht'][i];if(label.textContent!==t)label.textContent=t;if(btn.textContent!==b)btn.textContent=b}day.addEventListener('change',update);setInterval(update,1000);update()})();</script>

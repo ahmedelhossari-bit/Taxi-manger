@@ -5,43 +5,118 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: taxi-railway
+  cancel-in-progress: false
 jobs:
   railway:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch railway data
+      - name: Fetch OEBB Live Data
         run: |
           python3 - <<'PY'
-          import json, urllib.request, urllib.parse, datetime, time
-          base = 'https://v6.oebb.transport.rest/api'
-          stations = ['Wien Hauptbahnhof','Wien Westbahnhof','Wien Meidling','Wien Mitte','Flughafen Wien']
-          def get(path):
-              req = urllib.request.Request(base+path, headers={'Accept':'application/json','User-Agent':'TaxiPro/1.0'})
+          import json, urllib.request, time
+          from datetime import datetime, timezone
+          from zoneinfo import ZoneInfo
+
+          def api(method, params):
+              payload={
+                  'id':'1',
+                  'ver':'1.67',
+                  'lang':'deu',
+                  'auth':{'type':'AID','aid':'OWDL4fE4ixNiPBBm'},
+                  'client':{'id':'OEBB','type':'WEB','name':'webapp','l':'vs_webapp'},
+                  'formatted':False,
+                  'svcReqL':[{'meth':method,'req':params}]
+              }
+              req=urllib.request.Request(
+                  'https://fahrplan.oebb.at/bin/mgate.exe',
+                  data=json.dumps(payload).encode(),
+                  headers={'Content-Type':'application/json'},
+                  method='POST'
+              )
               with urllib.request.urlopen(req,timeout=30) as r:
-                  return json.load(r)
-          result = {'source':'OEBB via transport.rest','updated':datetime.datetime.now(datetime.timezone.utc).isoformat(),'stations':[]}
-          for name in stations:
-              try:
-                  loc = get('/locations?'+urllib.parse.urlencode({'query':name,'results':5}))
-                  stop = next(x for x in loc if x.get('id') and x.get('type') in ('stop','station'))
-                  sid = urllib.parse.quote(str(stop['id']),safe='')
-                  board = get('/stops/'+sid+'/departures?duration=90&results=40')
-                  rows = board['departures']
-                  alerts = []
-                  for d in rows:
-                      delay = d.get('delay')
-                      cancelled = bool(d.get('cancelled'))
-                      if cancelled or (isinstance(delay,(int,float)) and delay>=600):
-                          alerts.append({'train':(d.get('line') or {}).get('name'),'direction':d.get('direction'),'delay':None if delay is None else round(delay/60),'cancelled':cancelled,'planned':d.get('plannedWhen'),'expected':d.get('when')})
-                  result['stations'].append({'name':name,'resolved':stop.get('name'),'status':'OK','alerts':alerts})
-              except Exception as e:
-                  result['stations'].append({'name':name,'status':'ERROR','error':str(e),'alerts':[]})
-              time.sleep(2)
-          if not any(s['status']=='OK' for s in result['stations']):
-              raise RuntimeError(str(result))
+                  data=json.load(r)
+              result=data['svcResL'][0]
+              if result.get('err')!='OK':
+                  raise RuntimeError(str(result))
+              return result['res']
+
+          def seconds(t):
+              if not t or not t.isdigit():
+                  return None
+              t=t.zfill(6)
+              return int(t[:-6] or 0)*86400+int(t[-6:-4])*3600+int(t[-4:-2])*60+int(t[-2:])
+
+          def clock(t):
+              return t[-6:-4]+':'+t[-4:-2] if t and len(t)>=6 else None
+
+          stations=[
+              ('Wien Hauptbahnhof','8103000'),
+              ('Wien Westbahnhof','8100003'),
+              ('Wien Meidling','8100514'),
+              ('Wien Mitte','8101949'),
+              ('Flughafen Wien','8101060')
+          ]
+          now=datetime.now(ZoneInfo('Europe/Vienna'))
+          output={
+              'source':'OEBB SCOTTY',
+              'updated':datetime.now(timezone.utc).isoformat(),
+              'stations':[]
+          }
+
+          for name,sid in stations:
+              item={'name':name,'id':sid,'status':'OK','alerts':[],'records':0,'errors':[]}
+              for board in ['ARR','DEP']:
+                  try:
+                      data=api('StationBoard',{
+                          'type':board,
+                          'stbLoc':{'type':'S','extId':sid},
+                          'date':now.strftime('%Y%m%d'),
+                          'time':now.strftime('%H%M%S'),
+                          'maxJny':100,
+                          'dur':120
+                      })
+                      products=data.get('common',{}).get('prodL',[])
+                      prefix='a' if board=='ARR' else 'd'
+                      for j in data.get('jnyL',[]):
+                          stop=j.get('stbStop',{})
+                          ix=stop.get(prefix+'ProdX',j.get('prodX',-1))
+                          prod=products[ix] if isinstance(ix,int) and 0<=ix<len(products) else {}
+                          train=prod.get('name','Unknown')
+                          if train.lower().startswith(('tram','bus','u-bahn')):
+                              continue
+                          planned=stop.get(prefix+'TimeS')
+                          actual=stop.get(prefix+'TimeR')
+                          p,a=seconds(planned),seconds(actual)
+                          delay=round((a-p)/60) if p is not None and a is not None else None
+                          cancelled=bool(stop.get(prefix+'Cncl') or j.get('isCncl') or j.get('isCancelled'))
+                          item['records']+=1
+                          if cancelled or (delay is not None and delay>=10):
+                              item['alerts'].append({
+                                  'train':train,
+                                  'board':board,
+                                  'direction':j.get('dirTxt'),
+                                  'planned':clock(planned),
+                                  'expected':clock(actual),
+                                  'delay':delay,
+                                  'cancelled':cancelled
+                              })
+                  except Exception as e:
+                      item['errors'].append(str(e))
+                  time.sleep(2)
+              if item['errors']:
+                  item['status']='PARTIAL' if len(item['errors'])==1 else 'ERROR'
+              output['stations'].append(item)
+              print(name,item['status'],'Records:',item['records'],'Alerts:',len(item['alerts']))
+
+          if not any(s['status']!='ERROR' for s in output['stations']):
+              raise RuntimeError('All stations failed')
+
           with open('railway.json','w',encoding='utf-8') as f:
-              json.dump(result,f,ensure_ascii=False,indent=2)
+              json.dump(output,f,ensure_ascii=False,indent=2)
+          print('RAILWAY RADAR SUCCESSFUL')
           PY
       - name: Save railway data
         run: |
@@ -49,6 +124,6 @@ jobs:
           git config user.email "railway@users.noreply.github.com"
           git add railway.json
           git diff --cached --quiet && exit 0
-          git commit -m "Update railway radar"
+          git commit -m "Update OEBB radar"
           git pull --rebase
           git push

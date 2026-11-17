@@ -533,3 +533,55 @@ setInterval(refresh,1000);
 refresh();
 })();
 </script>
+<script>
+(function(){
+if(document.getElementById('gpsPro'))return;
+const q=id=>document.getElementById(id);
+let s=document.createElement('section');
+s.id='gpsPro';
+s.innerHTML='<h2>GPS TRACKING</h2><div style="text-align:center;padding:15px;background:#141518;border-radius:15px"><small>KM/H</small><div id="gpsSpeed" style="font-size:54px;color:#d8b575;font-weight:bold">0</div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0;text-align:center"><div><small>المسافة المسجلة</small><h2 id="gpsKm">0.00 km</h2></div><div><small>دقة الإشارة</small><h2 id="gpsAcc">—</h2></div></div><p id="gpsState">GPS OFFLINE</p><button id="gpsStart">تفعيل GPS</button><button id="gpsStop">إيقاف GPS</button><button id="gpsMap">عرض موقعي على الخريطة</button>';
+document.body.append(s);
+let nav=q('proNav');
+if(nav){
+let b=document.createElement('button');
+b.innerHTML='◎<br>GPS';
+nav.append(b);
+Array.from(nav.children).filter(x=>x!==b).forEach(x=>x.addEventListener('click',()=>{s.style.display='none'}));
+b.onclick=()=>{document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));s.classList.remove('prohidden');s.style.display='block';window.scrollTo(0,0)};
+}
+s.style.display='none';
+let watch=null,last=null,pos=null;
+db.gps=db.gps||{};
+const deg=x=>x*Math.PI/180;
+function distance(a,b){
+let x=Math.sin(deg(b.latitude-a.latitude)/2)**2+Math.cos(deg(a.latitude))*Math.cos(deg(b.latitude))*Math.sin(deg(b.longitude-a.longitude)/2)**2;
+return 12742*Math.asin(Math.sqrt(Math.min(1,x)));
+}
+function update(p){
+let c=p.coords,d=today(),sh=db.shifts[d];
+pos=c;
+q('gpsAcc').textContent=Math.round(c.accuracy)+' m';
+q('gpsSpeed').textContent=c.speed==null?'—':Math.round(c.speed*3.6);
+db.gps=db.gps||{};
+let active=!!(sh&&!sh.end&&!sh.pause);
+let km=last?distance(last.c,c):0;
+let dt=last?(p.timestamp-last.t)/1000:0;
+if(active&&last&&last.active&&last.d===d&&c.accuracy<=25&&last.c.accuracy<=25&&km>=.02&&dt>0&&dt<60&&km/dt*3600<180){
+db.gps[d]=(db.gps[d]||0)+km;
+localStorage.setItem('taxiV4',JSON.stringify(db));
+}
+last={c,t:p.timestamp,d,active};
+q('gpsKm').textContent=Number(db.gps[d]||0).toFixed(2)+' km';
+q('gpsState').textContent=active?'GPS ACTIVE · SHIFT ON':'GPS ACTIVE · STANDBY';
+}
+q('gpsStart').onclick=()=>{
+if(watch!==null)return;
+if(!navigator.geolocation)return alert('GPS غير متاح');
+last=null;
+q('gpsState').textContent='CONNECTING...';
+watch=navigator.geolocation.watchPosition(update,e=>{q('gpsState').textContent=e.message},{enableHighAccuracy:true,maximumAge:0,timeout:20000});
+};
+q('gpsStop').onclick=()=>{if(watch!==null)navigator.geolocation.clearWatch(watch);watch=null;last=null;q('gpsState').textContent='GPS OFFLINE';q('gpsSpeed').textContent='0'};
+q('gpsMap').onclick=()=>{if(!pos)return alert('فعّل GPS أولاً');window.open('https://www.google.com/maps?q='+pos.latitude+','+pos.longitude,'_blank')};
+})();
+</script>

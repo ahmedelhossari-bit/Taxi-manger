@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/railway.yml']
 permissions:
   contents: write
 concurrency:
@@ -57,7 +60,7 @@ jobs:
               ('Wien Westbahnhof','8100003'),
               ('Wien Meidling','8100514'),
               ('Wien Mitte','8101949'),
-              ('Flughafen Wien','8101060')
+              ('Flughafen Wien',None)
           ]
           now=datetime.now(ZoneInfo('Europe/Vienna'))
           output={
@@ -68,6 +71,20 @@ jobs:
 
           for name,sid in stations:
               item={'name':name,'id':sid,'status':'OK','alerts':[],'records':0,'errors':[]}
+              if sid is None:
+                  try:
+                      locations=api('LocMatch',{'input':{'field':'S','loc':{'name':'Flughafen Wien Bahnhof','type':'ALL'},'maxLoc':20}})['match']['locL']
+                      candidates=[s for s in locations if s.get('type')=='S' and s.get('extId') and s.get('name','').strip().casefold() in ('flughafen wien bahnhof','flughafen wien','wien flughafen bahnhof','wien flughafen')]
+                      if not candidates:
+                          raise RuntimeError('Airport station not resolved: '+str([(s.get('name'),s.get('extId')) for s in locations]))
+                      sid=candidates[0]['extId']
+                      item['id']=sid
+                      print('Airport resolved:',candidates[0].get('name'),sid)
+                  except Exception as e:
+                      item['status']='ERROR'
+                      item['errors'].append(str(e))
+                      output['stations'].append(item)
+                      continue
               for board in ['ARR','DEP']:
                   try:
                       data=api('StationBoard',{

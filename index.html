@@ -1028,11 +1028,35 @@ setInterval(()=>{if(!s.classList.contains('prohidden'))load()},60000);
 (()=>{
 const nav=document.getElementById('proNav');if(!nav||document.getElementById('taxiMapPro'))return;
 const s=document.createElement('section');s.id='taxiMapPro';s.classList.add('prohidden');
-s.innerHTML='<h2 style="color:#d8b575">TAXI PRO Maps · Beta</h2><p style="font-size:12px">Test only · standard car route · no live traffic · taxi access not verified. Follow road signs.</p><input id="tmAddress" placeholder="Adresse / Ziel in Wien" autocomplete="off"><button id="tmFind">Search / Suchen</button><div id="tmResults"></div><div id="tmMap" style="height:420px;border-radius:14px;margin:10px 0;z-index:0"></div><button id="tmLocate">◎ GPS</button><button id="tmStands">🚕 Taxi stands</button><button id="tmAccess">Taxi access (OSM)</button><button id="tmRules">Official taxi rules / WKO</button><button id="tmTraffic">Live traffic / Verkehr</button><div id="tmInfo"></div><p id="tmStatus" role="status"></p><div id="tmRoute"></div><small>Gold: car route · Green: unverified OSM taxi access · Blue: taxi stands. Stadt Wien CC BY 4.0 / OpenStreetMap contributors.</small><p><a href="https://www.wko.at/wien/transport-verkehr/befoerderungsgewerbe-personenkraftwagen/taxi-standplatz-infos" target="_blank" rel="noopener">WKO Taxi restrictions & updates</a></p>';
+s.innerHTML='<h2 style="color:#d8b575">TAXI PRO Maps · Beta</h2><p style="font-size:12px">Test only · standard car route · no live traffic · taxi access not verified. Follow road signs.</p><input id="tmAddress" placeholder="Adresse / Ziel in Wien" autocomplete="off"><button id="tmFind">Search / Suchen</button><div id="tmResults"></div><div id="tmMap" style="height:420px;border-radius:14px;margin:10px 0;z-index:0"></div><button id="tmLocate">◎ GPS</button><button id="tmLearn">Traffic learning: OFF</button><button id="tmForget">Delete traffic history</button><p id="tmLearning" style="font-size:12px"></p><button id="tmStands">🚕 Taxi stands</button><button id="tmAccess">Taxi access (OSM)</button><button id="tmRules">Official taxi rules / WKO</button><button id="tmTraffic">Live traffic / Verkehr</button><div id="tmInfo"></div><p id="tmStatus" role="status"></p><div id="tmRoute"></div><small>Gold: car route · Green: unverified OSM taxi access · Blue: taxi stands. Stadt Wien CC BY 4.0 / OpenStreetMap contributors.</small><p><a href="https://www.wko.at/wien/transport-verkehr/befoerderungsgewerbe-personenkraftwagen/taxi-standplatz-infos" target="_blank" rel="noopener">WKO Taxi restrictions & updates</a></p>';
 document.body.append(s);const b=document.createElement('button');b.textContent='TAXI Maps';nav.append(b);
 const q=id=>document.getElementById(id),status=t=>q('tmStatus').textContent=t;
 let map,init,watch=null,position,marker,accuracy,destination,destMarker,routeLine,stands,access,searching=false,routing=false,accessBusy=false,lastSearch=0;
 function visible(){return !s.classList.contains('prohidden')}
+const trafficKey='taxipro_traffic_v1';
+let trafficOn=false,previousSample=null,traffic={};
+try{traffic=JSON.parse(localStorage.getItem(trafficKey)||'{}')||{}}catch(e){}
+function pruneTraffic(){const cutoff=Date.now()-90*86400000;for(const k of Object.keys(traffic))if(traffic[k].last<cutoff)delete traffic[k];const keys=Object.keys(traffic).sort((a,b)=>traffic[b].last-traffic[a].last);for(const k of keys.slice(5000))delete traffic[k]}
+function paintTraffic(){q('tmLearn').textContent='Traffic learning: '+(trafficOn?'ON':'OFF');q('tmLearning').textContent=Object.keys(traffic).length+' local time/location buckets · 90-day retention · no upload · GPS only while map open. Historical observations, not live congestion.'}
+function saveTraffic(){try{pruneTraffic();localStorage.setItem(trafficKey,JSON.stringify(traffic));paintTraffic()}catch(e){trafficOn=false;previousSample=null;paintTraffic();status('Traffic learning stopped: storage unavailable')}}
+function learnTraffic(g){
+if(!trafficOn||!visible()||document.hidden){previousSample=null;return}
+const a=g.coords,t=g.timestamp;if(!Number.isFinite(a.accuracy)||a.accuracy>25){previousSample=null;return}
+const prev=previousSample;if(prev&&t-prev.t<5000)return;previousSample={lat:a.latitude,lon:a.longitude,t};
+if(!prev||t-prev.t>30000||t<=prev.t)return;
+const seconds=(t-prev.t)/1000;
+const meters=map.distance([prev.lat,prev.lon],[a.latitude,a.longitude]);
+const speed=Number.isFinite(a.speed)&&a.speed>=0?a.speed*3.6:meters/seconds*3.6;
+if(!Number.isFinite(speed)||speed<5||speed>145||meters<15)return;
+const dt=new Date(t);const local=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Vienna',weekday:'short',hour:'2-digit',hourCycle:'h23'}).formatToParts(dt);const weekday=local.find(x=>x.type==='weekday')?.value;const hour=local.find(x=>x.type==='hour')?.value;
+const lat=Math.round(a.latitude*500)/500,lon=Math.round(a.longitude*500)/500;
+const key=[lat,lon,weekday,hour].join('|');const v=traffic[key]||{n:0,avg:0,last:t};const n=Math.min(v.n+1,1000);v.avg=Math.round((v.avg+(speed-v.avg)/n)*10)/10;v.n=n;v.last=t;traffic[key]=v;saveTraffic();
+}
+q('tmLearn').onclick=()=>{if(trafficOn){trafficOn=false;previousSample=null;paintTraffic();return}if(!confirm('Enable optional local traffic learning? Approximate location, weekday, hour and speed averages stay on this device for up to 90 days. No upload. You can stop or delete at any time. Only with the map open.'))return;trafficOn=true;previousSample=null;paintTraffic()};
+q('tmForget').onclick=()=>{if(!confirm('Delete all locally learned traffic history?'))return;trafficOn=false;previousSample=null;traffic={};try{localStorage.removeItem(trafficKey)}catch(e){}paintTraffic()};
+document.addEventListener('visibilitychange',()=>{previousSample=null});
+pruneTraffic();try{localStorage.setItem(trafficKey,JSON.stringify(traffic))}catch(e){}paintTraffic();
+
 function button(parent,label,fn){const el=document.createElement('button');el.textContent=label;el.onclick=fn;parent.append(el);return el}
 async function ready(){
 if(map)return map;if(init)return init;
@@ -1047,6 +1071,7 @@ status('Waiting for GPS…');
 watch=navigator.geolocation.watchPosition(g=>{
 const first=!position;position=[g.coords.latitude,g.coords.longitude];
 if(!marker){marker=L.circleMarker(position,{radius:9,color:'white',weight:2,fillColor:'#278bff',fillOpacity:1}).addTo(map);accuracy=L.circle(position,{radius:g.coords.accuracy,color:'#278bff',weight:1,fillOpacity:.08}).addTo(map)}else{marker.setLatLng(position);accuracy.setLatLng(position).setRadius(g.coords.accuracy)}
+learnTraffic(g);
 if(first){map.setView(position,16);status('GPS ready · ±'+Math.round(g.coords.accuracy)+' m');if(destination)calculate()}
 },e=>{status('GPS: '+e.message);if(watch!==null)navigator.geolocation.clearWatch(watch);watch=null},{enableHighAccuracy:true,maximumAge:5000,timeout:20000});
 }
@@ -1073,7 +1098,7 @@ q('tmTraffic').onclick=()=>info('Live traffic · external official sources (not 
 ['EVIS.AT','Live data integration requires a provider agreement and fees.','https://evis.asfinag.at/Home']
 ]);
 
-document.querySelectorAll('#proNav button').forEach(el=>{if(el!==b)el.addEventListener('click',()=>{s.classList.add('prohidden');if(watch!==null){navigator.geolocation.clearWatch(watch);watch=null;position=null}})});
+document.querySelectorAll('#proNav button').forEach(el=>{if(el!==b)el.addEventListener('click',()=>{s.classList.add('prohidden');trafficOn=false;previousSample=null;paintTraffic();if(watch!==null){navigator.geolocation.clearWatch(watch);watch=null;position=null}})});
 b.onclick=async()=>{document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));s.classList.remove('prohidden');window.scrollTo(0,0);try{await ready();map.invalidateSize();locate()}catch(e){status('Map unavailable: '+e.message)}};
 const gps=q('gpsMap');if(gps)gps.onclick=()=>b.click();
 })();

@@ -169,3 +169,141 @@ setInterval(update,1000);
 update();
 })();
 </script>
+<script>
+(function(){
+if(document.getElementById('proCalendar'))return;
+const el=id=>document.getElementById(id);
+const day=el('day');
+const eur=n=>'€'+Number(n||0).toFixed(2);
+const total=a=>a.reduce((s,x)=>s+Number(x.amount||0),0);
+const fmt=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+let style=document.createElement('style');
+style.textContent=`
+body{background:#101114!important;color:#f1f1f1!important;font-family:-apple-system,BlinkMacSystemFont,Arial!important;padding:14px 14px 110px!important}
+h1,h2,h3{color:#dab77b!important}h1{letter-spacing:2px;font-size:32px}
+section{background:#1c1d21!important;border:1px solid #34312c!important;border-radius:22px!important;padding:17px!important;box-shadow:0 5px 20px #0003}
+input,select,textarea{box-sizing:border-box!important;max-width:100%;min-width:0;background:#292a2e!important;color:#fff!important;border:1px solid #414039!important;border-radius:12px!important;font-size:16px!important}
+button{border-radius:12px!important;background:#d8b575!important;color:#151515!important;font-weight:700!important}
+button.green{background:#d8b575!important}button.red{background:#98434b!important;color:white!important}
+.big,#income{color:#d8b575!important}progress{accent-color:#d8b575!important}
+.progrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;direction:ltr}
+.progrid button{margin:0!important;padding:8px 0!important;min-height:61px;font-size:12px!important;overflow:hidden}
+.progrid small{font-size:10px;display:block}
+.prohead{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.prohead button{width:42px!important}
+#proNav{position:fixed;bottom:0;left:0;right:0;background:#151619f5;display:flex;z-index:1000;border-top:1px solid #544630;padding:8px 5px calc(8px + env(safe-area-inset-bottom));direction:rtl;gap:4px}
+#proNav button{flex:1;background:transparent!important;color:#d8b575!important;font-size:12px!important;margin:0!important;padding:10px 0!important}
+#proCalendar textarea{width:100%;min-height:100px;padding:12px}
+.prolabel{color:#aaa;font-size:13px;text-align:center;margin:6px 0}
+.prohidden{display:none!important}
+`;
+document.head.appendChild(style);
+document.title='TAXI PRO';
+document.querySelector('h1').textContent='TAXI PRO';
+let subtitle=document.createElement('div');
+subtitle.className='prolabel';
+subtitle.textContent='VIENNA · LUXURY BUSINESS EDITION';
+document.querySelector('h1').after(subtitle);
+let weekday=document.createElement('h3');
+day.after(weekday);
+let sections=Array.from(document.querySelectorAll('section'));
+let cal=document.createElement('section');
+cal.id='proCalendar';
+cal.innerHTML='<h2>التقويم الشهري</h2><div class="prohead"><button id="proPrev">‹</button><b id="proMonth"></b><button id="proNext">›</button></div><div id="proDays" class="progrid"></div><p id="proDayInfo"></p><h3>ملاحظات اليوم</h3><textarea id="proNote" placeholder="اكتب ملاحظات يوم الشغل"></textarea><label>ظروف اليوم</label><select id="proCondition"><option>يوم طبيعي</option><option>أمطار</option><option>ثلوج</option><option>حفلات ومهرجانات</option><option>عطلة رسمية</option><option>زحمة مرورية</option><option>مشكلة في العربية</option><option>أخرى</option></select><label>كيلومترات اليوم</label><input id="proKm" type="number" min="0" inputmode="decimal" placeholder="km"><button id="proSave">حفظ تفاصيل اليوم</button><button id="proDetails">عرض حسابات اليوم</button>';
+document.body.appendChild(cal);
+let finance=document.createElement('section');
+finance.id='proFinance';
+finance.innerHTML='<h2>الإدارة المالية</h2><div id="proFinancialReport"></div><h3>الالتزامات الشهرية</h3><div id="proBills"></div>';
+document.body.appendChild(finance);
+let m=new Date(day.value+'T12:00:00');
+m.setDate(1);
+db.proDays=db.proDays||{};
+db.proPaid=db.proPaid||{};
+const note=el('proNote'),km=el('proKm'),condition=el('proCondition');
+function readDay(){
+const a=db.proDays[day.value]||{};
+note.value=a.note||'';
+km.value=a.km===undefined?'':a.km;
+condition.value=a.condition||'يوم طبيعي';
+}
+function saveDetails(){
+let n=Number(km.value);
+if(!Number.isFinite(n)||n<0)return alert('راجع الكيلومترات');
+db.proDays[day.value]={note:note.value,km:n,condition:condition.value};
+save();
+draw();
+}
+el('proSave').onclick=()=>{saveDetails();alert('تم حفظ تفاصيل اليوم')};
+[note,km,condition].forEach(x=>x.addEventListener('change',saveDetails));
+function choose(d){
+day.value=d;
+render();
+day.dispatchEvent(new Event('change',{bubbles:true}));
+}
+function draw(){
+weekday.textContent=new Date(day.value+'T12:00:00').toLocaleDateString('ar-EG',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+el('proMonth').textContent=m.toLocaleDateString('en-GB',{month:'long',year:'numeric'});
+let grid=el('proDays');grid.replaceChildren();
+['Mo','Tu','We','Th','Fr','Sa','Su'].forEach(x=>{let b=document.createElement('div');b.className='prolabel';b.textContent=x;grid.appendChild(b)});
+for(let i=0;i<(m.getDay()+6)%7;i++)grid.appendChild(document.createElement('div'));
+let rows=[];
+let days=new Date(m.getFullYear(),m.getMonth()+1,0).getDate();
+for(let i=1;i<=days;i++){
+let dt=new Date(m.getFullYear(),m.getMonth(),i,12),d=fmt(dt);
+let t=db.trips.filter(x=>x.date===d),s=db.shifts[d],n=total(t);
+let worked=!!(s||t.length);
+if(worked)rows.push({d,n});
+let b=document.createElement('button');
+b.style.setProperty('background',d===day.value?'#d8b575':worked?(n>=Number(db.settings.target||250)?'#214638':'#57452c'):dt.getDay()===1?'#353535':'#282a30','important');
+b.style.setProperty('color',d===day.value?'#111':'#fff','important');
+let label=worked?'€'+Math.round(n):dt.getDay()===1?'OFF':'—';
+b.innerHTML=i+'<small>'+label+'</small>'+(db.proDays[d]?.note?'✎':'');
+b.onclick=()=>choose(d);
+grid.appendChild(b)
+}
+let t=db.trips.filter(x=>x.date===day.value),s=db.shifts[day.value];
+el('proDayInfo').textContent='دخل اليوم: '+eur(total(t))+' | '+t.length+' مشوار | '+(s?.end?'الشيفت مكتمل':s?'شيفت مفتوح':'لا يوجد شيفت');
+let sorted=rows.slice().sort((a,b)=>b.n-a.n);
+let gross=rows.reduce((a,x)=>a+x.n,0);
+let monthKey=fmt(m).slice(0,7);
+let expenses=db.expenses.filter(x=>x.date.startsWith(monthKey));
+let workdays=rows.length;
+let estimatedFuel=rows.filter(x=>!expenses.some(e=>e.date===x.d&&String(e.category).includes('بنزين'))).length*Number(db.settings.fuel||0);
+let rent=Number(db.settings.rent||0)*days/7;
+let fixed=Number(db.settings.fixed||0);
+let distance=Object.entries(db.proDays).filter(([d])=>d.startsWith(monthKey)).reduce((a,[d,v])=>a+Number(v.km||0),0);
+let rem=0;
+for(let i=1;i<=days;i++){let x=new Date(m.getFullYear(),m.getMonth(),i,12);if(fmt(x)>fmt(new Date())&&x.getDay()!==1)rem++}
+el('proFinancialReport').innerHTML='<p>'+monthKey+'</p><p>دخل الشهر: '+eur(gross)+'</p><p>أيام العمل المسجلة: '+workdays+'</p><p>المسافة المسجلة: '+distance.toFixed(1)+' km</p><p>أفضل يوم: '+(sorted.length?sorted[0].d+' / '+eur(sorted[0].n):'—')+'</p><p>أقل يوم دخلا: '+(sorted.length?sorted[sorted.length-1].d+' / '+eur(sorted[sorted.length-1].n):'—')+'</p><p>إيجار العربية للشهر: '+eur(rent)+'</p><p>المصاريف والبنزين: '+eur(total(expenses)+estimatedFuel)+'</p><p>الصافي بعد التزامات الشهر كاملة: '+eur(gross-total(expenses)-estimatedFuel-rent-fixed)+'</p><p>الدخل المتوقع حتى نهاية الشهر: '+(workdays?eur(gross+gross/workdays*rem):'—')+'</p><small>تقديرات قبل الضرائب، والتوقع مبني على متوسط الدخل المسجل.</small>';
+}
+function bills(){
+let box=el('proBills');box.replaceChildren();
+let key=fmt(m).slice(0,7);
+[['تحويل مصر',700],['إيجار البيت',397],['الخدمات',84],['التليفون والإنترنت - يوم 15',75]].forEach(([name,value])=>{
+let row=document.createElement('p'),c=document.createElement('input');
+c.type='checkbox';c.style.width='auto';
+c.checked=!!db.proPaid[key+'|'+name];
+c.onchange=()=>{db.proPaid[key+'|'+name]=c.checked;save()};
+row.append(c,document.createTextNode(' '+name+' — '+eur(value)));
+box.append(row)
+})
+}
+el('proPrev').onclick=()=>{m.setMonth(m.getMonth()-1);draw();bills()};
+el('proNext').onclick=()=>{m.setMonth(m.getMonth()+1);draw();bills()};
+let nav=document.createElement('nav');nav.id='proNav';
+function show(k){
+[...sections,cal,finance].forEach(x=>x.classList.add('prohidden'));
+let chosen=k==='home'?sections.slice(0,4):k==='calendar'?[cal]:k==='analysis'?sections.filter(x=>x.querySelector('#analysis,#reports,#best,#history')):[finance,...sections.filter(x=>x.querySelector('#target,#backupData'))];
+chosen.forEach(x=>x.classList.remove('prohidden'));
+if(k==='calendar'){readDay();draw()}
+if(k==='finance'){draw();bills()}
+window.scrollTo(0,0)
+}
+[['home','⌂ الرئيسية'],['calendar','▦ التقويم'],['analysis','▥ التحليل'],['finance','€ المالية']].forEach(([k,v])=>{let b=document.createElement('button');b.textContent=v;b.onclick=()=>show(k);nav.appendChild(b)});
+document.body.appendChild(nav);
+el('proDetails').onclick=()=>show('home');
+day.addEventListener('change',()=>{m=new Date(day.value+'T12:00:00');m.setDate(1);readDay();draw();bills()});
+document.addEventListener('click',()=>setTimeout(draw,200));
+readDay();draw();bills();show('home');
+})();
+</script>

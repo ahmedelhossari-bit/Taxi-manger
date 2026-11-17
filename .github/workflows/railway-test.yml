@@ -7,27 +7,59 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Test OEBB SCOTTY
+      - name: Test OEBB Live Trains
         run: |
           python3 - <<'PY'
-          import urllib.request,json
-          url='https://fahrplan.oebb.at/bin/mgate.exe'
-          payload={
-            'id':'1',
-            'ver':'1.67',
-            'lang':'deu',
-            'auth':{'type':'AID','aid':'OWDL4fE4ixNiPBBm'},
-            'client':{'id':'OEBB','type':'WEB','name':'webapp','l':'vs_webapp'},
-            'formatted':False,
-            'svcReqL':[{
-              'meth':'LocMatch',
-              'req':{'input':{'field':'S','loc':{'name':'Wien Hbf','type':'ALL'},'maxLoc':10}}
-            }]
-          }
-          req=urllib.request.Request(url,data=json.dumps(payload).encode(),headers={'Content-Type':'application/json'},method='POST')
-          with urllib.request.urlopen(req,timeout=30) as r:
-              data=json.load(r)
-          print(json.dumps(data,ensure_ascii=False,indent=2))
-          assert data['svcResL'][0]['res']['match']['locL']
-          print('OEBB CONNECTION SUCCESSFUL')
+          import json, urllib.request
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          def api(method, params):
+              payload={
+                  'id':'1',
+                  'ver':'1.67',
+                  'lang':'deu',
+                  'auth':{'type':'AID','aid':'OWDL4fE4ixNiPBBm'},
+                  'client':{'id':'OEBB','type':'WEB','name':'webapp','l':'vs_webapp'},
+                  'formatted':False,
+                  'svcReqL':[{'meth':method,'req':params}]
+              }
+              req=urllib.request.Request(
+                  'https://fahrplan.oebb.at/bin/mgate.exe',
+                  data=json.dumps(payload).encode(),
+                  headers={'Content-Type':'application/json'},
+                  method='POST'
+              )
+              with urllib.request.urlopen(req,timeout=30) as r:
+                  data=json.load(r)
+              result=data['svcResL'][0]
+              if result.get('err')!='OK':
+                  raise RuntimeError(str(result))
+              return result['res']
+
+          result=api('LocMatch',{
+              'input':{'field':'S','loc':{'name':'Wien Hbf','type':'ALL'},'maxLoc':10}
+          })
+          locations=result['match']['locL']
+          stations=[s for s in locations if s.get('type')=='S']
+          print('STATIONS:',json.dumps(stations,ensure_ascii=False))
+          station=next((s for s in stations if s.get('name') in ('Wien Hbf','Wien Hauptbahnhof')),None)
+          if not station:
+              raise RuntimeError('Exact station not found')
+          print('SELECTED:',station.get('name'),station.get('extId'))
+          now=datetime.now(ZoneInfo('Europe/Vienna'))
+          for board in ['ARR','DEP']:
+              result=api('StationBoard',{
+                  'type':board,
+                  'stbLoc':station,
+                  'date':now.strftime('%Y%m%d'),
+                  'time':now.strftime('%H%M%S'),
+                  'maxJny':20,
+                  'dur':90
+              })
+              journeys=result.get('jnyL',[])
+              print('BOARD:',board,'TRAINS:',len(journeys))
+              print(json.dumps(journeys[:3],ensure_ascii=False,indent=2))
+              assert journeys, 'No journeys returned'
+          print('OEBB LIVE TRAINS SUCCESSFUL')
           PY

@@ -620,7 +620,7 @@ j.onload=ok;j.onerror=no;document.head.append(j);
 });
 map=L.map('standMap').setView([48.2082,16.3738],12);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
-let url='https://data.wien.gv.at/daten/geo?service=WFS&version=1.1.0&request=GetFeature&typeName=ogdwien:TAXISTANDOGD&srsName=EPSG:4326&outputFormat=json';
+let url='https://data.wien.gv.at/daten/geo?service=WFS&version=1.1.0&request=GetFeature&typeName=ogdwien:TAXIOGD&srsName=EPSG:4326&outputFormat=json';
 let r=await fetch(url);
 if(!r.ok)throw Error('Data unavailable');
 let data=await r.json();

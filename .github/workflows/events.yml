@@ -13,33 +13,70 @@ jobs:
       - name: Fetch events
         run: |
           python3 - <<'PY'
-          import urllib.request,re,json
+          import urllib.request,re,json,os
           from html.parser import HTMLParser
-          from datetime import datetime
+          from datetime import datetime,date
           from zoneinfo import ZoneInfo
           class Parser(HTMLParser):
               def __init__(self):
                   super().__init__()
                   self.parts=[]
               def handle_data(self,data):
-                  self.parts.append(data)
-          url='https://spielplan.musikverein.at/spielplan'
-          req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
-          p=Parser()
-          p.feed(urllib.request.urlopen(req,timeout=60).read().decode('utf-8'))
-          text=' '.join(p.parts)
-          pat=r'(\d{2}\.\d{2}\.\d{4})\s+(\d{1,2}:\d{2})\s*Uhr\s*[-–−]\s*(\d{1,2}:\d{2})\s*Uhr'
+                  self.parts.append(data.strip())
+          def fetch(url):
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+              p=Parser()
+              p.feed(urllib.request.urlopen(req,timeout=60).read().decode('utf-8'))
+              return ' '.join(p.parts)
           now=datetime.now(ZoneInfo('Europe/Vienna'))
+          months='Jan Feb Mär Apr Mai Jun Jul Aug Sep Okt Nov Dez'.split()
+          full='jaenner februar maerz april mai juni juli august september oktober november dezember'.split()
           events=[]
-          for date,start,end in sorted(set(re.findall(pat,text))):
-              day=datetime.strptime(date,'%d.%m.%Y').date()
-              if day>=now.date():
-                  events.append(dict(venue='Musikverein',date=day.isoformat(),start=start,end=end,source=url))
-          if not events:
-              raise RuntimeError('No upcoming events found')
+          old=json.load(open('events.json')).get('events',[]) if os.path.exists('events.json') else []
+          status={}
+          def add(v,d,s,e,u):
+              if d>=now.date():
+                  events.append(dict(venue=v,date=d.isoformat(),start=s.zfill(5),end=e.zfill(5),source=u))
+          def run(key,venues,fn):
+              n=len(events)
+              try:
+                  fn()
+                  if len(events)==n:
+                      raise ValueError('No matches')
+                  status[key]='OK'
+              except Exception as exc:
+                  del events[n:]
+                  events.extend(e for e in old if e['venue'] in venues and e['date']>=now.date().isoformat())
+                  status[key]=str(exc)
+              print(key,status[key])
+          def musik():
+              u='https://spielplan.musikverein.at/spielplan'
+              for d,s,e in re.findall(r'(\d{2}\.\d{2}\.\d{4})\s+(\d{1,2}:\d{2})\s*Uhr\s*[-–−]\s*(\d{1,2}:\d{2})\s*Uhr',fetch(u)):
+                  add('Musikverein',datetime.strptime(d,'%d.%m.%Y').date(),s,e,u)
+          def burg():
+              u='https://www.burgtheater.at/spielplan'
+              pat=r'(\d{2})\.(\d{2})\.\s+(\d{1,2}:\d{2})\s*Uhr\s*[-–—]\s*(\d{1,2}:\d{2})\s*Uhr\s+(Burgtheater|Akademietheater|Vestibül|Kasino)'
+              for d,m,s,e,v in re.findall(pat,fetch(u)):
+                  y=now.year+(int(m)<now.month-2)
+                  add(v,date(y,int(m),int(d)),s,e,u)
+          def opera():
+              for offset in [0,1]:
+                  y,m=divmod(now.year*12+now.month-1+offset,12)
+                  u=f'https://www.wiener-staatsoper.at/kalender/{y}/{full[m]}/'
+                  pat=r'\b(\d{1,2})\s+[A-Za-zÄÖÜäöü]{3,5}\.\s+(\d{1,2}:\d{2})\s*[-–—]\s*(\d{1,2}:\d{2})'
+                  try:
+                      for d,s,e in re.findall(pat,fetch(u)):
+                          add('Wiener Staatsoper',date(y,m+1,int(d)),s,e,u)
+                  except Exception as exc:
+                      print(u,exc)
+          run('Musikverein',['Musikverein'],musik)
+          run('Burgtheater',['Burgtheater','Akademietheater','Vestibül','Kasino'],burg)
+          run('Staatsoper',['Wiener Staatsoper'],opera)
+          events=list({(e['venue'],e['date'],e['start'],e['end']):e for e in events}.values())
           events.sort(key=lambda e:(e['date'],e['end']))
           with open('events.json','w') as f:
-              json.dump(dict(updated=now.isoformat(),events=events),f,ensure_ascii=False,indent=2)
+              json.dump(dict(updated=now.isoformat(),status=status,events=events),f,ensure_ascii=False,indent=2)
+          print('Total events:',len(events))
           PY
       - name: Save events
         run: |

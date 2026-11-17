@@ -401,3 +401,107 @@ q('luxClock').textContent='VIENNA · '+new Date().toLocaleTimeString('en-GB',{ti
 },1000);
 })();
 </script>
+<script>
+(function(){
+if(window.luxShiftReady)return;
+window.luxShiftReady=true;
+const q=id=>document.getElementById(id);
+const put=(id,v)=>q(id).textContent=v;
+const hms=ms=>{let s=Math.max(0,Math.floor(ms/1000));return [Math.floor(s/3600),Math.floor(s/60)%60,s%60].map(n=>String(n).padStart(2,'0')).join(':')};
+const tm=t=>t?new Date(t).toLocaleTimeString('en-GB',{timeZone:'Europe/Vienna',hour12:false}):'--:--:--';
+let audio,alerts=new Set();
+function unlock(){try{if(!audio)audio=new(window.AudioContext||window.webkitAudioContext)();audio.resume()}catch(e){}}
+document.addEventListener('pointerdown',unlock);
+function beep(){try{if(!audio||audio.state!=='running')return;[0,.4,.8].forEach(d=>{let o=audio.createOscillator(),g=audio.createGain(),t=audio.currentTime+d;o.frequency.value=880;g.gain.value=.15;o.connect(g);g.connect(audio.destination);o.start(t);o.stop(t+.25)})}catch(e){}}
+const previous=shift;
+shift=function(a){
+let s=db.shifts[q('day').value];
+if(a==='pause'&&s&&(s.breaks||[]).length>=2&&!confirm('استخدمت البريكين المخططين. هل تحتاج راحة إضافية؟'))return;
+if(a==='end'&&!confirm('هل تريد إنهاء الشيفت؟'))return;
+unlock();previous.apply(this,arguments);tick();
+};
+function tick(){
+let now=Date.now(),s=db.shifts[q('day').value];
+let active=!!(s&&!s.end),paused=!!(active&&s.pause),br=s?s.breaks||[]:[];
+let elapsed=paused?Math.max(0,now-s.pause):0;
+let rest=br.reduce((a,b)=>a+Number(b[1]-b[0]),0)+elapsed;
+let work=s?Math.max(0,(s.end||now)-s.start-rest):0;
+put('luxMode',paused?'BREAK TIME':active?'WORKING TIME':s?'SHIFT COMPLETE':'READY TO START');
+put('luxTimer',hms(paused?elapsed:work));
+put('luxStart',tm(s&&s.start));
+put('luxWork',hms(work));
+put('luxRest',hms(rest));
+put('luxCount',(br.length+(paused?1:0))+' / 2');
+let color=paused&&elapsed>=1800000?'#ef7777':paused&&elapsed>=1500000?'#efa954':'#d8b575';
+let p=Math.min(100,(paused?elapsed/1800000:work/32400000)*100);
+q('luxTimer').style.color=color;
+q('luxRing').style.background='conic-gradient('+color+' '+p+'%, #343538 0)';
+put('luxRemain',paused?(elapsed>=1800000?'OVERTIME +'+hms(elapsed-1800000):'REMAINING '+hms(1800000-elapsed)):active?'ON DUTY':s?'OFF DUTY':'STANDBY');
+put('luxWarning',paused?(elapsed>=1800000?'انتهى وقت الراحة المخطط':elapsed>=1500000?'باقي أقل من 5 دقائق':''):'');
+if(paused&&elapsed>=1500000){
+let key=s.pause+'-'+(elapsed>=1800000?30:25);
+if(!alerts.has(key)){alerts.add(key);beep()}
+}
+put('luxLog',br.map((b,i)=>'Break '+(i+1)+' | '+tm(b[0])+' — '+tm(b[1])).join(' | ')+(paused?' | بداية البريك '+tm(s.pause):''));
+}
+setInterval(tick,1000);
+document.addEventListener('visibilitychange',tick);
+q('day').addEventListener('change',tick);
+tick();
+})();
+</script>
+<style>
+#luxActions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+#luxActions button{font-size:13px!important;min-height:46px}
+#luxTotals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+#luxTotals .luxcell{padding:14px 5px}
+#proNav{gap:4px!important;background:#141518f7!important}
+#proNav button{flex:1!important;font-size:11px!important;border-radius:12px!important;color:#96979c!important}
+#proNav button.selected{background:#302a21!important;color:#d8b575!important}
+</style>
+<script>
+(function(){
+if(document.getElementById('luxActions'))return;
+const q=id=>document.getElementById(id);
+const work=q('status').closest('section');
+let actions=document.createElement('div');
+actions.id='luxActions';
+let btn={};
+['start','pause','resume','end'].forEach((a,i)=>{
+let b=Array.from(work.querySelectorAll('button')).find(x=>x.getAttribute('onclick')==="shift('"+a+"')");
+if(!b)return;
+btn[a]=b;
+b.textContent=['▶ بداية الشغل','Ⅱ استراحة','▶ العودة للشغل','■ إنهاء الشيفت'][i];
+actions.appendChild(b);
+});
+work.appendChild(actions);
+if(btn.start)btn.start.style.gridColumn='1 / -1';
+if(btn.end){btn.end.style.setProperty('background','#41282b','important');btn.end.style.setProperty('color','#ef9292','important')}
+let totals=document.createElement('div');
+totals.id='luxTotals';
+let old=q('summary').nextElementSibling;
+if(old)old.style.display='none';
+q('summary').after(totals);
+function update(){
+let s=db.shifts[q('day').value],active=!!(s&&!s.end),paused=!!(active&&s.pause);
+if(btn.start)btn.start.hidden=!!s;
+if(btn.pause)btn.pause.hidden=!active||paused;
+if(btn.resume)btn.resume.hidden=!paused;
+if(btn.end)btn.end.hidden=!active;
+let trips=db.trips.filter(t=>t.date===q('day').value);
+let html=['Cash','Visa','Uber','Bolt'].map(k=>'<div class="luxcell"><small>'+k+'</small><b>€'+trips.filter(t=>t.payment===k).reduce((a,t)=>a+Number(t.amount||0),0).toFixed(2)+'</b></div>').join('');
+if(totals.innerHTML!==html)totals.innerHTML=html;
+}
+let nav=q('proNav');
+if(nav){
+let buttons=Array.from(nav.children);
+buttons.forEach((b,i)=>{
+b.innerHTML=['⌂<br>الرئيسية','▦<br>التقويم','▥<br>التحليل','€<br>المالية'][i]||b.innerHTML;
+b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('selected'));b.classList.add('selected')});
+});
+buttons[0]?.classList.add('selected');
+}
+setInterval(update,1000);
+update();
+})();
+</script>

@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · Build 2.5 · Payment Fix</div>
+<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · V5.7</div>
 
 <h1>🚕 Taxi Manager</h1>
 <section>
@@ -971,7 +971,9 @@ const drawer=document.createElement('aside');
 drawer.id='tpDrawer';
 drawer.setAttribute('aria-hidden','true');
 document.body.append(menu,shade,drawer);
+let drawerScroll=null;
 function close(){
+if(drawerScroll!==null){document.body.classList.remove('tpDrawerLocked');document.body.style.removeProperty('--tp-lock-top');window.scrollTo(0,drawerScroll);drawerScroll=null;}
 drawer.classList.remove('open');
 shade.style.display='none';
 drawer.setAttribute('aria-hidden','true');
@@ -989,7 +991,7 @@ return el;
 }
 add('button','✕').onclick=close;
 add('h2','TAXI PRO');
-add('p','Driver Beta 5.2').style.fontSize='10px';
+add('p','Driver Beta 5.7').style.fontSize='10px';
 if(window.tpFounderVerified){const im=document.createElement('img');try{im.src=localStorage.getItem((window.tpDriverPrefix+'avatar'))||''}catch(e){}if(im.getAttribute('src')){im.style.cssText='width:76px;height:76px;object-fit:cover;border-radius:50%;border:2px solid #d8b575;display:block;margin:12px auto';drawer.append(im)}}add('p',window.tpDriverName);
 add('p','Professional Driver').style.fontSize='12px';
 const words=[
@@ -1018,6 +1020,7 @@ add('button','⚙  '+['اللغة / الملف الشخصي','Language / Profile
 add('button',['تسجيل الخروج','Sign out','Abmelden'][ix]).onclick=()=>{close();window.tpDriverLogout()};
 if(window.tpFounderVerified)add('button',['تسجيل الخروج','Sign out','Abmelden'][ix]).onclick=()=>{close();window.tpFounderSignOut?.()};add('hr','');
 add('p','© 2026 TAXI PRO').style.fontSize='12px';add('p','Your data. Your business. Your privacy.').style.cssText='font-size:11px;font-style:italic;text-align:center;color:#d6b475';
+if(drawerScroll===null){drawerScroll=window.scrollY;document.body.style.setProperty('--tp-lock-top',(-drawerScroll)+'px');document.body.classList.add('tpDrawerLocked');}drawer.scrollTop=0;
 shade.style.display='block';
 drawer.classList.add('open');
 drawer.setAttribute('aria-hidden','false');
@@ -1249,4 +1252,15 @@ const quick=document.createElement('button');quick.id='taxiMapQuick';quick.textC
 #tpAvatarButton img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;border-radius:50%!important}
 #tp13bar #tpAvatarRemove{width:auto!important;min-width:0!important;min-height:0!important;background:transparent!important;color:#d8b575!important;border:0!important;padding:2px!important;margin:0!important;font-size:9px!important;white-space:normal!important}
 #tpAvatarRemove[hidden],#tpAvatarWrap input[hidden]{display:none!important}
-</style><style>#gpsPro{display:none!important}#proNav [data-gps-hidden]{display:none!important}</style>
+</style><style>#gpsPro{display:none!important}#proNav [data-gps-hidden]{display:none!important}</style><style>
+html{width:100%;max-width:100%;overflow-x:hidden!important;overscroll-behavior-x:none;-webkit-text-size-adjust:100%}
+body{width:100%!important;max-width:min(100%,600px)!important;overflow-x:clip!important;overscroll-behavior-x:none;touch-action:pan-y pinch-zoom}
+body>section,body>#tp13bar{width:100%!important;max-width:100%!important;min-width:0!important}
+body>section :is(input,select,textarea),body>section img{max-width:100%!important;min-width:0!important}
+body .leaflet-container{touch-action:none}
+#tpDrawer{max-width:100%;width:min(85%,340px)!important;height:100dvh;bottom:auto!important;padding-top:calc(16px + env(safe-area-inset-top))!important;padding-bottom:calc(22px + env(safe-area-inset-bottom))!important;overflow-x:hidden!important;overscroll-behavior:contain;touch-action:pan-y;visibility:hidden;transform:translateX(100%)}
+#tpDrawer.open{visibility:visible;transform:translateX(0)}
+body.tpDrawerLocked{position:fixed!important;top:var(--tp-lock-top)!important;left:max(0px,calc((100% - 600px)/2))!important;overflow:hidden!important}
+body.tpDrawerLocked #taxiMapQuick{visibility:hidden}
+#taxiMapQuick{max-width:calc(100% - 24px - env(safe-area-inset-right))!important;white-space:normal!important;overflow-wrap:anywhere;right:calc(12px + env(safe-area-inset-right))!important}
+</style>

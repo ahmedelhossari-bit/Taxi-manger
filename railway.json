@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T04:40:52.353413+00:00",
+  "updated": "2026-11-18T05:42:30.171001+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,114 +8,78 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EN 40407",
+          "train": "S 60 (Zug-Nr. 2604)",
           "board": "ARR",
-          "direction": "Warszawa Wschodnia",
-          "planned": "05:25",
-          "expected": "05:46",
-          "delay": 21,
+          "direction": "Eisenstadt Bahnhof",
+          "planned": "06:11",
+          "expected": "06:45",
+          "delay": 34,
           "cancelled": false
         },
         {
-          "train": "EN 40417",
+          "train": "S 63 (Zug-Nr. 7904)",
           "board": "ARR",
-          "direction": "Przemysl Glowny",
-          "planned": "05:25",
-          "expected": "05:46",
-          "delay": 21,
+          "direction": "Pamhagen Bahnhof",
+          "planned": "06:11",
+          "expected": "06:45",
+          "delay": 34,
           "cancelled": false
         },
         {
-          "train": "IC 407",
+          "train": "EC 463",
           "board": "ARR",
-          "direction": "Warszawa Wschodnia",
-          "planned": "05:25",
-          "expected": "05:46",
-          "delay": 21,
+          "direction": "Salzburg Hbf",
+          "planned": "06:32",
+          "expected": "06:43",
+          "delay": 11,
           "cancelled": false
         },
         {
-          "train": "IC 417",
-          "board": "ARR",
-          "direction": "Przemysl Glowny",
-          "planned": "05:25",
-          "expected": "05:46",
-          "delay": 21,
-          "cancelled": false
-        },
-        {
-          "train": "EN 40407",
+          "train": "S 60 (Zug-Nr. 2604)",
           "board": "DEP",
-          "direction": "München Hbf",
-          "planned": "05:39",
-          "expected": "05:49",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "EN 40417",
-          "board": "DEP",
-          "direction": "München Hbf",
-          "planned": "05:39",
-          "expected": "05:49",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "IC 407",
-          "board": "DEP",
-          "direction": "München Hbf",
-          "planned": "05:39",
-          "expected": "05:49",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "IC 417",
-          "board": "DEP",
-          "direction": "München Hbf",
-          "planned": "05:39",
-          "expected": "05:49",
-          "delay": 10,
+          "direction": "Wampersdorf",
+          "planned": "06:12",
+          "expected": "06:46",
+          "delay": 34,
           "cancelled": false
         }
       ],
-      "records": 93,
+      "records": 96,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "REX 51 (Zug-Nr. 1603)",
-          "board": "ARR",
-          "direction": "St.Pölten Hbf",
-          "planned": "06:07",
-          "expected": "06:29",
-          "delay": 22,
-          "cancelled": false
-        },
-        {
-          "train": "REX 51 (Zug-Nr. 1606)",
-          "board": "DEP",
-          "direction": "St.Pölten Hbf",
-          "planned": "05:53",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        }
-      ],
-      "records": 70,
+      "alerts": [],
+      "records": 76,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 124,
+      "alerts": [
+        {
+          "train": "S 60 (Zug-Nr. 2604)",
+          "board": "ARR",
+          "direction": "Eisenstadt Bahnhof",
+          "planned": "06:17",
+          "expected": "06:50",
+          "delay": 33,
+          "cancelled": false
+        },
+        {
+          "train": "S 60 (Zug-Nr. 2604)",
+          "board": "DEP",
+          "direction": "Wampersdorf",
+          "planned": "06:18",
+          "expected": "06:51",
+          "delay": 33,
+          "cancelled": false
+        }
+      ],
+      "records": 123,
       "errors": []
     },
     {
@@ -134,7 +98,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 31,
+      "records": 32,
       "errors": []
     }
   ]

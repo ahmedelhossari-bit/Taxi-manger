@@ -1,29 +1,77 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T02:43:21.487200+00:00",
+  "updated": "2026-11-18T03:37:47.931843+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 88,
+      "alerts": [
+        {
+          "train": "S 80 (Zug-Nr. 25002)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "05:26",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25002)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "05:28",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 93,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 56,
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1601)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "05:37",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 62,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 131,
+      "alerts": [
+        {
+          "train": "S 3 (Zug-Nr. 25002)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "05:20",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25002)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "05:21",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 137,
       "errors": []
     },
     {
@@ -42,7 +90,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 16,
+      "records": 27,
       "errors": []
     }
   ]

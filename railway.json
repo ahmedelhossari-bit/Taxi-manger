@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T15:03:31.754905+00:00",
+  "updated": "2026-11-18T16:08:01.133596+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,114 +8,50 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1213",
+          "train": "REX 7 (Zug-Nr. 22750)",
           "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "14:47",
-          "expected": "16:09",
-          "delay": 82,
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "16:36",
+          "expected": "17:15",
+          "delay": 39,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22244)",
+          "train": "EC 146",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:19",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Uzhhorod",
+          "planned": "17:20",
+          "expected": "17:46",
+          "delay": 26,
+          "cancelled": false
         },
         {
-          "train": "RJX 66",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "16:20",
-          "expected": "16:54",
+          "train": "S 2 (Zug-Nr. 22750)",
+          "board": "DEP",
+          "direction": "Mödling",
+          "planned": "16:42",
+          "expected": "17:16",
           "delay": 34,
           "cancelled": false
         },
         {
-          "train": "RJX19977",
-          "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "16:32",
-          "expected": "16:43",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "EC 144",
+          "train": "EC 146",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
-          "planned": "15:30",
-          "expected": "16:03",
-          "delay": 33,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 66",
-          "board": "DEP",
-          "direction": "München Hbf",
-          "planned": "16:28",
-          "expected": "16:58",
-          "delay": 30,
-          "cancelled": false
-        },
-        {
-          "train": "RJX19986",
-          "board": "DEP",
-          "direction": "Ötztal",
-          "planned": "16:28",
-          "expected": "16:58",
-          "delay": 30,
+          "planned": "17:30",
+          "expected": "17:49",
+          "delay": 19,
           "cancelled": false
         }
       ],
-      "records": 87,
+      "records": 94,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "EC 144",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "16:00",
-          "expected": "16:20",
-          "delay": 20,
-          "cancelled": false
-        },
-        {
-          "train": "REX 51 (Zug-Nr. 1643)",
-          "board": "ARR",
-          "direction": "St.Pölten Hbf",
-          "planned": "16:07",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "CJX 5 (Zug-Nr. 9104)",
-          "board": "DEP",
-          "direction": "Amstetten",
-          "planned": "15:48",
-          "expected": "16:03",
-          "delay": 15,
-          "cancelled": false
-        },
-        {
-          "train": "REX 51 (Zug-Nr. 1648)",
-          "board": "DEP",
-          "direction": "St.Pölten Hbf",
-          "planned": "16:23",
-          "expected": "17:02",
-          "delay": 39,
-          "cancelled": false
-        }
-      ],
+      "alerts": [],
       "records": 83,
       "errors": []
     },
@@ -125,120 +61,57 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1213",
+          "train": "S 2 (Zug-Nr. 22750)",
           "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "14:40",
-          "expected": "16:05",
-          "delay": 85,
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "16:47",
+          "expected": "17:20",
+          "delay": 33,
           "cancelled": false
         },
         {
-          "train": "EC 144",
+          "train": "EC 146",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "15:36",
-          "expected": "16:08",
+          "direction": "Uzhhorod",
+          "planned": "17:36",
+          "expected": "17:54",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22759)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "17:38",
+          "expected": "17:54",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22750)",
+          "board": "DEP",
+          "direction": "Mödling",
+          "planned": "16:49",
+          "expected": "17:21",
           "delay": 32,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22244)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:12",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "RJX19977",
-          "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "16:25",
-          "expected": "16:39",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22942)",
-          "board": "ARR",
-          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
-          "planned": "16:26",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "RJX 66",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "16:33",
-          "expected": "17:02",
-          "delay": 29,
-          "cancelled": false
-        },
-        {
-          "train": "RJX19986",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "16:33",
-          "expected": "17:02",
-          "delay": 29,
-          "cancelled": false
-        },
-        {
-          "train": "EC 1213",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "14:42",
-          "expected": "16:05",
-          "delay": 83,
-          "cancelled": false
-        },
-        {
-          "train": "EC 144",
+          "train": "EC 146",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
-          "planned": "15:38",
-          "expected": "16:09",
-          "delay": 31,
+          "planned": "17:38",
+          "expected": "17:55",
+          "delay": 17,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22244)",
+          "train": "S 2 (Zug-Nr. 22759)",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "16:14",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "RJX19977",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "16:27",
-          "expected": "16:40",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 66",
-          "board": "DEP",
-          "direction": "München Hbf",
-          "planned": "16:35",
-          "expected": "17:03",
-          "delay": 28,
-          "cancelled": false
-        },
-        {
-          "train": "RJX19986",
-          "board": "DEP",
-          "direction": "Ötztal",
-          "planned": "16:35",
-          "expected": "17:03",
-          "delay": 28,
+          "direction": "Wolfsthal",
+          "planned": "17:40",
+          "expected": "17:56",
+          "delay": 16,
           "cancelled": false
         }
       ],
@@ -260,26 +133,7 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "RJX19985",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "15:57",
-          "expected": "16:13",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
-          "train": "REX 7 (Zug-Nr. 22750)",
-          "board": "DEP",
-          "direction": "Mödling",
-          "planned": "16:16",
-          "expected": "16:26",
-          "delay": 10,
-          "cancelled": false
-        }
-      ],
+      "alerts": [],
       "records": 32,
       "errors": []
     }

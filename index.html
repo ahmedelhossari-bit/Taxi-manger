@@ -794,7 +794,7 @@ function translate(v){let m=v.match(/^(\s*[^\p{L}\p{N}]*)(.*?)(\s*)$/u);if(!m)re
 function scan(root){if(root.nodeType===1&&root.closest('#tp13bar,#tp13welcome,#tp13settings,.leaflet-container,script,style'))return;let w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){if(n.parentElement.closest('#tp13bar,#tp13welcome,#tp13settings,.leaflet-container,script,style,textarea,pre,code'))continue;let t=translate(n.data);if(t!==n.data)n.data=t}if(root.querySelectorAll)root.querySelectorAll('input[placeholder],textarea[placeholder]').forEach(e=>{if(!e.closest('#tp13settings')){let t=translate(e.placeholder);if(t!==e.placeholder)e.placeholder=t}})}
 let style=document.createElement('style');style.textContent='#tp13bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px auto;padding:10px;border:1px solid #564729;border-radius:12px;background:#141414;color:#d8b575}#tp13bar button,#tp13settings button,#tp13welcome button{background:#d8b575;color:#111;border:0;border-radius:9px;padding:10px;font-weight:bold}#tp13welcome,#tp13settings{position:fixed;inset:0;z-index:100000;background:#0c0d0e;color:#eee;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:25px;text-align:center;overflow:auto}#tp13settings input,#tp13settings select{max-width:90%;padding:12px;background:#222;color:white;border:1px solid #8a7144;border-radius:8px}';document.head.append(style);
 let bar=document.createElement('div');bar.id='tp13bar';let greet=document.createElement('span'),settings=document.createElement('button');bar.append(greet,settings);document.body.prepend(bar);
-function save(){try{localStorage.setItem(store,JSON.stringify(p))}catch(e){}}function refresh(){document.documentElement.lang=p.lang;document.documentElement.dir=p.lang==='ar'?'rtl':'ltr';greet.textContent=p.name?tr('Welcome, ','Herzlich willkommen, ','أهلاً بيك، ')+p.name:'TAXI PRO';settings.textContent=tr('Language / Profile','Sprache / Profil','اللغة / الملف الشخصي');scan(document.body)}
+function save(){try{localStorage.setItem(store,JSON.stringify(p))}catch(e){}}function refresh(){if(document.documentElement.lang!==p.lang)document.documentElement.lang=p.lang;document.documentElement.dir=p.lang==='ar'?'rtl':'ltr';greet.textContent=window.tpFounderVerified?tr('Welcome, Engineer Ahmed','Herzlich willkommen, Ingenieur Ahmed','أهلاً بيك، باشمهندس أحمد'):(p.name?tr('Welcome, ','Herzlich willkommen, ','أهلاً بيك، ')+p.name:'TAXI PRO');settings.textContent=tr('Language / Profile','Sprache / Profil','اللغة / الملف الشخصي');scan(document.body)}
 settings.onclick=()=>{let panel=document.createElement('div');panel.id='tp13settings';let title=document.createElement('h2');title.textContent='TAXI PRO • '+tr('Profile','Profil','الملف الشخصي');let input=document.createElement('input');input.value=p.name;input.maxLength=80;let select=document.createElement('select');for(let [v,t] of [['en','English'],['de','Deutsch'],['ar','العربية']]){let o=document.createElement('option');o.value=v;o.textContent=t;select.append(o)}select.value=p.lang;let b=document.createElement('button');b.textContent='Save / Speichern / حفظ';let about=document.createElement('p');about.textContent='TAXI PRO • Founder & Creator: Ahmed Elhosary • © 2026';let close=document.createElement('button');close.textContent='Close / Schließen / إغلاق';close.onclick=()=>panel.remove();b.onclick=()=>{p.name=input.value.trim()||'Driver';p.lang=normalizeLang(select.value);save();panel.remove();refresh()};panel.append(title,input,select,b,close,about);document.body.append(panel)};
 let introStyle=document.createElement('style');introStyle.textContent=`
 #tp13welcome{background:#050506!important;gap:0!important;overflow:hidden!important;isolation:isolate}
@@ -817,7 +817,7 @@ let hi=document.createElement('div');hi.className='tpIntroName';const greeting=t
 let chunks=p.lang==='ar'?greeting.split(/(\s+)/):Array.from(greeting);chunks.forEach((part,i)=>{let span=document.createElement('span');span.textContent=part;span.setAttribute('aria-hidden','true');span.style.setProperty('--delay',(.18+i*Math.min(.055,.85/chunks.length))+'s');span.style.setProperty('--dx',((i%2?1:-1)*(12+i%3*9))+'px');hi.append(span)});
 let line=document.createElement('div');line.className='tpIntroLine';let credit=document.createElement('div');credit.className='tpIntroCredit';credit.textContent='Founded by Ahmed Elhosary';credit.dir='ltr';let motto=document.createElement('div');motto.className='tpIntroMotto';motto.dir='ltr';motto.textContent='Built by experience. Driven by intelligence.';welcome.append(logo,hi,line,credit,motto);document.body.append(welcome);
 let finished=false;function dismiss(){if(finished)return;finished=true;welcome.classList.add('tpIntroExit');setTimeout(()=>welcome.remove(),300)}welcome.addEventListener('click',dismiss);setTimeout(dismiss,3200);}
-let introPlayed=false;function founderIntro(){if(window.tpFounderVerified&&!introPlayed){introPlayed=true;playIntro()}}window.addEventListener('tp-founder-verified',founderIntro);window.addEventListener('tp-founder-signedout',()=>{introPlayed=false;document.getElementById('tp13welcome')?.remove()});refresh();founderIntro();let pending=false;new MutationObserver(()=>{if(pending)return;pending=true;setTimeout(()=>{pending=false;scan(document.body)},150)}).observe(document.body,{childList:true,subtree:true,characterData:true});
+let introPlayed=false;function founderIntro(){refresh();if(window.tpFounderVerified&&!introPlayed){introPlayed=true;playIntro()}}window.addEventListener('tp-founder-verified',founderIntro);window.addEventListener('tp-founder-signedout',()=>{introPlayed=false;refresh();document.getElementById('tp13welcome')?.remove()});refresh();founderIntro();let pending=false;new MutationObserver(()=>{if(pending)return;pending=true;setTimeout(()=>{pending=false;scan(document.body)},150)}).observe(document.body,{childList:true,subtree:true,characterData:true});
 })();
 
 </script>
@@ -1020,7 +1020,7 @@ return el;
 }
 add('button','✕').onclick=close;
 add('h2','TAXI PRO');
-add('p','V5.4').style.fontSize='10px';
+add('p','V5.5').style.fontSize='10px';
 if(window.tpFounderVerified){const im=document.createElement('img');try{im.src=localStorage.getItem('tp.avatar.local.v1')||''}catch(e){}if(im.getAttribute('src')){im.style.cssText='width:76px;height:76px;object-fit:cover;border-radius:50%;border:2px solid #d8b575;display:block;margin:12px auto';drawer.append(im)}}add('p','Ahmed Elhosary');
 add('p','Founder & Creator').style.fontSize='12px';
 const words=[
@@ -1041,7 +1041,7 @@ const label=/taxi maps/i.test(txt)?['خريطة التاكسي','TAXI PRO Maps',
 const el=add('button',(/taxi maps/i.test(txt)?'⌖':/railway/i.test(txt)?'🚆':isRadar?'◉':icons[i]||'›')+'  '+label);
 el.onclick=()=>{close();old.click()};
 });
-const profile=document.querySelector('#tp13bar button');
+const profile=document.querySelector('#tp13bar > button');
 if(profile){
 add('button','⚙  '+['اللغة / الملف الشخصي','Language / Profile','Sprache / Profil'][ix]).onclick=()=>{close();profile.click()};
 }
@@ -1280,4 +1280,11 @@ const quick=document.createElement('button');quick.id='taxiMapQuick';quick.textC
 #tpAvatarButton img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;border-radius:50%!important}
 #tp13bar #tpAvatarRemove{width:auto!important;min-width:0!important;min-height:0!important;background:transparent!important;color:#d8b575!important;border:0!important;padding:2px!important;margin:0!important;font-size:9px!important;white-space:normal!important}
 #tpAvatarRemove[hidden],#tpAvatarWrap input[hidden]{display:none!important}
+</style><style>
+#tp13bar{grid-template-columns:76px minmax(0,1fr)!important;grid-template-rows:auto auto!important;column-gap:14px!important;row-gap:5px!important}
+#tp13bar>span{grid-column:2!important;grid-row:1!important;text-align:start!important;font-weight:650!important;line-height:1.35!important;color:#e5c789!important}
+#tp13bar>button{grid-column:2!important;grid-row:2!important}
+#tp13bar #tpAvatarWrap{grid-column:1!important;grid-row:1/3!important;width:76px!important}
+#tp13bar #tpAvatarButton{width:70px!important;height:70px!important;min-width:70px!important;max-width:70px!important;min-height:70px!important;max-height:70px!important;aspect-ratio:1!important;position:relative!important}
+#tp13bar #tpAvatarButton img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;margin:0!important;padding:0!important}
 </style>

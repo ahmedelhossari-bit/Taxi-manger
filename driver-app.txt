@@ -541,6 +541,8 @@ refresh();
 })();
 </script>
 <script>
+(()=>{const native=navigator.geolocation, key=window.tpDriverPrefix+'gpsConsent';let consent=localStorage.getItem(key), real=null, latest=null, seq=0;const subs=new Map();const lang=()=>document.documentElement.lang;const tr=(a,b,d)=>lang()==='ar'?a:lang()==='de'?d:b;function stop(){if(real!==null)native.clearWatch(real);real=null;latest=null}function fail(e){for(const v of [...subs.values()])v.bad?.(e)}function start(){if(!native||consent!=='yes'||real!==null||!subs.size)return;real=native.watchPosition(p=>{latest=p;for(const v of [...subs.values()])v.ok(p)},e=>{if(e.code===1){consent='no';localStorage.setItem(key,consent);stop()}fail(e)},{enableHighAccuracy:true,maximumAge:3000,timeout:20000})}function set(v){consent=v;localStorage.setItem(key,v);if(v==='yes')start();else{stop();fail({code:1,message:'Location disabled'})}}function ask(){if(consent!==null)return;set(confirm(tr('هل تسمح للتطبيق باستخدام موقعك للملاحة والمواقف وحساب مسافة الشيفت؟','Allow location for navigation, taxi stands and shift distance?','Standort für Navigation, Taxistände und Schichtstrecke erlauben?'))?'yes':'no')}window.tpGPS={watchPosition(ok,bad){const id=++seq;subs.set(id,{ok,bad});if(consent==='yes'){start();if(latest)setTimeout(()=>{if(subs.has(id)&&latest)ok(latest)},0)}else if(consent==='no')setTimeout(()=>{if(subs.has(id))bad?.({code:1,message:'Location disabled in settings'})},0);return id},clearWatch(id){subs.delete(id);if(!subs.size)stop()},getCurrentPosition(ok,bad){let id,t;const done=(fn,v)=>{clearTimeout(t);this.clearWatch(id);fn?.(v)};id=this.watchPosition(p=>done(ok,p),e=>done(bad,e));t=setTimeout(()=>done(bad,{code:3,message:'Location timeout'}),20000)},settings(){set(confirm(tr('تشغيل الموقع؟','Enable location?','Standort aktivieren?'))?'yes':'no');if(consent==='yes')document.getElementById('gpsStart')?.click()},ask};window.addEventListener('load',()=>{ask();if(consent==='yes')document.getElementById('gpsStart')?.click()});})();
+</script><script>
 (function(){
 if(document.getElementById('gpsPro'))return;
 const q=id=>document.getElementById(id);
@@ -551,10 +553,10 @@ document.body.append(s);
 let nav=q('proNav');
 if(nav){
 let b=document.createElement('button');
-b.innerHTML='◎<br>GPS';
+b.innerHTML='◎<br>GPS';b.dataset.gpsHidden='1';b.style.display='none';
 nav.append(b);
 Array.from(nav.children).filter(x=>x!==b).forEach(x=>x.addEventListener('click',()=>{s.style.display='none'}));
-b.onclick=()=>{document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));s.classList.remove('prohidden');s.style.display='block';window.scrollTo(0,0)};
+b.onclick=()=>window.tpGPS.settings();
 }
 s.style.display='none';
 let watch=null,last=null,pos=null;
@@ -565,7 +567,7 @@ let x=Math.sin(deg(b.latitude-a.latitude)/2)**2+Math.cos(deg(a.latitude))*Math.c
 return 12742*Math.asin(Math.sqrt(Math.min(1,x)));
 }
 function update(p){
-let c=p.coords,d=today(),sh=db.shifts[d];
+let c=p.coords,d=openShiftDate()||today(),sh=db.shifts[d];
 pos=c;
 q('gpsAcc').textContent=Math.round(c.accuracy)+' m';
 q('gpsSpeed').textContent=c.speed==null?'—':Math.round(c.speed*3.6);
@@ -586,9 +588,9 @@ if(watch!==null)return;
 if(!navigator.geolocation)return alert('GPS غير متاح');
 last=null;
 q('gpsState').textContent='CONNECTING...';
-watch=navigator.geolocation.watchPosition(update,e=>{q('gpsState').textContent=e.message},{enableHighAccuracy:true,maximumAge:0,timeout:20000});
+watch=window.tpGPS.watchPosition(update,e=>{q('gpsState').textContent=e.message;if(e.code===1){window.tpGPS.clearWatch(watch);watch=null;last=null}},{enableHighAccuracy:true,maximumAge:0,timeout:20000});
 };
-q('gpsStop').onclick=()=>{if(watch!==null)navigator.geolocation.clearWatch(watch);watch=null;last=null;q('gpsState').textContent='GPS OFFLINE';q('gpsSpeed').textContent='0'};
+q('gpsStop').onclick=()=>{if(watch!==null)window.tpGPS.clearWatch(watch);watch=null;last=null;q('gpsState').textContent='GPS OFFLINE';q('gpsSpeed').textContent='0'};
 q('gpsMap').onclick=()=>{if(!pos)return alert('فعّل GPS أولاً');window.open('https://www.google.com/maps?q='+pos.latitude+','+pos.longitude,'_blank')};
 })();
 </script>
@@ -645,7 +647,7 @@ status.textContent=points.length+' TAXI STANDS';
 }
 document.getElementById('standLocate').onclick=()=>{
 if(!map||!points.length)return alert('انتظر تحميل المواقف');
-navigator.geolocation.getCurrentPosition(p=>{
+window.tpGPS.getCurrentPosition(p=>{
 let ll=L.latLng(p.coords.latitude,p.coords.longitude);
 L.circleMarker(ll,{color:'#168cff',radius:9}).addTo(map);
 map.setView(ll,15);
@@ -1002,12 +1004,13 @@ const words=[
 ];
 const icons=['⌂','▦','▥','€','◎','🚕','♫','◉'];
 [...nav.querySelectorAll('button')].forEach((old,i)=>{
-const txt=old.textContent.trim();
+if(old.dataset.gpsHidden)return;const txt=old.textContent.trim();
 const isRadar=/radar|رادار/i.test(txt);
 const label=/taxi maps/i.test(txt)?['خريطة التاكسي','TAXI PRO Maps','Taxi-Karte'][ix]:/railway/i.test(txt)?['رادار القطارات','Railway Radar','Bahnradar'][ix]:isRadar?words[7][ix]:i<7?words[i][ix]:txt;
 const el=add('button',(/taxi maps/i.test(txt)?'⌖':/railway/i.test(txt)?'🚆':isRadar?'◉':icons[i]||'›')+'  '+label);
 el.onclick=()=>{close();old.click()};
 });
+add('button','◎  '+['إعدادات الموقع','Location settings','Standorteinstellungen'][ix]).onclick=()=>{close();window.tpGPS.settings()};
 const profile=document.querySelector('#tp13bar > button');
 if(profile){
 add('button','⚙  '+['اللغة / الملف الشخصي','Language / Profile','Sprache / Profil'][ix]).onclick=()=>{close();profile.click()};
@@ -1163,12 +1166,12 @@ function locate(){
 if(!navigator.geolocation){status('GPS unavailable');return}
 if(watch!==null){if(position)map.setView(position,16);return}
 status('Waiting for GPS…');
-watch=navigator.geolocation.watchPosition(g=>{
+watch=window.tpGPS.watchPosition(g=>{
 const first=!position;position=[g.coords.latitude,g.coords.longitude];
 if(!marker){marker=L.circleMarker(position,{radius:9,color:'white',weight:2,fillColor:'#278bff',fillOpacity:1}).addTo(map);accuracy=L.circle(position,{radius:g.coords.accuracy,color:'#278bff',weight:1,fillOpacity:.08}).addTo(map)}else{marker.setLatLng(position);accuracy.setLatLng(position).setRadius(g.coords.accuracy)}
 learnTraffic(g);lastFix=g;tickNav(g);
 if(first){map.setView(position,16);status('GPS ready · ±'+Math.round(g.coords.accuracy)+' m');if(destination)calculate()}
-},e=>{status('GPS: '+e.message);if(watch!==null)navigator.geolocation.clearWatch(watch);watch=null},{enableHighAccuracy:true,maximumAge:5000,timeout:20000});
+},e=>{status('GPS: '+e.message);if(watch!==null)window.tpGPS.clearWatch(watch);watch=null},{enableHighAccuracy:true,maximumAge:5000,timeout:20000});
 }
 async function select(lat,lon,label){activeRouteMode='car';clearTaxiPreview();stopNav();routeRequest++;if(routeAbort)routeAbort.abort();routing=false;navSteps=[];navGeo=[];q('tmRoute').replaceChildren();for(const layer of [routeLine,routeOutline])if(layer)layer.remove();routeLine=null;routeOutline=null;destination=[lat,lon];if(destMarker)destMarker.remove();destMarker=L.marker(destination).addTo(map);destMarker.bindTooltip(label);if(position)await calculate();else{map.setView(destination,16);locate()}}
 let activeRouteMode='car';
@@ -1203,7 +1206,7 @@ q('tmTraffic').onclick=()=>info('Live traffic · external official sources (not 
 ['EVIS.AT','Live data integration requires a provider agreement and fees.','https://evis.asfinag.at/Home']
 ]);
 
-document.querySelectorAll('#proNav button').forEach(el=>{if(el!==b)el.addEventListener('click',()=>{s.classList.add('prohidden');stopNav();trafficOn=false;previousSample=null;paintTraffic();if(watch!==null){navigator.geolocation.clearWatch(watch);watch=null;position=null}})});
+document.querySelectorAll('#proNav button').forEach(el=>{if(el!==b)el.addEventListener('click',()=>{s.classList.add('prohidden');stopNav();trafficOn=false;previousSample=null;paintTraffic();if(watch!==null){window.tpGPS.clearWatch(watch);watch=null;position=null}})});
 b.onclick=async()=>{document.querySelectorAll('section').forEach(x=>x.classList.add('prohidden'));s.classList.remove('prohidden');window.scrollTo(0,0);try{await ready();map.invalidateSize();locate()}catch(e){status('Map unavailable: '+e.message)}};
 const gps=q('gpsMap');if(gps)gps.onclick=()=>b.click();
 const routePanel=q('tmRoute'),mapPanel=q('tmMap'),statusPanel=q('tmStatus');
@@ -1246,4 +1249,4 @@ const quick=document.createElement('button');quick.id='taxiMapQuick';quick.textC
 #tpAvatarButton img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;border-radius:50%!important}
 #tp13bar #tpAvatarRemove{width:auto!important;min-width:0!important;min-height:0!important;background:transparent!important;color:#d8b575!important;border:0!important;padding:2px!important;margin:0!important;font-size:9px!important;white-space:normal!important}
 #tpAvatarRemove[hidden],#tpAvatarWrap input[hidden]{display:none!important}
-</style>
+</style><style>#gpsPro{display:none!important}#proNav [data-gps-hidden]{display:none!important}</style>

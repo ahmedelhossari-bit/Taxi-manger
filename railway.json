@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T16:08:01.133596+00:00",
+  "updated": "2026-11-18T17:14:27.890512+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,50 +8,51 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 7 (Zug-Nr. 22750)",
+          "train": "RJX 68",
           "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "16:36",
-          "expected": "17:15",
-          "delay": 39,
+          "direction": "Budapest-Keleti",
+          "planned": "18:20",
+          "expected": "18:47",
+          "delay": 27,
           "cancelled": false
         },
         {
-          "train": "EC 146",
-          "board": "ARR",
-          "direction": "Uzhhorod",
-          "planned": "17:20",
-          "expected": "17:46",
-          "delay": 26,
-          "cancelled": false
-        },
-        {
-          "train": "S 2 (Zug-Nr. 22750)",
+          "train": "RJX 68",
           "board": "DEP",
-          "direction": "Mödling",
-          "planned": "16:42",
-          "expected": "17:16",
-          "delay": 34,
+          "direction": "München Hbf Gl.5-10",
+          "planned": "18:28",
+          "expected": "18:51",
+          "delay": 23,
           "cancelled": false
         },
         {
-          "train": "EC 146",
+          "train": "RJX19988",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "17:30",
-          "expected": "17:49",
-          "delay": 19,
+          "direction": "Innsbruck Hbf",
+          "planned": "18:28",
+          "expected": "18:51",
+          "delay": 23,
           "cancelled": false
         }
       ],
-      "records": 94,
+      "records": 90,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
+      "alerts": [
+        {
+          "train": "EC 146",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "18:00",
+          "expected": "18:18",
+          "delay": 18,
+          "cancelled": false
+        }
+      ],
       "records": 83,
       "errors": []
     },
@@ -61,61 +62,70 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22750)",
+          "train": "REX 6 (Zug-Nr. 7688)",
           "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "16:47",
-          "expected": "17:20",
-          "delay": 33,
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "18:04",
+          "expected": "18:14",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "EC 146",
+          "train": "RJX 68",
           "board": "ARR",
-          "direction": "Uzhhorod",
-          "planned": "17:36",
-          "expected": "17:54",
-          "delay": 18,
+          "direction": "Budapest-Keleti",
+          "planned": "18:33",
+          "expected": "18:55",
+          "delay": 22,
           "cancelled": false
         },
         {
-          "train": "S 2 (Zug-Nr. 22759)",
+          "train": "RJX19988",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "17:38",
-          "expected": "17:54",
-          "delay": 16,
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "18:33",
+          "expected": "18:55",
+          "delay": 22,
           "cancelled": false
         },
         {
-          "train": "S 2 (Zug-Nr. 22750)",
-          "board": "DEP",
-          "direction": "Mödling",
-          "planned": "16:49",
-          "expected": "17:21",
-          "delay": 32,
+          "train": "EC 1217",
+          "board": "ARR",
+          "direction": "München Hbf Gl.5-10",
+          "planned": "18:40",
+          "expected": "19:40",
+          "delay": 60,
           "cancelled": false
         },
         {
-          "train": "EC 146",
+          "train": "RJX 68",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "17:38",
-          "expected": "17:55",
-          "delay": 17,
+          "direction": "München Hbf Gl.5-10",
+          "planned": "18:35",
+          "expected": "18:56",
+          "delay": 21,
           "cancelled": false
         },
         {
-          "train": "S 2 (Zug-Nr. 22759)",
+          "train": "RJX19988",
           "board": "DEP",
-          "direction": "Wolfsthal",
-          "planned": "17:40",
-          "expected": "17:56",
-          "delay": 16,
+          "direction": "Innsbruck Hbf",
+          "planned": "18:35",
+          "expected": "18:56",
+          "delay": 21,
+          "cancelled": false
+        },
+        {
+          "train": "EC 1217",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "18:42",
+          "expected": "19:40",
+          "delay": 58,
           "cancelled": false
         }
       ],
-      "records": 129,
+      "records": 126,
       "errors": []
     },
     {

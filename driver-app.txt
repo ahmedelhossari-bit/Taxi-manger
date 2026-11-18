@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · V5.7</div>
+<div id="tpBuildMarker" style="font-size:11px;text-align:center;color:#a9a9a9;padding:3px">TAXI PRO · V5.8</div>
 
 <h1>🚕 Taxi Manager</h1>
 <section>
@@ -989,9 +989,9 @@ el.textContent=value;
 drawer.append(el);
 return el;
 }
-add('button','✕').onclick=close;
+const closeBtn=add('button','×');closeBtn.id='tpDrawerClose';closeBtn.setAttribute('aria-label','Close menu');closeBtn.onclick=close;
 add('h2','TAXI PRO');
-add('p','Driver Beta 5.7').style.fontSize='10px';
+add('p','Driver Beta 5.8').style.fontSize='10px';
 if(window.tpFounderVerified){const im=document.createElement('img');try{im.src=localStorage.getItem((window.tpDriverPrefix+'avatar'))||''}catch(e){}if(im.getAttribute('src')){im.style.cssText='width:76px;height:76px;object-fit:cover;border-radius:50%;border:2px solid #d8b575;display:block;margin:12px auto';drawer.append(im)}}add('p',window.tpDriverName);
 add('p','Professional Driver').style.fontSize='12px';
 const words=[
@@ -1022,7 +1022,7 @@ if(window.tpFounderVerified)add('button',['تسجيل الخروج','Sign out','
 add('p','© 2026 TAXI PRO').style.fontSize='12px';add('p','Your data. Your business. Your privacy.').style.cssText='font-size:11px;font-style:italic;text-align:center;color:#d6b475';
 if(drawerScroll===null){drawerScroll=window.scrollY;document.body.style.setProperty('--tp-lock-top',(-drawerScroll)+'px');document.body.classList.add('tpDrawerLocked');}drawer.scrollTop=0;
 shade.style.display='block';
-drawer.classList.add('open');
+drawer.querySelectorAll('button:not(#tpDrawerClose)').forEach((el,i)=>el.style.setProperty('--tp-stagger',Math.min(i,12)*25+'ms'));drawer.classList.add('open');
 drawer.setAttribute('aria-hidden','false');
 menu.setAttribute('aria-expanded','true');
 }
@@ -1263,4 +1263,16 @@ body .leaflet-container{touch-action:none}
 body.tpDrawerLocked{position:fixed!important;top:var(--tp-lock-top)!important;left:max(0px,calc((100% - 600px)/2))!important;overflow:hidden!important}
 body.tpDrawerLocked #taxiMapQuick{visibility:hidden}
 #taxiMapQuick{max-width:calc(100% - 24px - env(safe-area-inset-right))!important;white-space:normal!important;overflow-wrap:anywhere;right:calc(12px + env(safe-area-inset-right))!important}
+</style><style>
+#tpDrawer{width:min(83%,320px)!important;padding-inline:16px!important;background:linear-gradient(160deg,#20201e,#121315 45%)!important;border-left:1px solid #695636;transition:transform .3s cubic-bezier(.2,.8,.2,1),visibility .3s!important}
+#tpDrawer #tpDrawerClose{position:sticky!important;top:0;z-index:3;display:grid!important;place-items:center;width:36px!important;height:36px!important;min-height:36px!important;min-width:36px!important;max-width:36px!important;margin:0 0 4px auto!important;padding:0!important;font-size:25px!important;line-height:1!important;border-radius:50%!important;color:#e3c17e!important;background:#292722!important;border:1px solid #655538!important;box-shadow:none!important}
+#tpDrawer h2{font-size:23px!important;letter-spacing:3px;margin:8px 0!important}
+#tpDrawer p{margin:7px 0!important;font-size:13px;line-height:1.35}
+#tpDrawer>img{width:62px!important;height:62px!important;margin:8px auto!important}
+#tpDrawer button:not(#tpDrawerClose){background:#202124!important;color:#e6cb96!important;border:1px solid #36322a!important;border-radius:10px!important;padding:9px 12px!important;margin:5px 0!important;min-height:42px!important;font-size:14px!important;line-height:1.25!important;box-shadow:none!important;transition:background .15s,transform .15s}
+#tpDrawer button:not(#tpDrawerClose):active{background:#4a3d28!important;transform:scale(.98)}
+#tpDrawer.open button:not(#tpDrawerClose){animation:tpMenuArrival .28s ease-out both;animation-delay:var(--tp-stagger,0ms)}
+#tpDrawer h2:after{content:'';display:block;width:66px;height:5px;margin:9px auto 12px;background:repeating-conic-gradient(#d8b575 0% 25%,transparent 0% 50%) 0/10px 10px;opacity:.9}
+@keyframes tpMenuArrival{from{opacity:0;translate:12px 0}to{opacity:1;translate:0 0}}
+@media(prefers-reduced-motion:reduce){#tpDrawer,#tpDrawer button{animation:none!important;transition:none!important}}
 </style>

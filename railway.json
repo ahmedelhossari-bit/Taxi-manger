@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T06:43:01.531634+00:00",
+  "updated": "2026-11-18T07:58:15.797865+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,51 +8,77 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 769",
+          "train": "REX 8 (Zug-Nr. 2507)",
           "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "07:32",
-          "expected": "07:44",
-          "delay": 12,
+          "direction": "Bratislava hl.st.",
+          "planned": "08:46",
+          "expected": "09:01",
+          "delay": 15,
           "cancelled": false
         },
         {
-          "train": "REX 62 (Zug-Nr. 9404)",
+          "train": "RJ 51",
           "board": "ARR",
-          "direction": "Hegyeshalom",
-          "planned": "07:52",
-          "expected": "08:09",
+          "direction": "Praha hl.n.",
+          "planned": "08:49",
+          "expected": "10:05",
+          "delay": 76,
+          "cancelled": false
+        },
+        {
+          "train": "D 40007",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "09:22",
+          "expected": "09:39",
           "delay": 17,
           "cancelled": false
         },
         {
-          "train": "RJX 267",
+          "train": "D 346",
+          "board": "ARR",
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:22",
+          "expected": "09:39",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:22",
+          "expected": "09:39",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 262",
           "board": "DEP",
-          "direction": "Budapest-Keleti",
-          "planned": "07:40",
-          "expected": "07:50",
-          "delay": 10,
+          "direction": "München Hbf",
+          "planned": "08:28",
+          "expected": "09:18",
+          "delay": 50,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19962",
+          "board": "DEP",
+          "direction": "Ötztal",
+          "planned": "08:28",
+          "expected": "09:18",
+          "delay": 50,
           "cancelled": false
         }
       ],
-      "records": 90,
+      "records": 86,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "REX 51 (Zug-Nr. 1611)",
-          "board": "ARR",
-          "direction": "St.Pölten Hbf",
-          "planned": "08:07",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        }
-      ],
+      "alerts": [],
       "records": 89,
       "errors": []
     },
@@ -62,34 +88,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 1 (Zug-Nr. 27124)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "07:22",
-          "expected": "07:47",
-          "delay": 25,
-          "cancelled": false
-        },
-        {
-          "train": "RJ 853",
-          "board": "ARR",
-          "direction": "Graz Hbf",
-          "planned": "07:33",
-          "expected": "07:43",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "REX 3 (Zug-Nr. 22213)",
+          "train": "RJX 262",
           "board": "ARR",
           "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "07:44",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "planned": "08:33",
+          "expected": "09:22",
+          "delay": 49,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19962",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "08:33",
+          "expected": "09:22",
+          "delay": 49,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 262",
+          "board": "DEP",
+          "direction": "München Hbf",
+          "planned": "08:35",
+          "expected": "09:23",
+          "delay": 48,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19962",
+          "board": "DEP",
+          "direction": "Ötztal",
+          "planned": "08:35",
+          "expected": "09:23",
+          "delay": 48,
+          "cancelled": false
         }
       ],
-      "records": 122,
+      "records": 126,
       "errors": []
     },
     {
@@ -108,7 +143,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 30,
+      "records": 29,
       "errors": []
     }
   ]

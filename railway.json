@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T05:42:30.171001+00:00",
+  "updated": "2026-11-18T06:43:01.531634+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,51 +8,52 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 60 (Zug-Nr. 2604)",
-          "board": "ARR",
-          "direction": "Eisenstadt Bahnhof",
-          "planned": "06:11",
-          "expected": "06:45",
-          "delay": 34,
-          "cancelled": false
-        },
-        {
-          "train": "S 63 (Zug-Nr. 7904)",
-          "board": "ARR",
-          "direction": "Pamhagen Bahnhof",
-          "planned": "06:11",
-          "expected": "06:45",
-          "delay": 34,
-          "cancelled": false
-        },
-        {
-          "train": "EC 463",
+          "train": "RJX 769",
           "board": "ARR",
           "direction": "Salzburg Hbf",
-          "planned": "06:32",
-          "expected": "06:43",
-          "delay": 11,
+          "planned": "07:32",
+          "expected": "07:44",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "S 60 (Zug-Nr. 2604)",
+          "train": "REX 62 (Zug-Nr. 9404)",
+          "board": "ARR",
+          "direction": "Hegyeshalom",
+          "planned": "07:52",
+          "expected": "08:09",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 267",
           "board": "DEP",
-          "direction": "Wampersdorf",
-          "planned": "06:12",
-          "expected": "06:46",
-          "delay": 34,
+          "direction": "Budapest-Keleti",
+          "planned": "07:40",
+          "expected": "07:50",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 96,
+      "records": 90,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 76,
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1611)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "08:07",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 89,
       "errors": []
     },
     {
@@ -61,25 +62,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 60 (Zug-Nr. 2604)",
+          "train": "S 1 (Zug-Nr. 27124)",
           "board": "ARR",
-          "direction": "Eisenstadt Bahnhof",
-          "planned": "06:17",
-          "expected": "06:50",
-          "delay": 33,
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "07:22",
+          "expected": "07:47",
+          "delay": 25,
           "cancelled": false
         },
         {
-          "train": "S 60 (Zug-Nr. 2604)",
-          "board": "DEP",
-          "direction": "Wampersdorf",
-          "planned": "06:18",
-          "expected": "06:51",
-          "delay": 33,
+          "train": "RJ 853",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "07:33",
+          "expected": "07:43",
+          "delay": 10,
           "cancelled": false
+        },
+        {
+          "train": "REX 3 (Zug-Nr. 22213)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "07:44",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 123,
+      "records": 122,
       "errors": []
     },
     {
@@ -98,7 +108,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 32,
+      "records": 30,
       "errors": []
     }
   ]

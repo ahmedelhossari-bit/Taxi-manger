@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T20:04:55.171102+00:00",
+  "updated": "2026-11-18T20:59:50.011644+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,34 +8,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 257",
+          "train": "CJX 9 (Zug-Nr. 22964)",
           "board": "ARR",
-          "direction": "Praha hl.n.",
-          "planned": "20:49",
-          "expected": "21:04",
-          "delay": 15,
+          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
+          "planned": "22:03",
+          "expected": "22:17",
+          "delay": 14,
           "cancelled": false
         },
         {
-          "train": "EC 340",
+          "train": "EC 1219",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "21:20",
-          "expected": "21:30",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "EC 148",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "19:30",
-          "expected": "21:05",
-          "delay": 95,
+          "direction": "München Hbf",
+          "planned": "22:47",
+          "expected": "23:36",
+          "delay": 49,
           "cancelled": false
         }
       ],
-      "records": 83,
+      "records": 90,
       "errors": []
     },
     {
@@ -44,16 +35,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 148",
+          "train": "CJX 5 (Zug-Nr. 1941)",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "20:00",
-          "expected": "21:20",
-          "delay": 80,
+          "direction": "Amstetten NÖ Bahnhof",
+          "planned": "21:42",
+          "expected": "22:06",
+          "delay": 24,
+          "cancelled": false
+        },
+        {
+          "train": "WB 969",
+          "board": "ARR",
+          "direction": "Stuttgart Hbf",
+          "planned": "21:52",
+          "expected": "22:16",
+          "delay": 24,
+          "cancelled": false
+        },
+        {
+          "train": "REX 51 (Zug-Nr. 1667)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "22:07",
+          "expected": "22:20",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20070)",
+          "board": "DEP",
+          "direction": "Eichgraben-Altlengbach",
+          "planned": "21:56",
+          "expected": "22:06",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 68,
+      "records": 76,
       "errors": []
     },
     {
@@ -62,25 +80,61 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 148",
+          "train": "CJX 9 (Zug-Nr. 22964)",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "19:36",
-          "expected": "21:09",
-          "delay": 93,
+          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
+          "planned": "21:57",
+          "expected": "22:13",
+          "delay": 16,
           "cancelled": false
         },
         {
-          "train": "EC 148",
+          "train": "NJ 456",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "22:00",
+          "expected": "22:11",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "EC 1219",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "22:40",
+          "expected": "23:32",
+          "delay": 52,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22964)",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "19:38",
-          "expected": "21:09",
-          "delay": 91,
+          "direction": "Wien Hbf",
+          "planned": "21:58",
+          "expected": "22:14",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 456",
+          "board": "DEP",
+          "direction": "Berlin Hbf (Tiefgeschoß)",
+          "planned": "22:02",
+          "expected": "22:12",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "EC 1219",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "22:42",
+          "expected": "23:32",
+          "delay": 50,
           "cancelled": false
         }
       ],
-      "records": 126,
+      "records": 127,
       "errors": []
     },
     {
@@ -98,18 +152,8 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "RJX19957",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "20:57",
-          "expected": "21:13",
-          "delay": 16,
-          "cancelled": false
-        }
-      ],
-      "records": 31,
+      "alerts": [],
+      "records": 26,
       "errors": []
     }
   ]

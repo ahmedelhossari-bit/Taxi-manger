@@ -1020,7 +1020,7 @@ return el;
 }
 add('button','✕').onclick=close;
 add('h2','TAXI PRO');
-add('p','V5.1').style.fontSize='10px';
+add('p','V5.4').style.fontSize='10px';
 if(window.tpFounderVerified){const im=document.createElement('img');try{im.src=localStorage.getItem('tp.avatar.local.v1')||''}catch(e){}if(im.getAttribute('src')){im.style.cssText='width:76px;height:76px;object-fit:cover;border-radius:50%;border:2px solid #d8b575;display:block;margin:12px auto';drawer.append(im)}}add('p','Ahmed Elhosary');
 add('p','Founder & Creator').style.fontSize='12px';
 const words=[
@@ -1046,6 +1046,7 @@ if(profile){
 add('button','⚙  '+['اللغة / الملف الشخصي','Language / Profile','Sprache / Profil'][ix]).onclick=()=>{close();profile.click()};
 }
 if(window.tpFounderMenu)window.tpFounderMenu(add,close,ix);else add('button','♙  '+['دخول الحساب','Account sign in','Konto anmelden'][ix]).onclick=()=>{close();location.href='./founder.html'};
+if(window.tpFounderVerified)add('button','↗  '+['دعوة سائق / مشاركة التطبيق','Invite driver / Share app','Fahrer einladen / App teilen'][ix]).onclick=async()=>{close();const url=new URL('./membership.html',location.href).href;const message=['انضم إلى TAXI PRO وسجل حسابك كسائق.','Join TAXI PRO and create your driver account.','Registriere dich bei TAXI PRO als Fahrer.'][ix];if(navigator.share){try{await navigator.share({title:'TAXI PRO',text:message,url});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(url);alert(['تم نسخ رابط التسجيل','Registration link copied','Registrierungslink kopiert'][ix])}catch(e){prompt(['انسخ رابط التسجيل','Copy registration link','Registrierungslink kopieren'][ix],url)}};
 if(window.tpFounderVerified)add('button',['تسجيل الخروج','Sign out','Abmelden'][ix]).onclick=()=>{close();window.tpFounderSignOut?.()};add('hr','');
 add('p','© 2026 TAXI PRO').style.fontSize='12px';add('p','Built by experience. Driven by intelligence.').style.cssText='font-size:11px;font-style:italic;text-align:center;color:#d6b475';
 shade.style.display='block';

@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-18T19:01:49.507014+00:00",
+  "updated": "2026-11-18T20:04:55.171102+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,39 +8,21 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1217",
+          "train": "RJ 257",
           "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "18:47",
-          "expected": "20:17",
-          "delay": 90,
+          "direction": "Praha hl.n.",
+          "planned": "20:49",
+          "expected": "21:04",
+          "delay": 15,
           "cancelled": false
         },
         {
-          "train": "EC 148",
+          "train": "EC 340",
           "board": "ARR",
           "direction": "Budapest-Keleti",
-          "planned": "19:20",
-          "expected": "20:32",
-          "delay": 72,
-          "cancelled": false
-        },
-        {
-          "train": "IC 1132",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "19:54",
-          "expected": "20:04",
+          "planned": "21:20",
+          "expected": "21:30",
           "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 264",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "20:20",
-          "expected": "20:40",
-          "delay": 20,
           "cancelled": false
         },
         {
@@ -48,21 +30,12 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "19:30",
-          "expected": "20:35",
-          "delay": 65,
-          "cancelled": false
-        },
-        {
-          "train": "RJX13479",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "19:40",
-          "expected": "20:09",
-          "delay": 29,
+          "expected": "21:05",
+          "delay": 95,
           "cancelled": false
         }
       ],
-      "records": 87,
+      "records": 83,
       "errors": []
     },
     {
@@ -71,25 +44,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 967",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "19:52",
-          "expected": "20:03",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
           "train": "EC 148",
           "board": "ARR",
           "direction": "Budapest-Keleti",
           "planned": "20:00",
-          "expected": "21:01",
-          "delay": 61,
+          "expected": "21:20",
+          "delay": 80,
           "cancelled": false
         }
       ],
-      "records": 76,
+      "records": 68,
       "errors": []
     },
     {
@@ -98,39 +62,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1217",
-          "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "18:40",
-          "expected": "20:12",
-          "delay": 92,
-          "cancelled": false
-        },
-        {
           "train": "EC 148",
           "board": "ARR",
           "direction": "Budapest-Keleti",
           "planned": "19:36",
-          "expected": "20:39",
-          "delay": 63,
-          "cancelled": false
-        },
-        {
-          "train": "IC 745",
-          "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "19:56",
-          "expected": "20:07",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "EC 1217",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "18:42",
-          "expected": "20:12",
-          "delay": 90,
+          "expected": "21:09",
+          "delay": 93,
           "cancelled": false
         },
         {
@@ -138,21 +75,12 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "19:38",
-          "expected": "20:40",
-          "delay": 62,
-          "cancelled": false
-        },
-        {
-          "train": "IC 745",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "19:58",
-          "expected": "20:08",
-          "delay": 10,
+          "expected": "21:09",
+          "delay": 91,
           "cancelled": false
         }
       ],
-      "records": 125,
+      "records": 126,
       "errors": []
     },
     {
@@ -172,16 +100,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX13479",
+          "train": "RJX19957",
           "board": "ARR",
           "direction": "Ötztal Bahnhof",
-          "planned": "19:57",
-          "expected": "20:22",
-          "delay": 25,
+          "planned": "20:57",
+          "expected": "21:13",
+          "delay": 16,
           "cancelled": false
         }
       ],
-      "records": 32,
+      "records": 31,
       "errors": []
     }
   ]

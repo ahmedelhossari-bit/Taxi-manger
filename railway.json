@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-19T11:34:01.025064+00:00",
+  "updated": "2026-11-19T12:41:03.530222+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,34 +8,70 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 203",
+          "train": "REX 6 (Zug-Nr. 7619)",
           "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "11:49",
-          "expected": "12:46",
-          "delay": 57,
+          "direction": "Deutschkreutz Bahnhof",
+          "planned": "13:37",
+          "expected": "13:47",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "REX 8 (Zug-Nr. 2515)",
+          "train": "REX 65 (Zug-Nr. 7819)",
           "board": "ARR",
-          "direction": "Bratislava hl.st.",
-          "planned": "12:46",
-          "expected": "12:59",
-          "delay": 13,
+          "direction": "Wulkaprodersdorf Bahnhof",
+          "planned": "13:37",
+          "expected": "13:47",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "EC 203",
+          "train": "EC 103",
+          "board": "ARR",
+          "direction": "Warszawa Wschodnia",
+          "planned": "13:49",
+          "expected": "14:44",
+          "delay": 55,
+          "cancelled": false
+        },
+        {
+          "train": "EC 102",
+          "board": "ARR",
+          "direction": "Wien Westbahnhof",
+          "planned": "13:58",
+          "expected": "14:16",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22336)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "14:00",
+          "expected": "14:19",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "EC 103",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
-          "planned": "12:00",
-          "expected": "12:49",
-          "delay": 49,
+          "planned": "14:00",
+          "expected": "14:47",
+          "delay": 47,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22336)",
+          "board": "DEP",
+          "direction": "Breclav",
+          "planned": "14:02",
+          "expected": "14:20",
+          "delay": 18,
           "cancelled": false
         }
       ],
-      "records": 84,
+      "records": 87,
       "errors": []
     },
     {
@@ -44,16 +80,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 203",
-          "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "12:30",
-          "expected": "13:06",
-          "delay": 36,
+          "train": "EC 102",
+          "board": "DEP",
+          "direction": "Warszawa Wschodnia",
+          "planned": "13:30",
+          "expected": "14:00",
+          "delay": 30,
           "cancelled": false
         }
       ],
-      "records": 78,
+      "records": 75,
       "errors": []
     },
     {
@@ -62,25 +98,97 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 203",
+          "train": "REX 6 (Zug-Nr. 7619)",
           "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "12:06",
-          "expected": "12:54",
-          "delay": 48,
+          "direction": "Deutschkreutz Bahnhof",
+          "planned": "13:29",
+          "expected": "13:43",
+          "delay": 14,
           "cancelled": false
         },
         {
-          "train": "EC 203",
+          "train": "REX 65 (Zug-Nr. 7819)",
+          "board": "ARR",
+          "direction": "Wulkaprodersdorf Bahnhof",
+          "planned": "13:29",
+          "expected": "13:43",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "EC 102",
+          "board": "ARR",
+          "direction": "Wien Westbahnhof",
+          "planned": "13:51",
+          "expected": "14:12",
+          "delay": 21,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22336)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "13:52",
+          "expected": "14:13",
+          "delay": 21,
+          "cancelled": false
+        },
+        {
+          "train": "EC 103",
+          "board": "ARR",
+          "direction": "Warszawa Wschodnia",
+          "planned": "14:06",
+          "expected": "14:51",
+          "delay": 45,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7619)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "13:31",
+          "expected": "13:43",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7819)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "13:31",
+          "expected": "13:43",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "EC 102",
+          "board": "DEP",
+          "direction": "Warszawa Wschodnia",
+          "planned": "13:53",
+          "expected": "14:13",
+          "delay": 20,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22336)",
+          "board": "DEP",
+          "direction": "Breclav",
+          "planned": "13:54",
+          "expected": "14:14",
+          "delay": 20,
+          "cancelled": false
+        },
+        {
+          "train": "EC 103",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
-          "planned": "12:08",
-          "expected": "12:55",
-          "delay": 47,
+          "planned": "14:08",
+          "expected": "14:52",
+          "delay": 44,
           "cancelled": false
         }
       ],
-      "records": 111,
+      "records": 117,
       "errors": []
     },
     {
@@ -99,7 +207,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 25,
+      "records": 28,
       "errors": []
     }
   ]

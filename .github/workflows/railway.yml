@@ -142,5 +142,17 @@ jobs:
           git add railway.json
           git diff --cached --quiet && exit 0
           git commit -m "Update OEBB radar"
-          git pull --rebase
-          git push
+          # Main may move while this scheduled job is fetching data.
+          # Retry by replaying only our generated data commit on the latest main.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Railway data published"
+              exit 0
+            fi
+            echo "Main changed during push (attempt $attempt); retrying..."
+            sleep $((attempt * 2))
+          done
+          echo "::error::Unable to publish railway data after five attempts"
+          exit 1

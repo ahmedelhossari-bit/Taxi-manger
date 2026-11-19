@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-19T13:57:14.478211+00:00",
+  "updated": "2026-11-19T14:45:42.952751+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,43 +8,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1213",
-          "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "14:47",
-          "expected": "15:04",
-          "delay": 17,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 56",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "15:07",
-          "expected": "15:23",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
-          "train": "EC 103",
+          "train": "REX 6 (Zug-Nr. 7622)",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "14:00",
-          "expected": "14:57",
-          "delay": 57,
+          "direction": "Deutschkreutz",
+          "planned": "15:23",
+          "expected": "15:52",
+          "delay": 29,
           "cancelled": false
         },
         {
-          "train": "RJX 56",
+          "train": "REX 65 (Zug-Nr. 7822)",
           "board": "DEP",
-          "direction": "Praha hl.n.",
-          "planned": "15:10",
-          "expected": "15:26",
-          "delay": 16,
+          "direction": "Wulkaprodersdorf",
+          "planned": "15:23",
+          "expected": "15:52",
+          "delay": 29,
+          "cancelled": false
+        },
+        {
+          "train": "REX 92 (Zug-Nr. 2793)",
+          "board": "DEP",
+          "direction": "Hartberg",
+          "planned": "15:50",
+          "expected": "16:20",
+          "delay": 30,
           "cancelled": false
         }
       ],
-      "records": 82,
+      "records": 91,
       "errors": []
     },
     {
@@ -53,16 +44,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 103",
-          "board": "ARR",
-          "direction": "Warszawa Wschodnia",
-          "planned": "14:30",
-          "expected": "15:13",
-          "delay": 43,
+          "train": "EC 202",
+          "board": "DEP",
+          "direction": "Krakow Glowny",
+          "planned": "15:30",
+          "expected": "15:50",
+          "delay": 20,
           "cancelled": false
         }
       ],
-      "records": 77,
+      "records": 81,
       "errors": []
     },
     {
@@ -71,61 +62,97 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 103",
+          "train": "REX 6 (Zug-Nr. 7622)",
           "board": "ARR",
-          "direction": "Warszawa Wschodnia",
-          "planned": "14:06",
-          "expected": "15:01",
-          "delay": 55,
+          "direction": "Bratislava-Petrzalka",
+          "planned": "15:29",
+          "expected": "15:57",
+          "delay": 28,
           "cancelled": false
         },
         {
-          "train": "EC 1213",
+          "train": "REX 65 (Zug-Nr. 7822)",
           "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "14:40",
-          "expected": "15:00",
-          "delay": 20,
+          "direction": "Bratislava-Petrzalka",
+          "planned": "15:29",
+          "expected": "15:57",
+          "delay": 28,
           "cancelled": false
         },
         {
-          "train": "RJX 56",
+          "train": "EC 144",
           "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "15:00",
-          "expected": "15:19",
-          "delay": 19,
+          "direction": "Budapest-Keleti",
+          "planned": "15:36",
+          "expected": "15:48",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "EC 103",
+          "train": "EC 202",
+          "board": "ARR",
+          "direction": "Wien Westbahnhof",
+          "planned": "15:51",
+          "expected": "16:02",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "REX 92 (Zug-Nr. 2793)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "15:55",
+          "expected": "16:24",
+          "delay": 29,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7622)",
+          "board": "DEP",
+          "direction": "Deutschkreutz",
+          "planned": "15:31",
+          "expected": "15:58",
+          "delay": 27,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7822)",
+          "board": "DEP",
+          "direction": "Wulkaprodersdorf",
+          "planned": "15:31",
+          "expected": "15:58",
+          "delay": 27,
+          "cancelled": false
+        },
+        {
+          "train": "EC 144",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
-          "planned": "14:08",
-          "expected": "15:02",
-          "delay": 54,
+          "planned": "15:38",
+          "expected": "15:49",
+          "delay": 11,
           "cancelled": false
         },
         {
-          "train": "EC 1213",
+          "train": "EC 202",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "14:42",
-          "expected": "15:00",
-          "delay": 18,
+          "direction": "Krakow Glowny",
+          "planned": "15:53",
+          "expected": "16:03",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "RJX 56",
+          "train": "REX 92 (Zug-Nr. 2793)",
           "board": "DEP",
-          "direction": "Praha hl.n.",
-          "planned": "15:02",
-          "expected": "15:20",
-          "delay": 18,
+          "direction": "Hartberg",
+          "planned": "15:57",
+          "expected": "16:25",
+          "delay": 28,
           "cancelled": false
         }
       ],
-      "records": 122,
+      "records": 128,
       "errors": []
     },
     {
@@ -143,8 +170,27 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 31,
+      "alerts": [
+        {
+          "train": "RJX19985",
+          "board": "ARR",
+          "direction": "Ötztal Bahnhof",
+          "planned": "15:57",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "RJX19970",
+          "board": "DEP",
+          "direction": "Ötztal",
+          "planned": "17:02",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 32,
       "errors": []
     }
   ]

@@ -1,21 +1,77 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-19T04:52:56.343697+00:00",
+  "updated": "2026-11-19T05:51:51.801448+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 93,
+      "alerts": [
+        {
+          "train": "EC 463",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "06:32",
+          "expected": "07:10",
+          "delay": 38,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7706)",
+          "board": "ARR",
+          "direction": "Bratislava-Petrzalka",
+          "planned": "06:45",
+          "expected": "07:01",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "EC 463",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "06:40",
+          "expected": "07:13",
+          "delay": 33,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 563",
+          "board": "DEP",
+          "direction": "Flughafen Wien",
+          "planned": "06:42",
+          "expected": "06:57",
+          "delay": 15,
+          "cancelled": false
+        }
+      ],
+      "records": 92,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 72,
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1605)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "06:37",
+          "expected": "07:21",
+          "delay": 44,
+          "cancelled": false
+        },
+        {
+          "train": "REX 51 (Zug-Nr. 1610)",
+          "board": "DEP",
+          "direction": "St.Pölten Hbf",
+          "planned": "06:53",
+          "expected": "07:26",
+          "delay": 33,
+          "cancelled": false
+        }
+      ],
+      "records": 77,
       "errors": []
     },
     {
@@ -28,8 +84,8 @@
           "board": "ARR",
           "direction": "Salzburg Hbf",
           "planned": "06:24",
-          "expected": "06:55",
-          "delay": 31,
+          "expected": "07:05",
+          "delay": 41,
           "cancelled": false
         },
         {
@@ -37,12 +93,12 @@
           "board": "DEP",
           "direction": "Budapest-Keleti",
           "planned": "06:27",
-          "expected": "06:56",
-          "delay": 29,
+          "expected": "07:07",
+          "delay": 40,
           "cancelled": false
         }
       ],
-      "records": 123,
+      "records": 119,
       "errors": []
     },
     {
@@ -60,8 +116,18 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 30,
+      "alerts": [
+        {
+          "train": "RJ 563",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "06:57",
+          "expected": "07:16",
+          "delay": 19,
+          "cancelled": false
+        }
+      ],
+      "records": 29,
       "errors": []
     }
   ]

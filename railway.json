@@ -1,21 +1,12 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-19T10:34:51.301127+00:00",
+  "updated": "2026-11-19T11:34:01.025064+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
       "alerts": [
-        {
-          "train": "EC 140",
-          "board": "ARR",
-          "direction": "Nyiregyhaza",
-          "planned": "11:20",
-          "expected": "11:35",
-          "delay": 15,
-          "cancelled": false
-        },
         {
           "train": "EC 203",
           "board": "ARR",
@@ -26,12 +17,12 @@
           "cancelled": false
         },
         {
-          "train": "S 60 (Zug-Nr. 26035)",
-          "board": "DEP",
-          "direction": "Bruck/Leitha",
-          "planned": "11:21",
-          "expected": "11:36",
-          "delay": 15,
+          "train": "REX 8 (Zug-Nr. 2515)",
+          "board": "ARR",
+          "direction": "Bratislava hl.st.",
+          "planned": "12:46",
+          "expected": "12:59",
+          "delay": 13,
           "cancelled": false
         },
         {
@@ -44,15 +35,25 @@
           "cancelled": false
         }
       ],
-      "records": 89,
+      "records": 84,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 80,
+      "alerts": [
+        {
+          "train": "EC 203",
+          "board": "ARR",
+          "direction": "Krakow Glowny",
+          "planned": "12:30",
+          "expected": "13:06",
+          "delay": 36,
+          "cancelled": false
+        }
+      ],
+      "records": 78,
       "errors": []
     },
     {
@@ -65,8 +66,8 @@
           "board": "ARR",
           "direction": "Krakow Glowny",
           "planned": "12:06",
-          "expected": "12:53",
-          "delay": 47,
+          "expected": "12:54",
+          "delay": 48,
           "cancelled": false
         },
         {
@@ -74,12 +75,12 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "12:08",
-          "expected": "12:54",
-          "delay": 46,
+          "expected": "12:55",
+          "delay": 47,
           "cancelled": false
         }
       ],
-      "records": 115,
+      "records": 111,
       "errors": []
     },
     {

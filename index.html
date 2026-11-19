@@ -209,6 +209,63 @@ let noticePolling=false;async function pollDriverRequests(){if(document.hidden||
  new MutationObserver(apply).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
 </script>
+<style>
+#tpCalendarStatement{margin:16px 0;padding:14px;background:#25262b;border:1px solid #4b4337;border-radius:14px}
+#tpCalendarStatement .tpCalStat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+#tpCalendarStatement .tpCalStat>div{background:#1b1c20;border-radius:10px;padding:10px;overflow-wrap:anywhere}
+#tpCalendarStatement .tpCalStat small{display:block;color:#aaa;margin-bottom:5px}
+#tpCalendarStatement .tpCalStat strong{color:#d8b575;font-size:19px}
+#tpCalendarStatement .tpCalEvent{border-top:1px solid #494949;padding:12px 0;display:flex;align-items:center;justify-content:space-between;gap:8px}
+#tpCalendarStatement .tpCalEvent button{width:auto!important;min-width:72px!important;margin:0!important;padding:9px!important;background:#703c42!important;color:white!important;font-size:12px!important}
+#tpFinLegacy #history{display:none!important}
+</style>
+<script>
+(function(){
+ const q=id=>document.getElementById(id),cal=q('proCalendar'),day=q('day');
+ if(!cal||!day||q('tpCalendarStatement'))return;
+ const box=document.createElement('div');box.id='tpCalendarStatement';
+ const notes=q('proNote');if(notes)notes.before(box);else cal.append(box);
+ const ar=['أكل وشرب','بنزين','غسيل العربية','ركن وغرامات','شخصية','أخرى'];
+ const words={
+ ar:{title:'تفاصيل اليوم',gross:'إجمالي المشاوير',net:'صافي التشغيل',expenses:'المصروفات',rent:'إيجار السيارة',hours:'ساعات العمل',start:'بداية الشيفت',end:'نهاية الشيفت',breaks:'الاستراحات',trips:'المشاوير',timeline:'سجل العمليات',empty:'لا توجد عمليات مسجلة',delete:'حذف',confirm:'حذف هذه العملية؟',note:'ملاحظات اليوم',condition:'ظروف اليوم',km:'كيلومترات اليوم',save:'حفظ تفاصيل اليوم',details:'تفاصيل اليوم',calendar:'التقويم الشهري',cats:ar},
+ en:{title:'Daily details',gross:'Trip revenue',net:'Operating net',expenses:'Expenses',rent:'Car rental',hours:'Working hours',start:'Shift start',end:'Shift end',breaks:'Breaks',trips:'Trips',timeline:'Trip & expense history',empty:'No recorded transactions',delete:'Delete',confirm:'Delete this entry?',note:'Daily notes',condition:'Day conditions',km:'Daily kilometres',save:'Save daily details',details:'Daily details',calendar:'Monthly calendar',cats:['Food & drinks','Fuel','Car wash','Parking & fines','Personal','Other']},
+ de:{title:'Tagesdetails',gross:'Fahrtumsatz',net:'Betriebsergebnis',expenses:'Ausgaben',rent:'Fahrzeugmiete',hours:'Arbeitsstunden',start:'Schichtbeginn',end:'Schichtende',breaks:'Pausen',trips:'Fahrten',timeline:'Fahrten und Ausgaben',empty:'Keine Einträge',delete:'Löschen',confirm:'Eintrag löschen?',note:'Tagesnotizen',condition:'Tagesbedingungen',km:'Tageskilometer',save:'Tagesdetails speichern',details:'Tagesdetails',calendar:'Monatskalender',cats:['Essen & Trinken','Kraftstoff','Autowäsche','Parken & Strafen','Privat','Sonstiges']}
+ };
+ const money=n=>new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR'}).format(n||0);
+ const sum=a=>a.reduce((v,x)=>v+(Number(x.amount)||0),0);
+ const clock=t=>t?new Date(t).toLocaleTimeString('en-GB',{timeZone:'Europe/Vienna',hour:'2-digit',minute:'2-digit'}):'—';
+ const append=(parent,tag,value,cls)=>{const e=document.createElement(tag);if(cls)e.className=cls;e.textContent=value;parent.append(e);return e};
+ function draw(){
+  if(cal.classList.contains('prohidden'))return;
+  const lang=(document.documentElement.lang||'ar').split('-')[0],t=words[lang]||words.en,d=day.value;
+  const trips=db.trips.filter(x=>x.date===d),expenses=db.expenses.filter(x=>x.date===d),sh=db.shifts[d],rent=(Number(db.settings.rent)||0)/7;
+  const headings=cal.querySelectorAll('h2,h3');if(headings[0])headings[0].textContent=t.calendar;if(headings[1])headings[1].textContent=t.note;
+  const labels=cal.querySelectorAll('label');if(labels[0])labels[0].textContent=t.condition;if(labels[1])labels[1].textContent=t.km;
+  if(q('proSave'))q('proSave').textContent=t.save;if(q('proDetails'))q('proDetails').textContent=t.details;
+  box.replaceChildren();append(box,'h3',t.title+' · '+d);
+  const stats=append(box,'div','', 'tpCalStat');
+  for(const [label,value] of [[t.gross,money(sum(trips))],[t.net,money(sum(trips)-sum(expenses)-rent)],[t.expenses,money(sum(expenses))],[t.rent,money(rent)],[t.trips,String(trips.length)],[t.hours,hours(d).toFixed(2)+' h']]){
+   const item=append(stats,'div','');append(item,'small',label);append(item,'strong',value);
+  }
+  append(box,'p',t.start+': '+clock(sh?.start)+' · '+t.end+': '+clock(sh?.end));
+  const breaks=sh?.breaks||[];append(box,'p',t.breaks+': '+breaks.map((b,i)=>(i+1)+'. '+clock(b[0])+'–'+clock(b[1])).join(' | ')+(sh?.pause?' · '+clock(sh.pause)+'–…':''));
+  append(box,'h3',t.timeline);
+  const events=[...db.trips.map((x,i)=>({x,i,k:'trips'})),...db.expenses.map((x,i)=>({x,i,k:'expenses'}))].filter(v=>v.x.date===d).sort((a,b)=>String(a.x.time||'').localeCompare(String(b.x.time||'')));
+  if(!events.length)append(box,'p',t.empty);
+  for(const v of events){
+   const row=append(box,'div','', 'tpCalEvent'),description=append(row,'span',(v.x.time||'—')+' · '+(v.k==='trips'?'+':'−')+money(v.x.amount)+' · '+(v.k==='trips'?(v.x.area||t.trips):(t.cats[ar.indexOf(v.x.category)]||v.x.category||t.expenses)));
+   description.style.flex='1';description.style.overflowWrap='anywhere';
+   const button=append(row,'button',t.delete);button.type='button';button.onclick=()=>{if(!confirm(t.confirm))return;db[v.k].splice(v.i,1);save();draw()};
+  }
+ }
+ q('proDetails').onclick=()=>{draw();box.scrollIntoView({behavior:'smooth',block:'start'})};
+ cal.addEventListener('click',e=>{if(e.target.closest('#proDays button'))setTimeout(draw,0)});
+ day.addEventListener('change',()=>setTimeout(draw,0));
+ document.addEventListener('click',e=>{if(e.target.closest('#tpDrawer,#proNav'))setTimeout(draw,50)});
+ new MutationObserver(()=>setTimeout(draw,0)).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+ draw();
+})();
+</script>
 </body>
 </html>
 <script>

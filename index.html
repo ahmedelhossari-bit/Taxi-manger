@@ -203,7 +203,7 @@ let noticePolling=false;async function pollDriverRequests(){if(document.hidden||
  [t.daily,t.rental,t.monthly].forEach((value,i)=>{if(settingLabels[i])settingLabels[i].textContent=value});
  if(saveSettings)saveSettings.textContent=t.save;if(copy)copy.textContent=t.copy;if(restore)restore.textContent=t.restore;
  backup.placeholder=t.placeholder;
- [...category.options].forEach((opt,i)=>{if(t.categories[i])opt.textContent=t.categories[i]});
+ [...category.options].forEach((opt,i)=>{if(t.categories[i]){if(!opt.hasAttribute('value'))opt.value=labels.ar.categories[i];opt.textContent=t.categories[i]}});
  }
  apply();
  new MutationObserver(apply).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
@@ -369,7 +369,8 @@ el('proNext').onclick=()=>{m.setMonth(m.getMonth()+1);draw();bills()};
 let nav=document.createElement('nav');nav.id='proNav';
 function show(k){
 [...sections,cal,finance].forEach(x=>x.classList.add('prohidden'));
-let chosen=k==='home'?sections.slice(0,4):k==='calendar'?[cal]:k==='analysis'?sections.filter(x=>x.querySelector('#analysis,#reports,#best,#history')):[finance];
+let chosen=k==='home'?sections.slice(0,4):k==='calendar'?[cal]:k==='analysis'?sections.filter(x=>x.querySelector('#analysis,#reports,#best,#history')):[finance,...sections.filter(x=>x.querySelector('#target,#backupData'))];
+if(k==='finance'){const settingsSection=sections.find(x=>x.querySelector('#target'));if(settingsSection&&finance)settingsSection.before(finance)}
 chosen.forEach(x=>x.classList.remove('prohidden'));
 if(k==='calendar'){readDay();draw()}
 if(k==='finance'){draw();bills()}

@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-19T19:53:50.625507+00:00",
+  "updated": "2026-11-19T20:44:01.143705+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,21 +8,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 343",
-          "board": "ARR",
-          "direction": "Wien Westbahnhof",
-          "planned": "20:28",
-          "expected": "20:56",
-          "delay": 28,
-          "cancelled": false
-        },
-        {
           "train": "RJX 261",
           "board": "ARR",
           "direction": "München Hbf",
           "planned": "21:32",
-          "expected": "21:59",
-          "delay": 27,
+          "expected": "22:11",
+          "delay": 39,
           "cancelled": false
         },
         {
@@ -30,21 +21,21 @@
           "board": "ARR",
           "direction": "Ötztal Bahnhof",
           "planned": "21:32",
-          "expected": "21:59",
-          "delay": 27,
+          "expected": "22:11",
+          "delay": 39,
           "cancelled": false
         },
         {
-          "train": "EC 343",
+          "train": "RJX 261",
           "board": "DEP",
           "direction": "Budapest-Keleti",
-          "planned": "20:37",
-          "expected": "20:58",
-          "delay": 21,
+          "planned": "21:40",
+          "expected": "22:14",
+          "delay": 34,
           "cancelled": false
         }
       ],
-      "records": 84,
+      "records": 88,
       "errors": []
     },
     {
@@ -52,7 +43,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 70,
+      "records": 75,
       "errors": []
     },
     {
@@ -61,21 +52,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "IC 530",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "21:00",
-          "expected": "21:10",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
           "train": "RJX 261",
           "board": "ARR",
           "direction": "München Hbf",
           "planned": "21:25",
-          "expected": "21:55",
-          "delay": 30,
+          "expected": "22:06",
+          "delay": 41,
           "cancelled": false
         },
         {
@@ -83,8 +65,17 @@
           "board": "ARR",
           "direction": "Ötztal Bahnhof",
           "planned": "21:25",
-          "expected": "21:55",
-          "delay": 30,
+          "expected": "22:06",
+          "delay": 41,
+          "cancelled": false
+        },
+        {
+          "train": "EC 1219",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "22:40",
+          "expected": "22:50",
+          "delay": 10,
           "cancelled": false
         },
         {
@@ -92,8 +83,8 @@
           "board": "DEP",
           "direction": "Budapest-Keleti",
           "planned": "21:27",
-          "expected": "21:56",
-          "delay": 29,
+          "expected": "22:07",
+          "delay": 40,
           "cancelled": false
         },
         {
@@ -101,12 +92,12 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "21:27",
-          "expected": "21:56",
-          "delay": 29,
+          "expected": "22:07",
+          "delay": 40,
           "cancelled": false
         }
       ],
-      "records": 126,
+      "records": 127,
       "errors": []
     },
     {
@@ -125,7 +116,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 29,
+      "records": 27,
       "errors": []
     }
   ]

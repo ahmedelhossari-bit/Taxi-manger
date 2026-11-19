@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-19T03:45:50.113913+00:00",
+  "updated": "2026-11-19T04:52:56.343697+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -15,15 +15,34 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 67,
+      "records": 72,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 134,
+      "alerts": [
+        {
+          "train": "EC 463",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "06:24",
+          "expected": "06:55",
+          "delay": 31,
+          "cancelled": false
+        },
+        {
+          "train": "EC 463",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "06:27",
+          "expected": "06:56",
+          "delay": 29,
+          "cancelled": false
+        }
+      ],
+      "records": 123,
       "errors": []
     },
     {
@@ -42,7 +61,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 30,
       "errors": []
     }
   ]

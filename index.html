@@ -39,7 +39,7 @@
 <h2>💳 المصاريف</h2>
 <select id="category"><option>أكل وشرب</option><option>بنزين</option><option>غسيل العربية</option><option>ركن وغرامات</option><option>شخصية</option><option>أخرى</option></select>
 <input id="expense" type="text" inputmode="decimal" autocomplete="off" placeholder="المبلغ">
-<button onclick="add('expenses')">حفظ المصروف</button>
+<button id="tpSaveExpense" onclick="add('expenses')">حفظ المصروف</button>
 </section>
 <section><h2>📊 التحليل اليومي</h2><div id="analysis"></div><div id="chart"></div></section>
 <section><h2>📈 الأسبوع والشهر</h2><div id="reports"></div></section>
@@ -171,6 +171,16 @@ const beam=document.createElement('div');beam.className='tpFBeam';const sub=docu
 q('tpFLogin').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;try{const s=await api('/auth/v1/token?grant_type=password','POST',{email:q('tpFEmail').value.trim(),password:q('tpFPassword').value});q('tpFPassword').value='';await check(s.access_token);persist(s);verified=true;announce();await refresh()}catch(e){reset();msg(e.message)}finally{busy=false}};
 q('tpFRefresh').onclick=refresh;q('tpFLogout').onclick=async()=>{const t=token;reset();try{if(t)await api('/auth/v1/logout','POST',{},t)}catch(e){}msg('Signed out')};q('tpFClose').onclick=()=>d.close();d.addEventListener('close',()=>{q('tpFPassword').value=''});
 let noticePolling=false;async function pollDriverRequests(){if(document.hidden||noticePolling||!window.tpNotify||!window.tpFounderVerified)return;noticePolling=true;try{if(!await restore())return;const rows=await api('/rest/v1/driver_profiles?status=eq.pending&select=id,full_name,created_at','GET',undefined,token);for(const row of rows)window.tpNotify('driver:'+row.id,'New driver request',row.full_name)}catch(e){}finally{noticePolling=false}}setInterval(pollDriverRequests,30000);window.addEventListener('tp-founder-verified',()=>{setTimeout(pollDriverRequests,1000)});window.tpFounderSignOut=()=>q('tpFLogout').click();restore();setInterval(()=>{if(!busy)restore()},60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!busy)restore()});window.tpFounderMenu=(add,close,ix)=>{const label=['إدارة السائقين','Driver Management','Fahrerverwaltung'][ix];add('button','♙  '+label).onclick=()=>{close();if(!d.open)d.showModal();restore().then(ok=>{if(ok)refresh();else msg('Sign in or retry connection')})}};
+})();
+</script>
+<script>
+(function(){
+ const btn=document.getElementById('tpSaveExpense');
+ if(!btn)return;
+ const labels={ar:'حفظ المصروف',en:'Save expense',de:'Ausgabe speichern'};
+ function update(){const lang=(document.documentElement.lang||'ar').split('-')[0];btn.textContent=labels[lang]||labels.en}
+ update();
+ new MutationObserver(update).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
 </script>
 </body>

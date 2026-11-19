@@ -37,7 +37,7 @@
 <h2>💳 المصاريف</h2>
 <select id="category"><option>أكل وشرب</option><option>بنزين</option><option>غسيل العربية</option><option>ركن وغرامات</option><option>شخصية</option><option>أخرى</option></select>
 <input id="expense" type="text" inputmode="decimal" autocomplete="off" placeholder="المبلغ">
-<button onclick="add('expenses')">حفظ المصروف</button>
+<button id="tpSaveExpense" onclick="add('expenses')">حفظ المصروف</button>
 </section>
 <section><h2>📊 التحليل اليومي</h2><div id="analysis"></div><div id="chart"></div></section>
 <section><h2>📈 الأسبوع والشهر</h2><div id="reports"></div></section>
@@ -138,6 +138,16 @@ function loadSettings(){for(let k of ['target','rent','fuel','fixed'])$(k).value
 $('day').value=openShiftDate()||today();loadSettings();render();setInterval(render,30000);
 </script>
 
+<script>
+(function(){
+ const btn=document.getElementById('tpSaveExpense');
+ if(!btn)return;
+ const labels={ar:'حفظ المصروف',en:'Save expense',de:'Ausgabe speichern'};
+ function update(){const lang=(document.documentElement.lang||'ar').split('-')[0];btn.textContent=labels[lang]||labels.en}
+ update();
+ new MutationObserver(update).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+})();
+</script>
 </body>
 </html>
 <script>

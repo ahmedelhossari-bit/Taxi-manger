@@ -1219,7 +1219,10 @@ const q=id=>document.getElementById(id),status=t=>q('tmStatus').textContent=t;
 let routeRequest=0,routeAbort=null;let map,init,watch=null,position,marker,accuracy,destination,destMarker,routeLine,stands,access,searching=false,routing=false,accessBusy=false,lastSearch=0;
 function visible(){return !s.classList.contains('prohidden')}
 const trafficKey='taxipro_traffic_v1';
-let trafficOn=false,previousSample=null,traffic={};
+let trafficOn=true,previousSample=null,traffic={};
+const trafficPrefKey='taxipro_traffic_learning_enabled_v1';
+try{trafficOn=localStorage.getItem(trafficPrefKey)!=='false'}catch(e){}
+function persistTrafficPref(){try{localStorage.setItem(trafficPrefKey,String(trafficOn))}catch(e){}}
 try{traffic=JSON.parse(localStorage.getItem(trafficKey)||'{}')||{}}catch(e){}
 function pruneTraffic(){const cutoff=Date.now()-90*86400000;for(const k of Object.keys(traffic))if(traffic[k].last<cutoff)delete traffic[k];const keys=Object.keys(traffic).sort((a,b)=>traffic[b].last-traffic[a].last);for(const k of keys.slice(5000))delete traffic[k]}
 function paintTraffic(){q('tmLearn').textContent='Traffic learning: '+(trafficOn?'ON':'OFF');q('tmLearning').textContent=Object.keys(traffic).length+' local time/location buckets · 90-day retention · no upload · GPS only while map open. Historical observations, not live congestion.'}
@@ -1237,8 +1240,8 @@ const dt=new Date(t);const local=new Intl.DateTimeFormat('en-GB',{timeZone:'Euro
 const lat=Math.round(a.latitude*500)/500,lon=Math.round(a.longitude*500)/500;
 const key=[lat,lon,weekday,hour].join('|');const v=traffic[key]||{n:0,avg:0,last:t};const n=Math.min(v.n+1,1000);v.avg=Math.round((v.avg+(speed-v.avg)/n)*10)/10;v.n=n;v.last=t;traffic[key]=v;saveTraffic();
 }
-q('tmLearn').onclick=()=>{if(trafficOn){trafficOn=false;previousSample=null;paintTraffic();return}if(!confirm('Enable optional local traffic learning? Approximate location, weekday, hour and speed averages stay on this device for up to 90 days. No upload. You can stop or delete at any time. Only with the map open.'))return;trafficOn=true;previousSample=null;paintTraffic()};
-q('tmForget').onclick=()=>{if(!confirm('Delete all locally learned traffic history?'))return;trafficOn=false;previousSample=null;traffic={};try{localStorage.removeItem(trafficKey)}catch(e){}paintTraffic()};
+q('tmLearn').onclick=()=>{if(trafficOn){trafficOn=false;persistTrafficPref();previousSample=null;paintTraffic();return}if(!confirm('Enable optional local traffic learning? Approximate location, weekday, hour and speed averages stay on this device for up to 90 days. No upload. You can stop or delete at any time. Only with the map open.'))return;trafficOn=true;persistTrafficPref();previousSample=null;paintTraffic()};
+q('tmForget').onclick=()=>{if(!confirm('Delete all locally learned traffic history?'))return;trafficOn=false;persistTrafficPref();previousSample=null;traffic={};try{localStorage.removeItem(trafficKey)}catch(e){}paintTraffic()};
 document.addEventListener('visibilitychange',()=>{previousSample=null});
 pruneTraffic();try{localStorage.setItem(trafficKey,JSON.stringify(traffic))}catch(e){}paintTraffic();
 

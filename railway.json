@@ -1,122 +1,13 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-19T17:46:55.900296+00:00",
+  "updated": "2026-11-19T18:47:26.823385+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "RJX 165",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "18:32",
-          "expected": "18:50",
-          "delay": 18,
-          "cancelled": false
-        },
-        {
-          "train": "RJ 555",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "18:36",
-          "expected": "18:47",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "REX 6 (Zug-Nr. 7629)",
-          "board": "ARR",
-          "direction": "Deutschkreutz Bahnhof",
-          "planned": "18:37",
-          "expected": "18:47",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "REX 65 (Zug-Nr. 7829)",
-          "board": "ARR",
-          "direction": "Wulkaprodersdorf Bahnhof",
-          "planned": "18:37",
-          "expected": "18:47",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "REX 64 (Zug-Nr. 2654)",
-          "board": "ARR",
-          "direction": "Eisenstadt Bahnhof",
-          "planned": "18:42",
-          "expected": "18:56",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
-          "train": "REX 63 (Zug-Nr. 7954)",
-          "board": "ARR",
-          "direction": "Fertöszentmiklós",
-          "planned": "18:42",
-          "expected": "18:56",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
-          "train": "EC 1217",
-          "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "18:47",
-          "expected": "19:25",
-          "delay": 38,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25056)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "18:56",
-          "expected": "19:16",
-          "delay": 20,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 165",
-          "board": "DEP",
-          "direction": "Budapest-Keleti",
-          "planned": "18:42",
-          "expected": "18:53",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "REX 64 (Zug-Nr. 2661)",
-          "board": "DEP",
-          "direction": "Eisenstadt",
-          "planned": "18:48",
-          "expected": "18:59",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "REX 63 (Zug-Nr. 7961)",
-          "board": "DEP",
-          "direction": "Pamhagen",
-          "planned": "18:48",
-          "expected": "18:59",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25056)",
-          "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "18:58",
-          "expected": "19:17",
-          "delay": 19,
-          "cancelled": false
-        }
-      ],
-      "records": 99,
+      "alerts": [],
+      "records": 85,
       "errors": []
     },
     {
@@ -125,25 +16,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 146",
+          "train": "REX 51 (Zug-Nr. 1657)",
           "board": "ARR",
-          "direction": "Uzhhorod",
-          "planned": "18:00",
-          "expected": "18:53",
-          "delay": 53,
+          "direction": "St.Pölten Hbf",
+          "planned": "19:37",
+          "expected": "19:52",
+          "delay": 15,
           "cancelled": false
         },
         {
-          "train": "S 50 (Zug-Nr. 20059)",
+          "train": "REX 51 (Zug-Nr. 1659)",
           "board": "ARR",
-          "direction": "Eichgraben NÖ-Altlengbach Bahnhst",
-          "planned": "19:03",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "St.Pölten Hbf",
+          "planned": "20:07",
+          "expected": "20:19",
+          "delay": 12,
+          "cancelled": false
         }
       ],
-      "records": 79,
+      "records": 73,
       "errors": []
     },
     {
@@ -152,70 +43,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 165",
+          "train": "EC 148",
           "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "18:25",
-          "expected": "18:46",
-          "delay": 21,
-          "cancelled": false
-        },
-        {
-          "train": "S 2 (Zug-Nr. 22763)",
-          "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "18:38",
-          "expected": "18:48",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "EC 1217",
-          "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "18:40",
-          "expected": "19:21",
-          "delay": 41,
-          "cancelled": false
-        },
-        {
-          "train": "S 3 (Zug-Nr. 25056)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "18:50",
-          "expected": "19:10",
-          "delay": 20,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 165",
-          "board": "DEP",
           "direction": "Budapest-Keleti",
-          "planned": "18:27",
-          "expected": "18:47",
-          "delay": 20,
+          "planned": "19:36",
+          "expected": "19:48",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "EC 1217",
+          "train": "EC 148",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "18:42",
-          "expected": "19:21",
-          "delay": 39,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25056)",
-          "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "18:51",
-          "expected": "19:11",
-          "delay": 20,
+          "direction": "Wien Westbahnhof",
+          "planned": "19:38",
+          "expected": "19:49",
+          "delay": 11,
           "cancelled": false
         }
       ],
-      "records": 127,
+      "records": 128,
       "errors": []
     },
     {
@@ -234,7 +80,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 33,
+      "records": 32,
       "errors": []
     }
   ]

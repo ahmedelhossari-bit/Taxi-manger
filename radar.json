@@ -1,6 +1,6 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-20T04:57:44.672806+00:00",
+  "updated": "2026-11-20T06:04:33.836107+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
@@ -41,31 +41,30 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 3,
-      "alertCause": "police activity",
-      "reasonId": 47,
-      "reasonName": "Polizeieinsatz",
-      "name": "I20261120-0001-F01",
-      "parentName": "I20261120-0001",
+      "alertCauseId": 137,
+      "alertCause": "miscellaneous",
+      "reasonId": 14,
+      "reasonName": "Betriebsstörung",
+      "name": "I20261120-0002",
+      "parentName": "I20261120-0002",
       "priority": "1",
       "owner": "WL",
-      "title": "U3: Polizeieinsatz",
-      "description": "Linie U3: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie U3: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "title": "U3: Betriebsstörung",
+      "description": "Die Linie U3 fährt derzeit zwischen den Stationen Herrengasse und Landstraße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig. Voraussichtliche Dauer: 07:20 Uhr. Grund: Betriebsstörung im Haltestellenbereich Stephansplatz.",
+      "descriptionHTML": "<p>Die Linie U3 fährt derzeit zwischen den Stationen Herrengasse und Landstraße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig.</p><p>Voraussichtliche Dauer: 07:20 Uhr.</p><p>Grund: Betriebsstörung im Haltestellenbereich Stephansplatz.</p>",
       "languages": [
         {
           "de": {
-            "title": "U3: Polizeieinsatz",
-            "descriptionPlain": "Linie U3: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie U3: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+            "title": "U3: Betriebsstörung",
+            "descriptionPlain": "Die Linie U3 fährt derzeit zwischen den Stationen Herrengasse und Landstraße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig. Voraussichtliche Dauer: 07:20 Uhr. Grund: Betriebsstörung im Haltestellenbereich Stephansplatz.",
+            "descriptionHtml": "<p>Die Linie U3 fährt derzeit zwischen den Stationen Herrengasse und Landstraße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig.</p><p>Voraussichtliche Dauer: 07:20 Uhr.</p><p>Grund: Betriebsstörung im Haltestellenbereich Stephansplatz.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-20T05:29:00.000+0100",
-        "resume": "2026-11-20T05:40:00.000+0100",
-        "created": "2026-11-20T05:40:00.000+0100",
-        "lastUpdate": "2026-11-20T05:40:00.000+0100"
+        "start": "2026-11-20T06:57:00.000+0100",
+        "created": "2026-11-20T06:58:00.000+0100",
+        "lastUpdate": "2026-11-20T07:01:00.000+0100"
       },
       "status": "active",
       "attributes": {
@@ -84,7 +83,7 @@
         }
       ],
       "relatedStops": [
-        4916
+        4911
       ]
     },
     {
@@ -147,6 +146,50 @@
           "lineId": 127,
           "lineName": "27",
           "vehicleType": "ptTram"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261120-0003",
+      "parentName": "I20261120-0003",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U6: Verspätungen",
+      "description": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Schadhaftes Fahrzeug.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U6: Verspätungen",
+            "descriptionPlain": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Schadhaftes Fahrzeug.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-20T07:04:00.000+0100",
+        "created": "2026-11-20T07:04:00.000+0100",
+        "lastUpdate": "2026-11-20T07:04:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U6": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U6"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 306,
+          "lineName": "U6",
+          "vehicleType": "ptMetro"
         }
       ]
     },
@@ -225,12 +268,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1884-101",
-      "parentName": "R1884-101",
+      "name": "R1882-101",
+      "parentName": "R1882-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
       "time": {
         "start": "2026-11-18T00:00:17.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
@@ -239,7 +282,7 @@
         "1"
       ],
       "relatedStops": [
-        1884
+        1882
       ]
     },
     {
@@ -271,12 +314,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1881-101",
-      "parentName": "R1881-101",
+      "name": "R1884-101",
+      "parentName": "R1884-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
       "time": {
         "start": "2026-11-18T00:00:17.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
@@ -285,30 +328,7 @@
         "1"
       ],
       "relatedStops": [
-        1881
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1882-101",
-      "parentName": "R1882-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-18T00:00:17.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1882
+        1884
       ]
     },
     {
@@ -386,6 +406,29 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1881-101",
+      "parentName": "R1881-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-18T00:00:17.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1881
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R3886-480",
       "parentName": "R3886-480",
       "priority": "1",
@@ -409,21 +452,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2343-626",
-      "parentName": "R2343-626",
+      "name": "R2359-125",
+      "parentName": "R2359-125",
       "priority": "1",
       "owner": "WL",
-      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
       "time": {
         "start": "2026-11-19T00:00:28.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
       },
       "relatedLines": [
-        "26E"
+        "25"
       ],
       "relatedStops": [
-        2343
+        2359
       ]
     },
     {
@@ -570,21 +613,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2359-125",
-      "parentName": "R2359-125",
+      "name": "R2343-626",
+      "parentName": "R2343-626",
       "priority": "1",
       "owner": "WL",
-      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
       "time": {
         "start": "2026-11-19T00:00:28.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
       },
       "relatedLines": [
-        "25"
+        "26E"
       ],
       "relatedStops": [
-        2359
+        2343
       ]
     },
     {

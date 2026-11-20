@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T10:39:25.013552+00:00",
+  "updated": "2026-11-20T11:35:47.912215+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,30 +8,12 @@
       "status": "PARTIAL",
       "alerts": [
         {
-          "train": "EC 140",
+          "train": "EC 204",
           "board": "ARR",
-          "direction": "Nyiregyhaza",
-          "planned": "11:20",
-          "expected": "11:45",
-          "delay": 25,
-          "cancelled": false
-        },
-        {
-          "train": "RJX19981",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "11:32",
-          "expected": "11:43",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 61",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "11:32",
-          "expected": "11:43",
-          "delay": 11,
+          "direction": "Wien Westbahnhof",
+          "planned": "11:58",
+          "expected": "12:51",
+          "delay": 53,
           "cancelled": false
         },
         {
@@ -39,12 +21,30 @@
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "12:07",
-          "expected": "12:48",
-          "delay": 41,
+          "expected": "12:56",
+          "delay": 49,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19975",
+          "board": "ARR",
+          "direction": "Ötztal Bahnhof",
+          "planned": "12:32",
+          "expected": "12:56",
+          "delay": 24,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 55",
+          "board": "ARR",
+          "direction": "Praha hl.n.",
+          "planned": "12:49",
+          "expected": "13:00",
+          "delay": 11,
           "cancelled": false
         }
       ],
-      "records": 44,
+      "records": 45,
       "errors": [
         "{'meth': 'StationBoard', 'err': 'FAIL', 'errTxt': 'HCI Service: request failed', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
       ]
@@ -55,25 +55,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 909",
+          "train": "S 50 (Zug-Nr. 20133)",
           "board": "ARR",
-          "direction": "Wels Hbf",
-          "planned": "11:22",
-          "expected": "11:41",
-          "delay": 19,
-          "cancelled": false
+          "direction": "Unterpurkersdorf Bahnhst",
+          "planned": "12:48",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         },
         {
           "train": "EC 204",
           "board": "DEP",
           "direction": "Krakow Glowny",
           "planned": "11:30",
-          "expected": "11:45",
-          "delay": 15,
+          "expected": "12:35",
+          "delay": 65,
           "cancelled": false
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20132)",
+          "board": "DEP",
+          "direction": "Unterpurkersdorf",
+          "planned": "12:41",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 83,
+      "records": 80,
       "errors": []
     },
     {
@@ -82,12 +91,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 140",
+          "train": "EC 204",
           "board": "ARR",
-          "direction": "Nyiregyhaza",
-          "planned": "11:36",
-          "expected": "11:52",
-          "delay": 16,
+          "direction": "Wien Westbahnhof",
+          "planned": "11:51",
+          "expected": "12:47",
+          "delay": 56,
           "cancelled": false
         },
         {
@@ -95,57 +104,48 @@
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "12:00",
-          "expected": "12:44",
-          "delay": 44,
+          "expected": "12:52",
+          "delay": 52,
           "cancelled": false
         },
         {
-          "train": "RJX19981",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "11:27",
-          "expected": "11:39",
-          "delay": 12,
+          "train": "RJX19975",
+          "board": "ARR",
+          "direction": "Ötztal Bahnhof",
+          "planned": "12:25",
+          "expected": "12:50",
+          "delay": 25,
           "cancelled": false
         },
         {
-          "train": "RJX 61",
+          "train": "EC 204",
           "board": "DEP",
-          "direction": "Budapest-Keleti",
-          "planned": "11:27",
-          "expected": "11:39",
-          "delay": 12,
+          "direction": "Krakow Glowny",
+          "planned": "11:53",
+          "expected": "12:48",
+          "delay": 55,
           "cancelled": false
-        },
-        {
-          "train": "EC 140",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "11:38",
-          "expected": "11:53",
-          "delay": 15,
-          "cancelled": false
-        },
-        {
-          "train": "S 3 (Zug-Nr. 25027)",
-          "board": "DEP",
-          "direction": "Leobersdorf",
-          "planned": "11:39",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         },
         {
           "train": "IC 538",
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "12:02",
-          "expected": "12:45",
-          "delay": 43,
+          "expected": "12:53",
+          "delay": 51,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19975",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "12:27",
+          "expected": "12:51",
+          "delay": 24,
           "cancelled": false
         }
       ],
-      "records": 120,
+      "records": 115,
       "errors": []
     },
     {
@@ -164,7 +164,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 29,
       "errors": []
     }
   ]

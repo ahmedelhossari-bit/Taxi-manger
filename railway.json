@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T23:12:33.555603+00:00",
+  "updated": "2026-11-20T23:56:57.296018+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,30 +8,30 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 367",
+          "train": "REX 8 (Zug-Nr. 2539)",
           "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "00:35",
-          "expected": "00:45",
-          "delay": 10,
+          "direction": "Bratislava hl.st.",
+          "planned": "00:46",
+          "expected": "01:01",
+          "delay": 15,
           "cancelled": false
         }
       ],
-      "records": 88,
+      "records": 77,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
-      "status": "PARTIAL",
+      "status": "OK",
       "alerts": [
         {
           "train": "CJX 5 (Zug-Nr. 1947)",
           "board": "ARR",
           "direction": "St.Valentin Bahnhof",
           "planned": "00:43",
-          "expected": "00:55",
-          "delay": 12,
+          "expected": "00:56",
+          "delay": 13,
           "cancelled": false
         },
         {
@@ -39,59 +39,29 @@
           "board": "ARR",
           "direction": "St.Pölten Hbf",
           "planned": "01:10",
-          "expected": "01:20",
+          "expected": "01:25",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "REX 51 (Zug-Nr. 1682)",
+          "board": "DEP",
+          "direction": "St.Pölten Hbf",
+          "planned": "00:53",
+          "expected": "01:03",
           "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 44,
-      "errors": [
-        "{'meth': 'StationBoard', 'err': 'FAIL', 'errTxt': 'HCI Service: request failed', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
-      ]
+      "records": 73,
+      "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "RJX 367",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "00:28",
-          "expected": "00:40",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 367",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "00:30",
-          "expected": "00:41",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "REX 6 (Zug-Nr. 7640)",
-          "board": "DEP",
-          "direction": "Deutschkreutz",
-          "planned": "00:34",
-          "expected": "00:46",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "REX 65 (Zug-Nr. 7840)",
-          "board": "DEP",
-          "direction": "Wulkaprodersdorf",
-          "planned": "00:34",
-          "expected": "00:46",
-          "delay": 12,
-          "cancelled": false
-        }
-      ],
-      "records": 115,
+      "alerts": [],
+      "records": 83,
       "errors": []
     },
     {
@@ -110,7 +80,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 13,
+      "records": 5,
       "errors": []
     }
   ]

@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T13:55:50.716051+00:00",
+  "updated": "2026-11-20T14:47:44.427279+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,30 +8,12 @@
       "status": "PARTIAL",
       "alerts": [
         {
-          "train": "REX 8 (Zug-Nr. 2519)",
-          "board": "ARR",
-          "direction": "Bratislava hl.st.",
-          "planned": "14:46",
-          "expected": "14:57",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "IC 648",
-          "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "14:48",
-          "expected": "15:01",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
           "train": "RJ 251",
           "board": "ARR",
           "direction": "Berlin Hbf (Tiefgeschoß)",
           "planned": "14:54",
-          "expected": "15:35",
-          "delay": 41,
+          "expected": "15:50",
+          "delay": 56,
           "cancelled": false
         },
         {
@@ -39,12 +21,21 @@
           "board": "ARR",
           "direction": "Villach Hbf",
           "planned": "15:07",
-          "expected": "15:39",
-          "delay": 32,
+          "expected": "15:50",
+          "delay": 43,
+          "cancelled": false
+        },
+        {
+          "train": "EC 205",
+          "board": "ARR",
+          "direction": "Krakow Glowny",
+          "planned": "15:49",
+          "expected": "16:00",
+          "delay": 11,
           "cancelled": false
         }
       ],
-      "records": 41,
+      "records": 47,
       "errors": [
         "{'meth': 'StationBoard', 'err': 'FAIL', 'errTxt': 'HCI Service: request failed', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
       ]
@@ -55,25 +46,79 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 51 (Zug-Nr. 1639)",
+          "train": "CJX 5 (Zug-Nr. 1927)",
           "board": "ARR",
-          "direction": "St.Pölten Hbf",
-          "planned": "15:07",
+          "direction": "Amstetten NÖ Bahnhof",
+          "planned": "15:42",
+          "expected": "15:58",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20145)",
+          "board": "ARR",
+          "direction": "Unterpurkersdorf Bahnhst",
+          "planned": "15:48",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "S 50 (Zug-Nr. 20142)",
+          "train": "WB 965",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "15:52",
+          "expected": "16:04",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "REX 51 (Zug-Nr. 1643)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "16:07",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "CJX 5 (Zug-Nr. 9104)",
           "board": "DEP",
-          "direction": "Unterpurkersdorf",
-          "planned": "15:11",
+          "direction": "Amstetten",
+          "planned": "15:48",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "REX 51 (Zug-Nr. 1646)",
+          "board": "DEP",
+          "direction": "St.Pölten Hbf",
+          "planned": "15:53",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20046)",
+          "board": "DEP",
+          "direction": "Eichgraben-Altlengbach",
+          "planned": "15:56",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20146)",
+          "board": "DEP",
+          "direction": "Tullnerbach-Pressbaum",
+          "planned": "16:11",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 79,
+      "records": 81,
       "errors": []
     },
     {
@@ -83,24 +128,15 @@
       "alerts": [
         {
           "train": "RJX 56",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "15:00",
-          "expected": "15:35",
-          "delay": 35,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 56",
           "board": "DEP",
           "direction": "Praha hl.n.",
           "planned": "15:02",
-          "expected": "15:36",
-          "delay": 34,
+          "expected": "15:47",
+          "delay": 45,
           "cancelled": false
         }
       ],
-      "records": 124,
+      "records": 123,
       "errors": []
     },
     {
@@ -119,7 +155,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 30,
+      "records": 31,
       "errors": []
     }
   ]

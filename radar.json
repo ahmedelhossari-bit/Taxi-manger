@@ -1,6 +1,6 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-20T14:02:31.137223+00:00",
+  "updated": "2026-11-20T14:59:23.729725+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
@@ -70,54 +70,6 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 71,
-      "alertCause": "vehicle on the line",
-      "reasonId": 25,
-      "reasonName": "Falschparker",
-      "name": "I20261120-0018-F01",
-      "parentName": "I20261120-0018",
-      "priority": "1",
-      "owner": "WL",
-      "title": "42: Falschparker",
-      "description": "Linie 42: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 42: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "42: Falschparker",
-            "descriptionPlain": "Linie 42: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 42: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-20T14:07:00.000+0100",
-        "resume": "2026-11-20T14:13:00.000+0100",
-        "created": "2026-11-20T14:13:00.000+0100",
-        "lastUpdate": "2026-11-20T14:13:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "42": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "42"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 142,
-          "lineName": "42",
-          "vehicleType": "ptTram"
-        }
-      ],
-      "relatedStops": [
-        3875
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
       "alertCauseId": 45,
       "alertCause": "construction work",
       "reasonId": 27,
@@ -164,91 +116,45 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 77,
-      "alertCause": "accident",
-      "reasonId": 13,
-      "reasonName": "Fremder Verkehrsunfall",
-      "name": "I20261120-0016-F01",
-      "parentName": "I20261120-0016",
+      "alertCauseId": 122,
+      "alertCause": "demonstration",
+      "reasonId": 22,
+      "reasonName": "Demonstration",
+      "name": "I20261120-0021",
+      "parentName": "I20261120-0021",
       "priority": "1",
       "owner": "WL",
-      "title": "10: Fremder Verkehrsunfall",
-      "description": "Linie 10: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 10: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "title": "13A: Demonstration",
+      "description": "Linie 13A: Kein Betrieb zwischen Neubaugasse U und Burggasse, Neubaugasse. Ersatz: Linien U3, U6 und 48A. Voraussichtliche Dauer: 18:00 Uhr. Grund: Demonstration im Bereich Neubaugasse.",
+      "descriptionHTML": "<p>Linie 13A: <br>Kein Betrieb zwischen Neubaugasse U und Burggasse, Neubaugasse.</p><p>Ersatz: Linien U3, U6 und 48A.</p><p>Voraussichtliche Dauer: 18:00 Uhr.</p><p>Grund: Demonstration im Bereich Neubaugasse.</p>",
       "languages": [
         {
           "de": {
-            "title": "10: Fremder Verkehrsunfall",
-            "descriptionPlain": "Linie 10: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 10: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+            "title": "13A: Demonstration",
+            "descriptionPlain": "Linie 13A: Kein Betrieb zwischen Neubaugasse U und Burggasse, Neubaugasse. Ersatz: Linien U3, U6 und 48A. Voraussichtliche Dauer: 18:00 Uhr. Grund: Demonstration im Bereich Neubaugasse.",
+            "descriptionHtml": "<p>Linie 13A: <br>Kein Betrieb zwischen Neubaugasse U und Burggasse, Neubaugasse.</p><p>Ersatz: Linien U3, U6 und 48A.</p><p>Voraussichtliche Dauer: 18:00 Uhr.</p><p>Grund: Demonstration im Bereich Neubaugasse.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-20T13:56:00.000+0100",
-        "resume": "2026-11-20T14:14:00.000+0100",
-        "created": "2026-11-20T14:14:00.000+0100",
-        "lastUpdate": "2026-11-20T14:14:00.000+0100"
+        "start": "2026-11-20T15:49:00.000+0100",
+        "created": "2026-11-20T15:51:00.000+0100",
+        "lastUpdate": "2026-11-20T15:51:00.000+0100"
       },
-      "location": "Wernhardtstraße",
+      "location": "Neubaugasse",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "10": "ptTram"
+          "13A": "ptBusCity"
         }
       },
       "relatedLines": [
-        "10"
+        "13A"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 110,
-          "lineName": "10",
-          "vehicleType": "ptTram"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 77,
-      "alertCause": "accident",
-      "reasonId": 12,
-      "reasonName": "Verkehrsunfall",
-      "name": "I20261120-0013",
-      "parentName": "I20261120-0013",
-      "priority": "1",
-      "owner": "WL",
-      "title": "35A: Verkehrsunfall",
-      "description": "Linie 35A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsunfall.",
-      "descriptionHTML": "<p>Linie 35A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsunfall.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "35A: Verkehrsunfall",
-            "descriptionPlain": "Linie 35A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsunfall.",
-            "descriptionHtml": "<p>Linie 35A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsunfall.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-20T13:38:00.000+0100",
-        "resume": "2026-11-20T13:38:00.000+0100",
-        "created": "2026-11-20T13:38:00.000+0100",
-        "lastUpdate": "2026-11-20T13:38:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "35A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "35A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 435,
-          "lineName": "35A",
+          "lineId": 413,
+          "lineName": "13A",
           "vehicleType": "ptBusCity"
         }
       ]
@@ -294,6 +200,51 @@
         {
           "lineId": 410,
           "lineName": "10A",
+          "vehicleType": "ptBusCity"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 60,
+      "alertCause": "heavy traffic",
+      "reasonId": 46,
+      "reasonName": "Verkehrsüberlastung",
+      "name": "I20261120-0020",
+      "parentName": "I20261120-0020",
+      "priority": "1",
+      "owner": "WL",
+      "title": "7A: Verkehrsüberlastung",
+      "description": "Linie 7A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
+      "descriptionHTML": "<p>Linie 7A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "7A: Verkehrsüberlastung",
+            "descriptionPlain": "Linie 7A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
+            "descriptionHtml": "<p>Linie 7A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-20T15:04:00.000+0100",
+        "resume": "2026-11-20T15:04:00.000+0100",
+        "created": "2026-11-20T15:05:00.000+0100",
+        "lastUpdate": "2026-11-20T15:05:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "7A": "ptBusCity"
+        }
+      },
+      "relatedLines": [
+        "7A"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 407,
+          "lineName": "7A",
           "vehicleType": "ptBusCity"
         }
       ]
@@ -427,98 +378,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1882-101",
-      "parentName": "R1882-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-18T00:00:17.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1882
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1883-101",
-      "parentName": "R1883-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-18T00:00:17.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1883
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1884-101",
-      "parentName": "R1884-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "time": {
-        "start": "2026-11-18T00:00:17.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1884
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1881-101",
-      "parentName": "R1881-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-18T00:00:17.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1881
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1880-101",
       "parentName": "R1880-101",
       "priority": "1",
@@ -588,6 +447,98 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1881-101",
+      "parentName": "R1881-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-18T00:00:17.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1881
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1884-101",
+      "parentName": "R1884-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "time": {
+        "start": "2026-11-18T00:00:17.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1884
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1883-101",
+      "parentName": "R1883-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-18T00:00:17.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1883
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1882-101",
+      "parentName": "R1882-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-18T00:00:17.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1882
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R3886-480",
       "parentName": "R3886-480",
       "priority": "1",
@@ -611,21 +562,67 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2373-127",
-      "parentName": "R2373-127",
+      "name": "R2343-125",
+      "parentName": "R2343-125",
       "priority": "1",
       "owner": "WL",
-      "title": "Linie 25 in\nTokiostraße benützen",
-      "description": "Linie 25 in\nTokiostraße benützen",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
       "time": {
         "start": "2026-11-19T00:00:28.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
       },
       "relatedLines": [
-        "27"
+        "25"
       ],
       "relatedStops": [
-        2373
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2378-627",
+      "parentName": "R2378-627",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Busse halten\nSatzingerweg 41",
+      "description": "Busse halten\nSatzingerweg 41",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2378
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-626",
+      "parentName": "R2343-626",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2343
       ]
     },
     {
@@ -657,12 +654,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2373-125",
-      "parentName": "R2373-125",
+      "name": "R2371-125",
+      "parentName": "R2371-125",
       "priority": "1",
       "owner": "WL",
-      "title": "Züge halten\nDonaufelder Straße 175-177",
-      "description": "Züge halten\nDonaufelder Straße 175-177",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
       "time": {
         "start": "2026-11-19T00:00:28.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
@@ -671,7 +668,7 @@
         "25"
       ],
       "relatedStops": [
-        2373
+        2371
       ]
     },
     {
@@ -680,21 +677,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2343-626",
-      "parentName": "R2343-626",
+      "name": "R2370-125",
+      "parentName": "R2370-125",
       "priority": "1",
       "owner": "WL",
-      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
       "time": {
         "start": "2026-11-19T00:00:28.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
       },
       "relatedLines": [
-        "26E"
+        "25"
       ],
       "relatedStops": [
-        2343
+        2370
       ]
     },
     {
@@ -749,29 +746,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R318-437",
-      "parentName": "R318-437",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
-      "description": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "37A"
-      ],
-      "relatedStops": [
-        318
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2345-127",
       "parentName": "R2345-127",
       "priority": "1",
@@ -787,6 +761,29 @@
       ],
       "relatedStops": [
         2345
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R318-437",
+      "parentName": "R318-437",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
+      "description": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-20T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "37A"
+      ],
+      "relatedStops": [
+        318
       ]
     },
     {
@@ -864,21 +861,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2371-125",
-      "parentName": "R2371-125",
+      "name": "R2373-127",
+      "parentName": "R2373-127",
       "priority": "1",
       "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "title": "Linie 25 in\nTokiostraße benützen",
+      "description": "Linie 25 in\nTokiostraße benützen",
       "time": {
         "start": "2026-11-19T00:00:28.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
       },
       "relatedLines": [
-        "25"
+        "27"
       ],
       "relatedStops": [
-        2371
+        2373
       ]
     },
     {
@@ -887,12 +884,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2370-125",
-      "parentName": "R2370-125",
+      "name": "R2373-125",
+      "parentName": "R2373-125",
       "priority": "1",
       "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "title": "Züge halten\nDonaufelder Straße 175-177",
+      "description": "Züge halten\nDonaufelder Straße 175-177",
       "time": {
         "start": "2026-11-19T00:00:28.000+0100",
         "end": "2026-11-20T23:59:59.000+0100"
@@ -901,53 +898,7 @@
         "25"
       ],
       "relatedStops": [
-        2370
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2378-627",
-      "parentName": "R2378-627",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Busse halten\nSatzingerweg 41",
-      "description": "Busse halten\nSatzingerweg 41",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2378
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-125",
-      "parentName": "R2343-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-20T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2343
+        2373
       ]
     },
     {
@@ -1048,52 +999,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R14-171",
-      "parentName": "R14-171",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Demonstration",
-      "description": "Fahrtbehinderung\nwegen Demonstration",
-      "time": {
-        "start": "2026-11-20T10:56:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "71"
-      ],
-      "relatedStops": [
-        14
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R15-171",
-      "parentName": "R15-171",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Demonstration",
-      "description": "Fahrtbehinderung\nwegen Demonstration",
-      "time": {
-        "start": "2026-11-20T10:56:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "71"
-      ],
-      "relatedStops": [
-        15
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R18-171",
       "parentName": "R18-171",
       "priority": "1",
@@ -1109,52 +1014,6 @@
       ],
       "relatedStops": [
         18
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R19-171",
-      "parentName": "R19-171",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Demonstration",
-      "description": "Fahrtbehinderung\nwegen Demonstration",
-      "time": {
-        "start": "2026-11-20T10:56:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "71"
-      ],
-      "relatedStops": [
-        19
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R81-171",
-      "parentName": "R81-171",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Demonstration",
-      "description": "Fahrtbehinderung\nwegen Demonstration",
-      "time": {
-        "start": "2026-11-20T10:56:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "71"
-      ],
-      "relatedStops": [
-        81
       ]
     },
     {
@@ -1186,21 +1045,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R46-171",
-      "parentName": "R46-171",
+      "name": "R14-171",
+      "parentName": "R14-171",
       "priority": "1",
       "owner": "WL",
-      "title": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
-      "description": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
+      "title": "Fahrtbehinderung\nwegen Demonstration",
+      "description": "Fahrtbehinderung\nwegen Demonstration",
       "time": {
-        "start": "2026-11-20T10:57:00.000+0100",
-        "end": "2026-11-20T18:00:00.000+0100"
+        "start": "2026-11-20T10:56:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
       },
       "relatedLines": [
         "71"
       ],
       "relatedStops": [
-        46
+        14
       ]
     },
     {
@@ -1209,21 +1068,67 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R51-171",
-      "parentName": "R51-171",
+      "name": "R81-171",
+      "parentName": "R81-171",
       "priority": "1",
       "owner": "WL",
-      "title": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
-      "description": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
+      "title": "Fahrtbehinderung\nwegen Demonstration",
+      "description": "Fahrtbehinderung\nwegen Demonstration",
       "time": {
-        "start": "2026-11-20T10:57:00.000+0100",
-        "end": "2026-11-20T18:00:00.000+0100"
+        "start": "2026-11-20T10:56:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
       },
       "relatedLines": [
         "71"
       ],
       "relatedStops": [
-        51
+        81
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R15-171",
+      "parentName": "R15-171",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Demonstration",
+      "description": "Fahrtbehinderung\nwegen Demonstration",
+      "time": {
+        "start": "2026-11-20T10:56:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
+      },
+      "relatedLines": [
+        "71"
+      ],
+      "relatedStops": [
+        15
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R19-171",
+      "parentName": "R19-171",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Demonstration",
+      "description": "Fahrtbehinderung\nwegen Demonstration",
+      "time": {
+        "start": "2026-11-20T10:56:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
+      },
+      "relatedLines": [
+        "71"
+      ],
+      "relatedStops": [
+        19
       ]
     },
     {
@@ -1255,8 +1160,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R49-171",
-      "parentName": "R49-171",
+      "name": "R44-171",
+      "parentName": "R44-171",
       "priority": "1",
       "owner": "WL",
       "title": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
@@ -1269,7 +1174,7 @@
         "71"
       ],
       "relatedStops": [
-        49
+        44
       ]
     },
     {
@@ -1301,8 +1206,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R44-171",
-      "parentName": "R44-171",
+      "name": "R46-171",
+      "parentName": "R46-171",
       "priority": "1",
       "owner": "WL",
       "title": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
@@ -1315,7 +1220,76 @@
         "71"
       ],
       "relatedStops": [
-        44
+        46
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R49-171",
+      "parentName": "R49-171",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
+      "description": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
+      "time": {
+        "start": "2026-11-20T10:57:00.000+0100",
+        "end": "2026-11-20T18:00:00.000+0100"
+      },
+      "relatedLines": [
+        "71"
+      ],
+      "relatedStops": [
+        49
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R51-171",
+      "parentName": "R51-171",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
+      "description": "Betriebsstörung\nBetrieb ab Schwarzenbergplatz",
+      "time": {
+        "start": "2026-11-20T10:57:00.000+0100",
+        "end": "2026-11-20T18:00:00.000+0100"
+      },
+      "relatedLines": [
+        "71"
+      ],
+      "relatedStops": [
+        51
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R51-101",
+      "parentName": "R51-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Resselgasse",
+      "description": "Demonstration\nBetrieb ab Resselgasse",
+      "time": {
+        "start": "2026-11-20T10:58:00.000+0100",
+        "end": "2026-11-20T18:30:00.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        51
       ]
     },
     {
@@ -1393,21 +1367,113 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R51-101",
-      "parentName": "R51-101",
+      "name": "R14-101",
+      "parentName": "R14-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Resselgasse",
-      "description": "Demonstration\nBetrieb ab Resselgasse",
+      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
       "time": {
-        "start": "2026-11-20T10:58:00.000+0100",
-        "end": "2026-11-20T18:30:00.000+0100"
+        "start": "2026-11-20T10:58:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
       },
       "relatedLines": [
         "1"
       ],
       "relatedStops": [
-        51
+        14
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R22-101",
+      "parentName": "R22-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "time": {
+        "start": "2026-11-20T10:58:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        22
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R20-101",
+      "parentName": "R20-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "time": {
+        "start": "2026-11-20T10:58:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        20
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R19-101",
+      "parentName": "R19-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "time": {
+        "start": "2026-11-20T10:58:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        19
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R18-101",
+      "parentName": "R18-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
+      "time": {
+        "start": "2026-11-20T10:58:30.000+0100",
+        "end": "2026-11-20T18:15:00.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        18
       ]
     },
     {
@@ -1462,121 +1528,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R14-101",
-      "parentName": "R14-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "time": {
-        "start": "2026-11-20T10:58:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        14
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R18-101",
-      "parentName": "R18-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "time": {
-        "start": "2026-11-20T10:58:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        18
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R19-101",
-      "parentName": "R19-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "time": {
-        "start": "2026-11-20T10:58:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        19
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R20-101",
-      "parentName": "R20-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "time": {
-        "start": "2026-11-20T10:58:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        20
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R22-101",
-      "parentName": "R22-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "description": "Demonstration\nBetrieb ab Julius-Raab-Platz",
-      "time": {
-        "start": "2026-11-20T10:58:30.000+0100",
-        "end": "2026-11-20T18:15:00.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        22
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R50-136",
       "parentName": "R50-136",
       "priority": "1",
@@ -1592,52 +1543,6 @@
       ],
       "relatedStops": [
         50
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R49-136",
-      "parentName": "R49-136",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Schwarzenbergplatz",
-      "description": "Demonstration\nBetrieb ab Schwarzenbergplatz",
-      "time": {
-        "start": "2026-11-20T10:59:00.000+0100",
-        "end": "2026-11-20T18:30:00.000+0100"
-      },
-      "relatedLines": [
-        "D"
-      ],
-      "relatedStops": [
-        49
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R46-136",
-      "parentName": "R46-136",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Demonstration\nBetrieb ab Schwarzenbergplatz",
-      "description": "Demonstration\nBetrieb ab Schwarzenbergplatz",
-      "time": {
-        "start": "2026-11-20T10:59:00.000+0100",
-        "end": "2026-11-20T18:30:00.000+0100"
-      },
-      "relatedLines": [
-        "D"
-      ],
-      "relatedStops": [
-        46
       ]
     },
     {
@@ -1669,8 +1574,54 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R18-136",
-      "parentName": "R18-136",
+      "name": "R46-136",
+      "parentName": "R46-136",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Schwarzenbergplatz",
+      "description": "Demonstration\nBetrieb ab Schwarzenbergplatz",
+      "time": {
+        "start": "2026-11-20T10:59:00.000+0100",
+        "end": "2026-11-20T18:30:00.000+0100"
+      },
+      "relatedLines": [
+        "D"
+      ],
+      "relatedStops": [
+        46
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R49-136",
+      "parentName": "R49-136",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Schwarzenbergplatz",
+      "description": "Demonstration\nBetrieb ab Schwarzenbergplatz",
+      "time": {
+        "start": "2026-11-20T10:59:00.000+0100",
+        "end": "2026-11-20T18:30:00.000+0100"
+      },
+      "relatedLines": [
+        "D"
+      ],
+      "relatedStops": [
+        49
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R14-136",
+      "parentName": "R14-136",
       "priority": "1",
       "owner": "WL",
       "title": "Demonstration\nBetrieb ab Börse",
@@ -1683,7 +1634,7 @@
         "D"
       ],
       "relatedStops": [
-        18
+        14
       ]
     },
     {
@@ -1715,8 +1666,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R14-136",
-      "parentName": "R14-136",
+      "name": "R18-136",
+      "parentName": "R18-136",
       "priority": "1",
       "owner": "WL",
       "title": "Demonstration\nBetrieb ab Börse",
@@ -1729,7 +1680,7 @@
         "D"
       ],
       "relatedStops": [
-        14
+        18
       ]
     },
     {
@@ -1807,374 +1758,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R568-110",
-      "parentName": "R568-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "description": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "time": {
-        "start": "2026-11-20T13:57:49.000+0100",
-        "end": "2026-11-20T15:11:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        568
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R566-110",
-      "parentName": "R566-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "description": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "time": {
-        "start": "2026-11-20T13:57:49.000+0100",
-        "end": "2026-11-20T15:11:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        566
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1599-110",
-      "parentName": "R1599-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "time": {
-        "start": "2026-11-20T14:05:19.000+0100",
-        "end": "2026-11-20T15:04:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        1599
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R150-142",
-      "parentName": "R150-142",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-20T14:08:49.000+0100",
-        "end": "2026-11-20T15:08:00.000+0100"
-      },
-      "relatedLines": [
-        "42"
-      ],
-      "relatedStops": [
-        150
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R148-142",
-      "parentName": "R148-142",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-20T14:08:49.000+0100",
-        "end": "2026-11-20T15:08:00.000+0100"
-      },
-      "relatedLines": [
-        "42"
-      ],
-      "relatedStops": [
-        148
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1342-142",
-      "parentName": "R1342-142",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-20T14:08:49.000+0100",
-        "end": "2026-11-20T15:08:00.000+0100"
-      },
-      "relatedLines": [
-        "42"
-      ],
-      "relatedStops": [
-        1342
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R493-142",
-      "parentName": "R493-142",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-20T14:08:50.000+0100",
-        "end": "2026-11-20T15:08:00.000+0100"
-      },
-      "relatedLines": [
-        "42"
-      ],
-      "relatedStops": [
-        493
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1212-142",
-      "parentName": "R1212-142",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-20T14:08:51.000+0100",
-        "end": "2026-11-20T15:08:00.000+0100"
-      },
-      "relatedLines": [
-        "42"
-      ],
-      "relatedStops": [
-        1212
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1213-142",
-      "parentName": "R1213-142",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-20T14:08:51.000+0100",
-        "end": "2026-11-20T15:08:00.000+0100"
-      },
-      "relatedLines": [
-        "42"
-      ],
-      "relatedStops": [
-        1213
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R569-110",
-      "parentName": "R569-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "description": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "time": {
-        "start": "2026-11-20T14:12:21.000+0100",
-        "end": "2026-11-20T15:11:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        569
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R567-110",
-      "parentName": "R567-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "description": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "time": {
-        "start": "2026-11-20T14:12:21.000+0100",
-        "end": "2026-11-20T15:11:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        567
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R565-110",
-      "parentName": "R565-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "description": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "time": {
-        "start": "2026-11-20T14:12:21.000+0100",
-        "end": "2026-11-20T15:11:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        565
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R575-110",
-      "parentName": "R575-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "description": "Fremdunfall\nBetrieb ab Linzer Straße",
-      "time": {
-        "start": "2026-11-20T14:12:21.000+0100",
-        "end": "2026-11-20T15:11:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        575
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R583-110",
-      "parentName": "R583-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Joachimsthalerplatz",
-      "description": "Fremdunfall\nBetrieb ab Joachimsthalerplatz",
-      "time": {
-        "start": "2026-11-20T14:12:51.000+0100",
-        "end": "2026-11-20T15:12:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        583
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R581-110",
-      "parentName": "R581-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nBetrieb ab Joachimsthalerplatz",
-      "description": "Fremdunfall\nBetrieb ab Joachimsthalerplatz",
-      "time": {
-        "start": "2026-11-20T14:12:51.000+0100",
-        "end": "2026-11-20T15:12:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        581
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R579-110",
-      "parentName": "R579-110",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fremdunfall\nUmleitung nach Baumgarten",
-      "description": "Fremdunfall\nUmleitung nach Baumgarten",
-      "time": {
-        "start": "2026-11-20T14:13:21.000+0100",
-        "end": "2026-11-20T15:12:00.000+0100"
-      },
-      "relatedLines": [
-        "10"
-      ],
-      "relatedStops": [
-        579
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R47-0",
       "parentName": "R47-0",
       "priority": "1",
@@ -2207,6 +1790,52 @@
       },
       "relatedStops": [
         17
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R665-413",
+      "parentName": "R665-413",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Neubaugasse",
+      "description": "Demonstration\nBetrieb ab Neubaugasse",
+      "time": {
+        "start": "2026-11-20T15:52:30.000+0100",
+        "end": "2026-11-20T22:00:00.000+0100"
+      },
+      "relatedLines": [
+        "13A"
+      ],
+      "relatedStops": [
+        665
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3528-413",
+      "parentName": "R3528-413",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Demonstration\nBetrieb ab Burggasse",
+      "description": "Demonstration\nBetrieb ab Burggasse",
+      "time": {
+        "start": "2026-11-20T15:53:02.000+0100",
+        "end": "2026-11-20T21:00:00.000+0100"
+      },
+      "relatedLines": [
+        "13A"
+      ],
+      "relatedStops": [
+        3528
       ]
     },
     {

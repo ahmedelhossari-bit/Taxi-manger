@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T18:47:31.317533+00:00",
+  "updated": "2026-11-20T19:51:18.329132+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,30 +8,39 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 255",
-          "board": "ARR",
-          "direction": "Praha hl.n.",
-          "planned": "18:54",
-          "expected": "19:53",
-          "delay": 59,
-          "cancelled": false
-        },
-        {
           "train": "EC 207",
           "board": "ARR",
           "direction": "Krakow Glowny",
           "planned": "19:49",
-          "expected": "20:26",
-          "delay": 37,
+          "expected": "21:00",
+          "delay": 71,
           "cancelled": false
         },
         {
-          "train": "RJX 264",
+          "train": "RJ 257",
+          "board": "ARR",
+          "direction": "Praha hl.n.",
+          "planned": "20:49",
+          "expected": "21:05",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 132",
+          "board": "ARR",
+          "direction": "Trieste Centrale",
+          "planned": "21:07",
+          "expected": "21:29",
+          "delay": 22,
+          "cancelled": false
+        },
+        {
+          "train": "EC 340",
           "board": "ARR",
           "direction": "Budapest-Keleti",
-          "planned": "20:20",
-          "expected": "20:31",
-          "delay": 11,
+          "planned": "21:20",
+          "expected": "21:32",
+          "delay": 12,
           "cancelled": false
         },
         {
@@ -39,57 +48,20 @@
           "board": "DEP",
           "direction": "Graz Hbf",
           "planned": "19:53",
-          "expected": "20:29",
-          "delay": 36,
+          "expected": "21:03",
+          "delay": 70,
           "cancelled": false
         }
       ],
-      "records": 85,
+      "records": 84,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "S 50 (Zug-Nr. 20161)",
-          "board": "ARR",
-          "direction": "Tullnerbach-Pressbaum Bahnhof",
-          "planned": "19:48",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "WB 967",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "19:52",
-          "expected": "20:04",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "S 50 (Zug-Nr. 20163)",
-          "board": "ARR",
-          "direction": "Unterpurkersdorf Bahnhst",
-          "planned": "20:18",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "REX 51 (Zug-Nr. 1662)",
-          "board": "DEP",
-          "direction": "St.Pölten Hbf",
-          "planned": "19:53",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        }
-      ],
-      "records": 79,
+      "alerts": [],
+      "records": 73,
       "errors": []
     },
     {
@@ -102,8 +74,17 @@
           "board": "ARR",
           "direction": "Krakow Glowny",
           "planned": "19:58",
-          "expected": "20:33",
-          "delay": 35,
+          "expected": "21:07",
+          "delay": 69,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 132",
+          "board": "ARR",
+          "direction": "Trieste Centrale",
+          "planned": "21:00",
+          "expected": "21:25",
+          "delay": 25,
           "cancelled": false
         },
         {
@@ -111,12 +92,21 @@
           "board": "DEP",
           "direction": "Graz Hbf",
           "planned": "20:00",
-          "expected": "20:34",
-          "delay": 34,
+          "expected": "21:08",
+          "delay": 68,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 132",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "21:02",
+          "expected": "21:26",
+          "delay": 24,
           "cancelled": false
         }
       ],
-      "records": 124,
+      "records": 129,
       "errors": []
     },
     {
@@ -135,7 +125,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 31,
+      "records": 29,
       "errors": []
     }
   ]

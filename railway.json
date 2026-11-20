@@ -1,12 +1,22 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T21:28:57.944565+00:00",
+  "updated": "2026-11-20T22:17:09.080813+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
+      "alerts": [
+        {
+          "train": "EC 462",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "23:20",
+          "expected": "23:34",
+          "delay": 14,
+          "cancelled": false
+        }
+      ],
       "records": 97,
       "errors": []
     },
@@ -15,7 +25,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 75,
+      "records": 79,
       "errors": []
     },
     {
@@ -23,7 +33,7 @@
       "id": "8100514",
       "status": "OK",
       "alerts": [],
-      "records": 139,
+      "records": 136,
       "errors": []
     },
     {
@@ -42,7 +52,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 24,
+      "records": 22,
       "errors": []
     }
   ]

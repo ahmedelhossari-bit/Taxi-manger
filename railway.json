@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T19:51:18.329132+00:00",
+  "updated": "2026-11-20T20:40:17.962171+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,60 +8,61 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 207",
+          "train": "RJX19961",
           "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "19:49",
-          "expected": "21:00",
-          "delay": 71,
+          "direction": "Ötztal Bahnhof",
+          "planned": "21:32",
+          "expected": "21:42",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "RJ 257",
+          "train": "RJX 261",
           "board": "ARR",
-          "direction": "Praha hl.n.",
-          "planned": "20:49",
-          "expected": "21:05",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 132",
-          "board": "ARR",
-          "direction": "Trieste Centrale",
-          "planned": "21:07",
-          "expected": "21:29",
-          "delay": 22,
+          "direction": "München Hbf",
+          "planned": "21:32",
+          "expected": "21:42",
+          "delay": 10,
           "cancelled": false
         },
         {
           "train": "EC 340",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "21:20",
-          "expected": "21:32",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "EC 207",
           "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "19:53",
-          "expected": "21:03",
-          "delay": 70,
+          "direction": "Wien Westbahnhof",
+          "planned": "21:30",
+          "expected": "21:40",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 84,
+      "records": 90,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 73,
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1665)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "21:37",
+          "expected": "21:47",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "WB 969",
+          "board": "ARR",
+          "direction": "Stuttgart Hbf",
+          "planned": "21:52",
+          "expected": "22:04",
+          "delay": 12,
+          "cancelled": false
+        }
+      ],
+      "records": 79,
       "errors": []
     },
     {
@@ -70,43 +71,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 207",
+          "train": "RJ 652",
           "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "19:58",
-          "expected": "21:07",
-          "delay": 69,
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "21:29",
+          "expected": "21:41",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "RJX 132",
-          "board": "ARR",
-          "direction": "Trieste Centrale",
-          "planned": "21:00",
-          "expected": "21:25",
-          "delay": 25,
-          "cancelled": false
-        },
-        {
-          "train": "EC 207",
+          "train": "RJ 652",
           "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "20:00",
-          "expected": "21:08",
-          "delay": 68,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 132",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "21:02",
-          "expected": "21:26",
-          "delay": 24,
+          "direction": "Villach Hbf",
+          "planned": "21:31",
+          "expected": "21:42",
+          "delay": 11,
           "cancelled": false
         }
       ],
-      "records": 129,
+      "records": 126,
       "errors": []
     },
     {
@@ -125,7 +108,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 29,
+      "records": 27,
       "errors": []
     }
   ]

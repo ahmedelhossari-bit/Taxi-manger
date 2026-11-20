@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T06:12:47.387466+00:00",
+  "updated": "2026-11-20T07:29:46.469040+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,32 +8,79 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 62 (Zug-Nr. 9430)",
+          "train": "S 80 (Zug-Nr. 25015)",
           "board": "ARR",
-          "direction": "Györ",
-          "planned": "07:25",
+          "direction": "Wien Aspern Nord Bahnhst",
+          "planned": "08:31",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 60 (Zug-Nr. 26024)",
+          "board": "ARR",
+          "direction": "Bruck/Leitha Bahnhof",
+          "planned": "08:39",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25015)",
+          "board": "DEP",
+          "direction": "Leobersdorf",
+          "planned": "08:33",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 95,
+      "records": 86,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 80,
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1616)",
+          "board": "DEP",
+          "direction": "St.Pölten Hbf",
+          "planned": "08:23",
+          "expected": "08:33",
+          "delay": 10,
+          "cancelled": false
+        }
+      ],
+      "records": 83,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 126,
+      "alerts": [
+        {
+          "train": "S 80 (Zug-Nr. 25015)",
+          "board": "ARR",
+          "direction": "Wien Aspern Nord Bahnhst",
+          "planned": "08:38",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 3 (Zug-Nr. 25015)",
+          "board": "DEP",
+          "direction": "Leobersdorf",
+          "planned": "08:39",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 129,
       "errors": []
     },
     {
@@ -52,7 +99,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 30,
+      "records": 28,
       "errors": []
     }
   ]

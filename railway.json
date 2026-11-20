@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T17:49:09.367581+00:00",
+  "updated": "2026-11-20T18:47:31.317533+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,52 +8,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1217",
-          "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "18:47",
-          "expected": "19:01",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
           "train": "RJ 255",
           "board": "ARR",
           "direction": "Praha hl.n.",
           "planned": "18:54",
-          "expected": "19:51",
-          "delay": 57,
+          "expected": "19:53",
+          "delay": 59,
           "cancelled": false
         },
         {
-          "train": "NJ 40490",
-          "board": "DEP",
-          "direction": "Amsterdam Centraal",
-          "planned": "18:36",
-          "expected": "19:06",
-          "delay": 30,
+          "train": "EC 207",
+          "board": "ARR",
+          "direction": "Krakow Glowny",
+          "planned": "19:49",
+          "expected": "20:26",
+          "delay": 37,
           "cancelled": false
         },
         {
-          "train": "NJ 492",
-          "board": "DEP",
-          "direction": "Hamburg-Altona",
-          "planned": "18:36",
-          "expected": "19:06",
-          "delay": 30,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 165",
-          "board": "DEP",
+          "train": "RJX 264",
+          "board": "ARR",
           "direction": "Budapest-Keleti",
-          "planned": "18:42",
-          "expected": "18:55",
-          "delay": 13,
+          "planned": "20:20",
+          "expected": "20:31",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "EC 207",
+          "board": "DEP",
+          "direction": "Graz Hbf",
+          "planned": "19:53",
+          "expected": "20:29",
+          "delay": 36,
           "cancelled": false
         }
       ],
-      "records": 95,
+      "records": 85,
       "errors": []
     },
     {
@@ -62,34 +53,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 51 (Zug-Nr. 1655)",
+          "train": "S 50 (Zug-Nr. 20161)",
           "board": "ARR",
-          "direction": "St.Pölten Hbf",
-          "planned": "19:07",
+          "direction": "Tullnerbach-Pressbaum Bahnhof",
+          "planned": "19:48",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "REX 51 (Zug-Nr. 1658)",
-          "board": "DEP",
-          "direction": "St.Pölten Hbf",
-          "planned": "18:53",
+          "train": "WB 967",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "19:52",
+          "expected": "20:04",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20163)",
+          "board": "ARR",
+          "direction": "Unterpurkersdorf Bahnhst",
+          "planned": "20:18",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "S 50 (Zug-Nr. 20158)",
+          "train": "REX 51 (Zug-Nr. 1662)",
           "board": "DEP",
-          "direction": "Unterpurkersdorf",
-          "planned": "19:11",
+          "direction": "St.Pölten Hbf",
+          "planned": "19:53",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 77,
+      "records": 79,
       "errors": []
     },
     {
@@ -98,43 +98,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1217",
+          "train": "EC 207",
           "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "18:40",
-          "expected": "18:57",
-          "delay": 17,
+          "direction": "Krakow Glowny",
+          "planned": "19:58",
+          "expected": "20:33",
+          "delay": 35,
           "cancelled": false
         },
         {
-          "train": "EC 1217",
+          "train": "EC 207",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "18:42",
-          "expected": "18:57",
-          "delay": 15,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 40490",
-          "board": "DEP",
-          "direction": "Amsterdam Centraal",
-          "planned": "18:44",
-          "expected": "19:12",
-          "delay": 28,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 492",
-          "board": "DEP",
-          "direction": "Hamburg-Altona",
-          "planned": "18:44",
-          "expected": "19:12",
-          "delay": 28,
+          "direction": "Graz Hbf",
+          "planned": "20:00",
+          "expected": "20:34",
+          "delay": 34,
           "cancelled": false
         }
       ],
-      "records": 123,
+      "records": 124,
       "errors": []
     },
     {
@@ -153,7 +135,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 34,
+      "records": 31,
       "errors": []
     }
   ]

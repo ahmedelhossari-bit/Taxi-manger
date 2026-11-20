@@ -1,42 +1,53 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-20T12:39:30.835485+00:00",
+  "updated": "2026-11-20T13:55:50.716051+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
-      "status": "OK",
+      "status": "PARTIAL",
       "alerts": [
         {
-          "train": "EC 142",
+          "train": "REX 8 (Zug-Nr. 2519)",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "13:20",
-          "expected": "13:47",
-          "delay": 27,
+          "direction": "Bratislava hl.st.",
+          "planned": "14:46",
+          "expected": "14:57",
+          "delay": 11,
           "cancelled": false
         },
         {
-          "train": "EC 142",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "13:30",
-          "expected": "13:50",
-          "delay": 20,
+          "train": "IC 648",
+          "board": "ARR",
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "14:48",
+          "expected": "15:01",
+          "delay": 13,
           "cancelled": false
         },
         {
-          "train": "IC 537",
-          "board": "DEP",
-          "direction": "Klagenfurt Hbf",
-          "planned": "13:53",
-          "expected": "14:05",
-          "delay": 12,
+          "train": "RJ 251",
+          "board": "ARR",
+          "direction": "Berlin Hbf (Tiefgeschoß)",
+          "planned": "14:54",
+          "expected": "15:35",
+          "delay": 41,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 56",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "15:07",
+          "expected": "15:39",
+          "delay": 32,
           "cancelled": false
         }
       ],
-      "records": 83,
-      "errors": []
+      "records": 41,
+      "errors": [
+        "{'meth': 'StationBoard', 'err': 'FAIL', 'errTxt': 'HCI Service: request failed', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
+      ]
     },
     {
       "name": "Wien Westbahnhof",
@@ -44,70 +55,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 50 (Zug-Nr. 20037)",
+          "train": "REX 51 (Zug-Nr. 1639)",
           "board": "ARR",
-          "direction": "Eichgraben NÖ-Altlengbach Bahnhst",
-          "planned": "13:33",
-          "expected": "13:54",
-          "delay": 21,
-          "cancelled": false
-        },
-        {
-          "train": "S 50 (Zug-Nr. 20137)",
-          "board": "ARR",
-          "direction": "Unterpurkersdorf Bahnhst",
-          "planned": "13:48",
+          "direction": "St.Pölten Hbf",
+          "planned": "15:07",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "WB 963",
-          "board": "ARR",
-          "direction": "Stuttgart Hbf",
-          "planned": "13:52",
-          "expected": "14:05",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
-          "train": "S 50 (Zug-Nr. 20039)",
-          "board": "ARR",
-          "direction": "Eichgraben NÖ-Altlengbach Bahnhst",
-          "planned": "14:03",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "S 50 (Zug-Nr. 20136)",
+          "train": "S 50 (Zug-Nr. 20142)",
           "board": "DEP",
           "direction": "Unterpurkersdorf",
-          "planned": "13:41",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "REX 51 (Zug-Nr. 1638)",
-          "board": "DEP",
-          "direction": "St.Pölten Hbf",
-          "planned": "13:53",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "S 50 (Zug-Nr. 20038)",
-          "board": "DEP",
-          "direction": "Eichgraben-Altlengbach",
-          "planned": "13:56",
+          "planned": "15:11",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 83,
+      "records": 79,
       "errors": []
     },
     {
@@ -116,70 +82,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 142",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "13:36",
-          "expected": "13:54",
-          "delay": 18,
-          "cancelled": false
-        },
-        {
-          "train": "WB 1004",
+          "train": "RJX 56",
           "board": "ARR",
           "direction": "Villach Hbf",
-          "planned": "13:38",
-          "expected": "13:48",
-          "delay": 10,
+          "planned": "15:00",
+          "expected": "15:35",
+          "delay": 35,
           "cancelled": false
         },
         {
-          "train": "IC 643",
-          "board": "ARR",
-          "direction": "Wels Hbf",
-          "planned": "13:56",
-          "expected": "14:07",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "IC 537",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "13:58",
-          "expected": "14:09",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "EC 142",
+          "train": "RJX 56",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "13:38",
-          "expected": "13:55",
-          "delay": 17,
-          "cancelled": false
-        },
-        {
-          "train": "IC 643",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "13:58",
-          "expected": "14:08",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "IC 537",
-          "board": "DEP",
-          "direction": "Klagenfurt Hbf",
-          "planned": "14:00",
-          "expected": "14:10",
-          "delay": 10,
+          "direction": "Praha hl.n.",
+          "planned": "15:02",
+          "expected": "15:36",
+          "delay": 34,
           "cancelled": false
         }
       ],
-      "records": 117,
+      "records": 124,
       "errors": []
     },
     {

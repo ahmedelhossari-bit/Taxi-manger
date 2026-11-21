@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T15:17:57.592886+00:00",
+  "updated": "2026-11-21T16:12:15.194190+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,43 +8,61 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 80 (Zug-Nr. 25047)",
+          "train": "RJX 134",
           "board": "ARR",
-          "direction": "Wien Aspern Nord Bahnhst",
-          "planned": "16:31",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Venezia Santa Lucia",
+          "planned": "17:07",
+          "expected": "17:26",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "EC 146",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "17:20",
+          "expected": "18:52",
+          "delay": 92,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 67",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "17:32",
+          "expected": "19:36",
+          "delay": 124,
+          "cancelled": false
         },
         {
           "train": "EC 79",
           "board": "DEP",
           "direction": "Zagreb Glavni kolodvor",
           "planned": "15:53",
-          "expected": "16:33",
-          "delay": 40,
+          "expected": "17:13",
+          "delay": 80,
           "cancelled": false
         },
         {
-          "train": "S 80 (Zug-Nr. 25047)",
+          "train": "EC 146",
           "board": "DEP",
-          "direction": "Mödling",
-          "planned": "16:33",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Wien Westbahnhof",
+          "planned": "17:30",
+          "expected": "18:55",
+          "delay": 85,
+          "cancelled": false
         },
         {
-          "train": "CJX 9 (Zug-Nr. 22951)",
+          "train": "RJX 67",
           "board": "DEP",
-          "direction": "Payerbach-Reichenau",
-          "planned": "16:55",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Budapest-Keleti",
+          "planned": "17:40",
+          "expected": "19:39",
+          "delay": 119,
+          "cancelled": false
         }
       ],
-      "records": 86,
+      "records": 89,
       "errors": []
     },
     {
@@ -52,7 +70,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 82,
+      "records": 81,
       "errors": []
     },
     {
@@ -65,66 +83,75 @@
           "board": "ARR",
           "direction": "Wien Hbf (Bahnsteige 3-12)",
           "planned": "15:58",
-          "expected": "16:36",
-          "delay": 38,
+          "expected": "17:16",
+          "delay": 78,
           "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25047)",
-          "board": "ARR",
-          "direction": "Wien Aspern Nord Bahnhst",
-          "planned": "16:38",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         },
         {
           "train": "RJX 134",
           "board": "ARR",
           "direction": "Venezia Santa Lucia",
           "planned": "17:00",
-          "expected": "17:12",
-          "delay": 12,
+          "expected": "17:22",
+          "delay": 22,
           "cancelled": false
         },
         {
-          "train": "CJX 9 (Zug-Nr. 22951)",
+          "train": "RJX 67",
           "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 1-2)",
-          "planned": "17:00",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "München Hbf",
+          "planned": "17:25",
+          "expected": "19:31",
+          "delay": 126,
+          "cancelled": false
+        },
+        {
+          "train": "EC 146",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "17:36",
+          "expected": "18:59",
+          "delay": 83,
+          "cancelled": false
         },
         {
           "train": "EC 79",
           "board": "DEP",
           "direction": "Zagreb Glavni kolodvor",
           "planned": "16:00",
-          "expected": "16:37",
-          "delay": 37,
+          "expected": "17:17",
+          "delay": 77,
           "cancelled": false
-        },
-        {
-          "train": "S 3 (Zug-Nr. 25047)",
-          "board": "DEP",
-          "direction": "Mödling",
-          "planned": "16:39",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         },
         {
           "train": "RJX 134",
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "17:02",
-          "expected": "17:13",
-          "delay": 11,
+          "expected": "17:23",
+          "delay": 21,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 67",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "17:27",
+          "expected": "19:32",
+          "delay": 125,
+          "cancelled": false
+        },
+        {
+          "train": "EC 146",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "17:38",
+          "expected": "19:00",
+          "delay": 82,
           "cancelled": false
         }
       ],
-      "records": 123,
+      "records": 124,
       "errors": []
     },
     {
@@ -142,17 +169,7 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "RJX19985",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "15:57",
-          "expected": "16:18",
-          "delay": 21,
-          "cancelled": false
-        }
-      ],
+      "alerts": [],
       "records": 29,
       "errors": []
     }

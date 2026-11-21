@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T20:09:17.644148+00:00",
+  "updated": "2026-11-21T20:49:40.009253+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,21 +8,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "D 347",
-          "board": "ARR",
-          "direction": "Wien Westbahnhof",
-          "planned": "18:58",
-          "expected": "21:36",
-          "delay": 158,
-          "cancelled": false
-        },
-        {
           "train": "D 40347",
           "board": "ARR",
           "direction": "Wien Westbahnhof",
           "planned": "18:58",
-          "expected": "21:36",
-          "delay": 158,
+          "expected": "22:06",
+          "delay": 188,
           "cancelled": false
         },
         {
@@ -30,35 +21,26 @@
           "board": "ARR",
           "direction": "Wien Westbahnhof",
           "planned": "18:58",
-          "expected": "21:36",
-          "delay": 158,
+          "expected": "22:06",
+          "delay": 188,
           "cancelled": false
         },
         {
-          "train": "EC 343",
+          "train": "S 1 (Zug-Nr. 28954)",
           "board": "ARR",
-          "direction": "Wien Westbahnhof",
-          "planned": "20:28",
-          "expected": "21:12",
-          "delay": 44,
+          "direction": "Wien Liesing Bahnhof",
+          "planned": "21:41",
+          "expected": "21:59",
+          "delay": 18,
           "cancelled": false
         },
         {
-          "train": "RJ 257",
+          "train": "S 80 (Zug-Nr. 25069)",
           "board": "ARR",
-          "direction": "Praha hl.n.",
-          "planned": "20:49",
-          "expected": "21:09",
-          "delay": 20,
-          "cancelled": false
-        },
-        {
-          "train": "D 347",
-          "board": "DEP",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "19:08",
-          "expected": "21:39",
-          "delay": 151,
+          "direction": "Wien Aspern Nord Bahnhst",
+          "planned": "22:01",
+          "expected": "22:12",
+          "delay": 11,
           "cancelled": false
         },
         {
@@ -66,8 +48,8 @@
           "board": "DEP",
           "direction": "Kyiv Pasazhyrskyi",
           "planned": "19:08",
-          "expected": "21:39",
-          "delay": 151,
+          "expected": "22:09",
+          "delay": 181,
           "cancelled": false
         },
         {
@@ -75,17 +57,26 @@
           "board": "DEP",
           "direction": "Uzhhorod",
           "planned": "19:08",
-          "expected": "21:39",
-          "delay": 151,
+          "expected": "22:09",
+          "delay": 181,
           "cancelled": false
         },
         {
-          "train": "EC 343",
+          "train": "S 1 (Zug-Nr. 28859)",
           "board": "DEP",
-          "direction": "Budapest-Keleti",
-          "planned": "20:37",
-          "expected": "21:14",
-          "delay": 37,
+          "direction": "Wien Liesing",
+          "planned": "21:47",
+          "expected": "22:02",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25069)",
+          "board": "DEP",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "22:03",
+          "expected": "22:13",
+          "delay": 10,
           "cancelled": false
         }
       ],
@@ -97,7 +88,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 75,
+      "records": 77,
       "errors": []
     },
     {
@@ -106,21 +97,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "D 347",
-          "board": "ARR",
-          "direction": "Wien Westbahnhof",
-          "planned": "18:51",
-          "expected": "21:32",
-          "delay": 161,
-          "cancelled": false
-        },
-        {
           "train": "D 40347",
           "board": "ARR",
           "direction": "Wien Westbahnhof",
           "planned": "18:51",
-          "expected": "21:32",
-          "delay": 161,
+          "expected": "22:02",
+          "delay": 191,
           "cancelled": false
         },
         {
@@ -128,17 +110,35 @@
           "board": "ARR",
           "direction": "Wien Westbahnhof",
           "planned": "18:51",
-          "expected": "21:32",
-          "delay": 161,
+          "expected": "22:02",
+          "delay": 191,
           "cancelled": false
         },
         {
-          "train": "D 347",
-          "board": "DEP",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "18:53",
-          "expected": "21:33",
-          "delay": 160,
+          "train": "S 1 (Zug-Nr. 28954)",
+          "board": "ARR",
+          "direction": "Wien Liesing Bahnhof",
+          "planned": "21:35",
+          "expected": "21:54",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28859)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 1-2)",
+          "planned": "21:52",
+          "expected": "22:06",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "EC 1219",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "22:40",
+          "expected": "23:29",
+          "delay": 49,
           "cancelled": false
         },
         {
@@ -146,8 +146,8 @@
           "board": "DEP",
           "direction": "Kyiv Pasazhyrskyi",
           "planned": "18:53",
-          "expected": "21:33",
-          "delay": 160,
+          "expected": "22:03",
+          "delay": 190,
           "cancelled": false
         },
         {
@@ -155,12 +155,39 @@
           "board": "DEP",
           "direction": "Uzhhorod",
           "planned": "18:53",
-          "expected": "21:33",
-          "delay": 160,
+          "expected": "22:03",
+          "delay": 190,
+          "cancelled": false
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28954)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "21:36",
+          "expected": "21:55",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28859)",
+          "board": "DEP",
+          "direction": "Wien Liesing",
+          "planned": "21:54",
+          "expected": "22:07",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "EC 1219",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "22:42",
+          "expected": "23:30",
+          "delay": 48,
           "cancelled": false
         }
       ],
-      "records": 142,
+      "records": 135,
       "errors": []
     },
     {

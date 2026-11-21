@@ -1,23 +1,13 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T05:37:13.917408+00:00",
+  "updated": "2026-11-21T06:38:20.167881+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "WB 1001",
-          "board": "DEP",
-          "direction": "Villach Hbf",
-          "planned": "06:15",
-          "expected": "06:53",
-          "delay": 38,
-          "cancelled": false
-        }
-      ],
-      "records": 91,
+      "alerts": [],
+      "records": 93,
       "errors": []
     },
     {
@@ -25,7 +15,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 80,
+      "records": 90,
       "errors": []
     },
     {
@@ -34,25 +24,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 1001",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "06:20",
-          "expected": "06:57",
-          "delay": 37,
-          "cancelled": false
-        },
-        {
-          "train": "WB 1001",
+          "train": "CJX 9 (Zug-Nr. 22906)",
           "board": "DEP",
-          "direction": "Villach Hbf",
-          "planned": "06:22",
-          "expected": "06:58",
-          "delay": 36,
+          "direction": "Wien Hbf",
+          "planned": "07:30",
+          "expected": "07:40",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 126,
+      "records": 123,
       "errors": []
     },
     {

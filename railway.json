@@ -1,77 +1,21 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T10:18:51.982882+00:00",
+  "updated": "2026-11-21T11:12:28.385339+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "NJ 40421",
-          "board": "ARR",
-          "direction": "Amsterdam Centraal",
-          "planned": "09:48",
-          "expected": "11:19",
-          "delay": 91,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 493",
-          "board": "ARR",
-          "direction": "Hamburg-Altona",
-          "planned": "09:48",
-          "expected": "11:19",
-          "delay": 91,
-          "cancelled": false
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22324)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "11:00",
-          "expected": "11:19",
-          "delay": 19,
-          "cancelled": false
-        },
-        {
-          "train": "REX 63 (Zug-Nr. 7926)",
-          "board": "ARR",
-          "direction": "Pamhagen Bahnhof",
-          "planned": "11:42",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22324)",
-          "board": "DEP",
-          "direction": "Gänserndorf",
-          "planned": "11:02",
-          "expected": "11:20",
-          "delay": 18,
-          "cancelled": false
-        }
-      ],
-      "records": 89,
+      "alerts": [],
+      "records": 85,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "WB 909",
-          "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "11:22",
-          "expected": "11:32",
-          "delay": 10,
-          "cancelled": false
-        }
-      ],
-      "records": 82,
+      "alerts": [],
+      "records": 83,
       "errors": []
     },
     {
@@ -79,7 +23,7 @@
       "id": "8100514",
       "status": "OK",
       "alerts": [],
-      "records": 122,
+      "records": 121,
       "errors": []
     },
     {
@@ -99,16 +43,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 657",
-          "board": "ARR",
-          "direction": "Klagenfurt Hbf",
-          "planned": "10:57",
-          "expected": "11:19",
-          "delay": 22,
+          "train": "RJ 750",
+          "board": "DEP",
+          "direction": "Villach Hbf",
+          "planned": "12:02",
+          "expected": "12:12",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 31,
+      "records": 29,
       "errors": []
     }
   ]

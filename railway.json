@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T09:29:13.542167+00:00",
+  "updated": "2026-11-21T10:18:51.982882+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -12,8 +12,8 @@
           "board": "ARR",
           "direction": "Amsterdam Centraal",
           "planned": "09:48",
-          "expected": "11:11",
-          "delay": 83,
+          "expected": "11:19",
+          "delay": 91,
           "cancelled": false
         },
         {
@@ -21,56 +21,65 @@
           "board": "ARR",
           "direction": "Hamburg-Altona",
           "planned": "09:48",
-          "expected": "11:11",
-          "delay": 83,
+          "expected": "11:19",
+          "delay": 91,
           "cancelled": false
         },
         {
-          "train": "S 60 (Zug-Nr. 26034)",
-          "board": "DEP",
-          "direction": "Wampersdorf",
-          "planned": "11:11",
+          "train": "REX 1 (Zug-Nr. 22324)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "11:00",
+          "expected": "11:19",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "REX 63 (Zug-Nr. 7926)",
+          "board": "ARR",
+          "direction": "Pamhagen Bahnhof",
+          "planned": "11:42",
           "expected": null,
           "delay": null,
           "cancelled": true
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22324)",
+          "board": "DEP",
+          "direction": "Gänserndorf",
+          "planned": "11:02",
+          "expected": "11:20",
+          "delay": 18,
+          "cancelled": false
         }
       ],
-      "records": 83,
+      "records": 89,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 81,
+      "alerts": [
+        {
+          "train": "WB 909",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "11:22",
+          "expected": "11:32",
+          "delay": 10,
+          "cancelled": false
+        }
+      ],
+      "records": 82,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "NJ 40421",
-          "board": "ARR",
-          "direction": "Amsterdam Centraal",
-          "planned": "09:39",
-          "expected": "11:08",
-          "delay": 89,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 493",
-          "board": "ARR",
-          "direction": "Hamburg-Altona",
-          "planned": "09:39",
-          "expected": "11:08",
-          "delay": 89,
-          "cancelled": false
-        }
-      ],
-      "records": 121,
+      "alerts": [],
+      "records": 122,
       "errors": []
     },
     {
@@ -88,8 +97,18 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 28,
+      "alerts": [
+        {
+          "train": "RJ 657",
+          "board": "ARR",
+          "direction": "Klagenfurt Hbf",
+          "planned": "10:57",
+          "expected": "11:19",
+          "delay": 22,
+          "cancelled": false
+        }
+      ],
+      "records": 31,
       "errors": []
     }
   ]

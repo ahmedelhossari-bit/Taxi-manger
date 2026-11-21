@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T07:52:53.031307+00:00",
+  "updated": "2026-11-21T08:40:30.640160+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "CJX 9 (Zug-Nr. 22912)",
+          "train": "NJ 40421",
           "board": "ARR",
-          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
-          "planned": "09:03",
+          "direction": "Amsterdam Centraal",
+          "planned": "09:48",
+          "expected": "11:00",
+          "delay": 72,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 493",
+          "board": "ARR",
+          "direction": "Hamburg-Altona",
+          "planned": "09:48",
+          "expected": "11:00",
+          "delay": 72,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22923)",
+          "board": "DEP",
+          "direction": "Payerbach-Reichenau",
+          "planned": "09:55",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 91,
+      "records": 87,
       "errors": []
     },
     {
@@ -25,7 +43,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 84,
+      "records": 86,
       "errors": []
     },
     {
@@ -34,16 +52,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "CJX 9 (Zug-Nr. 22912)",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "08:58",
+          "train": "NJ 40421",
+          "board": "ARR",
+          "direction": "Amsterdam Centraal",
+          "planned": "09:39",
+          "expected": "10:57",
+          "delay": 78,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 493",
+          "board": "ARR",
+          "direction": "Hamburg-Altona",
+          "planned": "09:39",
+          "expected": "10:57",
+          "delay": 78,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22923)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 1-2)",
+          "planned": "10:00",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 131,
+      "records": 129,
       "errors": []
     },
     {
@@ -62,7 +98,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 29,
       "errors": []
     }
   ]

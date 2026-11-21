@@ -1,284 +1,90 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-21T14:23:01.077556+00:00",
+  "updated": "2026-11-21T15:15:40.509926+00:00",
   "events": [
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 77,
-      "alertCause": "accident",
-      "reasonId": 12,
-      "reasonName": "Verkehrsunfall",
-      "name": "I20261121-0020",
-      "parentName": "I20261121-0020",
-      "priority": "1",
-      "owner": "WL",
-      "title": "3A: Verkehrsunfall",
-      "description": "Linie 3A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsunfall.",
-      "descriptionHTML": "<p>Linie 3A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsunfall.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "3A: Verkehrsunfall",
-            "descriptionPlain": "Linie 3A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsunfall.",
-            "descriptionHtml": "<p>Linie 3A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsunfall.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-21T14:52:00.000+0100",
-        "resume": "2026-11-21T14:52:00.000+0100",
-        "created": "2026-11-21T14:53:00.000+0100",
-        "lastUpdate": "2026-11-21T14:53:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "3A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "3A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 403,
-          "lineName": "3A",
-          "vehicleType": "ptBusCity"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 45,
-      "alertCause": "construction work",
-      "reasonId": 27,
-      "reasonName": "Gleisbauarbeiten",
-      "name": "I20261020-0029",
-      "parentName": "I20261020-0029",
-      "priority": "1",
-      "owner": "WL",
-      "title": "1: Gleisbauarbeiten",
-      "description": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
-      "descriptionHTML": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "1: Gleisbauarbeiten",
-            "descriptionPlain": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
-            "descriptionHtml": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-10-20T11:58:00.000+0200",
-        "end": "2026-12-05T01:00:00.000+0100",
-        "created": "2026-10-20T11:59:00.000+0200",
-        "lastUpdate": "2026-10-20T16:28:00.000+0200"
-      },
-      "location": "Stefan-Fadinger-Platz",
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "1": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 101,
-          "lineName": "1",
-          "vehicleType": "ptTram"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 77,
-      "alertCause": "accident",
-      "reasonId": 12,
-      "reasonName": "Verkehrsunfall",
-      "name": "I20261121-0016-F01",
-      "parentName": "I20261121-0016",
-      "priority": "1",
-      "owner": "WL",
-      "title": "25: Verkehrsunfall",
-      "description": "Linie 25: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 25: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "25: Verkehrsunfall",
-            "descriptionPlain": "Linie 25: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 25: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-21T13:32:00.000+0100",
-        "resume": "2026-11-21T14:07:00.000+0100",
-        "created": "2026-11-21T14:07:00.000+0100",
-        "lastUpdate": "2026-11-21T14:07:00.000+0100"
-      },
-      "location": "Langobardenstraße",
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "25": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 125,
-          "lineName": "25",
-          "vehicleType": "ptTram"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 3,
-      "alertCause": "police activity",
-      "reasonId": 47,
-      "reasonName": "Polizeieinsatz",
-      "name": "I20261121-0017-F01",
-      "parentName": "I20261121-0017",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U4: Polizeieinsatz",
-      "description": "Linie U4: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie U4: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U4: Polizeieinsatz",
-            "descriptionPlain": "Linie U4: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie U4: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-21T13:53:00.000+0100",
-        "resume": "2026-11-21T14:07:00.000+0100",
-        "created": "2026-11-21T14:07:00.000+0100",
-        "lastUpdate": "2026-11-21T14:07:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "U4": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U4"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 304,
-          "lineName": "U4",
-          "vehicleType": "ptMetro"
-        }
-      ],
-      "relatedStops": [
-        4417
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 60,
-      "alertCause": "heavy traffic",
-      "reasonId": 46,
-      "reasonName": "Verkehrsüberlastung",
-      "name": "I20261121-0021",
-      "parentName": "I20261121-0021",
-      "priority": "1",
-      "owner": "WL",
-      "title": "1A: Verkehrsüberlastung",
-      "description": "Linie 1A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-      "descriptionHTML": "<p>Linie 1A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "1A: Verkehrsüberlastung",
-            "descriptionPlain": "Linie 1A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-            "descriptionHtml": "<p>Linie 1A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-21T15:20:00.000+0100",
-        "resume": "2026-11-21T15:20:00.000+0100",
-        "created": "2026-11-21T15:20:00.000+0100",
-        "lastUpdate": "2026-11-21T15:20:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "1A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "1A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 401,
-          "lineName": "1A",
-          "vehicleType": "ptBusCity"
-        }
-      ]
-    },
     {
       "refTrafficInfoCategoryId": 2,
       "alertCauseId": 14,
       "alertCause": "emergency medical services",
       "reasonId": 9,
       "reasonName": "Rettungseinsatz",
-      "name": "I20261121-0019",
-      "parentName": "I20261121-0019",
+      "name": "I20261121-0022-F01",
+      "parentName": "I20261121-0022",
       "priority": "1",
       "owner": "WL",
-      "title": "31A: Rettungseinsatz",
-      "description": "Linie 31A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Rettungseinsatz.",
-      "descriptionHTML": "<p>Linie 31A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Rettungseinsatz.</p>",
+      "title": "U2: Rettungseinsatz",
+      "description": "Linie U2: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie U2: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
       "languages": [
         {
           "de": {
-            "title": "31A: Rettungseinsatz",
-            "descriptionPlain": "Linie 31A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Rettungseinsatz.",
-            "descriptionHtml": "<p>Linie 31A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Rettungseinsatz.</p>"
+            "title": "U2: Rettungseinsatz",
+            "descriptionPlain": "Linie U2: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie U2: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-21T14:51:00.000+0100",
-        "end": "2026-11-21T15:21:00.000+0100",
-        "resume": "2026-11-21T14:51:00.000+0100",
-        "created": "2026-11-21T14:51:00.000+0100",
-        "lastUpdate": "2026-11-21T15:21:00.000+0100"
+        "start": "2026-11-21T15:41:00.000+0100",
+        "resume": "2026-11-21T15:53:00.000+0100",
+        "created": "2026-11-21T15:53:00.000+0100",
+        "lastUpdate": "2026-11-21T15:53:00.000+0100"
       },
-      "status": "resolved",
+      "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "31A": "ptBusCity"
+          "U2": "ptMetro"
         }
       },
       "relatedLines": [
-        "31A"
+        "U2"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 431,
-          "lineName": "31A",
-          "vehicleType": "ptBusCity"
+          "lineId": 302,
+          "lineName": "U2",
+          "vehicleType": "ptMetro"
         }
       ],
       "relatedStops": [
-        3127
+        4253
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "I20260925-0011",
+      "parentName": "I20260925-0011",
+      "priority": "1",
+      "owner": "WL",
+      "title": "26E: Gleisbauarbeiten",
+      "description": "Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen.",
+      "descriptionHTML": "<p>Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen. </p>",
+      "time": {
+        "start": "2026-09-25T08:55:00.000+0200",
+        "end": "2026-12-12T23:55:00.000+0100",
+        "created": "2026-09-25T09:29:00.000+0200",
+        "lastUpdate": "2026-09-26T13:51:00.000+0200"
+      },
+      "location": "Donaufelder",
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "26E": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 626,
+          "lineName": "26E",
+          "vehicleType": "ptBus"
+        }
       ]
     },
     {
@@ -346,38 +152,47 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "I20260925-0011",
-      "parentName": "I20260925-0011",
+      "alertCauseId": 45,
+      "alertCause": "construction work",
+      "reasonId": 27,
+      "reasonName": "Gleisbauarbeiten",
+      "name": "I20261020-0029",
+      "parentName": "I20261020-0029",
       "priority": "1",
       "owner": "WL",
-      "title": "26E: Gleisbauarbeiten",
-      "description": "Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen.",
-      "descriptionHTML": "<p>Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen. </p>",
+      "title": "1: Gleisbauarbeiten",
+      "description": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
+      "descriptionHTML": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "1: Gleisbauarbeiten",
+            "descriptionPlain": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
+            "descriptionHtml": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>"
+          }
+        }
+      ],
       "time": {
-        "start": "2026-09-25T08:55:00.000+0200",
-        "end": "2026-12-12T23:55:00.000+0100",
-        "created": "2026-09-25T09:29:00.000+0200",
-        "lastUpdate": "2026-09-26T13:51:00.000+0200"
+        "start": "2026-10-20T11:58:00.000+0200",
+        "end": "2026-12-05T01:00:00.000+0100",
+        "created": "2026-10-20T11:59:00.000+0200",
+        "lastUpdate": "2026-10-20T16:28:00.000+0200"
       },
-      "location": "Donaufelder",
+      "location": "Stefan-Fadinger-Platz",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "26E": "ptTram"
+          "1": "ptTram"
         }
       },
       "relatedLines": [
-        "26E"
+        "1"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 626,
-          "lineName": "26E",
-          "vehicleType": "ptBus"
+          "lineId": 101,
+          "lineName": "1",
+          "vehicleType": "ptTram"
         }
       ]
     },

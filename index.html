@@ -38,7 +38,7 @@
 <section>
 <h2>💳 المصاريف</h2>
 <select id="category"><option>أكل وشرب</option><option>بنزين</option><option>غسيل العربية</option><option>ركن وغرامات</option><option>شخصية</option><option>أخرى</option></select>
-<input id="expense" type="text" inputmode="decimal" autocomplete="off" placeholder="المبلغ">
+<input id="expense" type="text" inputmode="decimal" autocomplete="off" placeholder="Amount">
 <button id="tpSaveExpense" onclick="add('expenses')">حفظ المصروف</button>
 </section>
 <section><h2>📊 التحليل اليومي</h2><div id="analysis"></div><div id="chart"></div></section>
@@ -1551,5 +1551,20 @@ body.tpDriving #tmMap .leaflet-top{top:calc(max(env(safe-area-inset-top,0px),var
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)closeOverdueShift();});
   window.addEventListener('pageshow',closeOverdueShift);
   window.addEventListener('focus',closeOverdueShift);
+})();
+</script>
+
+<script>
+/* Keep the expense amount placeholder in sync with the selected language. */
+(function(){
+  const field=document.getElementById('expense');
+  if(!field)return;
+  function translateExpenseAmount(){
+    const lang=(document.documentElement.lang||'en').split('-')[0];
+    field.placeholder=lang==='ar'?'المبلغ':lang==='de'?'Betrag':'Amount';
+  }
+  translateExpenseAmount();
+  new MutationObserver(translateExpenseAmount).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  window.addEventListener('pageshow',translateExpenseAmount);
 })();
 </script>

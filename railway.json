@@ -1,21 +1,40 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T02:48:49.991261+00:00",
+  "updated": "2026-11-21T03:42:23.589252+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
       "alerts": [],
-      "records": 117,
+      "records": 113,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 79,
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1601)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "05:37",
+          "expected": "06:05",
+          "delay": 28,
+          "cancelled": false
+        },
+        {
+          "train": "REX 51 (Zug-Nr. 1606)",
+          "board": "DEP",
+          "direction": "St.Pölten Hbf",
+          "planned": "05:53",
+          "expected": "06:11",
+          "delay": 18,
+          "cancelled": false
+        }
+      ],
+      "records": 77,
       "errors": []
     },
     {
@@ -23,7 +42,7 @@
       "id": "8100514",
       "status": "OK",
       "alerts": [],
-      "records": 147,
+      "records": 146,
       "errors": []
     },
     {
@@ -42,7 +61,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 12,
+      "records": 22,
       "errors": []
     }
   ]

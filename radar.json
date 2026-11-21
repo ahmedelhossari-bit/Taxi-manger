@@ -1,97 +1,49 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-21T17:40:49.895774+00:00",
+  "updated": "2026-11-21T18:23:19.844374+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 71,
-      "alertCause": "vehicle on the line",
-      "reasonId": 25,
-      "reasonName": "Falschparker",
-      "name": "I20261121-0028-F01",
-      "parentName": "I20261121-0028",
+      "alertCauseId": 14,
+      "alertCause": "emergency medical services",
+      "reasonId": 9,
+      "reasonName": "Rettungseinsatz",
+      "name": "I20261121-0025-F01",
+      "parentName": "I20261121-0025",
       "priority": "1",
       "owner": "WL",
-      "title": "12A: Falschparker",
-      "description": "Linie 12A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 12A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "title": "43: Rettungseinsatz",
+      "description": "Linie 43: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie 43: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
       "languages": [
         {
           "de": {
-            "title": "12A: Falschparker",
-            "descriptionPlain": "Linie 12A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 12A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+            "title": "43: Rettungseinsatz",
+            "descriptionPlain": "Linie 43: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie 43: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-21T18:18:00.000+0100",
-        "resume": "2026-11-21T18:31:00.000+0100",
-        "created": "2026-11-21T18:31:00.000+0100",
-        "lastUpdate": "2026-11-21T18:31:00.000+0100"
+        "start": "2026-11-21T17:49:00.000+0100",
+        "resume": "2026-11-21T17:53:00.000+0100",
+        "created": "2026-11-21T17:53:00.000+0100",
+        "lastUpdate": "2026-11-21T17:53:00.000+0100"
       },
+      "location": "Hernalser Hauptstraße",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "12A": "ptBusCity"
+          "43": "ptTram"
         }
       },
       "relatedLines": [
-        "12A"
+        "43"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 412,
-          "lineName": "12A",
-          "vehicleType": "ptBusCity"
-        }
-      ],
-      "relatedStops": [
-        3160
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 45,
-      "alertCause": "construction work",
-      "reasonId": 27,
-      "reasonName": "Gleisbauarbeiten",
-      "name": "I20261020-0029",
-      "parentName": "I20261020-0029",
-      "priority": "1",
-      "owner": "WL",
-      "title": "1: Gleisbauarbeiten",
-      "description": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
-      "descriptionHTML": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "1: Gleisbauarbeiten",
-            "descriptionPlain": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
-            "descriptionHtml": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-10-20T11:58:00.000+0200",
-        "end": "2026-12-05T01:00:00.000+0100",
-        "created": "2026-10-20T11:59:00.000+0200",
-        "lastUpdate": "2026-10-20T16:28:00.000+0200"
-      },
-      "location": "Stefan-Fadinger-Platz",
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "1": "ptTram"
-        }
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 101,
-          "lineName": "1",
+          "lineId": 143,
+          "lineName": "43",
           "vehicleType": "ptTram"
         }
       ]
@@ -191,92 +143,85 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 71,
-      "alertCause": "vehicle on the line",
-      "reasonId": 25,
-      "reasonName": "Falschparker",
-      "name": "I20261121-0029",
-      "parentName": "I20261121-0029",
-      "priority": "1",
-      "owner": "WL",
-      "title": "10A: Falschparker",
-      "description": "Linie 10A: Fahrtbehinderung in Richtung Niederhofstraße U. Voraussichtliche Dauer: 19:10 Uhr. Grund: Falschparker im Bereich Chimanistraße.",
-      "descriptionHTML": "<p>Linie 10A:<br>Fahrtbehinderung in Richtung Niederhofstraße U.</p><p>Voraussichtliche Dauer: 19:10 Uhr.</p><p>Grund: Falschparker im Bereich Chimanistraße.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "10A: Falschparker",
-            "descriptionPlain": "Linie 10A: Fahrtbehinderung in Richtung Niederhofstraße U. Voraussichtliche Dauer: 19:10 Uhr. Grund: Falschparker im Bereich Chimanistraße.",
-            "descriptionHtml": "<p>Linie 10A:<br>Fahrtbehinderung in Richtung Niederhofstraße U.</p><p>Voraussichtliche Dauer: 19:10 Uhr.</p><p>Grund: Falschparker im Bereich Chimanistraße.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-21T18:35:00.000+0100",
-        "created": "2026-11-21T18:37:00.000+0100",
-        "lastUpdate": "2026-11-21T18:37:00.000+0100"
-      },
-      "location": "Chimanistraße",
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "10A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "10A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 410,
-          "lineName": "10A",
-          "vehicleType": "ptBusCity"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
       "alertCauseId": 14,
       "alertCause": "emergency medical services",
       "reasonId": 9,
       "reasonName": "Rettungseinsatz",
-      "name": "I20261121-0025-F01",
-      "parentName": "I20261121-0025",
+      "name": "I20261121-0033",
+      "parentName": "I20261121-0033",
       "priority": "1",
       "owner": "WL",
-      "title": "43: Rettungseinsatz",
-      "description": "Linie 43: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 43: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "title": "5: Rettungseinsatz",
+      "description": "Linie 5: Fahrtbehinderung in Richtung Westbahnhof S U. Voraussichtliche Dauer: 19:50 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Rauscherstraße.",
+      "descriptionHTML": "<p>Linie 5:<br>Fahrtbehinderung in Richtung Westbahnhof S U.</p><p>Voraussichtliche Dauer: 19:50 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Rauscherstraße.</p>",
       "languages": [
         {
           "de": {
-            "title": "43: Rettungseinsatz",
-            "descriptionPlain": "Linie 43: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 43: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+            "title": "5: Rettungseinsatz",
+            "descriptionPlain": "Linie 5: Fahrtbehinderung in Richtung Westbahnhof S U. Voraussichtliche Dauer: 19:50 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Rauscherstraße.",
+            "descriptionHtml": "<p>Linie 5:<br>Fahrtbehinderung in Richtung Westbahnhof S U.</p><p>Voraussichtliche Dauer: 19:50 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Rauscherstraße.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-21T17:49:00.000+0100",
-        "resume": "2026-11-21T17:53:00.000+0100",
-        "created": "2026-11-21T17:53:00.000+0100",
-        "lastUpdate": "2026-11-21T17:53:00.000+0100"
+        "start": "2026-11-21T19:19:00.000+0100",
+        "created": "2026-11-21T19:20:00.000+0100",
+        "lastUpdate": "2026-11-21T19:20:00.000+0100"
       },
-      "location": "Hernalser Hauptstraße",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "43": "ptTram"
+          "5": "ptTram"
         }
       },
       "relatedLines": [
-        "43"
+        "5"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 143,
-          "lineName": "43",
+          "lineId": 105,
+          "lineName": "5",
           "vehicleType": "ptTram"
+        }
+      ],
+      "relatedStops": [
+        349
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "I20260925-0011",
+      "parentName": "I20260925-0011",
+      "priority": "1",
+      "owner": "WL",
+      "title": "26E: Gleisbauarbeiten",
+      "description": "Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen.",
+      "descriptionHTML": "<p>Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen. </p>",
+      "time": {
+        "start": "2026-09-25T08:55:00.000+0200",
+        "end": "2026-12-12T23:55:00.000+0100",
+        "created": "2026-09-25T09:29:00.000+0200",
+        "lastUpdate": "2026-09-26T13:51:00.000+0200"
+      },
+      "location": "Donaufelder",
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "26E": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 626,
+          "lineName": "26E",
+          "vehicleType": "ptBus"
         }
       ]
     },
@@ -345,39 +290,233 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "I20260925-0011",
-      "parentName": "I20260925-0011",
+      "alertCauseId": 71,
+      "alertCause": "vehicle on the line",
+      "reasonId": 25,
+      "reasonName": "Falschparker",
+      "name": "I20261121-0029-F01",
+      "parentName": "I20261121-0029",
       "priority": "1",
       "owner": "WL",
-      "title": "26E: Gleisbauarbeiten",
-      "description": "Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen.",
-      "descriptionHTML": "<p>Die Kapazitäten der Ersatzlinie 26E sind nicht mit denen einer Straßenbahn vergleichbar. Weichen Sie daher nach Möglichkeit auf die U1 und die S-Bahn über Leopoldau S U oder Praterstern S U aus. Ab Kagraner Platz U können Sie auf die Linie 31A und ab Leopoldauer Straße auf die Linie 29A umsteigen. Alternativ können Sie auch mit der Linie 31A bis Siemensstraße S fahren und dort in die S-Bahn umsteigen. Außerdem können Sie ab Kagran U auf die Linie 27A und ab Leopoldauer Straße auf die Linie 29A umsteigen. </p>",
+      "title": "10A: Falschparker",
+      "description": "Linie 10A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie 10A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "10A: Falschparker",
+            "descriptionPlain": "Linie 10A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie 10A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+          }
+        }
+      ],
       "time": {
-        "start": "2026-09-25T08:55:00.000+0200",
-        "end": "2026-12-12T23:55:00.000+0100",
-        "created": "2026-09-25T09:29:00.000+0200",
-        "lastUpdate": "2026-09-26T13:51:00.000+0200"
+        "start": "2026-11-21T18:35:00.000+0100",
+        "resume": "2026-11-21T18:59:00.000+0100",
+        "created": "2026-11-21T18:59:00.000+0100",
+        "lastUpdate": "2026-11-21T18:59:00.000+0100"
       },
-      "location": "Donaufelder",
+      "location": "Chimanistraße",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "26E": "ptTram"
+          "10A": "ptBusCity"
         }
       },
       "relatedLines": [
-        "26E"
+        "10A"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 626,
-          "lineName": "26E",
-          "vehicleType": "ptBus"
+          "lineId": 410,
+          "lineName": "10A",
+          "vehicleType": "ptBusCity"
         }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 77,
+      "alertCause": "accident",
+      "reasonId": 12,
+      "reasonName": "Verkehrsunfall",
+      "name": "I20261121-0032",
+      "parentName": "I20261121-0032",
+      "priority": "1",
+      "owner": "WL",
+      "title": "7A: Verkehrsunfall",
+      "description": "Linie 7A: Fahrtbehinderung in Richtung Meidling Hauptstraße U. Voraussichtliche Dauer: 19:40 Uhr. Grund: Verkehrsunfall im Bereich Davidgasse # Herzgasse.",
+      "descriptionHTML": "<p>Linie 7A:<br>Fahrtbehinderung in Richtung Meidling Hauptstraße U.</p><p>Voraussichtliche Dauer: 19:40 Uhr.</p><p>Grund: Verkehrsunfall im Bereich Davidgasse # Herzgasse.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "7A: Verkehrsunfall",
+            "descriptionPlain": "Linie 7A: Fahrtbehinderung in Richtung Meidling Hauptstraße U. Voraussichtliche Dauer: 19:40 Uhr. Grund: Verkehrsunfall im Bereich Davidgasse # Herzgasse.",
+            "descriptionHtml": "<p>Linie 7A:<br>Fahrtbehinderung in Richtung Meidling Hauptstraße U.</p><p>Voraussichtliche Dauer: 19:40 Uhr.</p><p>Grund: Verkehrsunfall im Bereich Davidgasse # Herzgasse.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-21T19:08:00.000+0100",
+        "created": "2026-11-21T19:09:00.000+0100",
+        "lastUpdate": "2026-11-21T19:09:00.000+0100"
+      },
+      "location": "Davidgasse / Herzgasse",
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "7A": "ptBusCity"
+        }
+      },
+      "relatedLines": [
+        "7A"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 407,
+          "lineName": "7A",
+          "vehicleType": "ptBusCity"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 45,
+      "alertCause": "construction work",
+      "reasonId": 27,
+      "reasonName": "Gleisbauarbeiten",
+      "name": "I20261020-0029",
+      "parentName": "I20261020-0029",
+      "priority": "1",
+      "owner": "WL",
+      "title": "1: Gleisbauarbeiten",
+      "description": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
+      "descriptionHTML": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "1: Gleisbauarbeiten",
+            "descriptionPlain": "Linie 1: Betrieb nur zwischen Prater Hauptallee und Knöllgasse. Weiterfahrt zum Reumannplatz U. Ersatz: Linien 7A und 65A. Voraussichtliche Dauer: Mitte Dezember 2026. Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.",
+            "descriptionHtml": "<p>Linie 1: <br>Betrieb nur zwischen Prater Hauptallee und Knöllgasse.<br>Weiterfahrt zum Reumannplatz U.</p><p>Ersatz: Linien 7A und 65A.</p><p>Voraussichtliche Dauer: Mitte Dezember 2026.</p><p>Grund: Gleisbauarbeiten im Bereich Stefan-Fadinger-Platz.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-10-20T11:58:00.000+0200",
+        "end": "2026-12-05T01:00:00.000+0100",
+        "created": "2026-10-20T11:59:00.000+0200",
+        "lastUpdate": "2026-10-20T16:28:00.000+0200"
+      },
+      "location": "Stefan-Fadinger-Platz",
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "1": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 101,
+          "lineName": "1",
+          "vehicleType": "ptTram"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 77,
+      "alertCause": "accident",
+      "reasonId": 13,
+      "reasonName": "Fremder Verkehrsunfall",
+      "name": "I20261121-0030-F01",
+      "parentName": "I20261121-0030",
+      "priority": "1",
+      "owner": "WL",
+      "title": "73B: Fremder Verkehrsunfall",
+      "description": "Linie 73B: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie 73B: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "73B: Fremder Verkehrsunfall",
+            "descriptionPlain": "Linie 73B: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie 73B: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-21T18:50:00.000+0100",
+        "resume": "2026-11-21T18:53:00.000+0100",
+        "created": "2026-11-21T18:53:00.000+0100",
+        "lastUpdate": "2026-11-21T18:53:00.000+0100"
+      },
+      "location": "Etrichstraße",
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "73B": "ptBusCity"
+        }
+      },
+      "relatedLines": [
+        "73B"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 273,
+          "lineName": "73B",
+          "vehicleType": "ptBusCity"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261121-0031-F01",
+      "parentName": "I20261121-0031",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U6: Schadhaftes Fahrzeug",
+      "description": "Linie U6: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie U6: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U6: Schadhaftes Fahrzeug",
+            "descriptionPlain": "Linie U6: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie U6: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-21T18:54:00.000+0100",
+        "resume": "2026-11-21T19:19:00.000+0100",
+        "created": "2026-11-21T19:19:00.000+0100",
+        "lastUpdate": "2026-11-21T19:19:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U6": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U6"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 306,
+          "lineName": "U6",
+          "vehicleType": "ptMetro"
+        }
+      ],
+      "relatedStops": [
+        4615
       ]
     },
     {
@@ -593,6 +732,29 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2345-127",
+      "parentName": "R2345-127",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Züge halten bei\nLinie 31",
+      "description": "Züge halten bei\nLinie 31",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "27"
+      ],
+      "relatedStops": [
+        2345
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2370-125",
       "parentName": "R2370-125",
       "priority": "1",
@@ -769,29 +931,6 @@
       ],
       "relatedStops": [
         2380
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2345-127",
-      "parentName": "R2345-127",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Züge halten bei\nLinie 31",
-      "description": "Züge halten bei\nLinie 31",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "27"
-      ],
-      "relatedStops": [
-        2345
       ]
     },
     {
@@ -1030,26 +1169,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R17-0",
-      "parentName": "R17-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Haltestelle\naufgelassen!\n\nStop closed!",
-      "description": "Haltestelle\naufgelassen!\n\nStop closed!",
-      "time": {
-        "start": "2026-11-21T15:00:04.000+0100",
-        "end": "2026-11-21T22:30:00.000+0100"
-      },
-      "relatedStops": [
-        17
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R47-0",
       "parentName": "R47-0",
       "priority": "1",
@@ -1070,343 +1189,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R231-143",
-      "parentName": "R231-143",
+      "name": "R17-0",
+      "parentName": "R17-0",
       "priority": "1",
       "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
+      "title": "Haltestelle\naufgelassen!\n\nStop closed!",
+      "description": "Haltestelle\naufgelassen!\n\nStop closed!",
       "time": {
-        "start": "2026-11-21T17:52:50.000+0100",
-        "end": "2026-11-21T18:51:00.000+0100"
+        "start": "2026-11-21T15:00:04.000+0100",
+        "end": "2026-11-21T22:30:00.000+0100"
       },
-      "relatedLines": [
-        "43"
-      ],
       "relatedStops": [
-        231
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R236-143",
-      "parentName": "R236-143",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "time": {
-        "start": "2026-11-21T17:52:50.000+0100",
-        "end": "2026-11-21T18:51:00.000+0100"
-      },
-      "relatedLines": [
-        "43"
-      ],
-      "relatedStops": [
-        236
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R237-143",
-      "parentName": "R237-143",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "time": {
-        "start": "2026-11-21T17:52:50.000+0100",
-        "end": "2026-11-21T18:51:00.000+0100"
-      },
-      "relatedLines": [
-        "43"
-      ],
-      "relatedStops": [
-        237
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R235-143",
-      "parentName": "R235-143",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "time": {
-        "start": "2026-11-21T17:52:50.000+0100",
-        "end": "2026-11-21T18:51:00.000+0100"
-      },
-      "relatedLines": [
-        "43"
-      ],
-      "relatedStops": [
-        235
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R234-143",
-      "parentName": "R234-143",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "time": {
-        "start": "2026-11-21T17:52:50.000+0100",
-        "end": "2026-11-21T18:51:00.000+0100"
-      },
-      "relatedLines": [
-        "43"
-      ],
-      "relatedStops": [
-        234
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R233-143",
-      "parentName": "R233-143",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "time": {
-        "start": "2026-11-21T17:52:50.000+0100",
-        "end": "2026-11-21T18:51:00.000+0100"
-      },
-      "relatedLines": [
-        "43"
-      ],
-      "relatedStops": [
-        233
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R232-143",
-      "parentName": "R232-143",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "description": "Fahrtbehinderung\nFremder Verkehrsunfall",
-      "time": {
-        "start": "2026-11-21T17:52:50.000+0100",
-        "end": "2026-11-21T18:51:00.000+0100"
-      },
-      "relatedLines": [
-        "43"
-      ],
-      "relatedStops": [
-        232
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R199-137",
-      "parentName": "R199-137",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T17:57:51.000+0100",
-        "end": "2026-11-21T18:57:00.000+0100"
-      },
-      "relatedLines": [
-        "37"
-      ],
-      "relatedStops": [
-        199
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R201-137",
-      "parentName": "R201-137",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Nußdorfer Straße >",
-      "description": "Schadhafter Zug\nBetrieb ab Nußdorfer Straße >",
-      "time": {
-        "start": "2026-11-21T17:58:51.000+0100",
-        "end": "2026-11-21T18:58:00.000+0100"
-      },
-      "relatedLines": [
-        "37"
-      ],
-      "relatedStops": [
-        201
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R207-137",
-      "parentName": "R207-137",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Nußdorfer Straße >",
-      "description": "Schadhafter Zug\nBetrieb ab Nußdorfer Straße >",
-      "time": {
-        "start": "2026-11-21T17:58:51.000+0100",
-        "end": "2026-11-21T18:58:00.000+0100"
-      },
-      "relatedLines": [
-        "37"
-      ],
-      "relatedStops": [
-        207
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R203-137",
-      "parentName": "R203-137",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Nußdorfer Straße >",
-      "description": "Schadhafter Zug\nBetrieb ab Nußdorfer Straße >",
-      "time": {
-        "start": "2026-11-21T17:58:51.000+0100",
-        "end": "2026-11-21T18:58:00.000+0100"
-      },
-      "relatedLines": [
-        "37"
-      ],
-      "relatedStops": [
-        203
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R216-137",
-      "parentName": "R216-137",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T17:59:21.000+0100",
-        "end": "2026-11-21T18:58:00.000+0100"
-      },
-      "relatedLines": [
-        "37"
-      ],
-      "relatedStops": [
-        216
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R771-412",
-      "parentName": "R771-412",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-21T18:18:53.000+0100",
-        "end": "2026-11-21T19:18:00.000+0100"
-      },
-      "relatedLines": [
-        "12A"
-      ],
-      "relatedStops": [
-        771
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R670-412",
-      "parentName": "R670-412",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-21T18:18:53.000+0100",
-        "end": "2026-11-21T19:18:00.000+0100"
-      },
-      "relatedLines": [
-        "12A"
-      ],
-      "relatedStops": [
-        670
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2966-410",
-      "parentName": "R2966-410",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nFalschparker",
-      "description": "Fahrtbehinderung\nFalschparker",
-      "time": {
-        "start": "2026-11-21T18:39:29.000+0100",
-        "end": "2026-11-21T19:38:00.000+0100"
-      },
-      "relatedLines": [
-        "10A"
-      ],
-      "relatedStops": [
-        2966
+        17
       ]
     },
     {
@@ -1476,6 +1270,236 @@
       ],
       "relatedStops": [
         2977
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2966-410",
+      "parentName": "R2966-410",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-21T18:39:29.000+0100",
+        "end": "2026-11-21T19:38:00.000+0100"
+      },
+      "relatedLines": [
+        "10A"
+      ],
+      "relatedStops": [
+        2966
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R353-105",
+      "parentName": "R353-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        353
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R352-105",
+      "parentName": "R352-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        352
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R351-105",
+      "parentName": "R351-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        351
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R356-105",
+      "parentName": "R356-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        356
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R355-105",
+      "parentName": "R355-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        355
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R349-105",
+      "parentName": "R349-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        349
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R350-105",
+      "parentName": "R350-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        350
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R211-105",
+      "parentName": "R211-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        211
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R354-105",
+      "parentName": "R354-105",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-21T19:20:59.000+0100",
+        "end": "2026-11-21T20:20:00.000+0100"
+      },
+      "relatedLines": [
+        "5"
+      ],
+      "relatedStops": [
+        354
       ]
     },
     {

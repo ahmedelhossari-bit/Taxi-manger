@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T16:12:15.194190+00:00",
+  "updated": "2026-11-21T16:56:08.783549+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,21 +8,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 134",
-          "board": "ARR",
-          "direction": "Venezia Santa Lucia",
-          "planned": "17:07",
-          "expected": "17:26",
-          "delay": 19,
-          "cancelled": false
-        },
-        {
           "train": "EC 146",
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "17:20",
-          "expected": "18:52",
-          "delay": 92,
+          "expected": "19:00",
+          "delay": 100,
           "cancelled": false
         },
         {
@@ -30,17 +21,8 @@
           "board": "ARR",
           "direction": "München Hbf",
           "planned": "17:32",
-          "expected": "19:36",
-          "delay": 124,
-          "cancelled": false
-        },
-        {
-          "train": "EC 79",
-          "board": "DEP",
-          "direction": "Zagreb Glavni kolodvor",
-          "planned": "15:53",
-          "expected": "17:13",
-          "delay": 80,
+          "expected": "19:39",
+          "delay": 127,
           "cancelled": false
         },
         {
@@ -48,8 +30,8 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "17:30",
-          "expected": "18:55",
-          "delay": 85,
+          "expected": "19:03",
+          "delay": 93,
           "cancelled": false
         },
         {
@@ -57,20 +39,39 @@
           "board": "DEP",
           "direction": "Budapest-Keleti",
           "planned": "17:40",
-          "expected": "19:39",
-          "delay": 119,
+          "expected": "19:42",
+          "delay": 122,
           "cancelled": false
         }
       ],
-      "records": 89,
+      "records": 84,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 81,
+      "alerts": [
+        {
+          "train": "EC 146",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "18:00",
+          "expected": "19:20",
+          "delay": 80,
+          "cancelled": false
+        },
+        {
+          "train": "WB 923",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "18:22",
+          "expected": "18:34",
+          "delay": 12,
+          "cancelled": false
+        }
+      ],
+      "records": 84,
       "errors": []
     },
     {
@@ -79,30 +80,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 79",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "15:58",
-          "expected": "17:16",
-          "delay": 78,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 134",
-          "board": "ARR",
-          "direction": "Venezia Santa Lucia",
-          "planned": "17:00",
-          "expected": "17:22",
-          "delay": 22,
-          "cancelled": false
-        },
-        {
           "train": "RJX 67",
           "board": "ARR",
           "direction": "München Hbf",
           "planned": "17:25",
-          "expected": "19:31",
-          "delay": 126,
+          "expected": "19:35",
+          "delay": 130,
           "cancelled": false
         },
         {
@@ -110,26 +93,26 @@
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "17:36",
-          "expected": "18:59",
-          "delay": 83,
+          "expected": "19:07",
+          "delay": 91,
           "cancelled": false
         },
         {
-          "train": "EC 79",
-          "board": "DEP",
-          "direction": "Zagreb Glavni kolodvor",
-          "planned": "16:00",
-          "expected": "17:17",
-          "delay": 77,
+          "train": "IC 534",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "18:00",
+          "expected": "18:10",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "RJX 134",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "17:02",
-          "expected": "17:23",
-          "delay": 21,
+          "train": "RJX 165",
+          "board": "ARR",
+          "direction": "Ötztal Bahnhof",
+          "planned": "18:25",
+          "expected": "18:35",
+          "delay": 10,
           "cancelled": false
         },
         {
@@ -137,8 +120,8 @@
           "board": "DEP",
           "direction": "Budapest-Keleti",
           "planned": "17:27",
-          "expected": "19:32",
-          "delay": 125,
+          "expected": "19:36",
+          "delay": 129,
           "cancelled": false
         },
         {
@@ -146,12 +129,12 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "17:38",
-          "expected": "19:00",
-          "delay": 82,
+          "expected": "19:08",
+          "delay": 90,
           "cancelled": false
         }
       ],
-      "records": 124,
+      "records": 128,
       "errors": []
     },
     {
@@ -170,7 +153,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 29,
+      "records": 28,
       "errors": []
     }
   ]

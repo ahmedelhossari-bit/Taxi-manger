@@ -1,13 +1,32 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T11:54:28.058897+00:00",
+  "updated": "2026-11-21T12:39:37.595115+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 83,
+      "alerts": [
+        {
+          "train": "S 60 (Zug-Nr. 26045)",
+          "board": "ARR",
+          "direction": "Wampersdorf Bahnhof",
+          "planned": "13:49",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "EC 103",
+          "board": "ARR",
+          "direction": "Warszawa Wschodnia",
+          "planned": "13:49",
+          "expected": "13:59",
+          "delay": 10,
+          "cancelled": false
+        }
+      ],
+      "records": 86,
       "errors": []
     },
     {
@@ -15,15 +34,70 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 78,
+      "records": 81,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 126,
+      "alerts": [
+        {
+          "train": "REX 6 (Zug-Nr. 7619)",
+          "board": "ARR",
+          "direction": "Deutschkreutz Bahnhof",
+          "planned": "13:29",
+          "expected": "13:40",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7819)",
+          "board": "ARR",
+          "direction": "Wulkaprodersdorf Bahnhof",
+          "planned": "13:29",
+          "expected": "13:40",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "S 60 (Zug-Nr. 26045)",
+          "board": "ARR",
+          "direction": "Wampersdorf Bahnhof",
+          "planned": "13:43",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "RJX 161",
+          "board": "ARR",
+          "direction": "Ötztal Bahnhof",
+          "planned": "14:25",
+          "expected": "14:40",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 186",
+          "board": "ARR",
+          "direction": "Bolzano/Bozen",
+          "planned": "14:25",
+          "expected": "14:40",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "S 60 (Zug-Nr. 26045)",
+          "board": "DEP",
+          "direction": "Bruck/Leitha",
+          "planned": "13:44",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 118,
       "errors": []
     },
     {

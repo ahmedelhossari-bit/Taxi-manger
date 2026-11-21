@@ -1,7 +1,55 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-21T11:24:51.418765+00:00",
+  "updated": "2026-11-21T12:16:40.951892+00:00",
   "events": [
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 18,
+      "reasonName": "Schadhafter PKW",
+      "name": "I20261121-0013-F01",
+      "parentName": "I20261121-0013",
+      "priority": "1",
+      "owner": "WL",
+      "title": "D: Schadhafter PKW",
+      "description": "Linie D: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie D: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "D: Schadhafter PKW",
+            "descriptionPlain": "Linie D: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie D: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-21T12:47:00.000+0100",
+        "resume": "2026-11-21T12:51:00.000+0100",
+        "created": "2026-11-21T12:51:00.000+0100",
+        "lastUpdate": "2026-11-21T12:51:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "D": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "D"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 136,
+          "lineName": "D",
+          "vehicleType": "ptTram"
+        }
+      ],
+      "relatedStops": [
+        115
+      ]
+    },
     {
       "refTrafficInfoCategoryId": 2,
       "alertCauseId": 45,
@@ -90,51 +138,6 @@
           "lineId": 304,
           "lineName": "U4",
           "vehicleType": "ptMetro"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 60,
-      "alertCause": "heavy traffic",
-      "reasonId": 46,
-      "reasonName": "Verkehrsüberlastung",
-      "name": "I20261121-0010",
-      "parentName": "I20261121-0010",
-      "priority": "1",
-      "owner": "WL",
-      "title": "11A: Verkehrsüberlastung",
-      "description": "Linie 11A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-      "descriptionHTML": "<p>Linie 11A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "11A: Verkehrsüberlastung",
-            "descriptionPlain": "Linie 11A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsüberlastung.",
-            "descriptionHtml": "<p>Linie 11A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Verkehrsüberlastung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-21T11:26:00.000+0100",
-        "resume": "2026-11-21T11:26:00.000+0100",
-        "created": "2026-11-21T11:27:00.000+0100",
-        "lastUpdate": "2026-11-21T11:27:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "11A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "11A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 411,
-          "lineName": "11A",
-          "vehicleType": "ptBusCity"
         }
       ]
     },
@@ -359,12 +362,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1875-101",
-      "parentName": "R1875-101",
+      "name": "R1881-101",
+      "parentName": "R1881-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nKein Betrieb",
-      "description": "Gleisbauarbeiten\nKein Betrieb",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
       "time": {
         "start": "2026-11-18T00:00:17.000+0100",
         "end": "2026-11-21T23:59:59.000+0100"
@@ -373,7 +376,7 @@
         "1"
       ],
       "relatedStops": [
-        1875
+        1881
       ]
     },
     {
@@ -451,12 +454,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1881-101",
-      "parentName": "R1881-101",
+      "name": "R1875-101",
+      "parentName": "R1875-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "title": "Gleisbauarbeiten\nKein Betrieb",
+      "description": "Gleisbauarbeiten\nKein Betrieb",
       "time": {
         "start": "2026-11-18T00:00:17.000+0100",
         "end": "2026-11-21T23:59:59.000+0100"
@@ -465,30 +468,7 @@
         "1"
       ],
       "relatedStops": [
-        1881
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1880-101",
-      "parentName": "R1880-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-18T00:00:17.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1880
+        1875
       ]
     },
     {
@@ -520,6 +500,29 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1880-101",
+      "parentName": "R1880-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-18T00:00:17.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1880
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R3886-480",
       "parentName": "R3886-480",
       "priority": "1",
@@ -535,213 +538,6 @@
       ],
       "relatedStops": [
         3886
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-125",
-      "parentName": "R2343-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2343
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2345-127",
-      "parentName": "R2345-127",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Züge halten bei\nLinie 31",
-      "description": "Züge halten bei\nLinie 31",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "27"
-      ],
-      "relatedStops": [
-        2345
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R293-474",
-      "parentName": "R293-474",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
-      "description": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "74A"
-      ],
-      "relatedStops": [
-        293
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R318-437",
-      "parentName": "R318-437",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
-      "description": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "37A"
-      ],
-      "relatedStops": [
-        318
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2359-125",
-      "parentName": "R2359-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2359
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-626",
-      "parentName": "R2343-626",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2343
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2378-627",
-      "parentName": "R2378-627",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Busse halten\nSatzingerweg 41",
-      "description": "Busse halten\nSatzingerweg 41",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2378
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2370-125",
-      "parentName": "R2370-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2370
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2371-125",
-      "parentName": "R2371-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-19T00:00:28.000+0100",
-        "end": "2026-11-21T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2371
       ]
     },
     {
@@ -888,6 +684,213 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2345-127",
+      "parentName": "R2345-127",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Züge halten bei\nLinie 31",
+      "description": "Züge halten bei\nLinie 31",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "27"
+      ],
+      "relatedStops": [
+        2345
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2359-125",
+      "parentName": "R2359-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2359
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2370-125",
+      "parentName": "R2370-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2370
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-125",
+      "parentName": "R2343-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-626",
+      "parentName": "R2343-626",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2371-125",
+      "parentName": "R2371-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2371
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2378-627",
+      "parentName": "R2378-627",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Busse halten\nSatzingerweg 41",
+      "description": "Busse halten\nSatzingerweg 41",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2378
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R318-437",
+      "parentName": "R318-437",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
+      "description": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "37A"
+      ],
+      "relatedStops": [
+        318
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R293-474",
+      "parentName": "R293-474",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
+      "description": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
+      "time": {
+        "start": "2026-11-19T00:00:28.000+0100",
+        "end": "2026-11-21T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "74A"
+      ],
+      "relatedStops": [
+        293
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2558-125",
       "parentName": "R2558-125",
       "priority": "1",
@@ -980,21 +983,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R3069-125",
-      "parentName": "R3069-125",
+      "name": "R102-136",
+      "parentName": "R102-136",
       "priority": "1",
       "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
+      "title": "Fahrtbehinderung\nSchadhafter PKW",
+      "description": "Fahrtbehinderung\nSchadhafter PKW",
       "time": {
-        "start": "2026-11-21T11:40:45.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
+        "start": "2026-11-21T12:48:51.000+0100",
+        "end": "2026-11-21T13:48:00.000+0100"
       },
       "relatedLines": [
-        "25"
+        "D"
       ],
       "relatedStops": [
-        3069
+        102
       ]
     },
     {
@@ -1003,21 +1006,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R880-125",
-      "parentName": "R880-125",
+      "name": "R50-136",
+      "parentName": "R50-136",
       "priority": "1",
       "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
+      "title": "Fahrtbehinderung\nSchadhafter PKW",
+      "description": "Fahrtbehinderung\nSchadhafter PKW",
       "time": {
-        "start": "2026-11-21T11:40:46.000+0100",
-        "end": "2026-11-21T12:40:00.000+0100"
+        "start": "2026-11-21T12:48:51.000+0100",
+        "end": "2026-11-21T13:48:00.000+0100"
       },
       "relatedLines": [
-        "25"
+        "D"
       ],
       "relatedStops": [
-        880
+        50
       ]
     },
     {
@@ -1026,21 +1029,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2376-125",
-      "parentName": "R2376-125",
+      "name": "R49-136",
+      "parentName": "R49-136",
       "priority": "1",
       "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
+      "title": "Fahrtbehinderung\nSchadhafter PKW",
+      "description": "Fahrtbehinderung\nSchadhafter PKW",
       "time": {
-        "start": "2026-11-21T11:40:46.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
+        "start": "2026-11-21T12:48:51.000+0100",
+        "end": "2026-11-21T13:48:00.000+0100"
       },
       "relatedLines": [
-        "25"
+        "D"
       ],
       "relatedStops": [
-        2376
+        49
       ]
     },
     {
@@ -1049,21 +1052,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R885-125",
-      "parentName": "R885-125",
+      "name": "R46-136",
+      "parentName": "R46-136",
       "priority": "1",
       "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
+      "title": "Fahrtbehinderung\nSchadhafter PKW",
+      "description": "Fahrtbehinderung\nSchadhafter PKW",
       "time": {
-        "start": "2026-11-21T11:40:46.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
+        "start": "2026-11-21T12:48:51.000+0100",
+        "end": "2026-11-21T13:48:00.000+0100"
       },
       "relatedLines": [
-        "25"
+        "D"
       ],
       "relatedStops": [
-        885
+        46
       ]
     },
     {
@@ -1072,21 +1075,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R3187-125",
-      "parentName": "R3187-125",
+      "name": "R45-136",
+      "parentName": "R45-136",
       "priority": "1",
       "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
+      "title": "Fahrtbehinderung\nSchadhafter PKW",
+      "description": "Fahrtbehinderung\nSchadhafter PKW",
       "time": {
-        "start": "2026-11-21T11:40:46.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
+        "start": "2026-11-21T12:48:51.000+0100",
+        "end": "2026-11-21T13:48:00.000+0100"
       },
       "relatedLines": [
-        "25"
+        "D"
       ],
       "relatedStops": [
-        3187
+        45
       ]
     },
     {
@@ -1095,21 +1098,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2566-125",
-      "parentName": "R2566-125",
+      "name": "R130-136",
+      "parentName": "R130-136",
       "priority": "1",
       "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
+      "title": "Fahrtbehinderung\nSchadhafter PKW",
+      "description": "Fahrtbehinderung\nSchadhafter PKW",
       "time": {
-        "start": "2026-11-21T11:40:46.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
+        "start": "2026-11-21T12:48:51.000+0100",
+        "end": "2026-11-21T13:48:00.000+0100"
       },
       "relatedLines": [
-        "25"
+        "D"
       ],
       "relatedStops": [
-        2566
+        130
       ]
     },
     {
@@ -1118,964 +1121,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2377-125",
-      "parentName": "R2377-125",
+      "name": "R103-136",
+      "parentName": "R103-136",
       "priority": "1",
       "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
+      "title": "Fahrtbehinderung\nSchadhafter PKW",
+      "description": "Fahrtbehinderung\nSchadhafter PKW",
       "time": {
-        "start": "2026-11-21T11:40:46.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
+        "start": "2026-11-21T12:48:51.000+0100",
+        "end": "2026-11-21T13:48:00.000+0100"
       },
       "relatedLines": [
-        "25"
+        "D"
       ],
       "relatedStops": [
-        2377
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3115-125",
-      "parentName": "R3115-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "time": {
-        "start": "2026-11-21T11:46:15.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3115
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3186-125",
-      "parentName": "R3186-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "time": {
-        "start": "2026-11-21T11:46:16.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3186
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3185-125",
-      "parentName": "R3185-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "time": {
-        "start": "2026-11-21T11:46:16.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3185
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3183-125",
-      "parentName": "R3183-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "time": {
-        "start": "2026-11-21T11:46:16.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3183
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3184-125",
-      "parentName": "R3184-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "description": "Schadhafter Zug\nBetrieb ab Kagran ",
-      "time": {
-        "start": "2026-11-21T11:46:16.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3184
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3068-125",
-      "parentName": "R3068-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3068
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3197-125",
-      "parentName": "R3197-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3197
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2634-125",
-      "parentName": "R2634-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2634
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3191-125",
-      "parentName": "R3191-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3191
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3192-125",
-      "parentName": "R3192-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3192
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3193-125",
-      "parentName": "R3193-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3193
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3196-125",
-      "parentName": "R3196-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3196
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3005-125",
-      "parentName": "R3005-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:46.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        3005
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2374-125",
-      "parentName": "R2374-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:47.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2374
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2375-125",
-      "parentName": "R2375-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:47.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2375
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2556-125",
-      "parentName": "R2556-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse",
-      "time": {
-        "start": "2026-11-21T11:47:47.000+0100",
-        "end": "2026-11-21T12:46:00.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2556
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3009-126",
-      "parentName": "R3009-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug \nUmleitung nach Aspern Nord ",
-      "description": "Schadhafter Zug \nUmleitung nach Aspern Nord ",
-      "time": {
-        "start": "2026-11-21T11:55:16.000+0100",
-        "end": "2026-11-21T12:54:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3009
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3005-126",
-      "parentName": "R3005-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:16.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3005
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3068-126",
-      "parentName": "R3068-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:16.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3068
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2634-126",
-      "parentName": "R2634-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2634
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3193-126",
-      "parentName": "R3193-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3193
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3197-126",
-      "parentName": "R3197-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3197
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3191-126",
-      "parentName": "R3191-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3191
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2374-126",
-      "parentName": "R2374-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2374
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2375-126",
-      "parentName": "R2375-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2375
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3192-126",
-      "parentName": "R3192-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3192
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3196-126",
-      "parentName": "R3196-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:17.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3196
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2558-126",
-      "parentName": "R2558-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:18.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2558
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R881-126",
-      "parentName": "R881-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:18.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        881
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2556-126",
-      "parentName": "R2556-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "description": "Schadhafter Zug\nBetrieb ab Zanggasse ",
-      "time": {
-        "start": "2026-11-21T11:56:18.000+0100",
-        "end": "2026-11-21T12:55:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2556
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3185-126",
-      "parentName": "R3185-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3185
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3183-126",
-      "parentName": "R3183-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3183
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3069-126",
-      "parentName": "R3069-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3069
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2376-126",
-      "parentName": "R2376-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2376
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2377-126",
-      "parentName": "R2377-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2377
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3115-126",
-      "parentName": "R3115-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3115
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3186-126",
-      "parentName": "R3186-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3186
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3187-126",
-      "parentName": "R3187-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3187
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3184-126",
-      "parentName": "R3184-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:47.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        3184
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2566-126",
-      "parentName": "R2566-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:48.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2566
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R885-126",
-      "parentName": "R885-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nSchadhafter Zug",
-      "description": "Fahrtbehinderung\nSchadhafter Zug",
-      "time": {
-        "start": "2026-11-21T11:56:48.000+0100",
-        "end": "2026-11-21T12:45:00.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        885
+        103
       ]
     },
     {

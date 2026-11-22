@@ -1,13 +1,50 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T14:29:13.946410+00:00",
+  "updated": "2026-11-22T15:17:08.930817+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 87,
+      "alerts": [
+        {
+          "train": "RJX19977",
+          "board": "ARR",
+          "direction": "Innsbruck Hbf",
+          "planned": "16:32",
+          "expected": "17:12",
+          "delay": 40,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 113",
+          "board": "ARR",
+          "direction": "München Hbf Gl.5-10",
+          "planned": "16:36",
+          "expected": "17:22",
+          "delay": 46,
+          "cancelled": false
+        },
+        {
+          "train": "REX 64 (Zug-Nr. 2646)",
+          "board": "ARR",
+          "direction": "Eisenstadt Bahnhof",
+          "planned": "16:42",
+          "expected": "17:10",
+          "delay": 28,
+          "cancelled": false
+        },
+        {
+          "train": "REX 63 (Zug-Nr. 7946)",
+          "board": "ARR",
+          "direction": "Fertöszentmiklós",
+          "planned": "16:42",
+          "expected": "17:10",
+          "delay": 28,
+          "cancelled": false
+        }
+      ],
+      "records": 89,
       "errors": []
     },
     {
@@ -22,8 +59,63 @@
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 127,
+      "alerts": [
+        {
+          "train": "IC 740",
+          "board": "ARR",
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "16:02",
+          "expected": "16:17",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19977",
+          "board": "ARR",
+          "direction": "Innsbruck Hbf",
+          "planned": "16:25",
+          "expected": "17:08",
+          "delay": 43,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 113",
+          "board": "ARR",
+          "direction": "München Hbf Gl.5-10",
+          "planned": "16:29",
+          "expected": "17:17",
+          "delay": 48,
+          "cancelled": false
+        },
+        {
+          "train": "IC 740",
+          "board": "DEP",
+          "direction": "Salzburg Hbf",
+          "planned": "16:04",
+          "expected": "16:17",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19977",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "16:27",
+          "expected": "17:09",
+          "delay": 42,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 113",
+          "board": "DEP",
+          "direction": "Flughafen Wien",
+          "planned": "16:31",
+          "expected": "17:18",
+          "delay": 47,
+          "cancelled": false
+        }
+      ],
+      "records": 125,
       "errors": []
     },
     {
@@ -42,7 +134,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 29,
       "errors": []
     }
   ]

@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T11:49:56.336454+00:00",
+  "updated": "2026-11-22T12:39:44.384776+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,43 +8,42 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 55",
+          "train": "RJX19983",
           "board": "ARR",
-          "direction": "Praha hl.n.",
-          "planned": "12:49",
-          "expected": "13:10",
-          "delay": 21,
+          "direction": "Ötztal Bahnhof",
+          "planned": "13:32",
+          "expected": "13:47",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 63",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "13:32",
+          "expected": "13:47",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 63",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "13:40",
+          "expected": "13:50",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 85,
+      "records": 90,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "REX 51 (Zug-Nr. 1631)",
-          "board": "ARR",
-          "direction": "St.Pölten Hbf",
-          "planned": "13:07",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "WB 913",
-          "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "13:22",
-          "expected": "13:33",
-          "delay": 11,
-          "cancelled": false
-        }
-      ],
-      "records": 86,
+      "alerts": [],
+      "records": 84,
       "errors": []
     },
     {
@@ -53,30 +52,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX19982",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "12:33",
-          "expected": "12:51",
-          "delay": 18,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 62",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "12:33",
-          "expected": "12:51",
-          "delay": 18,
-          "cancelled": false
-        },
-        {
           "train": "RJX19983",
           "board": "ARR",
           "direction": "Ötztal Bahnhof",
           "planned": "13:25",
-          "expected": "13:40",
-          "delay": 15,
+          "expected": "13:42",
+          "delay": 17,
           "cancelled": false
         },
         {
@@ -84,25 +65,7 @@
           "board": "ARR",
           "direction": "München Hbf",
           "planned": "13:25",
-          "expected": "13:40",
-          "delay": 15,
-          "cancelled": false
-        },
-        {
-          "train": "RJX19982",
-          "board": "DEP",
-          "direction": "Ötztal",
-          "planned": "12:35",
-          "expected": "12:52",
-          "delay": 17,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 62",
-          "board": "DEP",
-          "direction": "München Hbf",
-          "planned": "12:35",
-          "expected": "12:52",
+          "expected": "13:42",
           "delay": 17,
           "cancelled": false
         },
@@ -111,8 +74,8 @@
           "board": "DEP",
           "direction": "Flughafen Wien",
           "planned": "13:27",
-          "expected": "13:41",
-          "delay": 14,
+          "expected": "13:43",
+          "delay": 16,
           "cancelled": false
         },
         {
@@ -120,12 +83,12 @@
           "board": "DEP",
           "direction": "Budapest-Keleti",
           "planned": "13:27",
-          "expected": "13:41",
-          "delay": 14,
+          "expected": "13:43",
+          "delay": 16,
           "cancelled": false
         }
       ],
-      "records": 127,
+      "records": 131,
       "errors": []
     },
     {
@@ -144,7 +107,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 30,
+      "records": 28,
       "errors": []
     }
   ]

@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T22:24:48.703450+00:00",
+  "updated": "2026-11-22T23:09:16.256299+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -12,8 +12,8 @@
           "board": "ARR",
           "direction": "Hamburg-Altona",
           "planned": "23:49",
-          "expected": "00:09",
-          "delay": 20,
+          "expected": "00:16",
+          "delay": 27,
           "cancelled": false
         },
         {
@@ -24,17 +24,36 @@
           "expected": "00:47",
           "delay": 12,
           "cancelled": false
+        },
+        {
+          "train": "IC 651",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "00:36",
+          "expected": "00:50",
+          "delay": 14,
+          "cancelled": false
         }
       ],
-      "records": 89,
+      "records": 41,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 84,
+      "alerts": [
+        {
+          "train": "CJX 5 (Zug-Nr. 1947)",
+          "board": "ARR",
+          "direction": "St.Valentin Bahnhof",
+          "planned": "00:43",
+          "expected": "00:56",
+          "delay": 13,
+          "cancelled": false
+        }
+      ],
+      "records": 40,
       "errors": []
     },
     {
@@ -56,17 +75,8 @@
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "00:29",
-          "expected": "00:40",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22375)",
-          "board": "DEP",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "23:07",
-          "expected": "23:31",
-          "delay": 24,
+          "expected": "00:46",
+          "delay": 17,
           "cancelled": false
         },
         {
@@ -83,12 +93,12 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "00:31",
-          "expected": "00:41",
-          "delay": 10,
+          "expected": "00:47",
+          "delay": 16,
           "cancelled": false
         }
       ],
-      "records": 134,
+      "records": 68,
       "errors": []
     },
     {
@@ -107,7 +117,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 20,
+      "records": 15,
       "errors": []
     }
   ]

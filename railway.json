@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T16:54:14.354856+00:00",
+  "updated": "2026-11-22T17:34:04.837405+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,34 +8,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 1006",
+          "train": "REX 6 (Zug-Nr. 7797)",
           "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "17:45",
-          "expected": "18:08",
-          "delay": 23,
+          "direction": "Mürzzuschlag Bahnhof",
+          "planned": "18:32",
+          "expected": "18:44",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "IC 534",
+          "train": "RJX 165",
           "board": "ARR",
-          "direction": "Graz Hbf",
-          "planned": "18:07",
-          "expected": "18:17",
-          "delay": 10,
+          "direction": "Ötztal Bahnhof",
+          "planned": "18:32",
+          "expected": "18:45",
+          "delay": 13,
           "cancelled": false
         },
         {
-          "train": "S 60 (Zug-Nr. 26062)",
+          "train": "RJ 255",
           "board": "ARR",
-          "direction": "Bruck/Leitha Bahnhof",
-          "planned": "18:09",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Praha hl.n.",
+          "planned": "18:54",
+          "expected": "20:01",
+          "delay": 67,
+          "cancelled": false
         }
       ],
-      "records": 86,
+      "records": 81,
       "errors": []
     },
     {
@@ -43,7 +43,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 84,
+      "records": 85,
       "errors": []
     },
     {
@@ -52,43 +52,61 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 1006",
+          "train": "RJX 165",
+          "board": "ARR",
+          "direction": "Ötztal Bahnhof",
+          "planned": "18:25",
+          "expected": "18:40",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 7797)",
+          "board": "ARR",
+          "direction": "Mürzzuschlag Bahnhof",
+          "planned": "18:26",
+          "expected": "18:39",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 555",
           "board": "ARR",
           "direction": "Villach Hbf",
-          "planned": "17:38",
-          "expected": "18:03",
-          "delay": 25,
+          "planned": "18:29",
+          "expected": "18:39",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "IC 534",
-          "board": "ARR",
-          "direction": "Graz Hbf",
-          "planned": "18:00",
-          "expected": "18:13",
+          "train": "NJ 448",
+          "board": "DEP",
+          "direction": "Bruxelles Midi",
+          "planned": "18:20",
+          "expected": "18:37",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7797)",
+          "board": "DEP",
+          "direction": "Bratislava-Petrzalka",
+          "planned": "18:27",
+          "expected": "18:40",
           "delay": 13,
           "cancelled": false
         },
         {
-          "train": "WB 1006",
+          "train": "RJX 165",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "17:40",
-          "expected": "18:04",
-          "delay": 24,
-          "cancelled": false
-        },
-        {
-          "train": "IC 534",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "18:02",
-          "expected": "18:15",
-          "delay": 13,
+          "direction": "Budapest-Keleti",
+          "planned": "18:27",
+          "expected": "18:41",
+          "delay": 14,
           "cancelled": false
         }
       ],
-      "records": 130,
+      "records": 124,
       "errors": []
     },
     {
@@ -107,7 +125,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 29,
       "errors": []
     }
   ]

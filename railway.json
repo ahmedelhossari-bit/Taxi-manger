@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T16:10:08.914352+00:00",
+  "updated": "2026-11-22T16:54:14.354856+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,52 +8,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX19977",
-          "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "16:32",
-          "expected": "17:16",
-          "delay": 44,
-          "cancelled": false
-        },
-        {
-          "train": "RJ 113",
-          "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "16:36",
-          "expected": "17:26",
-          "delay": 50,
-          "cancelled": false
-        },
-        {
-          "train": "REX 63 (Zug-Nr. 7946)",
-          "board": "ARR",
-          "direction": "Fertöszentmiklós",
-          "planned": "16:42",
-          "expected": "17:10",
-          "delay": 28,
-          "cancelled": false
-        },
-        {
           "train": "WB 1006",
           "board": "ARR",
           "direction": "Villach Hbf",
           "planned": "17:45",
-          "expected": "17:57",
-          "delay": 12,
+          "expected": "18:08",
+          "delay": 23,
           "cancelled": false
         },
         {
-          "train": "REX 64 (Zug-Nr. 2655)",
-          "board": "DEP",
-          "direction": "Eisenstadt",
-          "planned": "17:18",
+          "train": "IC 534",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "18:07",
+          "expected": "18:17",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "S 60 (Zug-Nr. 26062)",
+          "board": "ARR",
+          "direction": "Bruck/Leitha Bahnhof",
+          "planned": "18:09",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 92,
+      "records": 86,
       "errors": []
     },
     {
@@ -70,48 +52,21 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX19977",
-          "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "16:25",
-          "expected": "17:10",
-          "delay": 45,
-          "cancelled": false
-        },
-        {
-          "train": "RJ 113",
-          "board": "ARR",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "16:29",
-          "expected": "17:22",
-          "delay": 53,
-          "cancelled": false
-        },
-        {
           "train": "WB 1006",
           "board": "ARR",
           "direction": "Villach Hbf",
           "planned": "17:38",
-          "expected": "17:52",
-          "delay": 14,
+          "expected": "18:03",
+          "delay": 25,
           "cancelled": false
         },
         {
-          "train": "RJX19977",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "16:27",
-          "expected": "17:11",
-          "delay": 44,
-          "cancelled": false
-        },
-        {
-          "train": "RJ 113",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "16:31",
-          "expected": "17:23",
-          "delay": 52,
+          "train": "IC 534",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "18:00",
+          "expected": "18:13",
+          "delay": 13,
           "cancelled": false
         },
         {
@@ -119,12 +74,21 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "17:40",
-          "expected": "17:53",
+          "expected": "18:04",
+          "delay": 24,
+          "cancelled": false
+        },
+        {
+          "train": "IC 534",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "18:02",
+          "expected": "18:15",
           "delay": 13,
           "cancelled": false
         }
       ],
-      "records": 125,
+      "records": 130,
       "errors": []
     },
     {

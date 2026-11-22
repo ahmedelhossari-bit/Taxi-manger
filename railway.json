@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T11:09:12.535998+00:00",
+  "updated": "2026-11-22T11:49:56.336454+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 62",
+          "train": "RJ 55",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "12:20",
-          "expected": "12:31",
-          "delay": 11,
+          "direction": "Praha hl.n.",
+          "planned": "12:49",
+          "expected": "13:10",
+          "delay": 21,
           "cancelled": false
         }
       ],
-      "records": 86,
+      "records": 85,
       "errors": []
     },
     {
@@ -26,16 +26,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 140",
+          "train": "REX 51 (Zug-Nr. 1631)",
           "board": "ARR",
-          "direction": "Nyiregyhaza",
-          "planned": "12:00",
-          "expected": "12:23",
-          "delay": 23,
+          "direction": "St.Pölten Hbf",
+          "planned": "13:07",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "WB 913",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "13:22",
+          "expected": "13:33",
+          "delay": 11,
           "cancelled": false
         }
       ],
-      "records": 88,
+      "records": 86,
       "errors": []
     },
     {
@@ -44,25 +53,79 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 140",
+          "train": "RJX19982",
           "board": "ARR",
-          "direction": "Nyiregyhaza",
-          "planned": "11:36",
-          "expected": "12:10",
-          "delay": 34,
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "12:33",
+          "expected": "12:51",
+          "delay": 18,
           "cancelled": false
         },
         {
-          "train": "EC 140",
+          "train": "RJX 62",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "12:33",
+          "expected": "12:51",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19983",
+          "board": "ARR",
+          "direction": "Ötztal Bahnhof",
+          "planned": "13:25",
+          "expected": "13:40",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 63",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "13:25",
+          "expected": "13:40",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19982",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "11:38",
-          "expected": "12:11",
-          "delay": 33,
+          "direction": "Ötztal",
+          "planned": "12:35",
+          "expected": "12:52",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 62",
+          "board": "DEP",
+          "direction": "München Hbf",
+          "planned": "12:35",
+          "expected": "12:52",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19983",
+          "board": "DEP",
+          "direction": "Flughafen Wien",
+          "planned": "13:27",
+          "expected": "13:41",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 63",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "13:27",
+          "expected": "13:41",
+          "delay": 14,
           "cancelled": false
         }
       ],
-      "records": 125,
+      "records": 127,
       "errors": []
     },
     {
@@ -81,7 +144,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 30,
       "errors": []
     }
   ]

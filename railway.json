@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-21T23:27:38.741414+00:00",
+  "updated": "2026-11-22T00:05:13.800736+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,43 +8,24 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 367",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "00:35",
-          "expected": "00:49",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
           "train": "IC 651",
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "00:36",
-          "expected": "01:10",
-          "delay": 34,
+          "expected": "01:13",
+          "delay": 37,
           "cancelled": false
         }
       ],
-      "records": 78,
+      "records": 76,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "CJX 5 (Zug-Nr. 1947)",
-          "board": "ARR",
-          "direction": "St.Valentin Bahnhof",
-          "planned": "00:43",
-          "expected": "00:58",
-          "delay": 15,
-          "cancelled": false
-        }
-      ],
-      "records": 82,
+      "alerts": [],
+      "records": 68,
       "errors": []
     },
     {
@@ -53,30 +34,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 367",
-          "board": "ARR",
-          "direction": "Ötztal Bahnhof",
-          "planned": "00:28",
-          "expected": "00:44",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
           "train": "IC 651",
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "00:29",
-          "expected": "01:06",
-          "delay": 37,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 367",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "00:30",
-          "expected": "00:45",
-          "delay": 15,
+          "expected": "01:09",
+          "delay": 40,
           "cancelled": false
         },
         {
@@ -84,12 +47,12 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "00:31",
-          "expected": "01:07",
-          "delay": 36,
+          "expected": "01:10",
+          "delay": 39,
           "cancelled": false
         }
       ],
-      "records": 104,
+      "records": 84,
       "errors": []
     },
     {
@@ -108,7 +71,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 10,
+      "records": 5,
       "errors": []
     }
   ]

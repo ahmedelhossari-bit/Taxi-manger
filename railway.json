@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T15:17:08.930817+00:00",
+  "updated": "2026-11-22T16:10:08.914352+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -12,8 +12,8 @@
           "board": "ARR",
           "direction": "Innsbruck Hbf",
           "planned": "16:32",
-          "expected": "17:12",
-          "delay": 40,
+          "expected": "17:16",
+          "delay": 44,
           "cancelled": false
         },
         {
@@ -21,17 +21,8 @@
           "board": "ARR",
           "direction": "München Hbf Gl.5-10",
           "planned": "16:36",
-          "expected": "17:22",
-          "delay": 46,
-          "cancelled": false
-        },
-        {
-          "train": "REX 64 (Zug-Nr. 2646)",
-          "board": "ARR",
-          "direction": "Eisenstadt Bahnhof",
-          "planned": "16:42",
-          "expected": "17:10",
-          "delay": 28,
+          "expected": "17:26",
+          "delay": 50,
           "cancelled": false
         },
         {
@@ -42,9 +33,27 @@
           "expected": "17:10",
           "delay": 28,
           "cancelled": false
+        },
+        {
+          "train": "WB 1006",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "17:45",
+          "expected": "17:57",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "REX 64 (Zug-Nr. 2655)",
+          "board": "DEP",
+          "direction": "Eisenstadt",
+          "planned": "17:18",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 89,
+      "records": 92,
       "errors": []
     },
     {
@@ -52,7 +61,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 85,
+      "records": 84,
       "errors": []
     },
     {
@@ -61,21 +70,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "IC 740",
-          "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "16:02",
-          "expected": "16:17",
-          "delay": 15,
-          "cancelled": false
-        },
-        {
           "train": "RJX19977",
           "board": "ARR",
           "direction": "Innsbruck Hbf",
           "planned": "16:25",
-          "expected": "17:08",
-          "delay": 43,
+          "expected": "17:10",
+          "delay": 45,
           "cancelled": false
         },
         {
@@ -83,17 +83,17 @@
           "board": "ARR",
           "direction": "München Hbf Gl.5-10",
           "planned": "16:29",
-          "expected": "17:17",
-          "delay": 48,
+          "expected": "17:22",
+          "delay": 53,
           "cancelled": false
         },
         {
-          "train": "IC 740",
-          "board": "DEP",
-          "direction": "Salzburg Hbf",
-          "planned": "16:04",
-          "expected": "16:17",
-          "delay": 13,
+          "train": "WB 1006",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "17:38",
+          "expected": "17:52",
+          "delay": 14,
           "cancelled": false
         },
         {
@@ -101,8 +101,8 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "16:27",
-          "expected": "17:09",
-          "delay": 42,
+          "expected": "17:11",
+          "delay": 44,
           "cancelled": false
         },
         {
@@ -110,8 +110,17 @@
           "board": "DEP",
           "direction": "Flughafen Wien",
           "planned": "16:31",
-          "expected": "17:18",
-          "delay": 47,
+          "expected": "17:23",
+          "delay": 52,
+          "cancelled": false
+        },
+        {
+          "train": "WB 1006",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "17:40",
+          "expected": "17:53",
+          "delay": 13,
           "cancelled": false
         }
       ],
@@ -134,7 +143,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 29,
+      "records": 28,
       "errors": []
     }
   ]

@@ -1,13 +1,59 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T20:11:58.870168+00:00",
+  "updated": "2026-11-22T20:53:55.702060+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 91,
+      "alerts": [
+        {
+          "train": "NJ 456",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "22:07",
+          "expected": "22:28",
+          "delay": 21,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 266",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "22:20",
+          "expected": "22:51",
+          "delay": 31,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 40466",
+          "board": "DEP",
+          "direction": "Venezia Santa Lucia",
+          "planned": "21:39",
+          "expected": "21:53",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 466",
+          "board": "DEP",
+          "direction": "Zürich HB",
+          "planned": "21:39",
+          "expected": "21:53",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 456",
+          "board": "DEP",
+          "direction": "Berlin Hbf (Tiefgeschoß)",
+          "planned": "22:10",
+          "expected": "22:30",
+          "delay": 20,
+          "cancelled": false
+        }
+      ],
+      "records": 98,
       "errors": []
     },
     {
@@ -15,15 +61,52 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 80,
+      "records": 79,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 133,
+      "alerts": [
+        {
+          "train": "NJ 456",
+          "board": "ARR",
+          "direction": "Graz Hbf",
+          "planned": "22:00",
+          "expected": "22:23",
+          "delay": 23,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 40466",
+          "board": "DEP",
+          "direction": "Venezia Santa Lucia",
+          "planned": "21:47",
+          "expected": "21:58",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 466",
+          "board": "DEP",
+          "direction": "Zürich HB",
+          "planned": "21:47",
+          "expected": "21:58",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 456",
+          "board": "DEP",
+          "direction": "Berlin Hbf (Tiefgeschoß)",
+          "planned": "22:02",
+          "expected": "22:24",
+          "delay": 22,
+          "cancelled": false
+        }
+      ],
+      "records": 130,
       "errors": []
     },
     {
@@ -42,7 +125,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 29,
+      "records": 26,
       "errors": []
     }
   ]

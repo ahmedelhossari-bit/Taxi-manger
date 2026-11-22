@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T08:31:25.437933+00:00",
+  "updated": "2026-11-22T09:28:29.211566+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -12,8 +12,8 @@
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "09:22",
-          "expected": "10:08",
-          "delay": 46,
+          "expected": "10:29",
+          "delay": 67,
           "cancelled": false
         },
         {
@@ -21,8 +21,8 @@
           "board": "ARR",
           "direction": "Kyiv Pasazhyrskyi",
           "planned": "09:22",
-          "expected": "10:08",
-          "delay": 46,
+          "expected": "10:29",
+          "delay": 67,
           "cancelled": false
         },
         {
@@ -30,8 +30,8 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:30",
-          "expected": "10:13",
-          "delay": 43,
+          "expected": "10:34",
+          "delay": 64,
           "cancelled": false
         },
         {
@@ -39,12 +39,12 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:30",
-          "expected": "10:13",
-          "delay": 43,
+          "expected": "10:34",
+          "delay": 64,
           "cancelled": false
         }
       ],
-      "records": 98,
+      "records": 95,
       "errors": []
     },
     {
@@ -57,30 +57,30 @@
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "09:56",
-          "expected": "10:26",
-          "delay": 30,
+          "expected": "10:47",
+          "delay": 51,
           "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "ARR",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "09:56",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         },
         {
           "train": "D 40749",
           "board": "ARR",
           "direction": "Kyiv Pasazhyrskyi",
           "planned": "09:56",
-          "expected": "10:26",
-          "delay": 30,
+          "expected": "10:47",
+          "delay": 51,
+          "cancelled": false
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20123)",
+          "board": "ARR",
+          "direction": "Unterpurkersdorf Bahnhst",
+          "planned": "10:18",
+          "expected": "10:28",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 80,
+      "records": 89,
       "errors": []
     },
     {
@@ -93,26 +93,17 @@
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "09:36",
-          "expected": "10:17",
-          "delay": 41,
+          "expected": "10:38",
+          "delay": 62,
           "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "ARR",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "09:36",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         },
         {
           "train": "D 40749",
           "board": "ARR",
           "direction": "Kyiv Pasazhyrskyi",
           "planned": "09:36",
-          "expected": "10:17",
-          "delay": 41,
+          "expected": "10:38",
+          "delay": 62,
           "cancelled": false
         },
         {
@@ -120,30 +111,21 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:38",
-          "expected": "10:18",
-          "delay": 40,
+          "expected": "10:39",
+          "delay": 61,
           "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:38",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         },
         {
           "train": "D 40749",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:38",
-          "expected": "10:18",
-          "delay": 40,
+          "expected": "10:39",
+          "delay": 61,
           "cancelled": false
         }
       ],
-      "records": 131,
+      "records": 129,
       "errors": []
     },
     {
@@ -162,7 +144,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 29,
       "errors": []
     }
   ]

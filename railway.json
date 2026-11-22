@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T07:41:07.412264+00:00",
+  "updated": "2026-11-22T08:31:25.437933+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,37 +8,64 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22723)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "08:45",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "S 1 (Zug-Nr. 28754)",
-          "board": "ARR",
-          "direction": "Wien Liesing Bahnhof",
-          "planned": "09:11",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
           "train": "D 40007",
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "09:22",
-          "expected": "10:01",
-          "delay": 39,
+          "expected": "10:08",
+          "delay": 46,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:22",
+          "expected": "10:08",
+          "delay": 46,
+          "cancelled": false
+        },
+        {
+          "train": "D 40007",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "10:13",
+          "delay": 43,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "10:13",
+          "delay": 43,
+          "cancelled": false
+        }
+      ],
+      "records": 98,
+      "errors": []
+    },
+    {
+      "name": "Wien Westbahnhof",
+      "id": "8100003",
+      "status": "OK",
+      "alerts": [
+        {
+          "train": "D 40007",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "09:56",
+          "expected": "10:26",
+          "delay": 30,
           "cancelled": false
         },
         {
           "train": "D 346",
           "board": "ARR",
           "direction": "Bucuresti Nord Gara A",
-          "planned": "09:22",
+          "planned": "09:56",
           "expected": null,
           "delay": null,
           "cancelled": true
@@ -47,66 +74,13 @@
           "train": "D 40749",
           "board": "ARR",
           "direction": "Kyiv Pasazhyrskyi",
-          "planned": "09:22",
-          "expected": "10:01",
-          "delay": 39,
-          "cancelled": false
-        },
-        {
-          "train": "S 1 (Zug-Nr. 28339)",
-          "board": "DEP",
-          "direction": "Wien Liesing",
-          "planned": "08:47",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "S 1 (Zug-Nr. 28359)",
-          "board": "DEP",
-          "direction": "Wien Liesing",
-          "planned": "09:17",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "D 40007",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:06",
-          "delay": 36,
-          "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "D 40749",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:06",
-          "delay": 36,
+          "planned": "09:56",
+          "expected": "10:26",
+          "delay": 30,
           "cancelled": false
         }
       ],
-      "records": 105,
-      "errors": []
-    },
-    {
-      "name": "Wien Westbahnhof",
-      "id": "8100003",
-      "status": "OK",
-      "alerts": [],
-      "records": 83,
+      "records": 80,
       "errors": []
     },
     {
@@ -115,30 +89,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 1 (Zug-Nr. 28339)",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 1-2)",
-          "planned": "08:52",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "S 1 (Zug-Nr. 28359)",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 1-2)",
-          "planned": "09:22",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
           "train": "D 40007",
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "09:36",
-          "expected": "10:11",
-          "delay": 35,
+          "expected": "10:17",
+          "delay": 41,
           "cancelled": false
         },
         {
@@ -155,35 +111,17 @@
           "board": "ARR",
           "direction": "Kyiv Pasazhyrskyi",
           "planned": "09:36",
-          "expected": "10:11",
-          "delay": 35,
-          "cancelled": false
-        },
-        {
-          "train": "EC 71",
-          "board": "DEP",
-          "direction": "Ljubljana",
-          "planned": "08:00",
-          "expected": "08:41",
+          "expected": "10:17",
           "delay": 41,
           "cancelled": false
-        },
-        {
-          "train": "S 1 (Zug-Nr. 28754)",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "09:06",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         },
         {
           "train": "D 40007",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:38",
-          "expected": "10:12",
-          "delay": 34,
+          "expected": "10:18",
+          "delay": 40,
           "cancelled": false
         },
         {
@@ -200,12 +138,12 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:38",
-          "expected": "10:12",
-          "delay": 34,
+          "expected": "10:18",
+          "delay": 40,
           "cancelled": false
         }
       ],
-      "records": 135,
+      "records": 131,
       "errors": []
     },
     {
@@ -224,7 +162,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 30,
+      "records": 28,
       "errors": []
     }
   ]

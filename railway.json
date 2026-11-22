@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-22T06:20:33.078876+00:00",
+  "updated": "2026-11-22T07:41:07.412264+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,97 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22719)",
+          "train": "S 2 (Zug-Nr. 22723)",
           "board": "ARR",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "07:45",
-          "expected": "08:00",
-          "delay": 15,
+          "planned": "08:45",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28754)",
+          "board": "ARR",
+          "direction": "Wien Liesing Bahnhof",
+          "planned": "09:11",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40007",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "09:22",
+          "expected": "10:01",
+          "delay": 39,
+          "cancelled": false
+        },
+        {
+          "train": "D 346",
+          "board": "ARR",
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:22",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:22",
+          "expected": "10:01",
+          "delay": 39,
+          "cancelled": false
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28339)",
+          "board": "DEP",
+          "direction": "Wien Liesing",
+          "planned": "08:47",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28359)",
+          "board": "DEP",
+          "direction": "Wien Liesing",
+          "planned": "09:17",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40007",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "10:06",
+          "delay": 36,
+          "cancelled": false
+        },
+        {
+          "train": "D 346",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40749",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "10:06",
+          "delay": 36,
           "cancelled": false
         }
       ],
-      "records": 108,
+      "records": 105,
       "errors": []
     },
     {
@@ -25,7 +106,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 87,
+      "records": 83,
       "errors": []
     },
     {
@@ -34,25 +115,97 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22719)",
+          "train": "S 1 (Zug-Nr. 28339)",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "07:38",
-          "expected": "07:55",
-          "delay": 17,
+          "direction": "Wien Hbf (Bahnsteige 1-2)",
+          "planned": "08:52",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28359)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 1-2)",
+          "planned": "09:22",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40007",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "09:36",
+          "expected": "10:11",
+          "delay": 35,
           "cancelled": false
         },
         {
-          "train": "S 2 (Zug-Nr. 22719)",
+          "train": "D 346",
+          "board": "ARR",
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:36",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:36",
+          "expected": "10:11",
+          "delay": 35,
+          "cancelled": false
+        },
+        {
+          "train": "EC 71",
           "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "07:40",
-          "expected": "07:57",
-          "delay": 17,
+          "direction": "Ljubljana",
+          "planned": "08:00",
+          "expected": "08:41",
+          "delay": 41,
+          "cancelled": false
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28754)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "09:06",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40007",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:38",
+          "expected": "10:12",
+          "delay": 34,
+          "cancelled": false
+        },
+        {
+          "train": "D 346",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:38",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "D 40749",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:38",
+          "expected": "10:12",
+          "delay": 34,
           "cancelled": false
         }
       ],
-      "records": 132,
+      "records": 135,
       "errors": []
     },
     {
@@ -71,7 +224,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 28,
+      "records": 30,
       "errors": []
     }
   ]

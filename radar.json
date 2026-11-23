@@ -1,6 +1,6 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-23T05:16:07.298686+00:00",
+  "updated": "2026-11-23T06:31:48.228972+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
@@ -149,6 +149,54 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 14,
+      "alertCause": "emergency medical services",
+      "reasonId": 9,
+      "reasonName": "Rettungseinsatz",
+      "name": "I20261123-0004",
+      "parentName": "I20261123-0004",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U6: Rettungseinsatz",
+      "description": "Linie U6: Unregelmäßige Intervalle in Richtung Floridsdorf. Grund: Rettungseinsatz.",
+      "descriptionHTML": "<p>Linie U6:<br>Unregelmäßige Intervalle in Richtung Floridsdorf. <br><br>Grund: Rettungseinsatz.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U6: Rettungseinsatz",
+            "descriptionPlain": "Linie U6: Unregelmäßige Intervalle in Richtung Floridsdorf. Grund: Rettungseinsatz.",
+            "descriptionHtml": "<p>Linie U6:<br>Unregelmäßige Intervalle in Richtung Floridsdorf. <br><br>Grund: Rettungseinsatz.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-23T07:03:00.000+0100",
+        "resume": "2026-11-23T07:03:00.000+0100",
+        "created": "2026-11-23T07:04:00.000+0100",
+        "lastUpdate": "2026-11-23T07:04:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U6": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U6"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 306,
+          "lineName": "U6",
+          "vehicleType": "ptMetro"
+        }
+      ],
+      "relatedStops": [
+        4615
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
       "alertCauseId": 45,
       "alertCause": "construction work",
       "reasonId": 27,
@@ -191,6 +239,54 @@
           "lineName": "1",
           "vehicleType": "ptTram"
         }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 3,
+      "alertCause": "police activity",
+      "reasonId": 47,
+      "reasonName": "Polizeieinsatz",
+      "name": "I20261123-0005",
+      "parentName": "I20261123-0005",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U4: Polizeieinsatz",
+      "description": "Linie U4: Unregelmäßige Intervalle in Richtung Hütteldorf. Grund: Polizeieinsatz.",
+      "descriptionHTML": "<p>Linie U4:<br>Unregelmäßige Intervalle in Richtung Hütteldorf. <br><br>Grund: Polizeieinsatz.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U4: Polizeieinsatz",
+            "descriptionPlain": "Linie U4: Unregelmäßige Intervalle in Richtung Hütteldorf. Grund: Polizeieinsatz.",
+            "descriptionHtml": "<p>Linie U4:<br>Unregelmäßige Intervalle in Richtung Hütteldorf. <br><br>Grund: Polizeieinsatz.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-23T07:08:00.000+0100",
+        "resume": "2026-11-23T07:08:00.000+0100",
+        "created": "2026-11-23T07:10:00.000+0100",
+        "lastUpdate": "2026-11-23T07:10:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U4": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U4"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 304,
+          "lineName": "U4",
+          "vehicleType": "ptMetro"
+        }
+      ],
+      "relatedStops": [
+        4415
       ]
     },
     {

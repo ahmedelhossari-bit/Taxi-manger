@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T10:20:07.629002+00:00",
+  "updated": "2026-11-23T11:25:51.256361+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,52 +8,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX19976",
+          "train": "IC 538",
           "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "11:17",
-          "expected": "11:29",
-          "delay": 12,
+          "direction": "Graz Hbf",
+          "planned": "12:07",
+          "expected": "12:51",
+          "delay": 44,
           "cancelled": false
         },
         {
-          "train": "RJX19981",
-          "board": "ARR",
-          "direction": "Bregenz Bahnhof",
-          "planned": "11:32",
-          "expected": "12:03",
-          "delay": 31,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 61",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "11:32",
-          "expected": "12:03",
-          "delay": 31,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 61",
+          "train": "REX 64 (Zug-Nr. 2635)",
           "board": "DEP",
-          "direction": "Budapest-Keleti",
-          "planned": "11:40",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Eisenstadt",
+          "planned": "12:18",
+          "expected": "12:28",
+          "delay": 10,
+          "cancelled": false
         },
         {
-          "train": "RJX19981",
+          "train": "REX 63 (Zug-Nr. 7937)",
           "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "11:42",
-          "expected": "12:09",
-          "delay": 27,
+          "direction": "Pamhagen",
+          "planned": "12:18",
+          "expected": "12:28",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 84,
+      "records": 82,
       "errors": []
     },
     {
@@ -61,7 +43,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 78,
+      "records": 75,
       "errors": []
     },
     {
@@ -70,48 +52,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX19981",
-          "board": "ARR",
-          "direction": "Bregenz Bahnhof",
-          "planned": "11:25",
-          "expected": "11:58",
-          "delay": 33,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 61",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "11:25",
-          "expected": "11:58",
-          "delay": 33,
-          "cancelled": false
-        },
-        {
           "train": "IC 538",
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "12:00",
-          "expected": "12:40",
-          "delay": 40,
-          "cancelled": false
-        },
-        {
-          "train": "RJX19981",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "11:27",
-          "expected": "11:59",
-          "delay": 32,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 61",
-          "board": "DEP",
-          "direction": "Budapest-Keleti",
-          "planned": "11:27",
-          "expected": "11:59",
-          "delay": 32,
+          "expected": "12:47",
+          "delay": 47,
           "cancelled": false
         },
         {
@@ -119,12 +65,12 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "12:02",
-          "expected": "12:41",
-          "delay": 39,
+          "expected": "12:48",
+          "delay": 46,
           "cancelled": false
         }
       ],
-      "records": 120,
+      "records": 116,
       "errors": []
     },
     {
@@ -144,34 +90,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 7 (Zug-Nr. 22729)",
-          "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "10:45",
-          "expected": "11:21",
-          "delay": 36,
-          "cancelled": false
-        },
-        {
           "train": "RJX19981",
           "board": "ARR",
           "direction": "Bregenz Bahnhof",
           "planned": "11:57",
-          "expected": "12:22",
-          "delay": 25,
-          "cancelled": false
-        },
-        {
-          "train": "REX 7 (Zug-Nr. 22729)",
-          "board": "DEP",
-          "direction": "Wolfsthal",
-          "planned": "10:49",
-          "expected": "11:21",
-          "delay": 32,
+          "expected": "12:30",
+          "delay": 33,
           "cancelled": false
         }
       ],
-      "records": 31,
+      "records": 29,
       "errors": []
     }
   ]

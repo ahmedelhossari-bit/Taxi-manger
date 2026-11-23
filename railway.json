@@ -1,13 +1,32 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T02:54:09.361856+00:00",
+  "updated": "2026-11-23T03:51:03.941643+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 92,
+      "alerts": [
+        {
+          "train": "S 2 (Zug-Nr. 22709)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "05:15",
+          "expected": "05:25",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "REX 3 (Zug-Nr. 22201)",
+          "board": "DEP",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "04:39",
+          "expected": "04:54",
+          "delay": 15,
+          "cancelled": false
+        }
+      ],
+      "records": 94,
       "errors": []
     },
     {
@@ -15,15 +34,52 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 59,
+      "records": 68,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 131,
+      "alerts": [
+        {
+          "train": "REX 3 (Zug-Nr. 22201)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "04:44",
+          "expected": "04:58",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22709)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "05:08",
+          "expected": "05:21",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "REX 3 (Zug-Nr. 22201)",
+          "board": "DEP",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "04:45",
+          "expected": "04:59",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22709)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "05:10",
+          "expected": "05:22",
+          "delay": 12,
+          "cancelled": false
+        }
+      ],
+      "records": 135,
       "errors": []
     },
     {
@@ -42,7 +98,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 19,
+      "records": 27,
       "errors": []
     }
   ]

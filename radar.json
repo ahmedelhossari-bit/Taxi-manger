@@ -1,7 +1,96 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-23T09:38:11.103020+00:00",
+  "updated": "2026-11-23T10:45:33.368018+00:00",
   "events": [
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261123-0018",
+      "parentName": "I20261123-0018",
+      "priority": "1",
+      "owner": "WL",
+      "title": "1: Verspätungen",
+      "description": "Linie 1: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p><strong>Linie 1:</strong><br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "1: Verspätungen",
+            "descriptionPlain": "Linie 1: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p><strong>Linie 1:</strong><br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-23T11:25:00.000+0100",
+        "resume": "2026-11-23T11:25:00.000+0100",
+        "created": "2026-11-23T11:25:00.000+0100",
+        "lastUpdate": "2026-11-23T11:25:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "1": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 101,
+          "lineName": "1",
+          "vehicleType": "ptTram"
+        }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 137,
+      "alertCause": "miscellaneous",
+      "reasonId": 14,
+      "reasonName": "Betriebsstörung",
+      "name": "I20261123-0020",
+      "parentName": "I20261123-0020",
+      "priority": "1",
+      "owner": "WL",
+      "title": "48A: Betriebsstörung",
+      "description": "Linie 48A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
+      "descriptionHTML": "<p>Linie 48A:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Betriebsstörung.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "48A: Betriebsstörung",
+            "descriptionPlain": "Linie 48A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
+            "descriptionHtml": "<p>Linie 48A:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Betriebsstörung.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-23T11:37:00.000+0100",
+        "created": "2026-11-23T11:37:00.000+0100",
+        "lastUpdate": "2026-11-23T11:37:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "48A": "ptBusCity"
+        }
+      },
+      "relatedLines": [
+        "48A"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 448,
+          "lineName": "48A",
+          "vehicleType": "ptBusCity"
+        }
+      ]
+    },
     {
       "refTrafficInfoCategoryId": 2,
       "alertCauseId": 255,
@@ -36,95 +125,6 @@
           "lineId": 626,
           "lineName": "26E",
           "vehicleType": "ptBus"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 41,
-      "alertCause": "traffic management system failure",
-      "reasonId": 32,
-      "reasonName": "Stellwerksstörung",
-      "name": "I20261123-0013",
-      "parentName": "I20261123-0013",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U6: Stellwerksstörung",
-      "description": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Stellwerksstörung.",
-      "descriptionHTML": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Stellwerksstörung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U6: Stellwerksstörung",
-            "descriptionPlain": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Stellwerksstörung.",
-            "descriptionHtml": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Stellwerksstörung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-23T08:38:00.000+0100",
-        "resume": "2026-11-23T08:38:00.000+0100",
-        "created": "2026-11-23T08:38:00.000+0100",
-        "lastUpdate": "2026-11-23T08:38:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "U6": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U6"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 306,
-          "lineName": "U6",
-          "vehicleType": "ptMetro"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 157,
-      "reasonName": "Polizeiübung",
-      "name": "I20261123-0015",
-      "parentName": "I20261123-0015",
-      "priority": "1",
-      "owner": "WL",
-      "title": "1A: Polizeiübung",
-      "description": "Derzeit ist ein Betrieb der Linie 1A nicht möglich. Ersatz: Linien U- Bahn. Voraussichtliche Dauer: bis ca. 11:30 Uhr. Grund: Polizeiübung.",
-      "descriptionHTML": "<p>Derzeit ist ein Betrieb der Linie 1A nicht möglich.</p><p>Ersatz: Linien U- Bahn.</p><p>Voraussichtliche Dauer: bis ca. 11:30 Uhr.</p><p>Grund: Polizeiübung.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "1A: Polizeiübung",
-            "descriptionPlain": "Derzeit ist ein Betrieb der Linie 1A nicht möglich. Ersatz: Linien U- Bahn. Voraussichtliche Dauer: bis ca. 11:30 Uhr. Grund: Polizeiübung.",
-            "descriptionHtml": "<p>Derzeit ist ein Betrieb der Linie 1A nicht möglich.</p><p>Ersatz: Linien U- Bahn.</p><p>Voraussichtliche Dauer: bis ca. 11:30 Uhr.</p><p>Grund: Polizeiübung.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-23T09:28:00.000+0100",
-        "created": "2026-11-23T09:30:00.000+0100",
-        "lastUpdate": "2026-11-23T09:30:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "1A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "1A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 401,
-          "lineName": "1A",
-          "vehicleType": "ptBusCity"
         }
       ]
     },
@@ -239,46 +239,46 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 71,
-      "alertCause": "vehicle on the line",
-      "reasonId": 25,
-      "reasonName": "Falschparker",
-      "name": "I20261123-0016",
-      "parentName": "I20261123-0016",
+      "alertCauseId": 137,
+      "alertCause": "miscellaneous",
+      "reasonId": 14,
+      "reasonName": "Betriebsstörung",
+      "name": "I20261123-0019",
+      "parentName": "I20261123-0019",
       "priority": "1",
       "owner": "WL",
-      "title": "5: Falschparker",
-      "description": "Linie 5: Fahrtbehinderung in Richtung Westbahnhof S U. Ersatz: Linie U6. Voraussichtliche Dauer: 11:00 Uhr. Grund: Falschparker im Bereich Kaiserstraße 93.",
-      "descriptionHTML": "<p>Linie 5:<br>Fahrtbehinderung in Richtung Westbahnhof S U.</p><p>Ersatz: Linie U6.</p><p>Voraussichtliche Dauer: 11:00 Uhr.</p><p>Grund: Falschparker im Bereich Kaiserstraße 93.</p>",
+      "title": "3A: Verspätungen",
+      "description": "Linie 3A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
+      "descriptionHTML": "<p>Linie 3A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Betriebsstörung.</p>",
       "languages": [
         {
           "de": {
-            "title": "5: Falschparker",
-            "descriptionPlain": "Linie 5: Fahrtbehinderung in Richtung Westbahnhof S U. Ersatz: Linie U6. Voraussichtliche Dauer: 11:00 Uhr. Grund: Falschparker im Bereich Kaiserstraße 93.",
-            "descriptionHtml": "<p>Linie 5:<br>Fahrtbehinderung in Richtung Westbahnhof S U.</p><p>Ersatz: Linie U6.</p><p>Voraussichtliche Dauer: 11:00 Uhr.</p><p>Grund: Falschparker im Bereich Kaiserstraße 93.</p>"
+            "title": "3A: Verspätungen",
+            "descriptionPlain": "Linie 3A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Betriebsstörung.",
+            "descriptionHtml": "<p>Linie 3A:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Betriebsstörung.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-23T10:36:00.000+0100",
-        "created": "2026-11-23T10:37:00.000+0100",
-        "lastUpdate": "2026-11-23T10:37:00.000+0100"
+        "start": "2026-11-23T11:28:00.000+0100",
+        "resume": "2026-11-23T11:28:00.000+0100",
+        "created": "2026-11-23T11:28:00.000+0100",
+        "lastUpdate": "2026-11-23T11:28:00.000+0100"
       },
-      "location": "Kaiserstraße 93",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "5": "ptTram"
+          "3A": "ptBusCity"
         }
       },
       "relatedLines": [
-        "5"
+        "3A"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 105,
-          "lineName": "5",
-          "vehicleType": "ptTram"
+          "lineId": 403,
+          "lineName": "3A",
+          "vehicleType": "ptBusCity"
         }
       ]
     },
@@ -1070,6 +1070,29 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1223-138",
+      "parentName": "R1223-138",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Witterung\nBetrieb ab Nußdorfer Straße",
+      "description": "Witterung\nBetrieb ab Nußdorfer Straße",
+      "time": {
+        "start": "2026-11-23T08:06:16.000+0100",
+        "end": "2026-11-23T12:00:00.000+0100"
+      },
+      "relatedLines": [
+        "38"
+      ],
+      "relatedStops": [
+        1223
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R1224-138",
       "parentName": "R1224-138",
       "priority": "1",
@@ -1085,29 +1108,6 @@
       ],
       "relatedStops": [
         1224
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1221-138",
-      "parentName": "R1221-138",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Witterung\nBetrieb ab Nußdorfer Straße",
-      "description": "Witterung\nBetrieb ab Nußdorfer Straße",
-      "time": {
-        "start": "2026-11-23T08:06:16.000+0100",
-        "end": "2026-11-23T12:00:00.000+0100"
-      },
-      "relatedLines": [
-        "38"
-      ],
-      "relatedStops": [
-        1221
       ]
     },
     {
@@ -1185,8 +1185,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1223-138",
-      "parentName": "R1223-138",
+      "name": "R1221-138",
+      "parentName": "R1221-138",
       "priority": "1",
       "owner": "WL",
       "title": "Witterung\nBetrieb ab Nußdorfer Straße",
@@ -1199,7 +1199,7 @@
         "38"
       ],
       "relatedStops": [
-        1223
+        1221
       ]
     },
     {

@@ -1141,6 +1141,17 @@ const label=i===3?['المالية والتحليل','Financial Dashboard','Fina
 const el=add('button',(/taxi maps/i.test(txt)?'⌖':/railway/i.test(txt)?'🚆':isRadar?'◉':icons[i]||'›')+'  '+label);
 el.onclick=()=>{close();old.click()};
 });
+const weeklyButton=add('button','🧠  '+['التحليل الذكي','Smart Weekly Analysis','Intelligente Wochenanalyse'][ix]);
+weeklyButton.onclick=()=>{
+ close();
+ const target=document.getElementById('tpWeeklySmart');
+ if(!target){alert(['التحليل الذكي غير متاح في هذه النسخة','Smart analysis is not available in this version','Die Wochenanalyse ist in dieser Version nicht verfügbar'][ix]);return;}
+ const analysisNav=[...nav.querySelectorAll('button')].find(b=>/التحليل|analysis|analytics|statistik/i.test(b.textContent));
+ if(analysisNav)analysisNav.click();
+ document.querySelectorAll('section').forEach(x=>{if(x!==target)x.classList.add('prohidden')});
+ target.classList.remove('prohidden');
+ target.scrollIntoView({block:'start'});
+};
 add('button','◎  '+['إعدادات الموقع','Location settings','Standorteinstellungen'][ix]).onclick=()=>{close();window.tpGPS.settings()};
 add('button','♧  '+['الإشعارات','Notifications','Benachrichtigungen'][ix]).onclick=()=>{close();window.tpNoticeOpen?.()};
 const profile=document.querySelector('#tp13bar > button');
@@ -1666,5 +1677,16 @@ body.tpDriving #tmMap .leaflet-top{top:calc(max(env(safe-area-inset-top,0px),var
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)analyze()});
  window.addEventListener('pageshow',analyze);
  setInterval(()=>{if(!document.hidden)analyze()},60000);
+})();
+</script>
+
+<script>
+/* Smart weekly analysis is a dedicated view, not a hidden home section. */
+(function(){
+ const weekly=document.getElementById('tpWeeklySmart');
+ const nav=document.getElementById('proNav');
+ if(!weekly)return;
+ weekly.classList.add('prohidden');
+ if(nav)nav.addEventListener('click',function(e){if(e.target.closest('button'))weekly.classList.add('prohidden')},true);
 })();
 </script>

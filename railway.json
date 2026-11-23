@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T06:12:53.106680+00:00",
+  "updated": "2026-11-23T07:49:13.429481+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,79 +8,51 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 3 (Zug-Nr. 22206)",
+          "train": "REX 3 (Zug-Nr. 22214)",
           "board": "ARR",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "06:49",
-          "expected": "07:14",
-          "delay": 25,
+          "planned": "08:50",
+          "expected": "09:07",
+          "delay": 17,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22308)",
+          "train": "REX 1 (Zug-Nr. 22316)",
           "board": "ARR",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "07:02",
-          "expected": "07:13",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "D 1123",
-          "board": "ARR",
-          "direction": "St.Valentin Bahnhof",
-          "planned": "07:22",
-          "expected": "07:34",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "REX 62 (Zug-Nr. 9430)",
-          "board": "ARR",
-          "direction": "Györ",
-          "planned": "07:25",
+          "planned": "09:00",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "REX 1 (Zug-Nr. 22308)",
+          "train": "REX 62 (Zug-Nr. 9415)",
           "board": "DEP",
-          "direction": "Breclav",
-          "planned": "07:04",
-          "expected": "07:14",
+          "direction": "Györ",
+          "planned": "09:09",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "RJX 254",
+          "board": "DEP",
+          "direction": "Praha hl.n.",
+          "planned": "09:10",
+          "expected": "09:20",
           "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 97,
+      "records": 85,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "CJX 5 (Zug-Nr. 1907)",
-          "board": "ARR",
-          "direction": "Waidhofen/Ybbs Bahnhof",
-          "planned": "07:12",
-          "expected": "07:43",
-          "delay": 31,
-          "cancelled": false
-        },
-        {
-          "train": "CJX 5 (Zug-Nr. 9103)",
-          "board": "ARR",
-          "direction": "St.Valentin Bahnhof",
-          "planned": "07:12",
-          "expected": "07:43",
-          "delay": 31,
-          "cancelled": false
-        }
-      ],
-      "records": 80,
+      "alerts": [],
+      "records": 87,
       "errors": []
     },
     {
@@ -89,34 +61,52 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "D 1123",
+          "train": "REX 3 (Zug-Nr. 22214)",
           "board": "ARR",
-          "direction": "St.Valentin Bahnhof",
-          "planned": "07:15",
-          "expected": "07:29",
-          "delay": 14,
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "08:44",
+          "expected": "09:04",
+          "delay": 20,
           "cancelled": false
         },
         {
-          "train": "REX 93 (Zug-Nr. 7108)",
+          "train": "REX 1 (Zug-Nr. 22316)",
           "board": "ARR",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "07:16",
+          "planned": "08:52",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "D 1123",
+          "train": "EC 342",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "08:38",
+          "expected": "08:49",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "REX 3 (Zug-Nr. 22214)",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "07:17",
-          "expected": "07:30",
-          "delay": 13,
+          "planned": "08:45",
+          "expected": "09:04",
+          "delay": 19,
           "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22316)",
+          "board": "DEP",
+          "direction": "Breclav",
+          "planned": "08:54",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 121,
+      "records": 125,
       "errors": []
     },
     {
@@ -135,7 +125,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 30,
+      "records": 31,
       "errors": []
     }
   ]

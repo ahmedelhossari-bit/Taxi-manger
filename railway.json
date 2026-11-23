@@ -1,49 +1,12 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T16:50:06.820671+00:00",
+  "updated": "2026-11-23T17:50:22.669690+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "REX 6 (Zug-Nr. 7627)",
-          "board": "ARR",
-          "direction": "Deutschkreutz Bahnhof",
-          "planned": "17:37",
-          "expected": "17:53",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
-          "train": "REX 65 (Zug-Nr. 7827)",
-          "board": "ARR",
-          "direction": "Wulkaprodersdorf Bahnhof",
-          "planned": "17:37",
-          "expected": "17:53",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
-          "train": "WB 1006",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "17:45",
-          "expected": "17:55",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "REX 6 (Zug-Nr. 7753)",
-          "board": "DEP",
-          "direction": "Bratislava-Petrzalka",
-          "planned": "17:45",
-          "expected": "17:55",
-          "delay": 10,
-          "cancelled": false
-        }
-      ],
+      "alerts": [],
       "records": 94,
       "errors": []
     },
@@ -52,7 +15,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 86,
+      "records": 79,
       "errors": []
     },
     {
@@ -61,39 +24,30 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 1006",
+          "train": "IC 743",
           "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "17:38",
-          "expected": "17:51",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
-          "train": "S 60 (Zug-Nr. 26061)",
-          "board": "ARR",
-          "direction": "Wampersdorf Bahnhof",
-          "planned": "17:43",
-          "expected": "17:53",
+          "direction": "Salzburg Hbf",
+          "planned": "18:56",
+          "expected": "19:06",
           "delay": 10,
           "cancelled": false
         },
         {
-          "train": "WB 1006",
+          "train": "CJX 2954 (Zug-Nr. 2954)",
+          "board": "ARR",
+          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
+          "planned": "19:26",
+          "expected": "19:43",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 2954 (Zug-Nr. 2954)",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "17:40",
-          "expected": "17:52",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "S 60 (Zug-Nr. 26061)",
-          "board": "DEP",
-          "direction": "Bruck/Leitha",
-          "planned": "17:44",
-          "expected": "17:54",
-          "delay": 10,
+          "planned": "19:27",
+          "expected": "19:43",
+          "delay": 16,
           "cancelled": false
         }
       ],
@@ -116,7 +70,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 33,
+      "records": 32,
       "errors": []
     }
   ]

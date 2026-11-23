@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T07:49:13.429481+00:00",
+  "updated": "2026-11-23T09:10:03.260234+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,51 +8,133 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 3 (Zug-Nr. 22214)",
+          "train": "D 40007",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "08:50",
-          "expected": "09:07",
-          "delay": 17,
+          "direction": "Uzhhorod",
+          "planned": "09:22",
+          "expected": "10:13",
+          "delay": 51,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22316)",
+          "train": "D 346",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "09:00",
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:22",
+          "expected": "10:13",
+          "delay": 51,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:22",
+          "expected": "10:13",
+          "delay": 51,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 40421",
+          "board": "ARR",
+          "direction": "Amsterdam Centraal",
+          "planned": "09:48",
+          "expected": "10:42",
+          "delay": 54,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 493",
+          "board": "ARR",
+          "direction": "Hamburg-Altona",
+          "planned": "09:48",
+          "expected": "10:42",
+          "delay": 54,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22729)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "10:15",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "REX 62 (Zug-Nr. 9415)",
+          "train": "D 40007",
           "board": "DEP",
-          "direction": "Györ",
-          "planned": "09:09",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "10:18",
+          "delay": 48,
+          "cancelled": false
         },
         {
-          "train": "RJX 254",
+          "train": "D 346",
           "board": "DEP",
-          "direction": "Praha hl.n.",
-          "planned": "09:10",
-          "expected": "09:20",
-          "delay": 10,
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "10:18",
+          "delay": 48,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "10:18",
+          "delay": 48,
+          "cancelled": false
+        },
+        {
+          "train": "REX 7 (Zug-Nr. 22729)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "10:23",
+          "expected": "11:02",
+          "delay": 39,
           "cancelled": false
         }
       ],
-      "records": 85,
+      "records": 88,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 87,
+      "alerts": [
+        {
+          "train": "D 40007",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "09:56",
+          "expected": "10:32",
+          "delay": 36,
+          "cancelled": false
+        },
+        {
+          "train": "D 346",
+          "board": "ARR",
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:56",
+          "expected": "10:32",
+          "delay": 36,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:56",
+          "expected": "10:32",
+          "delay": 36,
+          "cancelled": false
+        }
+      ],
+      "records": 82,
       "errors": []
     },
     {
@@ -61,52 +143,88 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 3 (Zug-Nr. 22214)",
+          "train": "D 40007",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "08:44",
-          "expected": "09:04",
-          "delay": 20,
+          "direction": "Uzhhorod",
+          "planned": "09:36",
+          "expected": "10:23",
+          "delay": 47,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22316)",
+          "train": "D 346",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "08:52",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:36",
+          "expected": "10:23",
+          "delay": 47,
+          "cancelled": false
         },
         {
-          "train": "EC 342",
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:36",
+          "expected": "10:23",
+          "delay": 47,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 40421",
+          "board": "ARR",
+          "direction": "Amsterdam Centraal",
+          "planned": "09:39",
+          "expected": "10:39",
+          "delay": 60,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 493",
+          "board": "ARR",
+          "direction": "Hamburg-Altona",
+          "planned": "09:39",
+          "expected": "10:39",
+          "delay": 60,
+          "cancelled": false
+        },
+        {
+          "train": "D 40007",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
-          "planned": "08:38",
-          "expected": "08:49",
-          "delay": 11,
+          "planned": "09:38",
+          "expected": "10:24",
+          "delay": 46,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22214)",
+          "train": "D 346",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "08:45",
-          "expected": "09:04",
-          "delay": 19,
+          "direction": "Wien Westbahnhof",
+          "planned": "09:38",
+          "expected": "10:24",
+          "delay": 46,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22316)",
+          "train": "D 40749",
           "board": "DEP",
-          "direction": "Breclav",
-          "planned": "08:54",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:38",
+          "expected": "10:24",
+          "delay": 46,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22729)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "10:10",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 125,
+      "records": 126,
       "errors": []
     },
     {
@@ -124,8 +242,27 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 31,
+      "alerts": [
+        {
+          "train": "REX 7 (Zug-Nr. 22729)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "10:45",
+          "expected": "11:07",
+          "delay": 22,
+          "cancelled": false
+        },
+        {
+          "train": "REX 7 (Zug-Nr. 22729)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "10:49",
+          "expected": "11:07",
+          "delay": 18,
+          "cancelled": false
+        }
+      ],
+      "records": 28,
       "errors": []
     }
   ]

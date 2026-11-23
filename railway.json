@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T18:47:30.153622+00:00",
+  "updated": "2026-11-23T19:53:57.597316+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,52 +8,45 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 207",
+          "train": "RJX19961",
           "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "19:49",
-          "expected": "20:21",
-          "delay": 32,
+          "direction": "Bregenz Bahnhof",
+          "planned": "21:32",
+          "expected": "21:49",
+          "delay": 17,
           "cancelled": false
         },
         {
-          "train": "RJ 654",
-          "board": "DEP",
-          "direction": "Villach Hbf",
-          "planned": "19:24",
-          "expected": "19:47",
-          "delay": 23,
+          "train": "RJX 261",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "21:32",
+          "expected": "21:49",
+          "delay": 17,
           "cancelled": false
         },
         {
-          "train": "EC 207",
+          "train": "RJX 167",
           "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "19:53",
-          "expected": "20:24",
-          "delay": 31,
+          "direction": "Bratislava hl.st.",
+          "planned": "20:42",
+          "expected": "20:55",
+          "delay": 13,
           "cancelled": false
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22963)",
-          "board": "DEP",
-          "direction": "Payerbach-Reichenau",
-          "planned": "19:55",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         }
       ],
-      "records": 88,
+      "records": 84,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
-      "status": "OK",
+      "status": "PARTIAL",
       "alerts": [],
-      "records": 81,
-      "errors": []
+      "records": 36,
+      "errors": [
+        "{'meth': 'StationBoard', 'err': 'FAIL', 'errTxt': 'HCI Service: request failed', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
+      ]
     },
     {
       "name": "Wien Meidling",
@@ -61,97 +54,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 654",
+          "train": "RJX19961",
           "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "19:29",
-          "expected": "19:51",
-          "delay": 22,
-          "cancelled": false
-        },
-        {
-          "train": "EC 207",
-          "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "19:58",
-          "expected": "20:29",
-          "delay": 31,
-          "cancelled": false
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22963)",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 1-2)",
-          "planned": "20:00",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "RJX19957",
-          "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "20:25",
-          "expected": "20:44",
+          "direction": "Bregenz Bahnhof",
+          "planned": "21:25",
+          "expected": "21:44",
           "delay": 19,
           "cancelled": false
         },
         {
-          "train": "RJX 167",
+          "train": "RJX 261",
           "board": "ARR",
-          "direction": "Sargans",
-          "planned": "20:25",
-          "expected": "20:44",
+          "direction": "München Hbf",
+          "planned": "21:25",
+          "expected": "21:44",
           "delay": 19,
           "cancelled": false
         },
         {
-          "train": "RJ 654",
+          "train": "RJX19961",
           "board": "DEP",
-          "direction": "Villach Hbf",
-          "planned": "19:31",
-          "expected": "19:51",
-          "delay": 20,
-          "cancelled": false
-        },
-        {
-          "train": "EC 207",
-          "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "20:00",
-          "expected": "20:30",
-          "delay": 30,
-          "cancelled": false
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22963)",
-          "board": "DEP",
-          "direction": "Payerbach-Reichenau",
-          "planned": "20:04",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "RJX19957",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "20:27",
-          "expected": "20:45",
+          "direction": "Wien Hbf",
+          "planned": "21:27",
+          "expected": "21:45",
           "delay": 18,
           "cancelled": false
         },
         {
-          "train": "RJX 167",
+          "train": "RJX 261",
           "board": "DEP",
-          "direction": "Bratislava hl.st.",
-          "planned": "20:27",
-          "expected": "20:45",
+          "direction": "Budapest-Keleti",
+          "planned": "21:27",
+          "expected": "21:45",
           "delay": 18,
           "cancelled": false
         }
       ],
-      "records": 129,
+      "records": 127,
       "errors": []
     },
     {
@@ -170,7 +109,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 31,
+      "records": 29,
       "errors": []
     }
   ]

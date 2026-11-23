@@ -1,7 +1,52 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-23T03:55:38.272856+00:00",
+  "updated": "2026-11-23T05:16:07.298686+00:00",
   "events": [
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261123-0003",
+      "parentName": "I20261123-0003",
+      "priority": "1",
+      "owner": "WL",
+      "title": "25: Verspätungen",
+      "description": "Linie 25: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Linie 25:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "25: Verspätungen",
+            "descriptionPlain": "Linie 25: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Linie 25:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-23T06:06:00.000+0100",
+        "resume": "2026-11-23T06:06:00.000+0100",
+        "created": "2026-11-23T06:06:00.000+0100",
+        "lastUpdate": "2026-11-23T06:06:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "25": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 125,
+          "lineName": "25",
+          "vehicleType": "ptTram"
+        }
+      ]
+    },
     {
       "refTrafficInfoCategoryId": 2,
       "alertCauseId": 255,
@@ -200,21 +245,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R318-437",
-      "parentName": "R318-437",
+      "name": "R2373-126",
+      "parentName": "R2373-126",
       "priority": "1",
       "owner": "WL",
-      "title": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
-      "description": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
+      "title": "Züge halten in\nTokiostraße",
+      "description": "Züge halten in\nTokiostraße",
       "time": {
         "start": "2026-11-23T00:00:10.000+0100",
         "end": "2026-11-23T23:59:59.000+0100"
       },
       "relatedLines": [
-        "37A"
+        "26"
       ],
       "relatedStops": [
-        318
+        2373
       ]
     },
     {
@@ -223,21 +268,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2345-127",
-      "parentName": "R2345-127",
+      "name": "R2379-627",
+      "parentName": "R2379-627",
       "priority": "1",
       "owner": "WL",
-      "title": "Züge halten bei\nLinie 31",
-      "description": "Züge halten bei\nLinie 31",
+      "title": "Busse halten\nBessemerstraße 1-3",
+      "description": "Busse halten\nBessemerstraße 1-3",
       "time": {
         "start": "2026-11-23T00:00:10.000+0100",
         "end": "2026-11-23T23:59:59.000+0100"
       },
       "relatedLines": [
-        "27"
+        "26E"
       ],
       "relatedStops": [
-        2345
+        2379
       ]
     },
     {
@@ -269,35 +314,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2373-125",
-      "parentName": "R2373-125",
+      "name": "R2345-127",
+      "parentName": "R2345-127",
       "priority": "1",
       "owner": "WL",
-      "title": "Züge halten\nDonaufelder Straße 175-177",
-      "description": "Züge halten\nDonaufelder Straße 175-177",
-      "time": {
-        "start": "2026-11-23T00:00:10.000+0100",
-        "end": "2026-11-23T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2373
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2373-127",
-      "parentName": "R2373-127",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linie 25 in\nTokiostraße benützen",
-      "description": "Linie 25 in\nTokiostraße benützen",
+      "title": "Züge halten bei\nLinie 31",
+      "description": "Züge halten bei\nLinie 31",
       "time": {
         "start": "2026-11-23T00:00:10.000+0100",
         "end": "2026-11-23T23:59:59.000+0100"
@@ -306,7 +328,7 @@
         "27"
       ],
       "relatedStops": [
-        2373
+        2345
       ]
     },
     {
@@ -315,21 +337,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2379-627",
-      "parentName": "R2379-627",
+      "name": "R318-437",
+      "parentName": "R318-437",
       "priority": "1",
       "owner": "WL",
-      "title": "Busse halten\nBessemerstraße 1-3",
-      "description": "Busse halten\nBessemerstraße 1-3",
+      "title": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
+      "description": "Bauarbeiten\nBusse halten Pasettistraße vor Hellwagstraße (bei Linie 5A)",
       "time": {
         "start": "2026-11-23T00:00:10.000+0100",
         "end": "2026-11-23T23:59:59.000+0100"
       },
       "relatedLines": [
-        "26E"
+        "37A"
       ],
       "relatedStops": [
-        2379
+        318
       ]
     },
     {
@@ -499,29 +521,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2373-126",
-      "parentName": "R2373-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Züge halten in\nTokiostraße",
-      "description": "Züge halten in\nTokiostraße",
-      "time": {
-        "start": "2026-11-23T00:00:10.000+0100",
-        "end": "2026-11-23T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2373
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2378-627",
       "parentName": "R2378-627",
       "priority": "1",
@@ -683,6 +682,52 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2373-125",
+      "parentName": "R2373-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Züge halten\nDonaufelder Straße 175-177",
+      "description": "Züge halten\nDonaufelder Straße 175-177",
+      "time": {
+        "start": "2026-11-23T00:00:10.000+0100",
+        "end": "2026-11-23T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2373
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2373-127",
+      "parentName": "R2373-127",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linie 25 in\nTokiostraße benützen",
+      "description": "Linie 25 in\nTokiostraße benützen",
+      "time": {
+        "start": "2026-11-23T00:00:10.000+0100",
+        "end": "2026-11-23T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "27"
+      ],
+      "relatedStops": [
+        2373
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R3886-480",
       "parentName": "R3886-480",
       "priority": "1",
@@ -729,98 +774,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R500-101",
-      "parentName": "R500-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bhf. Hütteldorf\nÖBB-Ersatzbus für <80",
-      "description": "Bhf. Hütteldorf\nÖBB-Ersatzbus für <80",
-      "time": {
-        "start": "2026-11-23T00:30:12.000+0100",
-        "end": "2026-11-23T04:59:00.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        500
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1749-508",
-      "parentName": "R1749-508",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBusse halten Aßmayergasse nach Flurschützstraße bei Linie 59A",
-      "description": "Gleisbauarbeiten\nBusse halten Aßmayergasse nach Flurschützstraße bei Linie 59A",
-      "time": {
-        "start": "2026-11-23T00:45:12.000+0100",
-        "end": "2026-11-23T05:15:00.000+0100"
-      },
-      "relatedLines": [
-        "N8"
-      ],
-      "relatedStops": [
-        1749
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R407-506",
-      "parentName": "R407-506",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bauarbeiten\nBusse halten Quellenstraße 189",
-      "description": "Bauarbeiten\nBusse halten Quellenstraße 189",
-      "time": {
-        "start": "2026-11-23T00:54:14.000+0100",
-        "end": "2026-11-23T05:04:00.000+0100"
-      },
-      "relatedLines": [
-        "N6"
-      ],
-      "relatedStops": [
-        407
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R402-506",
-      "parentName": "R402-506",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bauarbeiten \nBusse halten Neilreichgasse 20-22 ",
-      "description": "Bauarbeiten \nBusse halten Neilreichgasse 20-22 ",
-      "time": {
-        "start": "2026-11-23T00:55:15.000+0100",
-        "end": "2026-11-23T05:05:00.000+0100"
-      },
-      "relatedLines": [
-        "N6"
-      ],
-      "relatedStops": [
-        402
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1974-466",
       "parentName": "R1974-466",
       "priority": "1",
@@ -859,6 +812,29 @@
       ],
       "relatedStops": [
         1199
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R500-101",
+      "parentName": "R500-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Bhf. Hütteldorf\nÖBB-Ersatzbus für <80",
+      "description": "Bhf. Hütteldorf\nÖBB-Ersatzbus für <80",
+      "time": {
+        "start": "2026-11-23T05:00:26.000+0100",
+        "end": "2026-11-23T23:00:00.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        500
       ]
     },
     {

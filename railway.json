@@ -1,12 +1,31 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T12:24:55.980311+00:00",
+  "updated": "2026-11-23T13:51:38.498883+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
+      "alerts": [
+        {
+          "train": "RJX 56",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "15:07",
+          "expected": "15:21",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 56",
+          "board": "DEP",
+          "direction": "Praha hl.n.",
+          "planned": "15:10",
+          "expected": "15:24",
+          "delay": 14,
+          "cancelled": false
+        }
+      ],
       "records": 85,
       "errors": []
     },
@@ -15,15 +34,34 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 79,
+      "records": 78,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 122,
+      "alerts": [
+        {
+          "train": "RJX 56",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "15:00",
+          "expected": "15:17",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 56",
+          "board": "DEP",
+          "direction": "Praha hl.n.",
+          "planned": "15:02",
+          "expected": "15:18",
+          "delay": 16,
+          "cancelled": false
+        }
+      ],
+      "records": 120,
       "errors": []
     },
     {
@@ -42,7 +80,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 29,
+      "records": 30,
       "errors": []
     }
   ]

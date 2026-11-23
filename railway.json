@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T09:10:03.260234+00:00",
+  "updated": "2026-11-23T10:20:07.629002+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,133 +8,60 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "D 40007",
+          "train": "RJX19976",
           "board": "ARR",
-          "direction": "Uzhhorod",
-          "planned": "09:22",
-          "expected": "10:13",
-          "delay": 51,
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "11:17",
+          "expected": "11:29",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "D 346",
+          "train": "RJX19981",
           "board": "ARR",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "09:22",
-          "expected": "10:13",
-          "delay": 51,
+          "direction": "Bregenz Bahnhof",
+          "planned": "11:32",
+          "expected": "12:03",
+          "delay": 31,
           "cancelled": false
         },
         {
-          "train": "D 40749",
+          "train": "RJX 61",
           "board": "ARR",
-          "direction": "Kyiv Pasazhyrskyi",
-          "planned": "09:22",
-          "expected": "10:13",
-          "delay": 51,
+          "direction": "München Hbf",
+          "planned": "11:32",
+          "expected": "12:03",
+          "delay": 31,
           "cancelled": false
         },
         {
-          "train": "NJ 40421",
-          "board": "ARR",
-          "direction": "Amsterdam Centraal",
-          "planned": "09:48",
-          "expected": "10:42",
-          "delay": 54,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 493",
-          "board": "ARR",
-          "direction": "Hamburg-Altona",
-          "planned": "09:48",
-          "expected": "10:42",
-          "delay": 54,
-          "cancelled": false
-        },
-        {
-          "train": "S 2 (Zug-Nr. 22729)",
-          "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "10:15",
+          "train": "RJX 61",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "11:40",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "D 40007",
+          "train": "RJX19981",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:18",
-          "delay": 48,
-          "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:18",
-          "delay": 48,
-          "cancelled": false
-        },
-        {
-          "train": "D 40749",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:18",
-          "delay": 48,
-          "cancelled": false
-        },
-        {
-          "train": "REX 7 (Zug-Nr. 22729)",
-          "board": "DEP",
-          "direction": "Wolfsthal",
-          "planned": "10:23",
-          "expected": "11:02",
-          "delay": 39,
+          "direction": "Flughafen Wien",
+          "planned": "11:42",
+          "expected": "12:09",
+          "delay": 27,
           "cancelled": false
         }
       ],
-      "records": 88,
+      "records": 84,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "D 40007",
-          "board": "ARR",
-          "direction": "Uzhhorod",
-          "planned": "09:56",
-          "expected": "10:32",
-          "delay": 36,
-          "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "ARR",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "09:56",
-          "expected": "10:32",
-          "delay": 36,
-          "cancelled": false
-        },
-        {
-          "train": "D 40749",
-          "board": "ARR",
-          "direction": "Kyiv Pasazhyrskyi",
-          "planned": "09:56",
-          "expected": "10:32",
-          "delay": 36,
-          "cancelled": false
-        }
-      ],
-      "records": 82,
+      "alerts": [],
+      "records": 78,
       "errors": []
     },
     {
@@ -143,88 +70,61 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "D 40007",
+          "train": "RJX19981",
           "board": "ARR",
-          "direction": "Uzhhorod",
-          "planned": "09:36",
-          "expected": "10:23",
-          "delay": 47,
+          "direction": "Bregenz Bahnhof",
+          "planned": "11:25",
+          "expected": "11:58",
+          "delay": 33,
           "cancelled": false
         },
         {
-          "train": "D 346",
+          "train": "RJX 61",
           "board": "ARR",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "09:36",
-          "expected": "10:23",
-          "delay": 47,
+          "direction": "München Hbf",
+          "planned": "11:25",
+          "expected": "11:58",
+          "delay": 33,
           "cancelled": false
         },
         {
-          "train": "D 40749",
+          "train": "IC 538",
           "board": "ARR",
-          "direction": "Kyiv Pasazhyrskyi",
-          "planned": "09:36",
-          "expected": "10:23",
-          "delay": 47,
+          "direction": "Graz Hbf",
+          "planned": "12:00",
+          "expected": "12:40",
+          "delay": 40,
           "cancelled": false
         },
         {
-          "train": "NJ 40421",
-          "board": "ARR",
-          "direction": "Amsterdam Centraal",
-          "planned": "09:39",
-          "expected": "10:39",
-          "delay": 60,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 493",
-          "board": "ARR",
-          "direction": "Hamburg-Altona",
-          "planned": "09:39",
-          "expected": "10:39",
-          "delay": 60,
-          "cancelled": false
-        },
-        {
-          "train": "D 40007",
+          "train": "RJX19981",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:38",
-          "expected": "10:24",
-          "delay": 46,
+          "direction": "Flughafen Wien",
+          "planned": "11:27",
+          "expected": "11:59",
+          "delay": 32,
           "cancelled": false
         },
         {
-          "train": "D 346",
+          "train": "RJX 61",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:38",
-          "expected": "10:24",
-          "delay": 46,
+          "direction": "Budapest-Keleti",
+          "planned": "11:27",
+          "expected": "11:59",
+          "delay": 32,
           "cancelled": false
         },
         {
-          "train": "D 40749",
+          "train": "IC 538",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:38",
-          "expected": "10:24",
-          "delay": 46,
+          "direction": "Wien Hbf",
+          "planned": "12:02",
+          "expected": "12:41",
+          "delay": 39,
           "cancelled": false
-        },
-        {
-          "train": "S 2 (Zug-Nr. 22729)",
-          "board": "DEP",
-          "direction": "Wolfsthal",
-          "planned": "10:10",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         }
       ],
-      "records": 126,
+      "records": 120,
       "errors": []
     },
     {
@@ -248,8 +148,17 @@
           "board": "ARR",
           "direction": "Mödling Bahnhof",
           "planned": "10:45",
-          "expected": "11:07",
-          "delay": 22,
+          "expected": "11:21",
+          "delay": 36,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19981",
+          "board": "ARR",
+          "direction": "Bregenz Bahnhof",
+          "planned": "11:57",
+          "expected": "12:22",
+          "delay": 25,
           "cancelled": false
         },
         {
@@ -257,12 +166,12 @@
           "board": "DEP",
           "direction": "Wolfsthal",
           "planned": "10:49",
-          "expected": "11:07",
-          "delay": 18,
+          "expected": "11:21",
+          "delay": 32,
           "cancelled": false
         }
       ],
-      "records": 28,
+      "records": 31,
       "errors": []
     }
   ]

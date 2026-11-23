@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-23T03:51:03.941643+00:00",
+  "updated": "2026-11-23T05:02:35.864302+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,22 +8,31 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22709)",
+          "train": "REX 3 (Zug-Nr. 22306)",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "05:15",
-          "expected": "05:25",
+          "direction": "Felixdorf Bahnhof",
+          "planned": "06:32",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "RJX 531",
+          "board": "DEP",
+          "direction": "Villach Hbf",
+          "planned": "05:53",
+          "expected": "06:03",
           "delay": 10,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22201)",
+          "train": "REX 1 (Zug-Nr. 22309)",
           "board": "DEP",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "04:39",
-          "expected": "04:54",
-          "delay": 15,
-          "cancelled": false
+          "planned": "06:29",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
       "records": 94,
@@ -34,7 +43,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 68,
+      "records": 73,
       "errors": []
     },
     {
@@ -43,43 +52,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 3 (Zug-Nr. 22201)",
+          "train": "REX 3 (Zug-Nr. 22306)",
           "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "04:44",
-          "expected": "04:58",
-          "delay": 14,
-          "cancelled": false
+          "direction": "Felixdorf Bahnhof",
+          "planned": "06:26",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         },
         {
-          "train": "S 2 (Zug-Nr. 22709)",
+          "train": "REX 1 (Zug-Nr. 22309)",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "05:08",
-          "expected": "05:21",
-          "delay": 13,
-          "cancelled": false
+          "direction": "Bernhardsthal Bahnhof",
+          "planned": "06:34",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         },
         {
-          "train": "REX 3 (Zug-Nr. 22201)",
+          "train": "REX 3 (Zug-Nr. 22306)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "06:27",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22309)",
           "board": "DEP",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "04:45",
-          "expected": "04:59",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
-          "train": "S 2 (Zug-Nr. 22709)",
-          "board": "DEP",
-          "direction": "Wolfsthal",
-          "planned": "05:10",
-          "expected": "05:22",
-          "delay": 12,
-          "cancelled": false
+          "planned": "06:37",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 135,
+      "records": 122,
       "errors": []
     },
     {
@@ -98,7 +107,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 27,
+      "records": 31,
       "errors": []
     }
   ]

@@ -1568,3 +1568,103 @@ body.tpDriving #tmMap .leaflet-top{top:calc(max(env(safe-area-inset-top,0px),var
   window.addEventListener('pageshow',translateExpenseAmount);
 })();
 </script>
+
+
+<style>
+#tpWeeklySmart{background:#191a1e!important;border:1px solid #5b4b32!important;color:#eee!important}
+#tpWeeklySmart h2{color:#dfbd7e!important}
+#tpWeeklySmart .tpw-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#tpWeeklySmart .tpw-card{background:#292a2f;border:1px solid #3e3c39;border-radius:12px;padding:12px;min-width:0}
+#tpWeeklySmart .tpw-card strong{display:block;color:#e5c080;font-size:19px}
+#tpWeeklySmart .tpw-card small{display:block;margin-top:4px;color:#b8b8bb}
+#tpWeeklySmart .tpw-row{padding:9px 0;border-bottom:1px solid #414044}
+#tpWeeklySmart .tpw-muted{color:#b7b7b9;font-size:13px}
+#tpWeeklySmart button{background:#d8b575;color:#151515}
+</style>
+<script>
+(function(){
+ if(document.getElementById('tpWeeklySmart'))return;
+ const section=document.createElement('section');
+ section.id='tpWeeklySmart';
+ section.innerHTML='<h2 id="tpwTitle"></h2><p class="tpw-muted" id="tpwRange"></p><div class="tpw-grid" id="tpwStats"></div><h3 id="tpwHoursTitle"></h3><div id="tpwHours"></div><h3 id="tpwAreasTitle"></h3><div id="tpwAreas"></div><h3 id="tpwDaysTitle"></h3><div id="tpwDays"></div><h3 id="tpwAdviceTitle"></h3><div id="tpwAdvice"></div><button id="tpwRefresh" type="button"></button>';
+ const anchor=document.getElementById('reports')?.closest('section');
+ if(anchor)anchor.after(section);else document.body.append(section);
+ const q=id=>document.getElementById(id);
+ const eur=n=>'€'+Number(n||0).toFixed(2);
+ const dateKey=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+ const lang=()=>((document.documentElement.lang||'en').split('-')[0]);
+ const tr=(en,ar,de)=>lang()==='ar'?ar:lang()==='de'?de:en;
+ const row=(name,description)=>{const el=document.createElement('div');el.className='tpw-row';const b=document.createElement('strong');b.textContent=name;const p=document.createElement('div');p.className='tpw-muted';p.textContent=description;el.append(b,p);return el};
+ const put=(id,items)=>{const e=q(id);e.replaceChildren(...items)};
+ function analyze(){
+  if(typeof db==='undefined'||!db||!Array.isArray(db.trips))return;
+  const today=new Date(),end=new Date(today.getFullYear(),today.getMonth(),today.getDate()),start=new Date(end);start.setDate(start.getDate()-6);
+  const startKey=dateKey(start),endKey=dateKey(end);
+  const trips=db.trips.filter(x=>x.date>=startKey&&x.date<=endKey);
+  const shifts=Object.entries(db.shifts||{}).filter(([d,s])=>d>=startKey&&d<=endKey&&s&&s.start);
+  const amount=x=>Number(x.amount)||0;
+  const total=trips.reduce((a,x)=>a+amount(x),0);
+  const expenses=(db.expenses||[]).filter(x=>x.date>=startKey&&x.date<=endKey).reduce((a,x)=>a+amount(x),0);
+  const exposure=Array(24).fill(0),hourRevenue=Array(24).fill(0),hourTrips=Array(24).fill(0);
+  let totalHours=0;
+  for(const [day,shift] of shifts){
+    const endTime=shift.end||Date.now(),begin=Number(shift.start);
+    if(!begin||endTime<=begin)continue;
+    const breaks=[...(shift.breaks||[]),...(shift.pause?[[shift.pause,endTime]]:[])].filter(b=>Array.isArray(b)&&b.length===2);
+    // Clip exposure to the selected seven calendar dates.
+    const minTime=Math.max(begin,start.getTime()),maxTime=Math.min(endTime,end.getTime()+86400000);
+    for(let t=minTime;t<maxTime;){
+      const next=Math.min(maxTime,Math.floor(t/60000)*60000+60000);
+      const midpoint=(t+next)/2;
+      if(!breaks.some(b=>midpoint>=b[0]&&midpoint<b[1])){
+        const h=(next-t)/3600000;
+        exposure[new Date(midpoint).getHours()]+=h;totalHours+=h;
+      }
+      t=next;
+    }
+  }
+  const areas=new Map(),days=new Map();
+  for(const x of trips){
+    const h=Number(String(x.time||'').slice(0,2));
+    if(Number.isInteger(h)&&h>=0&&h<24){hourRevenue[h]+=amount(x);hourTrips[h]++}
+    const area=String(x.stand||x.taxiStand||x.taxi_stand||x.area||'').trim();
+    if(area){const k=area.toLocaleLowerCase();const a=areas.get(k)||{name:area,revenue:0,count:0};a.revenue+=amount(x);a.count++;areas.set(k,a)}
+    const d=days.get(x.date)||{revenue:0,count:0};d.revenue+=amount(x);d.count++;days.set(x.date,d);
+  }
+  q('tpwTitle').textContent=tr('🧠 Smart Weekly Analysis','🧠 التحليل الذكي للأسبوع','🧠 Intelligente Wochenanalyse');
+  q('tpwRange').textContent=startKey+' — '+endKey+' · '+tr('Last 7 calendar days','آخر 7 أيام','Letzte 7 Kalendertage');
+  const stats=[
+    [eur(total),tr('Trip revenue','إيراد المشاوير','Fahrteinnahmen')],
+    [String(trips.length),tr('Trips','المشاوير','Fahrten')],
+    [totalHours.toFixed(1)+' h',tr('Recorded working hours','ساعات العمل المسجلة','Erfasste Arbeitsstunden')],
+    [totalHours?eur(total/totalHours)+'/h':'—',tr('Revenue per working hour','الإيراد لكل ساعة عمل','Umsatz pro Arbeitsstunde')],
+    [eur(total-expenses),tr('Revenue less recorded expenses','الإيراد بعد المصروفات المسجلة','Umsatz abzüglich erfasster Ausgaben')],
+    [eur(Number(db.settings?.target)||250),tr('Daily target','الهدف اليومي','Tagesziel')]
+  ];
+  put('tpwStats',stats.map(([value,label])=>{const c=document.createElement('div');c.className='tpw-card';const v=document.createElement('strong');v.textContent=value;const l=document.createElement('small');l.textContent=label;c.append(v,l);return c}));
+  q('tpwHoursTitle').textContent=tr('Best hours','أفضل الساعات','Beste Stunden');
+  const hours=hourRevenue.map((revenue,h)=>({h,revenue,trips:hourTrips[h],worked:exposure[h]})).filter(x=>x.worked>=0.5).map(x=>({...x,rate:x.revenue/x.worked})).sort((a,b)=>b.rate-a.rate);
+  put('tpwHours',hours.length?hours.slice(0,5).map(x=>row(String(x.h).padStart(2,'0')+':00–'+String((x.h+1)%24).padStart(2,'0')+':00 · '+eur(x.rate)+'/h',eur(x.revenue)+' · '+x.trips+' '+tr('trips','مشاوير','Fahrten')+' · '+x.worked.toFixed(1)+' h '+tr('worked','شغل','Arbeit'))):[row('—',tr('Not enough shift-hour records yet','لسه مفيش ساعات شيفت كفاية للتحليل','Noch nicht genug Schichtdaten'))]);
+  q('tpwAreasTitle').textContent=tr('Best recorded areas / stands','أفضل المناطق والمواقف المسجلة','Beste erfasste Gebiete / Standplätze');
+  const ranked=[...areas.values()].sort((a,b)=>b.revenue-a.revenue);
+  put('tpwAreas',ranked.length?ranked.slice(0,7).map(x=>row(x.name,eur(x.revenue)+' · '+x.count+' '+tr('trips','مشاوير','Fahrten')+' · '+eur(x.revenue/x.count)+'/'+tr('trip','مشوار','Fahrt'))):[row('—',tr('No area or stand recorded for these trips','مفيش منطقة أو موقف مسجل للمشاوير دي','Keine Gebiete oder Standplätze erfasst'))]);
+  q('tpwDaysTitle').textContent=tr('Daily performance','أداء الأيام','Tagesleistung');
+  put('tpwDays',[...days].sort((a,b)=>b[1].revenue-a[1].revenue).map(([d,x])=>row(d,eur(x.revenue)+' · '+x.count+' '+tr('trips','مشاوير','Fahrten'))));
+  q('tpwAdviceTitle').textContent=tr('Next-week guidance','توصيات الأسبوع القادم','Empfehlungen für nächste Woche');
+  const advice=[];
+  if(hours.length)advice.push(row(tr('Prioritize '+String(hours[0].h).padStart(2,'0')+':00','ركّز على الساعة '+String(hours[0].h).padStart(2,'0')+':00','Priorität: '+String(hours[0].h).padStart(2,'0')+':00'),tr('Highest observed revenue per working hour; based on available records, not a guarantee.','أعلى إيراد مسجل لكل ساعة عمل، بناءً على البيانات المتاحة وليس ضمانًا.','Höchster beobachteter Stundenumsatz, keine Garantie.')));
+  if(ranked.length)advice.push(row(ranked[0].name,tr('Highest recorded area revenue; time spent waiting there is not tracked.','أعلى منطقة في الإيراد المسجل؛ وقت الانتظار فيها غير محسوب.','Höchster erfasster Gebietsumsatz; Wartezeit nicht erfasst.')));
+  if(hours.length<3)advice.push(row(tr('Collect more data','سجّل بيانات أكتر','Mehr Daten sammeln'),tr('Keep logging trip time and taxi stand to improve recommendations.','استمر في تسجيل وقت المشوار وموقف التاكسي لتحسين التوصيات.','Fahrzeit und Standplatz weiter erfassen.')));
+  put('tpwAdvice',advice.length?advice:[row('—',tr('Start logging shifts and trips to get recommendations.','سجّل الشيفتات والمشاوير عشان تظهر التوصيات.','Schichten und Fahrten erfassen.'))]);
+  q('tpwRefresh').textContent=tr('Refresh analysis','تحديث التحليل','Analyse aktualisieren');
+ }
+ q('tpwRefresh').addEventListener('click',analyze);
+ const previousSave=save;
+ save=function(){const result=previousSave.apply(this,arguments);analyze();return result};
+ new MutationObserver(analyze).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+ analyze();
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)analyze()});
+ window.addEventListener('pageshow',analyze);
+ setInterval(()=>{if(!document.hidden)analyze()},60000);
+})();
+</script>

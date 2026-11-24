@@ -1,53 +1,51 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-24T09:46:39.415953+00:00",
+  "updated": "2026-11-24T10:41:52.331092+00:00",
   "events": [
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 67,
-      "alertCause": "roadway damage",
-      "reasonId": 39,
-      "reasonName": "Weichenstörung",
-      "name": "I20261124-0021",
-      "parentName": "I20261124-0021",
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261124-0020",
+      "parentName": "I20261124-0020",
       "priority": "1",
       "owner": "WL",
-      "title": "U6: Weichenstörung",
-      "description": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Weichenstörung.",
-      "descriptionHTML": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Weichenstörung.</p>",
+      "title": "U2: Verspätungen",
+      "description": "Linie U2: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Linie U2:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>",
       "languages": [
         {
           "de": {
-            "title": "U6: Weichenstörung",
-            "descriptionPlain": "Linie U6: Unregelmäßige Intervalle in beiden Richtungen. Grund: Weichenstörung.",
-            "descriptionHtml": "<p>Linie U6:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Weichenstörung.</p>"
+            "title": "U2: Verspätungen",
+            "descriptionPlain": "Linie U2: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Linie U2:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-24T10:20:00.000+0100",
-        "resume": "2026-11-24T10:20:00.000+0100",
-        "created": "2026-11-24T10:21:00.000+0100",
-        "lastUpdate": "2026-11-24T10:21:00.000+0100"
+        "start": "2026-11-24T10:13:00.000+0100",
+        "end": "2026-11-24T11:59:00.000+0100",
+        "resume": "2026-11-24T10:13:00.000+0100",
+        "created": "2026-11-24T10:14:00.000+0100",
+        "lastUpdate": "2026-11-24T11:37:00.000+0100"
       },
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "U6": "ptMetro"
+          "U2": "ptMetro"
         }
       },
       "relatedLines": [
-        "U6"
+        "U2"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 306,
-          "lineName": "U6",
+          "lineId": 302,
+          "lineName": "U2",
           "vehicleType": "ptMetro"
         }
-      ],
-      "relatedStops": [
-        4625
       ]
     },
     {
@@ -152,51 +150,6 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 53,
-      "alertCause": "defective vehicle",
-      "reasonId": 20,
-      "reasonName": "Schadhaftes Fahrzeug",
-      "name": "I20261124-0020",
-      "parentName": "I20261124-0020",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U2: Verspätungen",
-      "description": "Linie U2: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
-      "descriptionHTML": "<p>Linie U2:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U2: Verspätungen",
-            "descriptionPlain": "Linie U2: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
-            "descriptionHtml": "<p>Linie U2:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-24T10:13:00.000+0100",
-        "resume": "2026-11-24T10:13:00.000+0100",
-        "created": "2026-11-24T10:14:00.000+0100",
-        "lastUpdate": "2026-11-24T10:14:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "U2": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U2"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 302,
-          "lineName": "U2",
-          "vehicleType": "ptMetro"
-        }
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
       "alertCauseId": 45,
       "alertCause": "construction work",
       "reasonId": 27,
@@ -242,52 +195,6 @@
       ]
     },
     {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 40,
-      "alertCause": "level crossing failure",
-      "reasonId": 42,
-      "reasonName": "Störung an einem Bahnübergang",
-      "name": "I20261124-0018-F01",
-      "parentName": "I20261124-0018",
-      "priority": "1",
-      "owner": "WL",
-      "title": "16A: Störung an einem Bahnübergang",
-      "description": "Linie 16A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 16A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "16A: Störung an einem Bahnübergang",
-            "descriptionPlain": "Linie 16A: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 16A: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-24T09:45:00.000+0100",
-        "resume": "2026-11-24T09:54:00.000+0100",
-        "created": "2026-11-24T09:54:00.000+0100",
-        "lastUpdate": "2026-11-24T09:54:00.000+0100"
-      },
-      "location": "Himberger Straße",
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "16A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "16A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 416,
-          "lineName": "16A",
-          "vehicleType": "ptBusCity"
-        }
-      ]
-    },
-    {
       "refTrafficInfoCategoryId": 3,
       "alertCauseId": 255,
       "alertCause": "undefined alert cause",
@@ -308,29 +215,6 @@
       ],
       "relatedStops": [
         401
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1883-101",
-      "parentName": "R1883-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-24T00:00:20.000+0100",
-        "end": "2026-11-24T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1883
       ]
     },
     {
@@ -431,29 +315,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1884-101",
-      "parentName": "R1884-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "time": {
-        "start": "2026-11-24T00:00:20.000+0100",
-        "end": "2026-11-24T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1884
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1882-101",
       "parentName": "R1882-101",
       "priority": "1",
@@ -469,6 +330,52 @@
       ],
       "relatedStops": [
         1882
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1883-101",
+      "parentName": "R1883-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-24T00:00:20.000+0100",
+        "end": "2026-11-24T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1883
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1884-101",
+      "parentName": "R1884-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "time": {
+        "start": "2026-11-24T00:00:20.000+0100",
+        "end": "2026-11-24T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1884
       ]
     },
     {

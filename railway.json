@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T08:21:51.556911+00:00",
+  "updated": "2026-11-24T09:39:05.838673+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,48 +8,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 141",
-          "board": "ARR",
-          "direction": "Wien Westbahnhof",
-          "planned": "08:28",
-          "expected": "09:23",
-          "delay": 55,
-          "cancelled": false
-        },
-        {
-          "train": "D 40007",
-          "board": "ARR",
-          "direction": "Uzhhorod",
-          "planned": "09:22",
-          "expected": "10:19",
-          "delay": 57,
-          "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "ARR",
-          "direction": "Bucuresti Nord Gara A",
-          "planned": "09:22",
-          "expected": "10:19",
-          "delay": 57,
-          "cancelled": false
-        },
-        {
-          "train": "D 40749",
-          "board": "ARR",
-          "direction": "Kyiv Pasazhyrskyi",
-          "planned": "09:22",
-          "expected": "10:19",
-          "delay": 57,
-          "cancelled": false
-        },
-        {
           "train": "NJ 40421",
           "board": "ARR",
           "direction": "Amsterdam Centraal",
           "planned": "09:48",
-          "expected": "10:40",
-          "delay": 52,
+          "expected": "10:43",
+          "delay": 55,
           "cancelled": false
         },
         {
@@ -57,65 +21,129 @@
           "board": "ARR",
           "direction": "Hamburg-Altona",
           "planned": "09:48",
-          "expected": "10:40",
-          "delay": 52,
+          "expected": "10:43",
+          "delay": 55,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22218)",
+          "train": "RJX 630",
           "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "10:07",
+          "expected": "11:01",
+          "delay": 54,
+          "cancelled": false
+        },
+        {
+          "train": "EC 143",
+          "board": "ARR",
+          "direction": "Wien Westbahnhof",
+          "planned": "10:28",
+          "expected": "10:39",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19973",
+          "board": "ARR",
+          "direction": "Innsbruck Hbf",
+          "planned": "10:32",
+          "expected": "10:48",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 265",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "10:32",
+          "expected": "10:48",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "WB 1002",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "10:45",
+          "expected": "10:57",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "RJX13470",
+          "board": "DEP",
+          "direction": "Bregenz",
+          "planned": "10:28",
+          "expected": "10:45",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 60",
+          "board": "DEP",
+          "direction": "München Hbf",
+          "planned": "10:28",
+          "expected": "10:45",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22327)",
+          "board": "DEP",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "09:50",
+          "planned": "10:59",
           "expected": null,
           "delay": null,
           "cancelled": true
-        },
-        {
-          "train": "EC 141",
-          "board": "DEP",
-          "direction": "Budapest-Keleti",
-          "planned": "08:40",
-          "expected": "09:26",
-          "delay": 46,
-          "cancelled": false
-        },
-        {
-          "train": "D 40007",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:24",
-          "delay": 54,
-          "cancelled": false
-        },
-        {
-          "train": "D 346",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:24",
-          "delay": 54,
-          "cancelled": false
-        },
-        {
-          "train": "D 40749",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "09:30",
-          "expected": "10:24",
-          "delay": 54,
-          "cancelled": false
         }
       ],
-      "records": 89,
+      "records": 90,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 84,
+      "alerts": [
+        {
+          "train": "D 40007",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "09:56",
+          "expected": "10:47",
+          "delay": 51,
+          "cancelled": false
+        },
+        {
+          "train": "D 346",
+          "board": "ARR",
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:56",
+          "expected": "10:47",
+          "delay": 51,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:56",
+          "expected": "10:47",
+          "delay": 51,
+          "cancelled": false
+        },
+        {
+          "train": "S 50 (Zug-Nr. 20124)",
+          "board": "DEP",
+          "direction": "Unterpurkersdorf",
+          "planned": "10:41",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 82,
       "errors": []
     },
     {
@@ -128,8 +156,8 @@
           "board": "ARR",
           "direction": "Uzhhorod",
           "planned": "09:36",
-          "expected": "10:28",
-          "delay": 52,
+          "expected": "10:39",
+          "delay": 63,
           "cancelled": false
         },
         {
@@ -137,8 +165,8 @@
           "board": "ARR",
           "direction": "Bucuresti Nord Gara A",
           "planned": "09:36",
-          "expected": "10:28",
-          "delay": 52,
+          "expected": "10:39",
+          "delay": 63,
           "cancelled": false
         },
         {
@@ -146,8 +174,8 @@
           "board": "ARR",
           "direction": "Kyiv Pasazhyrskyi",
           "planned": "09:36",
-          "expected": "10:28",
-          "delay": 52,
+          "expected": "10:39",
+          "delay": 63,
           "cancelled": false
         },
         {
@@ -155,8 +183,8 @@
           "board": "ARR",
           "direction": "Amsterdam Centraal",
           "planned": "09:39",
-          "expected": "10:36",
-          "delay": 57,
+          "expected": "10:39",
+          "delay": 60,
           "cancelled": false
         },
         {
@@ -164,15 +192,69 @@
           "board": "ARR",
           "direction": "Hamburg-Altona",
           "planned": "09:39",
-          "expected": "10:36",
+          "expected": "10:39",
+          "delay": 60,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 630",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "10:00",
+          "expected": "10:57",
           "delay": 57,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22218)",
+          "train": "RJX19973",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "09:44",
+          "direction": "Innsbruck Hbf",
+          "planned": "10:25",
+          "expected": "10:44",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 265",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "10:25",
+          "expected": "10:44",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "RJX13470",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "10:33",
+          "expected": "10:49",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 60",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "10:33",
+          "expected": "10:49",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "WB 1002",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "10:38",
+          "expected": "10:53",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22327)",
+          "board": "ARR",
+          "direction": "Breclav",
+          "planned": "11:04",
           "expected": null,
           "delay": null,
           "cancelled": true
@@ -182,8 +264,8 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:38",
-          "expected": "10:29",
-          "delay": 51,
+          "expected": "10:39",
+          "delay": 61,
           "cancelled": false
         },
         {
@@ -191,8 +273,8 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:38",
-          "expected": "10:29",
-          "delay": 51,
+          "expected": "10:39",
+          "delay": 61,
           "cancelled": false
         },
         {
@@ -200,21 +282,75 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "09:38",
-          "expected": "10:29",
-          "delay": 51,
+          "expected": "10:39",
+          "delay": 61,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22218)",
+          "train": "RJX 630",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "09:45",
+          "planned": "10:02",
+          "expected": "10:58",
+          "delay": 56,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19973",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "10:27",
+          "expected": "10:45",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 265",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "10:27",
+          "expected": "10:45",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "RJX13470",
+          "board": "DEP",
+          "direction": "Bregenz",
+          "planned": "10:35",
+          "expected": "10:50",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 60",
+          "board": "DEP",
+          "direction": "München Hbf",
+          "planned": "10:35",
+          "expected": "10:50",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "WB 1002",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "10:40",
+          "expected": "10:54",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22327)",
+          "board": "DEP",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "11:07",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 126,
+      "records": 123,
       "errors": []
     },
     {

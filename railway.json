@@ -1,23 +1,13 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T12:43:51.787979+00:00",
+  "updated": "2026-11-24T14:00:03.723727+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "EC 78",
-          "board": "ARR",
-          "direction": "Zagreb Glavni kolodvor",
-          "planned": "14:07",
-          "expected": "14:42",
-          "delay": 35,
-          "cancelled": false
-        }
-      ],
-      "records": 83,
+      "alerts": [],
+      "records": 88,
       "errors": []
     },
     {
@@ -25,7 +15,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 80,
+      "records": 78,
       "errors": []
     },
     {
@@ -34,25 +24,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 78",
+          "train": "BB",
           "board": "ARR",
-          "direction": "Zagreb Glavni kolodvor",
-          "planned": "14:00",
-          "expected": "14:38",
-          "delay": 38,
+          "direction": "Baden b.Wien Josefsplatz (Badner Bahn)",
+          "planned": "14:59",
+          "expected": "15:09",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "EC 78",
+          "train": "BB",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "14:02",
-          "expected": "14:39",
-          "delay": 37,
+          "direction": "Wien Oper/Karlsplatz",
+          "planned": "14:59",
+          "expected": "15:09",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 117,
+      "records": 126,
       "errors": []
     },
     {

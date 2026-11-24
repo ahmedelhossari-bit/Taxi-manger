@@ -1,7 +1,51 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-24T04:51:43.701743+00:00",
+  "updated": "2026-11-24T05:53:39.543510+00:00",
   "events": [
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261124-0004",
+      "parentName": "I20261124-0004",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U1: Schadhaftes Fahrzeug",
+      "description": "Linie U1: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Linie U1:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Schadhaftes Fahrzeug.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U1: Schadhaftes Fahrzeug",
+            "descriptionPlain": "Linie U1: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Linie U1:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Schadhaftes Fahrzeug.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-24T06:46:00.000+0100",
+        "created": "2026-11-24T06:46:00.000+0100",
+        "lastUpdate": "2026-11-24T06:46:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U1": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U1"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 301,
+          "lineName": "U1",
+          "vehicleType": "ptMetro"
+        }
+      ]
+    },
     {
       "refTrafficInfoCategoryId": 2,
       "alertCauseId": 255,
@@ -150,6 +194,55 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261124-0003",
+      "parentName": "I20261124-0003",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U3: Verspätungen",
+      "description": "Linie U3: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Linie U3:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U3: Verspätungen",
+            "descriptionPlain": "Linie U3: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Linie U3:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-24T06:10:00.000+0100",
+        "end": "2026-11-24T06:51:00.000+0100",
+        "resume": "2026-11-24T06:10:00.000+0100",
+        "created": "2026-11-24T06:10:00.000+0100",
+        "lastUpdate": "2026-11-24T06:51:00.000+0100"
+      },
+      "status": "resolved",
+      "attributes": {
+        "relatedLineTypes": {
+          "U3": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U3"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 303,
+          "lineName": "U3",
+          "vehicleType": "ptMetro"
+        }
+      ],
+      "relatedStops": [
+        4909
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
       "alertCauseId": 45,
       "alertCause": "construction work",
       "reasonId": 27,
@@ -223,6 +316,52 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1882-101",
+      "parentName": "R1882-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-24T00:00:20.000+0100",
+        "end": "2026-11-24T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1882
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1883-101",
+      "parentName": "R1883-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-24T00:00:20.000+0100",
+        "end": "2026-11-24T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1883
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R1884-101",
       "parentName": "R1884-101",
       "priority": "1",
@@ -246,12 +385,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1875-101",
-      "parentName": "R1875-101",
+      "name": "R1881-101",
+      "parentName": "R1881-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nKein Betrieb",
-      "description": "Gleisbauarbeiten\nKein Betrieb",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
       "time": {
         "start": "2026-11-24T00:00:20.000+0100",
         "end": "2026-11-24T23:59:59.000+0100"
@@ -260,7 +399,7 @@
         "1"
       ],
       "relatedStops": [
-        1875
+        1881
       ]
     },
     {
@@ -315,12 +454,12 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1881-101",
-      "parentName": "R1881-101",
+      "name": "R1875-101",
+      "parentName": "R1875-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "title": "Gleisbauarbeiten\nKein Betrieb",
+      "description": "Gleisbauarbeiten\nKein Betrieb",
       "time": {
         "start": "2026-11-24T00:00:20.000+0100",
         "end": "2026-11-24T23:59:59.000+0100"
@@ -329,53 +468,7 @@
         "1"
       ],
       "relatedStops": [
-        1881
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1882-101",
-      "parentName": "R1882-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-24T00:00:20.000+0100",
-        "end": "2026-11-24T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1882
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1883-101",
-      "parentName": "R1883-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-24T00:00:20.000+0100",
-        "end": "2026-11-24T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1883
+        1875
       ]
     },
     {
@@ -836,213 +929,6 @@
       ],
       "relatedStops": [
         500
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1444-149",
-      "parentName": "R1444-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:34:11.000+0100",
-        "end": "2026-11-24T06:33:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1444
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1486-149",
-      "parentName": "R1486-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:34:11.000+0100",
-        "end": "2026-11-24T06:33:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1486
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1442-149",
-      "parentName": "R1442-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:34:11.000+0100",
-        "end": "2026-11-24T06:33:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1442
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1443-149",
-      "parentName": "R1443-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:34:11.000+0100",
-        "end": "2026-11-24T06:33:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1443
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1445-149",
-      "parentName": "R1445-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:34:11.000+0100",
-        "end": "2026-11-24T06:33:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1445
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1446-149",
-      "parentName": "R1446-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:37:41.000+0100",
-        "end": "2026-11-24T06:37:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1446
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1449-149",
-      "parentName": "R1449-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:37:41.000+0100",
-        "end": "2026-11-24T06:37:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1449
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1448-149",
-      "parentName": "R1448-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:37:41.000+0100",
-        "end": "2026-11-24T06:37:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1448
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1447-149",
-      "parentName": "R1447-149",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
-      "time": {
-        "start": "2026-11-24T05:37:41.000+0100",
-        "end": "2026-11-24T06:37:00.000+0100"
-      },
-      "relatedLines": [
-        "49"
-      ],
-      "relatedStops": [
-        1447
       ]
     },
     {

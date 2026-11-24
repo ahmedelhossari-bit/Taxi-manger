@@ -1,13 +1,50 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T14:00:03.723727+00:00",
+  "updated": "2026-11-24T14:56:41.098281+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 88,
+      "alerts": [
+        {
+          "train": "EC 205",
+          "board": "ARR",
+          "direction": "Krakow Glowny",
+          "planned": "15:49",
+          "expected": "16:43",
+          "delay": 54,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 658",
+          "board": "DEP",
+          "direction": "Salzburg Hbf",
+          "planned": "15:24",
+          "expected": "15:59",
+          "delay": 35,
+          "cancelled": false
+        },
+        {
+          "train": "REX 92 (Zug-Nr. 2793)",
+          "board": "DEP",
+          "direction": "Hartberg",
+          "planned": "15:50",
+          "expected": "16:05",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "EC 205",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "16:00",
+          "expected": "16:54",
+          "delay": 54,
+          "cancelled": false
+        }
+      ],
+      "records": 84,
       "errors": []
     },
     {
@@ -15,7 +52,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 78,
+      "records": 74,
       "errors": []
     },
     {
@@ -24,21 +61,93 @@
       "status": "OK",
       "alerts": [
         {
+          "train": "RJ 658",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "15:29",
+          "expected": "16:05",
+          "delay": 36,
+          "cancelled": false
+        },
+        {
+          "train": "REX 92 (Zug-Nr. 2793)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "15:55",
+          "expected": "16:09",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "EC 205",
+          "board": "ARR",
+          "direction": "Krakow Glowny",
+          "planned": "16:06",
+          "expected": "16:59",
+          "delay": 53,
+          "cancelled": false
+        },
+        {
           "train": "BB",
           "board": "ARR",
-          "direction": "Baden b.Wien Josefsplatz (Badner Bahn)",
-          "planned": "14:59",
-          "expected": "15:09",
+          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
+          "planned": "16:19",
+          "expected": "16:29",
           "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19977",
+          "board": "ARR",
+          "direction": "Innsbruck Hbf",
+          "planned": "16:25",
+          "expected": "16:37",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 658",
+          "board": "DEP",
+          "direction": "Salzburg Hbf",
+          "planned": "15:31",
+          "expected": "16:06",
+          "delay": 35,
+          "cancelled": false
+        },
+        {
+          "train": "REX 92 (Zug-Nr. 2793)",
+          "board": "DEP",
+          "direction": "Hartberg",
+          "planned": "15:57",
+          "expected": "16:10",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "EC 205",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "16:08",
+          "expected": "17:00",
+          "delay": 52,
           "cancelled": false
         },
         {
           "train": "BB",
           "board": "DEP",
-          "direction": "Wien Oper/Karlsplatz",
-          "planned": "14:59",
-          "expected": "15:09",
+          "direction": "Wiener Neudorf",
+          "planned": "16:19",
+          "expected": "16:29",
           "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19977",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "16:27",
+          "expected": "16:38",
+          "delay": 11,
           "cancelled": false
         }
       ],
@@ -61,7 +170,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 30,
+      "records": 31,
       "errors": []
     }
   ]

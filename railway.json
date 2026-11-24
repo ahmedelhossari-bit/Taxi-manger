@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T17:48:17.613672+00:00",
+  "updated": "2026-11-24T18:46:08.262565+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,43 +8,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 1 (Zug-Nr. 22359)",
+          "train": "EC 207",
           "board": "ARR",
-          "direction": "Breclav",
-          "planned": "18:51",
-          "expected": "19:06",
-          "delay": 15,
+          "direction": "Krakow Glowny",
+          "planned": "19:49",
+          "expected": "20:11",
+          "delay": 22,
           "cancelled": false
         },
         {
-          "train": "REX 64 (Zug-Nr. 2659)",
+          "train": "EC 207",
           "board": "DEP",
-          "direction": "Eisenstadt",
-          "planned": "18:18",
-          "expected": "18:58",
-          "delay": 40,
-          "cancelled": false
-        },
-        {
-          "train": "REX 63 (Zug-Nr. 7959)",
-          "board": "DEP",
-          "direction": "Pamhagen",
-          "planned": "18:18",
-          "expected": "18:58",
-          "delay": 40,
-          "cancelled": false
-        },
-        {
-          "train": "R 81 (Zug-Nr. 2578)",
-          "board": "DEP",
-          "direction": "Marchegg",
-          "planned": "18:46",
-          "expected": "19:38",
-          "delay": 52,
+          "direction": "Graz Hbf",
+          "planned": "19:53",
+          "expected": "20:14",
+          "delay": 21,
           "cancelled": false
         }
       ],
-      "records": 95,
+      "records": 86,
       "errors": []
     },
     {
@@ -52,7 +34,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 76,
+      "records": 83,
       "errors": []
     },
     {
@@ -61,16 +43,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "NJ 448",
+          "train": "EC 148",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "19:36",
+          "expected": "19:47",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "EC 207",
+          "board": "ARR",
+          "direction": "Krakow Glowny",
+          "planned": "19:58",
+          "expected": "20:18",
+          "delay": 20,
+          "cancelled": false
+        },
+        {
+          "train": "EC 148",
           "board": "DEP",
-          "direction": "Bruxelles Midi",
-          "planned": "18:20",
-          "expected": "18:53",
-          "delay": 33,
+          "direction": "Wien Westbahnhof",
+          "planned": "19:38",
+          "expected": "19:48",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "EC 207",
+          "board": "DEP",
+          "direction": "Graz Hbf",
+          "planned": "20:00",
+          "expected": "20:19",
+          "delay": 19,
           "cancelled": false
         }
       ],
-      "records": 124,
+      "records": 131,
       "errors": []
     },
     {

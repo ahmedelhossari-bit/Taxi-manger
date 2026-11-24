@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T11:35:38.080082+00:00",
+  "updated": "2026-11-24T12:43:51.787979+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,13 +8,13 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 1 (Zug-Nr. 22332)",
+          "train": "EC 78",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "13:00",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Zagreb Glavni kolodvor",
+          "planned": "14:07",
+          "expected": "14:42",
+          "delay": 35,
+          "cancelled": false
         }
       ],
       "records": 83,
@@ -24,17 +24,7 @@
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "WB 911",
-          "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "12:22",
-          "expected": "12:54",
-          "delay": 32,
-          "cancelled": false
-        }
-      ],
+      "alerts": [],
       "records": 80,
       "errors": []
     },
@@ -44,34 +34,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX19975",
+          "train": "EC 78",
           "board": "ARR",
-          "direction": "Bregenz Bahnhof",
-          "planned": "12:25",
-          "expected": "12:35",
-          "delay": 10,
+          "direction": "Zagreb Glavni kolodvor",
+          "planned": "14:00",
+          "expected": "14:38",
+          "delay": 38,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22332)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "12:52",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22332)",
+          "train": "EC 78",
           "board": "DEP",
-          "direction": "Breclav",
-          "planned": "12:54",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Wien Hbf",
+          "planned": "14:02",
+          "expected": "14:39",
+          "delay": 37,
+          "cancelled": false
         }
       ],
-      "records": 113,
+      "records": 117,
       "errors": []
     },
     {
@@ -90,7 +71,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 29,
+      "records": 30,
       "errors": []
     }
   ]

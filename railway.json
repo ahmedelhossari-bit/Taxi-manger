@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T14:56:41.098281+00:00",
+  "updated": "2026-11-24T15:57:16.223763+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -12,26 +12,35 @@
           "board": "ARR",
           "direction": "Krakow Glowny",
           "planned": "15:49",
-          "expected": "16:43",
-          "delay": 54,
+          "expected": "17:02",
+          "delay": 73,
           "cancelled": false
         },
         {
-          "train": "RJ 658",
-          "board": "DEP",
-          "direction": "Salzburg Hbf",
-          "planned": "15:24",
-          "expected": "15:59",
-          "delay": 35,
+          "train": "ICE 1215",
+          "board": "ARR",
+          "direction": "Stuttgart Hbf",
+          "planned": "16:47",
+          "expected": "16:58",
+          "delay": 11,
           "cancelled": false
         },
         {
-          "train": "REX 92 (Zug-Nr. 2793)",
-          "board": "DEP",
-          "direction": "Hartberg",
-          "planned": "15:50",
-          "expected": "16:05",
-          "delay": 15,
+          "train": "RJ 253",
+          "board": "ARR",
+          "direction": "Praha hl.n.",
+          "planned": "16:49",
+          "expected": "17:07",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 755",
+          "board": "ARR",
+          "direction": "Villach Hbf",
+          "planned": "17:07",
+          "expected": "17:20",
+          "delay": 13,
           "cancelled": false
         },
         {
@@ -39,20 +48,30 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "16:00",
-          "expected": "16:54",
-          "delay": 54,
+          "expected": "17:05",
+          "delay": 65,
           "cancelled": false
         }
       ],
-      "records": 84,
+      "records": 86,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 74,
+      "alerts": [
+        {
+          "train": "EC 205",
+          "board": "ARR",
+          "direction": "Krakow Glowny",
+          "planned": "16:30",
+          "expected": "17:22",
+          "delay": 52,
+          "cancelled": false
+        }
+      ],
+      "records": 82,
       "errors": []
     },
     {
@@ -61,66 +80,39 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 658",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "15:29",
-          "expected": "16:05",
-          "delay": 36,
-          "cancelled": false
-        },
-        {
-          "train": "REX 92 (Zug-Nr. 2793)",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "15:55",
-          "expected": "16:09",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
           "train": "EC 205",
           "board": "ARR",
           "direction": "Krakow Glowny",
           "planned": "16:06",
-          "expected": "16:59",
-          "delay": 53,
+          "expected": "17:10",
+          "delay": 64,
           "cancelled": false
         },
         {
-          "train": "BB",
+          "train": "RJX 755",
           "board": "ARR",
-          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
-          "planned": "16:19",
-          "expected": "16:29",
-          "delay": 10,
+          "direction": "Villach Hbf",
+          "planned": "17:00",
+          "expected": "17:15",
+          "delay": 15,
           "cancelled": false
         },
         {
-          "train": "RJX19977",
+          "train": "S 3 (Zug-Nr. 25050)",
           "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "16:25",
-          "expected": "16:37",
-          "delay": 12,
+          "direction": "Leobersdorf Bahnhof",
+          "planned": "17:20",
+          "expected": "17:54",
+          "delay": 34,
           "cancelled": false
         },
         {
-          "train": "RJ 658",
-          "board": "DEP",
-          "direction": "Salzburg Hbf",
-          "planned": "15:31",
-          "expected": "16:06",
-          "delay": 35,
-          "cancelled": false
-        },
-        {
-          "train": "REX 92 (Zug-Nr. 2793)",
-          "board": "DEP",
-          "direction": "Hartberg",
-          "planned": "15:57",
-          "expected": "16:10",
-          "delay": 13,
+          "train": "RJX13477",
+          "board": "ARR",
+          "direction": "Bregenz Bahnhof",
+          "planned": "17:25",
+          "expected": "18:29",
+          "delay": 64,
           "cancelled": false
         },
         {
@@ -128,30 +120,39 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "16:08",
-          "expected": "17:00",
-          "delay": 52,
+          "expected": "17:11",
+          "delay": 63,
           "cancelled": false
         },
         {
-          "train": "BB",
-          "board": "DEP",
-          "direction": "Wiener Neudorf",
-          "planned": "16:19",
-          "expected": "16:29",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "RJX19977",
+          "train": "RJX 755",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "16:27",
-          "expected": "16:38",
-          "delay": 11,
+          "planned": "17:02",
+          "expected": "17:18",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25050)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "17:21",
+          "expected": "17:55",
+          "delay": 34,
+          "cancelled": false
+        },
+        {
+          "train": "RJX13477",
+          "board": "DEP",
+          "direction": "Flughafen Wien",
+          "planned": "17:27",
+          "expected": "18:30",
+          "delay": 63,
           "cancelled": false
         }
       ],
-      "records": 126,
+      "records": 124,
       "errors": []
     },
     {
@@ -169,8 +170,18 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 31,
+      "alerts": [
+        {
+          "train": "RJX13477",
+          "board": "ARR",
+          "direction": "Bregenz Bahnhof",
+          "planned": "17:57",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 34,
       "errors": []
     }
   ]

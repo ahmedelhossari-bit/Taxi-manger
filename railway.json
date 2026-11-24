@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T04:55:10.145172+00:00",
+  "updated": "2026-11-24T05:51:14.819510+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,24 +8,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 1 (Zug-Nr. 22204)",
+          "train": "RJ 1121",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "06:19",
+          "direction": "St.Pölten Hbf",
+          "planned": "06:52",
+          "expected": "07:09",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22911)",
+          "board": "DEP",
+          "direction": "Payerbach-Reichenau",
+          "planned": "06:55",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 95,
+      "records": 91,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 72,
+      "alerts": [
+        {
+          "train": "REX 51 (Zug-Nr. 1607)",
+          "board": "ARR",
+          "direction": "St.Pölten Hbf",
+          "planned": "07:07",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 82,
       "errors": []
     },
     {
@@ -34,43 +53,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 1 (Zug-Nr. 22204)",
+          "train": "RJ 1121",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "06:12",
+          "direction": "St.Pölten Hbf",
+          "planned": "06:45",
+          "expected": "07:03",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22911)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 1-2)",
+          "planned": "07:00",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "CJX 9 (Zug-Nr. 22902)",
-          "board": "ARR",
-          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
-          "planned": "06:29",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22204)",
+          "train": "RJ 1121",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "06:14",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "planned": "06:47",
+          "expected": "07:04",
+          "delay": 17,
+          "cancelled": false
         },
         {
-          "train": "CJX 9 (Zug-Nr. 22902)",
+          "train": "CJX 9 (Zug-Nr. 22911)",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "06:30",
+          "direction": "Payerbach-Reichenau",
+          "planned": "07:04",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 123,
+      "records": 117,
       "errors": []
     },
     {
@@ -90,25 +109,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 7 (Zug-Nr. 22708)",
+          "train": "RJX 769",
           "board": "ARR",
-          "direction": "Wolfsthal Bahnhof",
-          "planned": "05:40",
-          "expected": "05:58",
-          "delay": 18,
-          "cancelled": false
-        },
-        {
-          "train": "REX 7 (Zug-Nr. 22708)",
-          "board": "DEP",
-          "direction": "Mödling",
-          "planned": "05:46",
-          "expected": "05:58",
-          "delay": 12,
-          "cancelled": false
+          "direction": "Salzburg Hbf",
+          "planned": "07:57",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 32,
+      "records": 30,
       "errors": []
     }
   ]

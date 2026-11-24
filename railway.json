@@ -1,32 +1,13 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-24T18:46:08.262565+00:00",
+  "updated": "2026-11-24T19:53:31.343516+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "EC 207",
-          "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "19:49",
-          "expected": "20:11",
-          "delay": 22,
-          "cancelled": false
-        },
-        {
-          "train": "EC 207",
-          "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "19:53",
-          "expected": "20:14",
-          "delay": 21,
-          "cancelled": false
-        }
-      ],
-      "records": 86,
+      "alerts": [],
+      "records": 84,
       "errors": []
     },
     {
@@ -34,7 +15,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 83,
+      "records": 74,
       "errors": []
     },
     {
@@ -43,43 +24,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 148",
+          "train": "IC 530",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "19:36",
-          "expected": "19:47",
+          "direction": "Villach Hbf",
+          "planned": "21:00",
+          "expected": "21:11",
           "delay": 11,
           "cancelled": false
         },
         {
-          "train": "EC 207",
-          "board": "ARR",
-          "direction": "Krakow Glowny",
-          "planned": "19:58",
-          "expected": "20:18",
-          "delay": 20,
-          "cancelled": false
-        },
-        {
-          "train": "EC 148",
+          "train": "IC 530",
           "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "19:38",
-          "expected": "19:48",
+          "direction": "Wien Hbf",
+          "planned": "21:02",
+          "expected": "21:12",
           "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "EC 207",
-          "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "20:00",
-          "expected": "20:19",
-          "delay": 19,
           "cancelled": false
         }
       ],
-      "records": 131,
+      "records": 127,
       "errors": []
     },
     {
@@ -98,7 +61,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 32,
+      "records": 29,
       "errors": []
     }
   ]

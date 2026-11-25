@@ -1,55 +1,7 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-25T16:11:50.485507+00:00",
+  "updated": "2026-11-25T17:18:40.211249+00:00",
   "events": [
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 77,
-      "alertCause": "accident",
-      "reasonId": 12,
-      "reasonName": "Verkehrsunfall",
-      "name": "I20261125-0028",
-      "parentName": "I20261125-0028",
-      "priority": "1",
-      "owner": "WL",
-      "title": "63A: Verkehrsunfall",
-      "description": "Linie 63A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsunfall im Haltestellenbereich Hans-Mandl-Berufsschule.",
-      "descriptionHTML": "<p>Linie 63A:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Verkehrsunfall im Haltestellenbereich Hans-Mandl-Berufsschule.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "63A: Verkehrsunfall",
-            "descriptionPlain": "Linie 63A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Verkehrsunfall im Haltestellenbereich Hans-Mandl-Berufsschule.",
-            "descriptionHtml": "<p>Linie 63A:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Verkehrsunfall im Haltestellenbereich Hans-Mandl-Berufsschule.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-25T15:49:00.000+0100",
-        "resume": "2026-11-25T15:49:00.000+0100",
-        "created": "2026-11-25T15:51:00.000+0100",
-        "lastUpdate": "2026-11-25T15:51:00.000+0100"
-      },
-      "status": "active",
-      "attributes": {
-        "relatedLineTypes": {
-          "63A": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "63A"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 463,
-          "lineName": "63A",
-          "vehicleType": "ptBusCity"
-        }
-      ],
-      "relatedStops": [
-        1685
-      ]
-    },
     {
       "refTrafficInfoCategoryId": 2,
       "alertCauseId": 71,
@@ -101,95 +53,43 @@
       "alertCause": "defective vehicle",
       "reasonId": 20,
       "reasonName": "Schadhaftes Fahrzeug",
-      "name": "I20261125-0032-F01",
-      "parentName": "I20261125-0032",
+      "name": "I20261125-0033",
+      "parentName": "I20261125-0033",
       "priority": "1",
       "owner": "WL",
-      "title": "U1: Schadhaftes Fahrzeug",
-      "description": "Linie U1: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie U1: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "title": "82A: Schadhaftes Fahrzeug",
+      "description": "Linie 82A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Linie 82A:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Schadhaftes Fahrzeug.</p>",
       "languages": [
         {
           "de": {
-            "title": "U1: Schadhaftes Fahrzeug",
-            "descriptionPlain": "Linie U1: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie U1: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+            "title": "82A: Schadhaftes Fahrzeug",
+            "descriptionPlain": "Linie 82A: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Linie 82A:<br>Unregelmäßige Intervalle in beiden Richtungen.</p><p>Grund: Schadhaftes Fahrzeug.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-25T17:08:00.000+0100",
-        "resume": "2026-11-25T17:08:00.000+0100",
-        "created": "2026-11-25T17:08:00.000+0100",
-        "lastUpdate": "2026-11-25T17:08:00.000+0100"
+        "start": "2026-11-25T17:48:00.000+0100",
+        "resume": "2026-11-25T17:48:00.000+0100",
+        "created": "2026-11-25T17:48:00.000+0100",
+        "lastUpdate": "2026-11-25T17:48:00.000+0100"
       },
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "U1": "ptMetro"
+          "82A": "ptBusCity"
         }
       },
       "relatedLines": [
-        "U1"
+        "82A"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 301,
-          "lineName": "U1",
-          "vehicleType": "ptMetro"
+          "lineId": 482,
+          "lineName": "82A",
+          "vehicleType": "ptBusCity"
         }
-      ],
-      "relatedStops": [
-        4109
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 53,
-      "alertCause": "defective vehicle",
-      "reasonId": 20,
-      "reasonName": "Schadhaftes Fahrzeug",
-      "name": "I20261125-0032",
-      "parentName": "I20261125-0032",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U1: Schadhaftes Fahrzeug",
-      "description": "Linie U1: Fahrtbehinderung in Richtung Leopoldau S U. Voraussichtliche Dauer: 17:20 Uhr. Grund: Schadhaftes Fahrzeug im Haltestellenbereich Karlsplatz.",
-      "descriptionHTML": "<p>Linie U1:<br>Fahrtbehinderung in Richtung Leopoldau S U.</p><p>Voraussichtliche Dauer: 17:20 Uhr.</p><p>Grund: Schadhaftes Fahrzeug im Haltestellenbereich Karlsplatz.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U1: Schadhaftes Fahrzeug",
-            "descriptionPlain": "Linie U1: Fahrtbehinderung in Richtung Leopoldau S U. Voraussichtliche Dauer: 17:20 Uhr. Grund: Schadhaftes Fahrzeug im Haltestellenbereich Karlsplatz.",
-            "descriptionHtml": "<p>Linie U1:<br>Fahrtbehinderung in Richtung Leopoldau S U.</p><p>Voraussichtliche Dauer: 17:20 Uhr.</p><p>Grund: Schadhaftes Fahrzeug im Haltestellenbereich Karlsplatz.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-25T17:08:00.000+0100",
-        "end": "2026-11-25T17:08:00.000+0100",
-        "resume": "2026-11-25T17:08:00.000+0100",
-        "created": "2026-11-25T17:08:00.000+0100",
-        "lastUpdate": "2026-11-25T17:08:00.000+0100"
-      },
-      "status": "resolved",
-      "attributes": {
-        "relatedLineTypes": {
-          "U1": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U1"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 301,
-          "lineName": "U1",
-          "vehicleType": "ptMetro"
-        }
-      ],
-      "relatedStops": [
-        4109
       ]
     },
     {
@@ -332,104 +232,6 @@
     },
     {
       "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 3,
-      "alertCause": "police activity",
-      "reasonId": 47,
-      "reasonName": "Polizeieinsatz",
-      "name": "I20261125-0025-F01",
-      "parentName": "I20261125-0025",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U6: Polizeieinsatz",
-      "description": "Linie U6: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie U6: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U6: Polizeieinsatz",
-            "descriptionPlain": "Linie U6: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie U6: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-25T14:08:00.000+0100",
-        "end": "2026-11-25T17:09:00.000+0100",
-        "resume": "2026-11-25T17:09:00.000+0100",
-        "created": "2026-11-25T14:19:00.000+0100",
-        "lastUpdate": "2026-11-25T17:09:00.000+0100"
-      },
-      "status": "resolved",
-      "attributes": {
-        "relatedLineTypes": {
-          "U6": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U6"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 306,
-          "lineName": "U6",
-          "vehicleType": "ptMetro"
-        }
-      ],
-      "relatedStops": [
-        4643
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 137,
-      "alertCause": "miscellaneous",
-      "reasonId": 14,
-      "reasonName": "Betriebsstörung",
-      "name": "I20261125-0027-F01",
-      "parentName": "I20261125-0027",
-      "priority": "1",
-      "owner": "WL",
-      "title": "U2: Betriebsstörung",
-      "description": "Linie U2: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie U2: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "U2: Betriebsstörung",
-            "descriptionPlain": "Linie U2: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie U2: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-25T15:46:00.000+0100",
-        "end": "2026-11-25T17:09:00.000+0100",
-        "resume": "2026-11-25T17:09:00.000+0100",
-        "created": "2026-11-25T15:48:00.000+0100",
-        "lastUpdate": "2026-11-25T17:09:00.000+0100"
-      },
-      "status": "resolved",
-      "attributes": {
-        "relatedLineTypes": {
-          "U2": "ptMetro"
-        }
-      },
-      "relatedLines": [
-        "U2"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 302,
-          "lineName": "U2",
-          "vehicleType": "ptMetro"
-        }
-      ],
-      "relatedStops": [
-        4257
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
       "alertCauseId": 255,
       "alertCause": "undefined alert cause",
       "reasonId": 0,
@@ -534,8 +336,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1882-101",
-      "parentName": "R1882-101",
+      "name": "R1880-101",
+      "parentName": "R1880-101",
       "priority": "1",
       "owner": "WL",
       "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
@@ -548,7 +350,7 @@
         "1"
       ],
       "relatedStops": [
-        1882
+        1880
       ]
     },
     {
@@ -580,29 +382,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1875-101",
-      "parentName": "R1875-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nKein Betrieb",
-      "description": "Gleisbauarbeiten\nKein Betrieb",
-      "time": {
-        "start": "2026-11-24T00:00:20.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1875
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1876-101",
       "parentName": "R1876-101",
       "priority": "1",
@@ -626,8 +405,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1880-101",
-      "parentName": "R1880-101",
+      "name": "R1882-101",
+      "parentName": "R1882-101",
       "priority": "1",
       "owner": "WL",
       "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
@@ -640,30 +419,7 @@
         "1"
       ],
       "relatedStops": [
-        1880
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1884-101",
-      "parentName": "R1884-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
-      "time": {
-        "start": "2026-11-24T00:00:20.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1884
+        1882
       ]
     },
     {
@@ -695,21 +451,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2343-626",
-      "parentName": "R2343-626",
+      "name": "R1884-101",
+      "parentName": "R1884-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "title": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
+      "description": "Gleisbauarbeiten\nZüge halten Quellenstraße 156 (Linie 6)",
       "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
+        "start": "2026-11-24T00:00:20.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedLines": [
-        "26E"
+        "1"
       ],
       "relatedStops": [
-        2343
+        1884
       ]
     },
     {
@@ -718,21 +474,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2558-125",
-      "parentName": "R2558-125",
+      "name": "R1875-101",
+      "parentName": "R1875-101",
       "priority": "1",
       "owner": "WL",
-      "title": "Gleisbauarbeiten\nLinie 26E hält Donaufelder Straße 148",
-      "description": "Gleisbauarbeiten\nLinie 26E hält Donaufelder Straße 148",
+      "title": "Gleisbauarbeiten\nKein Betrieb",
+      "description": "Gleisbauarbeiten\nKein Betrieb",
       "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
+        "start": "2026-11-24T00:00:20.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedLines": [
-        "25"
+        "1"
       ],
       "relatedStops": [
-        2558
+        1875
       ]
     },
     {
@@ -764,167 +520,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2345-127",
-      "parentName": "R2345-127",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Züge halten bei\nLinie 31",
-      "description": "Züge halten bei\nLinie 31",
-      "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "27"
-      ],
-      "relatedStops": [
-        2345
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2373-126",
-      "parentName": "R2373-126",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Züge halten in\nTokiostraße",
-      "description": "Züge halten in\nTokiostraße",
-      "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26"
-      ],
-      "relatedStops": [
-        2373
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2359-125",
-      "parentName": "R2359-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2359
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-125",
-      "parentName": "R2343-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2343
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2373-127",
-      "parentName": "R2373-127",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linie 25 in\nTokiostraße benützen",
-      "description": "Linie 25 in\nTokiostraße benützen",
-      "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "27"
-      ],
-      "relatedStops": [
-        2373
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2373-125",
-      "parentName": "R2373-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Züge halten\nDonaufelder Straße 175-177",
-      "description": "Züge halten\nDonaufelder Straße 175-177",
-      "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2373
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2378-627",
-      "parentName": "R2378-627",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Busse halten\nSatzingerweg 41",
-      "description": "Busse halten\nSatzingerweg 41",
-      "time": {
-        "start": "2026-11-24T00:00:22.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2378
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2380-627",
       "parentName": "R2380-627",
       "priority": "1",
@@ -948,21 +543,21 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2370-125",
-      "parentName": "R2370-125",
+      "name": "R2345-127",
+      "parentName": "R2345-127",
       "priority": "1",
       "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "title": "Züge halten bei\nLinie 31",
+      "description": "Züge halten bei\nLinie 31",
       "time": {
         "start": "2026-11-24T00:00:22.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedLines": [
-        "25"
+        "27"
       ],
       "relatedStops": [
-        2370
+        2345
       ]
     },
     {
@@ -1017,6 +612,213 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2373-126",
+      "parentName": "R2373-126",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Züge halten in\nTokiostraße",
+      "description": "Züge halten in\nTokiostraße",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26"
+      ],
+      "relatedStops": [
+        2373
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2558-125",
+      "parentName": "R2558-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nLinie 26E hält Donaufelder Straße 148",
+      "description": "Gleisbauarbeiten\nLinie 26E hält Donaufelder Straße 148",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2558
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-125",
+      "parentName": "R2343-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2359-125",
+      "parentName": "R2359-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus 26E\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2359
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-626",
+      "parentName": "R2343-626",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2378-627",
+      "parentName": "R2378-627",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Busse halten\nSatzingerweg 41",
+      "description": "Busse halten\nSatzingerweg 41",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2378
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2370-125",
+      "parentName": "R2370-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2370
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2373-125",
+      "parentName": "R2373-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Züge halten\nDonaufelder Straße 175-177",
+      "description": "Züge halten\nDonaufelder Straße 175-177",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2373
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2373-127",
+      "parentName": "R2373-127",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linie 25 in\nTokiostraße benützen",
+      "description": "Linie 25 in\nTokiostraße benützen",
+      "time": {
+        "start": "2026-11-24T00:00:22.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "27"
+      ],
+      "relatedStops": [
+        2373
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R3886-480",
       "parentName": "R3886-480",
       "priority": "1",
@@ -1032,6 +834,29 @@
       ],
       "relatedStops": [
         3886
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R293-474",
+      "parentName": "R293-474",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
+      "description": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
+      "time": {
+        "start": "2026-11-25T00:00:29.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "74A"
+      ],
+      "relatedStops": [
+        293
       ]
     },
     {
@@ -1078,29 +903,6 @@
       ],
       "relatedStops": [
         318
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R293-474",
-      "parentName": "R293-474",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
-      "description": "Bauarbeiten\nEinstieg Leberstraße vor S-Bahn-Gebäude",
-      "time": {
-        "start": "2026-11-25T00:00:29.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "74A"
-      ],
-      "relatedStops": [
-        293
       ]
     },
     {
@@ -1210,29 +1012,6 @@
       },
       "relatedStops": [
         47
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R15-102",
-      "parentName": "R15-102",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Verkehrsunfall\nZüge halten bei Linie 49",
-      "description": "Verkehrsunfall\nZüge halten bei Linie 49",
-      "time": {
-        "start": "2026-11-25T16:45:25.000+0100",
-        "end": "2026-11-25T17:44:00.000+0100"
-      },
-      "relatedLines": [
-        "2"
-      ],
-      "relatedStops": [
-        15
       ]
     },
     {
@@ -1361,26 +1140,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R8611-0",
-      "parentName": "R8611-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:03.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        8611
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R8685-0",
       "parentName": "R8685-0",
       "priority": "1",
@@ -1421,6 +1180,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R8611-0",
+      "parentName": "R8611-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:03.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        8611
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R8682-0",
       "parentName": "R8682-0",
       "priority": "1",
@@ -1441,26 +1220,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R848-0",
-      "parentName": "R848-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        848
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R253-0",
       "parentName": "R253-0",
       "priority": "1",
@@ -1473,26 +1232,6 @@
       },
       "relatedStops": [
         253
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R251-0",
-      "parentName": "R251-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        251
       ]
     },
     {
@@ -1681,6 +1420,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R251-0",
+      "parentName": "R251-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        251
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R249-0",
       "parentName": "R249-0",
       "priority": "1",
@@ -1761,8 +1520,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R245-0",
-      "parentName": "R245-0",
+      "name": "R787-0",
+      "parentName": "R787-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -1772,7 +1531,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        245
+        787
       ]
     },
     {
@@ -1781,8 +1540,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R789-0",
-      "parentName": "R789-0",
+      "name": "R788-0",
+      "parentName": "R788-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -1792,27 +1551,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        789
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R790-0",
-      "parentName": "R790-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        790
+        788
       ]
     },
     {
@@ -2021,8 +1760,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R806-0",
-      "parentName": "R806-0",
+      "name": "R245-0",
+      "parentName": "R245-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -2032,7 +1771,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        806
+        245
       ]
     },
     {
@@ -2053,6 +1792,66 @@
       },
       "relatedStops": [
         242
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R789-0",
+      "parentName": "R789-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        789
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R790-0",
+      "parentName": "R790-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        790
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R806-0",
+      "parentName": "R806-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        806
       ]
     },
     {
@@ -2241,6 +2040,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R187-0",
+      "parentName": "R187-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        187
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R847-0",
       "parentName": "R847-0",
       "priority": "1",
@@ -2281,86 +2100,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R845-0",
-      "parentName": "R845-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        845
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R844-0",
-      "parentName": "R844-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        844
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R236-0",
-      "parentName": "R236-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        236
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R187-0",
-      "parentName": "R187-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        187
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R188-0",
       "parentName": "R188-0",
       "priority": "1",
@@ -2373,6 +2112,26 @@
       },
       "relatedStops": [
         188
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R845-0",
+      "parentName": "R845-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        845
       ]
     },
     {
@@ -2401,6 +2160,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R844-0",
+      "parentName": "R844-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        844
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R190-0",
       "parentName": "R190-0",
       "priority": "1",
@@ -2413,6 +2192,26 @@
       },
       "relatedStops": [
         190
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R236-0",
+      "parentName": "R236-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        236
       ]
     },
     {
@@ -2601,6 +2400,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R233-0",
+      "parentName": "R233-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        233
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R897-0",
       "parentName": "R897-0",
       "priority": "1",
@@ -2721,8 +2540,28 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R859-0",
-      "parentName": "R859-0",
+      "name": "R176-0",
+      "parentName": "R176-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        176
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R218-0",
+      "parentName": "R218-0",
       "priority": "1",
       "owner": "WL",
       "title": "\nKein Platz für\n---- Gewalt ----\n",
@@ -2732,7 +2571,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        859
+        218
       ]
     },
     {
@@ -2773,46 +2612,6 @@
       },
       "relatedStops": [
         216
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R192-0",
-      "parentName": "R192-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        192
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R176-0",
-      "parentName": "R176-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        176
       ]
     },
     {
@@ -2873,6 +2672,46 @@
       },
       "relatedStops": [
         199
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R201-0",
+      "parentName": "R201-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        201
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R192-0",
+      "parentName": "R192-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        192
       ]
     },
     {
@@ -2961,26 +2800,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R201-0",
-      "parentName": "R201-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        201
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R207-0",
       "parentName": "R207-0",
       "priority": "1",
@@ -2993,6 +2812,26 @@
       },
       "relatedStops": [
         207
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R859-0",
+      "parentName": "R859-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        859
       ]
     },
     {
@@ -3141,46 +2980,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R787-0",
-      "parentName": "R787-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        787
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R788-0",
-      "parentName": "R788-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        788
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R855-0",
       "parentName": "R855-0",
       "priority": "1",
@@ -3241,6 +3040,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R848-0",
+      "parentName": "R848-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:15.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        848
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R885-0",
       "parentName": "R885-0",
       "priority": "1",
@@ -3253,26 +3072,6 @@
       },
       "relatedStops": [
         885
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R233-0",
-      "parentName": "R233-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        233
       ]
     },
     {
@@ -3341,26 +3140,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R218-0",
-      "parentName": "R218-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:15.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        218
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R898-0",
       "parentName": "R898-0",
       "priority": "1",
@@ -3381,18 +3160,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R560-0",
-      "parentName": "R560-0",
+      "name": "R622-0",
+      "parentName": "R622-0",
       "priority": "1",
       "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
       "time": {
         "start": "2026-11-25T05:00:16.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        560
+        622
       ]
     },
     {
@@ -3461,46 +3240,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R481-0",
-      "parentName": "R481-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:16.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        481
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R482-0",
-      "parentName": "R482-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:16.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        482
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R8-0",
       "parentName": "R8-0",
       "priority": "1",
@@ -3553,6 +3292,46 @@
       },
       "relatedStops": [
         400
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R481-0",
+      "parentName": "R481-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:16.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        481
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R482-0",
+      "parentName": "R482-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:16.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        482
       ]
     },
     {
@@ -3933,26 +3712,6 @@
       },
       "relatedStops": [
         500
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1230-0",
-      "parentName": "R1230-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:16.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1230
       ]
     },
     {
@@ -9861,6 +9620,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R560-0",
+      "parentName": "R560-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:16.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        560
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R561-0",
       "parentName": "R561-0",
       "priority": "1",
@@ -9873,26 +9652,6 @@
       },
       "relatedStops": [
         561
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R622-0",
-      "parentName": "R622-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:16.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        622
       ]
     },
     {
@@ -12041,6 +11800,66 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1230-0",
+      "parentName": "R1230-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:16.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1230
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2039-0",
+      "parentName": "R2039-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2039
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2043-0",
+      "parentName": "R2043-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\nGewalt\n",
+      "description": "Kein Platz für\nGewalt\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2043
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2044-0",
       "parentName": "R2044-0",
       "priority": "1",
@@ -12113,66 +11932,6 @@
       },
       "relatedStops": [
         2047
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2043-0",
-      "parentName": "R2043-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\nGewalt\n",
-      "description": "Kein Platz für\nGewalt\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2043
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2039-0",
-      "parentName": "R2039-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2039
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2038-0",
-      "parentName": "R2038-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2038
       ]
     },
     {
@@ -12381,6 +12140,146 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1365-0",
+      "parentName": "R1365-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1365
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1366-0",
+      "parentName": "R1366-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1366
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1367-0",
+      "parentName": "R1367-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1367
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1368-0",
+      "parentName": "R1368-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1368
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1369-0",
+      "parentName": "R1369-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1369
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1371-0",
+      "parentName": "R1371-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1371
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R5815-0",
+      "parentName": "R5815-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        5815
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R1372-0",
       "parentName": "R1372-0",
       "priority": "1",
@@ -12493,26 +12392,6 @@
       },
       "relatedStops": [
         1378
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R5815-0",
-      "parentName": "R5815-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        5815
       ]
     },
     {
@@ -12681,26 +12560,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2424-0",
-      "parentName": "R2424-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\nGewalt\n",
-      "description": "Kein Platz für\nGewalt\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2424
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R5200-0",
       "parentName": "R5200-0",
       "priority": "1",
@@ -12753,6 +12612,26 @@
       },
       "relatedStops": [
         1388
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2038-0",
+      "parentName": "R2038-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2038
       ]
     },
     {
@@ -12981,6 +12860,86 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1685-0",
+      "parentName": "R1685-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1685
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1683-0",
+      "parentName": "R1683-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1683
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1678-0",
+      "parentName": "R1678-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1678
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1660-0",
+      "parentName": "R1660-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1660
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R1842-0",
       "parentName": "R1842-0",
       "priority": "1",
@@ -12993,86 +12952,6 @@
       },
       "relatedStops": [
         1842
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1837-0",
-      "parentName": "R1837-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1837
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1819-0",
-      "parentName": "R1819-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1819
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1818-0",
-      "parentName": "R1818-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1818
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1798-0",
-      "parentName": "R1798-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1798
       ]
     },
     {
@@ -13321,8 +13200,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1797-0",
-      "parentName": "R1797-0",
+      "name": "R1837-0",
+      "parentName": "R1837-0",
       "priority": "1",
       "owner": "WL",
       "title": "\nKein Platz für\n---- Gewalt ----\n",
@@ -13332,7 +13211,27 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        1797
+        1837
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1819-0",
+      "parentName": "R1819-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1819
       ]
     },
     {
@@ -13581,26 +13480,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1685-0",
-      "parentName": "R1685-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1685
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1752-0",
       "parentName": "R1752-0",
       "priority": "1",
@@ -13613,6 +13492,106 @@
       },
       "relatedStops": [
         1752
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1818-0",
+      "parentName": "R1818-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1818
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1798-0",
+      "parentName": "R1798-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1798
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1797-0",
+      "parentName": "R1797-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1797
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2431-0",
+      "parentName": "R2431-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\nGewalt\n",
+      "description": "Kein Platz für\nGewalt\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2431
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2430-0",
+      "parentName": "R2430-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\nKein Platz für\nGewalt\n\n",
+      "description": "\n\nKein Platz für\nGewalt\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2430
       ]
     },
     {
@@ -13681,8 +13660,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1683-0",
-      "parentName": "R1683-0",
+      "name": "R1762-0",
+      "parentName": "R1762-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -13692,7 +13671,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        1683
+        1762
       ]
     },
     {
@@ -13701,8 +13680,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1678-0",
-      "parentName": "R1678-0",
+      "name": "R1764-0",
+      "parentName": "R1764-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -13712,67 +13691,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        1678
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1660-0",
-      "parentName": "R1660-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1660
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2431-0",
-      "parentName": "R2431-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\nGewalt\n",
-      "description": "Kein Platz für\nGewalt\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2431
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2430-0",
-      "parentName": "R2430-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\nKein Platz für\nGewalt\n\n",
-      "description": "\n\nKein Platz für\nGewalt\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2430
+        1764
       ]
     },
     {
@@ -13853,46 +13772,6 @@
       },
       "relatedStops": [
         5587
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1762-0",
-      "parentName": "R1762-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1762
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1764-0",
-      "parentName": "R1764-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1764
       ]
     },
     {
@@ -14021,6 +13900,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2424-0",
+      "parentName": "R2424-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\nGewalt\n",
+      "description": "Kein Platz für\nGewalt\n",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2424
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2422-0",
       "parentName": "R2422-0",
       "priority": "1",
@@ -14041,46 +13940,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2443-0",
-      "parentName": "R2443-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2443
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2448-0",
-      "parentName": "R2448-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2448
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2160-0",
       "parentName": "R2160-0",
       "priority": "1",
@@ -14093,6 +13952,46 @@
       },
       "relatedStops": [
         2160
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2162-0",
+      "parentName": "R2162-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2162
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2164-0",
+      "parentName": "R2164-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2164
       ]
     },
     {
@@ -14421,46 +14320,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2162-0",
-      "parentName": "R2162-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2162
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2164-0",
-      "parentName": "R2164-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2164
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2165-0",
       "parentName": "R2165-0",
       "priority": "1",
@@ -14633,6 +14492,46 @@
       },
       "relatedStops": [
         2176
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2177-0",
+      "parentName": "R2177-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2177
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2178-0",
+      "parentName": "R2178-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:17.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2178
       ]
     },
     {
@@ -14941,8 +14840,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2177-0",
-      "parentName": "R2177-0",
+      "name": "R2443-0",
+      "parentName": "R2443-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -14952,7 +14851,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2177
+        2443
       ]
     },
     {
@@ -14961,8 +14860,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2178-0",
-      "parentName": "R2178-0",
+      "name": "R2448-0",
+      "parentName": "R2448-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -14972,7 +14871,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2178
+        2448
       ]
     },
     {
@@ -15501,188 +15400,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1365-0",
-      "parentName": "R1365-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1365
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1366-0",
-      "parentName": "R1366-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1366
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1367-0",
-      "parentName": "R1367-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1367
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1368-0",
-      "parentName": "R1368-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1368
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1369-0",
-      "parentName": "R1369-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1369
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1371-0",
-      "parentName": "R1371-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:17.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1371
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3568-0",
-      "parentName": "R3568-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\nGewalt\n",
-      "description": "Kein Platz für\nGewalt\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3568
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3570-0",
-      "parentName": "R3570-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\nKein Platz für\nGewalt\n\n",
-      "description": "\n\nKein Platz für\nGewalt\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3570
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3571-0",
-      "parentName": "R3571-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\nKein Platz für\nGewalt\n\n",
-      "description": "\n\nKein Platz für\nGewalt\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3571
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3066-0",
-      "parentName": "R3066-0",
+      "name": "R2223-0",
+      "parentName": "R2223-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -15692,7 +15411,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        3066
+        2223
       ]
     },
     {
@@ -15701,8 +15420,68 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2189-0",
-      "parentName": "R2189-0",
+      "name": "R2910-0",
+      "parentName": "R2910-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2910
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2915-0",
+      "parentName": "R2915-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2915
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2920-0",
+      "parentName": "R2920-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2920
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2939-0",
+      "parentName": "R2939-0",
       "priority": "1",
       "owner": "WL",
       "title": "\nKein Platz für\n---- Gewalt ----\n",
@@ -15712,7 +15491,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2189
+        2939
       ]
     },
     {
@@ -15721,8 +15500,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2555-0",
-      "parentName": "R2555-0",
+      "name": "R2940-0",
+      "parentName": "R2940-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -15732,7 +15511,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2555
+        2940
       ]
     },
     {
@@ -15741,8 +15520,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2188-0",
-      "parentName": "R2188-0",
+      "name": "R2947-0",
+      "parentName": "R2947-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -15752,7 +15531,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2188
+        2947
       ]
     },
     {
@@ -15761,8 +15540,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2186-0",
-      "parentName": "R2186-0",
+      "name": "R2959-0",
+      "parentName": "R2959-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -15772,7 +15551,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2186
+        2959
       ]
     },
     {
@@ -15781,18 +15560,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2185-0",
-      "parentName": "R2185-0",
+      "name": "R2960-0",
+      "parentName": "R2960-0",
       "priority": "1",
       "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
       "time": {
         "start": "2026-11-25T05:00:18.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2185
+        2960
       ]
     },
     {
@@ -15801,38 +15580,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2556-0",
-      "parentName": "R2556-0",
+      "name": "R2961-0",
+      "parentName": "R2961-0",
       "priority": "1",
       "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
       "time": {
         "start": "2026-11-25T05:00:18.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2556
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2564-0",
-      "parentName": "R2564-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2564
+        2961
       ]
     },
     {
@@ -15901,8 +15660,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2566-0",
-      "parentName": "R2566-0",
+      "name": "R3528-0",
+      "parentName": "R3528-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -15912,7 +15671,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2566
+        3528
       ]
     },
     {
@@ -15921,18 +15680,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R3113-0",
-      "parentName": "R3113-0",
+      "name": "R3568-0",
+      "parentName": "R3568-0",
       "priority": "1",
       "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
+      "title": "Kein Platz für\nGewalt\n",
+      "description": "Kein Platz für\nGewalt\n",
       "time": {
         "start": "2026-11-25T05:00:18.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        3113
+        3568
       ]
     },
     {
@@ -15941,8 +15700,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R3115-0",
-      "parentName": "R3115-0",
+      "name": "R3569-0",
+      "parentName": "R3569-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
@@ -15952,7 +15711,67 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        3115
+        3569
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3570-0",
+      "parentName": "R3570-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\nKein Platz für\nGewalt\n\n",
+      "description": "\n\nKein Platz für\nGewalt\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3570
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3571-0",
+      "parentName": "R3571-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\nKein Platz für\nGewalt\n\n",
+      "description": "\n\nKein Platz für\nGewalt\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3571
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2966-0",
+      "parentName": "R2966-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2966
       ]
     },
     {
@@ -16001,46 +15820,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2973-0",
-      "parentName": "R2973-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2973
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2971-0",
-      "parentName": "R2971-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2971
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2987-0",
       "parentName": "R2987-0",
       "priority": "1",
@@ -16081,6 +15860,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2977-0",
+      "parentName": "R2977-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2977
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2981-0",
       "parentName": "R2981-0",
       "priority": "1",
@@ -16113,26 +15912,6 @@
       },
       "relatedStops": [
         2979
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2977-0",
-      "parentName": "R2977-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2977
       ]
     },
     {
@@ -16213,66 +15992,6 @@
       },
       "relatedStops": [
         2224
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2223-0",
-      "parentName": "R2223-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2223
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3528-0",
-      "parentName": "R3528-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3528
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3569-0",
-      "parentName": "R3569-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3569
       ]
     },
     {
@@ -16393,66 +16112,6 @@
       },
       "relatedStops": [
         2218
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2217-0",
-      "parentName": "R2217-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2217
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2216-0",
-      "parentName": "R2216-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2216
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2213-0",
-      "parentName": "R2213-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2213
       ]
     },
     {
@@ -16781,6 +16440,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R2021-0",
+      "parentName": "R2021-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2021
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R2190-0",
       "parentName": "R2190-0",
       "priority": "1",
@@ -17041,26 +16720,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2021-0",
-      "parentName": "R2021-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2021
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2023-0",
       "parentName": "R2023-0",
       "priority": "1",
@@ -17073,6 +16732,146 @@
       },
       "relatedStops": [
         2023
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2024-0",
+      "parentName": "R2024-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2024
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2025-0",
+      "parentName": "R2025-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2025
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2026-0",
+      "parentName": "R2026-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2026
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2971-0",
+      "parentName": "R2971-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2971
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2968-0",
+      "parentName": "R2968-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2968
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1907-0",
+      "parentName": "R1907-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1907
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2217-0",
+      "parentName": "R2217-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2217
       ]
     },
     {
@@ -17361,26 +17160,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2968-0",
-      "parentName": "R2968-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2968
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R2861-0",
       "parentName": "R2861-0",
       "priority": "1",
@@ -17393,26 +17172,6 @@
       },
       "relatedStops": [
         2861
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2966-0",
-      "parentName": "R2966-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2966
       ]
     },
     {
@@ -17521,8 +17280,8 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2024-0",
-      "parentName": "R2024-0",
+      "name": "R2216-0",
+      "parentName": "R2216-0",
       "priority": "1",
       "owner": "WL",
       "title": "\nKein Platz für\n---- Gewalt ----\n",
@@ -17532,47 +17291,7 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2024
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2025-0",
-      "parentName": "R2025-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2025
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2026-0",
-      "parentName": "R2026-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2026
+        2216
       ]
     },
     {
@@ -17641,8 +17360,28 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2975-0",
-      "parentName": "R2975-0",
+      "name": "R1925-0",
+      "parentName": "R1925-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1925
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1926-0",
+      "parentName": "R1926-0",
       "priority": "1",
       "owner": "WL",
       "title": "\nKein Platz für\n---- Gewalt ----\n",
@@ -17652,7 +17391,127 @@
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2975
+        1926
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1927-0",
+      "parentName": "R1927-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1927
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2865-0",
+      "parentName": "R2865-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2865
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2189-0",
+      "parentName": "R2189-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2189
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2866-0",
+      "parentName": "R2866-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2866
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1930-0",
+      "parentName": "R1930-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1930
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1931-0",
+      "parentName": "R1931-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1931
       ]
     },
     {
@@ -17741,6 +17600,46 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R1932-0",
+      "parentName": "R1932-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1932
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1933-0",
+      "parentName": "R1933-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1933
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R3445-0",
       "parentName": "R3445-0",
       "priority": "1",
@@ -17781,18 +17680,58 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2974-0",
-      "parentName": "R2974-0",
+      "name": "R1940-0",
+      "parentName": "R1940-0",
       "priority": "1",
       "owner": "WL",
-      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
-      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
       "time": {
         "start": "2026-11-25T05:00:18.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2974
+        1940
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1941-0",
+      "parentName": "R1941-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        1941
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2975-0",
+      "parentName": "R2975-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2975
       ]
     },
     {
@@ -17813,46 +17752,6 @@
       },
       "relatedStops": [
         3447
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2865-0",
-      "parentName": "R2865-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2865
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2866-0",
-      "parentName": "R2866-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2866
       ]
     },
     {
@@ -17933,206 +17832,6 @@
       },
       "relatedStops": [
         3468
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1907-0",
-      "parentName": "R1907-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1907
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1925-0",
-      "parentName": "R1925-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
-      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1925
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1926-0",
-      "parentName": "R1926-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1926
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1927-0",
-      "parentName": "R1927-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1927
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1930-0",
-      "parentName": "R1930-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1930
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1931-0",
-      "parentName": "R1931-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1931
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1932-0",
-      "parentName": "R1932-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1932
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1933-0",
-      "parentName": "R1933-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1933
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1940-0",
-      "parentName": "R1940-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1940
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R1941-0",
-      "parentName": "R1941-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        1941
       ]
     },
     {
@@ -18253,6 +17952,166 @@
       },
       "relatedStops": [
         2010
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2012-0",
+      "parentName": "R2012-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2012
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2013-0",
+      "parentName": "R2013-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2013
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2974-0",
+      "parentName": "R2974-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2974
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2014-0",
+      "parentName": "R2014-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2014
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2182-0",
+      "parentName": "R2182-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2182
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2183-0",
+      "parentName": "R2183-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2183
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2184-0",
+      "parentName": "R2184-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2184
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3431-0",
+      "parentName": "R3431-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\nGewalt\n",
+      "description": "Kein Platz für\nGewalt\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3431
       ]
     },
     {
@@ -18421,198 +18280,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2012-0",
-      "parentName": "R2012-0",
+      "name": "R2213-0",
+      "parentName": "R2213-0",
       "priority": "1",
       "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
       "time": {
         "start": "2026-11-25T05:00:18.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2012
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2013-0",
-      "parentName": "R2013-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2013
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2014-0",
-      "parentName": "R2014-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2014
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2212-0",
-      "parentName": "R2212-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
-      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2212
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3068-0",
-      "parentName": "R3068-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3068
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3069-0",
-      "parentName": "R3069-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3069
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2182-0",
-      "parentName": "R2182-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2182
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2183-0",
-      "parentName": "R2183-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2183
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2184-0",
-      "parentName": "R2184-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2184
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3431-0",
-      "parentName": "R3431-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\nGewalt\n",
-      "description": "Kein Platz für\nGewalt\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3431
+        2213
       ]
     },
     {
@@ -18841,6 +18520,46 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R3068-0",
+      "parentName": "R3068-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3068
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3069-0",
+      "parentName": "R3069-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "description": "\n\n\n\nKein Platz für\nGewalt\n\n\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3069
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R3005-0",
       "parentName": "R3005-0",
       "priority": "1",
@@ -18893,6 +18612,246 @@
       },
       "relatedStops": [
         3057
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3066-0",
+      "parentName": "R3066-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3066
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3113-0",
+      "parentName": "R3113-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3113
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3115-0",
+      "parentName": "R3115-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3115
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2212-0",
+      "parentName": "R2212-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2212
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2555-0",
+      "parentName": "R2555-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2555
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2556-0",
+      "parentName": "R2556-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2556
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2564-0",
+      "parentName": "R2564-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2564
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2566-0",
+      "parentName": "R2566-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2566
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2188-0",
+      "parentName": "R2188-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2188
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2186-0",
+      "parentName": "R2186-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2186
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2185-0",
+      "parentName": "R2185-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2185
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2973-0",
+      "parentName": "R2973-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:18.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        2973
       ]
     },
     {
@@ -19001,18 +18960,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2910-0",
-      "parentName": "R2910-0",
+      "name": "R3184-0",
+      "parentName": "R3184-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
       "description": "Kein Platz für\n---- Gewalt ----",
       "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
+        "start": "2026-11-25T05:00:19.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2910
+        3184
       ]
     },
     {
@@ -19021,58 +18980,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2915-0",
-      "parentName": "R2915-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\n\nKein Platz für\n---- Gewalt ----\n\n",
-      "description": "\n\nKein Platz für\n---- Gewalt ----\n\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2915
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2920-0",
-      "parentName": "R2920-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2920
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2939-0",
-      "parentName": "R2939-0",
+      "name": "R3213-0",
+      "parentName": "R3213-0",
       "priority": "1",
       "owner": "WL",
       "title": "\nKein Platz für\n---- Gewalt ----\n",
       "description": "\nKein Platz für\n---- Gewalt ----\n",
       "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
+        "start": "2026-11-25T05:00:19.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2939
+        3213
       ]
     },
     {
@@ -19081,98 +19000,18 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2940-0",
-      "parentName": "R2940-0",
+      "name": "R3183-0",
+      "parentName": "R3183-0",
       "priority": "1",
       "owner": "WL",
       "title": "Kein Platz für\n---- Gewalt ----",
       "description": "Kein Platz für\n---- Gewalt ----",
       "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
+        "start": "2026-11-25T05:00:19.000+0100",
         "end": "2026-11-25T23:59:59.000+0100"
       },
       "relatedStops": [
-        2940
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2947-0",
-      "parentName": "R2947-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2947
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2959-0",
-      "parentName": "R2959-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2959
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2960-0",
-      "parentName": "R2960-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2960
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2961-0",
-      "parentName": "R2961-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:18.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        2961
+        3183
       ]
     },
     {
@@ -19193,6 +19032,26 @@
       },
       "relatedStops": [
         3185
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R8887-0",
+      "parentName": "R8887-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\nGewalt\n",
+      "description": "Kein Platz für\nGewalt\n",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        8887
       ]
     },
     {
@@ -19241,26 +19100,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R3191-0",
-      "parentName": "R3191-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3191
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R3192-0",
       "parentName": "R3192-0",
       "priority": "1",
@@ -19273,226 +19112,6 @@
       },
       "relatedStops": [
         3192
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3193-0",
-      "parentName": "R3193-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3193
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3213-0",
-      "parentName": "R3213-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3213
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R8895-0",
-      "parentName": "R8895-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\nGewalt\n",
-      "description": "Kein Platz für\nGewalt\n",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        8895
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R4732-0",
-      "parentName": "R4732-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        4732
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3196-0",
-      "parentName": "R3196-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3196
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3183-0",
-      "parentName": "R3183-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3183
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3184-0",
-      "parentName": "R3184-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3184
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3170-0",
-      "parentName": "R3170-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3170
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R3207-0",
-      "parentName": "R3207-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        3207
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R4733-0",
-      "parentName": "R4733-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        4733
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R8887-0",
-      "parentName": "R8887-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\nGewalt\n",
-      "description": "Kein Platz für\nGewalt\n",
-      "time": {
-        "start": "2026-11-25T05:00:19.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        8887
       ]
     },
     {
@@ -19541,6 +19160,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R8895-0",
+      "parentName": "R8895-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\nGewalt\n",
+      "description": "Kein Platz für\nGewalt\n",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        8895
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R4718-0",
       "parentName": "R4718-0",
       "priority": "1",
@@ -19553,6 +19192,46 @@
       },
       "relatedStops": [
         4718
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R4732-0",
+      "parentName": "R4732-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        4732
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R4733-0",
+      "parentName": "R4733-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        4733
       ]
     },
     {
@@ -19581,6 +19260,106 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R3193-0",
+      "parentName": "R3193-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3193
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3207-0",
+      "parentName": "R3207-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3207
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3196-0",
+      "parentName": "R3196-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3196
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3191-0",
+      "parentName": "R3191-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3191
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3170-0",
+      "parentName": "R3170-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:19.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        3170
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R8119-0",
       "parentName": "R8119-0",
       "priority": "1",
@@ -19593,46 +19372,6 @@
       },
       "relatedStops": [
         8119
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R7417-0",
-      "parentName": "R7417-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Kein Platz für\n---- Gewalt ----",
-      "description": "Kein Platz für\n---- Gewalt ----",
-      "time": {
-        "start": "2026-11-25T05:00:24.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        7417
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R7416-0",
-      "parentName": "R7416-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:24.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        7416
       ]
     },
     {
@@ -19661,6 +19400,26 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
+      "name": "R7417-0",
+      "parentName": "R7417-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Kein Platz für\n---- Gewalt ----",
+      "description": "Kein Platz für\n---- Gewalt ----",
+      "time": {
+        "start": "2026-11-25T05:00:24.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        7417
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
       "name": "R7373-0",
       "parentName": "R7373-0",
       "priority": "1",
@@ -19681,26 +19440,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R7375-0",
-      "parentName": "R7375-0",
-      "priority": "1",
-      "owner": "WL",
-      "title": "\nKein Platz für\n---- Gewalt ----\n",
-      "description": "\nKein Platz für\n---- Gewalt ----\n",
-      "time": {
-        "start": "2026-11-25T05:00:24.000+0100",
-        "end": "2026-11-25T23:59:59.000+0100"
-      },
-      "relatedStops": [
-        7375
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R5943-0",
       "parentName": "R5943-0",
       "priority": "1",
@@ -19713,6 +19452,46 @@
       },
       "relatedStops": [
         5943
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R7416-0",
+      "parentName": "R7416-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:24.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        7416
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R7375-0",
+      "parentName": "R7375-0",
+      "priority": "1",
+      "owner": "WL",
+      "title": "\nKein Platz für\n---- Gewalt ----\n",
+      "description": "\nKein Platz für\n---- Gewalt ----\n",
+      "time": {
+        "start": "2026-11-25T05:00:24.000+0100",
+        "end": "2026-11-25T23:59:59.000+0100"
+      },
+      "relatedStops": [
+        7375
       ]
     }
   ]

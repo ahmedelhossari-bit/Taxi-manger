@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T06:58:00.771894+00:00",
+  "updated": "2026-11-25T08:30:38.424238+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,114 +8,70 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22719)",
+          "train": "S 80 (Zug-Nr. 25019)",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "07:45",
-          "expected": "08:09",
-          "delay": 24,
-          "cancelled": false
+          "direction": "Wien Aspern Nord Bahnhst",
+          "planned": "09:31",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         },
         {
-          "train": "REX 62 (Zug-Nr. 9404)",
+          "train": "REX 8 (Zug-Nr. 2509)",
           "board": "ARR",
-          "direction": "Hegyeshalom",
-          "planned": "07:52",
-          "expected": "08:04",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25012)",
-          "board": "ARR",
-          "direction": "Wien Liesing Bahnhof",
-          "planned": "07:56",
-          "expected": "08:07",
-          "delay": 11,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 40236",
-          "board": "ARR",
-          "direction": "Venezia Santa Lucia",
-          "planned": "07:58",
-          "expected": "08:11",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 467",
-          "board": "ARR",
-          "direction": "Zürich HB",
-          "planned": "07:58",
-          "expected": "08:11",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
-          "train": "REX 6 (Zug-Nr. 7687)",
-          "board": "ARR",
-          "direction": "Deutschkreutz Bahnhof",
-          "planned": "08:00",
-          "expected": "08:19",
-          "delay": 19,
-          "cancelled": false
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22908)",
-          "board": "ARR",
-          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
-          "planned": "08:05",
-          "expected": "08:19",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
-          "train": "EC 206",
-          "board": "ARR",
-          "direction": "Graz Hbf",
-          "planned": "08:05",
-          "expected": "08:15",
+          "direction": "Bratislava hl.st.",
+          "planned": "09:46",
+          "expected": "09:56",
           "delay": 10,
           "cancelled": false
         },
         {
-          "train": "S 1 (Zug-Nr. 28299)",
-          "board": "DEP",
-          "direction": "Wien Liesing",
-          "planned": "07:47",
-          "expected": "08:03",
-          "delay": 16,
+          "train": "NJ 40421",
+          "board": "ARR",
+          "direction": "Amsterdam Centraal",
+          "planned": "09:48",
+          "expected": "10:16",
+          "delay": 28,
           "cancelled": false
         },
         {
-          "train": "REX 7 (Zug-Nr. 22719)",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "07:53",
-          "expected": "08:09",
-          "delay": 16,
+          "train": "NJ 493",
+          "board": "ARR",
+          "direction": "Hamburg-Altona",
+          "planned": "09:48",
+          "expected": "10:16",
+          "delay": 28,
           "cancelled": false
         },
         {
-          "train": "S 80 (Zug-Nr. 25012)",
+          "train": "S 80 (Zug-Nr. 25019)",
           "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "07:58",
-          "expected": "08:08",
-          "delay": 10,
-          "cancelled": false
+          "direction": "Mödling",
+          "planned": "09:33",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 91,
+      "records": 89,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 82,
+      "alerts": [
+        {
+          "train": "CJX 5 (Zug-Nr. 1915)",
+          "board": "ARR",
+          "direction": "Waidhofen/Ybbs Bahnhof",
+          "planned": "09:42",
+          "expected": "09:52",
+          "delay": 10,
+          "cancelled": false
+        }
+      ],
+      "records": 84,
       "errors": []
     },
     {
@@ -124,115 +80,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22719)",
+          "train": "S 80 (Zug-Nr. 25019)",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "07:38",
-          "expected": "08:03",
-          "delay": 25,
+          "direction": "Wien Aspern Nord Bahnhst",
+          "planned": "09:38",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "NJ 40421",
+          "board": "ARR",
+          "direction": "Amsterdam Centraal",
+          "planned": "09:39",
+          "expected": "10:12",
+          "delay": 33,
           "cancelled": false
         },
         {
-          "train": "NJ 40236",
+          "train": "NJ 493",
           "board": "ARR",
-          "direction": "Venezia Santa Lucia",
-          "planned": "07:51",
-          "expected": "08:07",
-          "delay": 16,
+          "direction": "Hamburg-Altona",
+          "planned": "09:39",
+          "expected": "10:12",
+          "delay": 33,
           "cancelled": false
         },
         {
-          "train": "NJ 467",
-          "board": "ARR",
-          "direction": "Zürich HB",
-          "planned": "07:51",
-          "expected": "08:07",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
-          "train": "S 1 (Zug-Nr. 28299)",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 1-2)",
-          "planned": "07:52",
-          "expected": "08:07",
-          "delay": 15,
-          "cancelled": false
-        },
-        {
-          "train": "REX 6 (Zug-Nr. 7687)",
-          "board": "ARR",
-          "direction": "Deutschkreutz Bahnhof",
-          "planned": "07:52",
-          "expected": "08:14",
-          "delay": 22,
-          "cancelled": false
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22908)",
-          "board": "ARR",
-          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
-          "planned": "07:58",
-          "expected": "08:14",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
-          "train": "EC 206",
-          "board": "ARR",
-          "direction": "Graz Hbf",
-          "planned": "07:58",
-          "expected": "08:10",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "S 2 (Zug-Nr. 22719)",
+          "train": "S 3 (Zug-Nr. 25019)",
           "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "07:40",
-          "expected": "08:05",
-          "delay": 25,
-          "cancelled": false
-        },
-        {
-          "train": "S 1 (Zug-Nr. 28299)",
-          "board": "DEP",
-          "direction": "Wien Liesing",
-          "planned": "07:54",
-          "expected": "08:08",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
-          "train": "REX 6 (Zug-Nr. 7687)",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "07:55",
-          "expected": "08:16",
-          "delay": 21,
-          "cancelled": false
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22908)",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "08:00",
-          "expected": "08:15",
-          "delay": 15,
-          "cancelled": false
-        },
-        {
-          "train": "EC 206",
-          "board": "DEP",
-          "direction": "Krakow Glowny",
-          "planned": "08:00",
-          "expected": "08:11",
-          "delay": 11,
-          "cancelled": false
+          "direction": "Mödling",
+          "planned": "09:39",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 130,
+      "records": 127,
       "errors": []
     },
     {
@@ -250,18 +134,8 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "REX 7 (Zug-Nr. 22719)",
-          "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "08:15",
-          "expected": "08:25",
-          "delay": 10,
-          "cancelled": false
-        }
-      ],
-      "records": 30,
+      "alerts": [],
+      "records": 28,
       "errors": []
     }
   ]

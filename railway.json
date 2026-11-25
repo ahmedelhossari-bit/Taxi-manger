@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T04:57:14.681934+00:00",
+  "updated": "2026-11-25T05:54:50.421688+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,34 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 106",
+          "train": "S 80 (Zug-Nr. 25008)",
           "board": "ARR",
-          "direction": "Wien Westbahnhof",
-          "planned": "05:54",
-          "expected": "06:06",
+          "direction": "Wien Liesing Bahnhof",
+          "planned": "06:56",
+          "expected": "07:07",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "S 3 (Zug-Nr. 28170)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "07:09",
+          "expected": "07:21",
           "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25008)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "06:58",
+          "expected": "07:08",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 96,
+      "records": 92,
       "errors": []
     },
     {
@@ -25,7 +43,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 73,
+      "records": 76,
       "errors": []
     },
     {
@@ -34,16 +52,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 106",
-          "board": "DEP",
-          "direction": "Warszawa Wschodnia",
-          "planned": "05:49",
-          "expected": "06:03",
-          "delay": 14,
+          "train": "S 80 (Zug-Nr. 25008)",
+          "board": "ARR",
+          "direction": "Wien Liesing Bahnhof",
+          "planned": "06:50",
+          "expected": "07:02",
+          "delay": 12,
           "cancelled": false
+        },
+        {
+          "train": "S 3 (Zug-Nr. 28170)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "07:02",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25008)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "06:51",
+          "expected": "07:02",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "S 3 (Zug-Nr. 28170)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "07:03",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 123,
+      "records": 119,
       "errors": []
     },
     {
@@ -62,7 +107,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 31,
+      "records": 30,
       "errors": []
     }
   ]

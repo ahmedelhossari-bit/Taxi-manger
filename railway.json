@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T09:51:33.674941+00:00",
+  "updated": "2026-11-25T10:50:06.932975+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 1002",
+          "train": "IC 538",
           "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "10:45",
-          "expected": "10:57",
-          "delay": 12,
+          "direction": "Graz Hbf",
+          "planned": "12:07",
+          "expected": "12:59",
+          "delay": 52,
           "cancelled": false
         }
       ],
-      "records": 85,
+      "records": 86,
       "errors": []
     },
     {
@@ -26,16 +26,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "CJX 5 (Zug-Nr. 1909)",
+          "train": "WB 961",
           "board": "ARR",
-          "direction": "Kleinreifling Bahnhof",
-          "planned": "07:41",
-          "expected": "11:00",
-          "delay": 199,
+          "direction": "München Hbf",
+          "planned": "11:52",
+          "expected": "12:03",
+          "delay": 11,
           "cancelled": false
         }
       ],
-      "records": 83,
+      "records": 80,
       "errors": []
     },
     {
@@ -44,70 +44,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 1002",
+          "train": "IC 538",
           "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "10:38",
-          "expected": "10:51",
-          "delay": 13,
+          "direction": "Graz Hbf",
+          "planned": "12:00",
+          "expected": "12:55",
+          "delay": 55,
           "cancelled": false
         },
         {
-          "train": "IC 547",
+          "train": "RJX19975",
           "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "10:56",
-          "expected": "11:06",
-          "delay": 10,
+          "direction": "Bregenz Bahnhof",
+          "planned": "12:25",
+          "expected": "12:36",
+          "delay": 11,
           "cancelled": false
         },
         {
-          "train": "BB",
-          "board": "ARR",
-          "direction": "Baden b.Wien Josefsplatz (Badner Bahn)",
-          "planned": "10:59",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "RJX 638",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "11:00",
-          "expected": "11:10",
-          "delay": 10,
-          "cancelled": false
-        },
-        {
-          "train": "WB 1002",
+          "train": "IC 538",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "10:40",
-          "expected": "10:52",
-          "delay": 12,
+          "planned": "12:02",
+          "expected": "12:56",
+          "delay": 54,
           "cancelled": false
         },
         {
-          "train": "BB",
-          "board": "DEP",
-          "direction": "Wien Oper/Karlsplatz",
-          "planned": "10:59",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "RJX 638",
+          "train": "RJX19975",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "11:02",
-          "expected": "11:12",
+          "planned": "12:27",
+          "expected": "12:37",
           "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 122,
+      "records": 120,
       "errors": []
     },
     {

@@ -1,13 +1,32 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T02:48:44.720208+00:00",
+  "updated": "2026-11-25T03:51:46.574906+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 92,
+      "alerts": [
+        {
+          "train": "R 4 (Zug-Nr. 28016)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "05:39",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 1 (Zug-Nr. 28217)",
+          "board": "DEP",
+          "direction": "Wien Liesing",
+          "planned": "05:47",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 93,
       "errors": []
     },
     {
@@ -15,15 +34,34 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 58,
+      "records": 68,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 131,
+      "alerts": [
+        {
+          "train": "R 4 (Zug-Nr. 28016)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "05:32",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "R 4 (Zug-Nr. 28016)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "05:33",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 133,
       "errors": []
     },
     {
@@ -42,7 +80,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 18,
+      "records": 27,
       "errors": []
     }
   ]

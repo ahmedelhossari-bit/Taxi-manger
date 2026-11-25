@@ -1,23 +1,13 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T00:19:20.291880+00:00",
+  "updated": "2026-11-25T01:50:25.774994+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "IC 759",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "23:36",
-          "expected": "01:28",
-          "delay": 112,
-          "cancelled": false
-        }
-      ],
-      "records": 7,
+      "alerts": [],
+      "records": 14,
       "errors": []
     },
     {
@@ -25,34 +15,15 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 0,
+      "records": 4,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "IC 759",
-          "board": "ARR",
-          "direction": "Villach Hbf",
-          "planned": "23:29",
-          "expected": "01:24",
-          "delay": 115,
-          "cancelled": false
-        },
-        {
-          "train": "IC 759",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "23:31",
-          "expected": "01:25",
-          "delay": 114,
-          "cancelled": false
-        }
-      ],
-      "records": 7,
+      "alerts": [],
+      "records": 22,
       "errors": []
     },
     {
@@ -71,7 +42,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 4,
+      "records": 8,
       "errors": []
     }
   ]

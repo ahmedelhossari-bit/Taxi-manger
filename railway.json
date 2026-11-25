@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T12:59:32.898204+00:00",
+  "updated": "2026-11-25T14:21:25.323409+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,61 +8,60 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 8 (Zug-Nr. 2517)",
+          "train": "RJX 65",
           "board": "ARR",
-          "direction": "Bratislava hl.st.",
-          "planned": "13:46",
-          "expected": "14:02",
-          "delay": 16,
+          "direction": "München Hbf",
+          "planned": "15:32",
+          "expected": "15:47",
+          "delay": 15,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22338)",
+          "train": "RJX19985",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "14:30",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Bregenz Bahnhof",
+          "planned": "15:32",
+          "expected": "15:47",
+          "delay": 15,
+          "cancelled": false
         },
         {
-          "train": "S 80 (Zug-Nr. 25039)",
-          "board": "ARR",
-          "direction": "Wien Aspern Nord Bahnhst",
-          "planned": "14:31",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "CJX 9 (Zug-Nr. 22939)",
+          "train": "IC 648",
           "board": "DEP",
-          "direction": "Payerbach-Reichenau",
-          "planned": "13:55",
-          "expected": "14:05",
-          "delay": 10,
+          "direction": "Salzburg Hbf",
+          "planned": "14:57",
+          "expected": "15:25",
+          "delay": 28,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 65",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "15:40",
+          "expected": "15:53",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19985",
+          "board": "DEP",
+          "direction": "Flughafen Wien",
+          "planned": "15:42",
+          "expected": "15:55",
+          "delay": 13,
           "cancelled": false
         }
       ],
-      "records": 84,
+      "records": 91,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "WB 963",
-          "board": "ARR",
-          "direction": "Stuttgart Hbf",
-          "planned": "13:52",
-          "expected": "14:06",
-          "delay": 14,
-          "cancelled": false
-        }
-      ],
-      "records": 84,
+      "alerts": [],
+      "records": 78,
       "errors": []
     },
     {
@@ -71,19 +70,91 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 1 (Zug-Nr. 22338)",
+          "train": "IC 648",
+          "board": "ARR",
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "15:02",
+          "expected": "15:29",
+          "delay": 27,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 65",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "15:25",
+          "expected": "15:42",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19985",
+          "board": "ARR",
+          "direction": "Bregenz Bahnhof",
+          "planned": "15:25",
+          "expected": "15:42",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7623)",
+          "board": "ARR",
+          "direction": "Deutschkreutz Bahnhof",
+          "planned": "15:29",
+          "expected": "15:39",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7823)",
+          "board": "ARR",
+          "direction": "Wulkaprodersdorf Bahnhof",
+          "planned": "15:29",
+          "expected": "15:39",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "S 3 (Zug-Nr. 25044)",
           "board": "ARR",
           "direction": "Wr.Neustadt Hbf",
-          "planned": "14:22",
+          "planned": "15:50",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "REX 1 (Zug-Nr. 22338)",
+          "train": "IC 648",
           "board": "DEP",
-          "direction": "Angern/March",
-          "planned": "14:24",
+          "direction": "Salzburg Hbf",
+          "planned": "15:04",
+          "expected": "15:30",
+          "delay": 26,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 65",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "15:27",
+          "expected": "15:43",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "RJX19985",
+          "board": "DEP",
+          "direction": "Flughafen Wien",
+          "planned": "15:27",
+          "expected": "15:43",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25044)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "15:51",
           "expected": null,
           "delay": null,
           "cancelled": true
@@ -107,8 +178,18 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 30,
+      "alerts": [
+        {
+          "train": "RJX19985",
+          "board": "ARR",
+          "direction": "Bregenz Bahnhof",
+          "planned": "16:07",
+          "expected": "16:18",
+          "delay": 11,
+          "cancelled": false
+        }
+      ],
+      "records": 31,
       "errors": []
     }
   ]

@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T08:30:38.424238+00:00",
+  "updated": "2026-11-25T09:51:33.674941+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,52 +8,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 80 (Zug-Nr. 25019)",
+          "train": "WB 1002",
           "board": "ARR",
-          "direction": "Wien Aspern Nord Bahnhst",
-          "planned": "09:31",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
-          "train": "REX 8 (Zug-Nr. 2509)",
-          "board": "ARR",
-          "direction": "Bratislava hl.st.",
-          "planned": "09:46",
-          "expected": "09:56",
-          "delay": 10,
+          "direction": "Villach Hbf",
+          "planned": "10:45",
+          "expected": "10:57",
+          "delay": 12,
           "cancelled": false
-        },
-        {
-          "train": "NJ 40421",
-          "board": "ARR",
-          "direction": "Amsterdam Centraal",
-          "planned": "09:48",
-          "expected": "10:16",
-          "delay": 28,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 493",
-          "board": "ARR",
-          "direction": "Hamburg-Altona",
-          "planned": "09:48",
-          "expected": "10:16",
-          "delay": 28,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25019)",
-          "board": "DEP",
-          "direction": "Mödling",
-          "planned": "09:33",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
         }
       ],
-      "records": 89,
+      "records": 85,
       "errors": []
     },
     {
@@ -62,16 +26,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "CJX 5 (Zug-Nr. 1915)",
+          "train": "CJX 5 (Zug-Nr. 1909)",
           "board": "ARR",
-          "direction": "Waidhofen/Ybbs Bahnhof",
-          "planned": "09:42",
-          "expected": "09:52",
-          "delay": 10,
+          "direction": "Kleinreifling Bahnhof",
+          "planned": "07:41",
+          "expected": "11:00",
+          "delay": 199,
           "cancelled": false
         }
       ],
-      "records": 84,
+      "records": 83,
       "errors": []
     },
     {
@@ -80,43 +44,70 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 80 (Zug-Nr. 25019)",
+          "train": "WB 1002",
           "board": "ARR",
-          "direction": "Wien Aspern Nord Bahnhst",
-          "planned": "09:38",
+          "direction": "Villach Hbf",
+          "planned": "10:38",
+          "expected": "10:51",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "IC 547",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "10:56",
+          "expected": "11:06",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "BB",
+          "board": "ARR",
+          "direction": "Baden b.Wien Josefsplatz (Badner Bahn)",
+          "planned": "10:59",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "NJ 40421",
+          "train": "RJX 638",
           "board": "ARR",
-          "direction": "Amsterdam Centraal",
-          "planned": "09:39",
-          "expected": "10:12",
-          "delay": 33,
+          "direction": "Villach Hbf",
+          "planned": "11:00",
+          "expected": "11:10",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "NJ 493",
-          "board": "ARR",
-          "direction": "Hamburg-Altona",
-          "planned": "09:39",
-          "expected": "10:12",
-          "delay": 33,
-          "cancelled": false
-        },
-        {
-          "train": "S 3 (Zug-Nr. 25019)",
+          "train": "WB 1002",
           "board": "DEP",
-          "direction": "Mödling",
-          "planned": "09:39",
+          "direction": "Wien Hbf",
+          "planned": "10:40",
+          "expected": "10:52",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "BB",
+          "board": "DEP",
+          "direction": "Wien Oper/Karlsplatz",
+          "planned": "10:59",
           "expected": null,
           "delay": null,
           "cancelled": true
+        },
+        {
+          "train": "RJX 638",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "11:02",
+          "expected": "11:12",
+          "delay": 10,
+          "cancelled": false
         }
       ],
-      "records": 127,
+      "records": 122,
       "errors": []
     },
     {

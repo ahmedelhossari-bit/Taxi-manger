@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T10:50:06.932975+00:00",
+  "updated": "2026-11-25T11:50:27.215155+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -12,30 +12,92 @@
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "12:07",
-          "expected": "12:59",
-          "delay": 52,
+          "expected": "13:03",
+          "delay": 56,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 62",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "12:20",
+          "expected": "13:04",
+          "delay": 44,
+          "cancelled": false
+        },
+        {
+          "train": "ICE 1211",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "12:47",
+          "expected": "12:58",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25033)",
+          "board": "ARR",
+          "direction": "Wien Aspern Nord Bahnhst",
+          "planned": "13:01",
+          "expected": "13:12",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22928)",
+          "board": "ARR",
+          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
+          "planned": "13:03",
+          "expected": "13:27",
+          "delay": 24,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7732)",
+          "board": "ARR",
+          "direction": "Bratislava-Petrzalka",
+          "planned": "13:15",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "RJX19982",
+          "board": "DEP",
+          "direction": "Bregenz",
+          "planned": "12:28",
+          "expected": "12:52",
+          "delay": 24,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 62",
+          "board": "DEP",
+          "direction": "München Hbf",
+          "planned": "12:28",
+          "expected": "13:07",
+          "delay": 39,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25033)",
+          "board": "DEP",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "13:03",
+          "expected": "13:13",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 86,
+      "records": 87,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "WB 961",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "11:52",
-          "expected": "12:03",
-          "delay": 11,
-          "cancelled": false
-        }
-      ],
-      "records": 80,
+      "alerts": [],
+      "records": 79,
       "errors": []
     },
     {
@@ -48,39 +110,111 @@
           "board": "ARR",
           "direction": "Graz Hbf",
           "planned": "12:00",
-          "expected": "12:55",
-          "delay": 55,
+          "expected": "12:59",
+          "delay": 59,
           "cancelled": false
         },
         {
-          "train": "RJX19975",
+          "train": "RJX19982",
           "board": "ARR",
-          "direction": "Bregenz Bahnhof",
-          "planned": "12:25",
-          "expected": "12:36",
-          "delay": 11,
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "12:33",
+          "expected": "12:56",
+          "delay": 23,
           "cancelled": false
+        },
+        {
+          "train": "RJX 62",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "12:33",
+          "expected": "13:13",
+          "delay": 40,
+          "cancelled": false
+        },
+        {
+          "train": "ICE 1211",
+          "board": "ARR",
+          "direction": "München Hbf",
+          "planned": "12:40",
+          "expected": "12:54",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22928)",
+          "board": "ARR",
+          "direction": "Payerbach-Reichenau an der Rax Bahnhof",
+          "planned": "12:57",
+          "expected": "13:23",
+          "delay": 26,
+          "cancelled": false
+        },
+        {
+          "train": "S 3 (Zug-Nr. 25034)",
+          "board": "ARR",
+          "direction": "Leobersdorf Bahnhof",
+          "planned": "13:20",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         },
         {
           "train": "IC 538",
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "12:02",
-          "expected": "12:56",
-          "delay": 54,
+          "expected": "13:00",
+          "delay": 58,
           "cancelled": false
         },
         {
-          "train": "RJX19975",
+          "train": "RJX19982",
+          "board": "DEP",
+          "direction": "Bregenz",
+          "planned": "12:35",
+          "expected": "12:57",
+          "delay": 22,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 62",
+          "board": "DEP",
+          "direction": "München Hbf",
+          "planned": "12:35",
+          "expected": "13:14",
+          "delay": 39,
+          "cancelled": false
+        },
+        {
+          "train": "ICE 1211",
           "board": "DEP",
           "direction": "Wien Hbf",
-          "planned": "12:27",
-          "expected": "12:37",
-          "delay": 10,
+          "planned": "12:42",
+          "expected": "12:54",
+          "delay": 12,
           "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22928)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "12:58",
+          "expected": "13:23",
+          "delay": 25,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25034)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "13:21",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 120,
+      "records": 122,
       "errors": []
     },
     {

@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-25T21:02:39.433174+00:00",
+  "updated": "2026-11-25T22:02:57.698292+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,120 +8,30 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 3 (Zug-Nr. 22244)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:19",
-          "expected": "22:10",
-          "delay": 351,
-          "cancelled": false
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22346)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:30",
-          "expected": "22:11",
-          "delay": 341,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25048)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:56",
-          "expected": "22:13",
-          "delay": 317,
-          "cancelled": false
-        },
-        {
-          "train": "RJX13479",
-          "board": "ARR",
-          "direction": "Bregenz Bahnhof",
-          "planned": "19:32",
-          "expected": "22:14",
-          "delay": 162,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 69",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "19:32",
-          "expected": "22:14",
-          "delay": 162,
-          "cancelled": false
-        },
-        {
-          "train": "IC 842",
-          "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "21:48",
-          "expected": "22:07",
-          "delay": 19,
-          "cancelled": false
-        },
-        {
           "train": "EC 107",
           "board": "ARR",
           "direction": "Warszawa Wschodnia",
           "planned": "21:49",
-          "expected": "23:01",
-          "delay": 72,
+          "expected": "23:03",
+          "delay": 74,
           "cancelled": false
         },
         {
-          "train": "EC 70",
+          "train": "EC 462",
           "board": "ARR",
-          "direction": "Ljubljana",
-          "planned": "22:07",
-          "expected": "22:29",
-          "delay": 22,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 768",
-          "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "22:17",
-          "expected": "22:36",
+          "direction": "Budapest-Keleti",
+          "planned": "23:20",
+          "expected": "23:39",
           "delay": 19,
           "cancelled": false
         },
         {
-          "train": "RJX 169",
+          "train": "RJ 177",
           "board": "ARR",
-          "direction": "Sargans",
-          "planned": "22:32",
-          "expected": "22:45",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22346)",
-          "board": "DEP",
-          "direction": "Angern/March",
-          "planned": "16:32",
-          "expected": "22:12",
-          "delay": 340,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25048)",
-          "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "16:58",
-          "expected": "22:14",
-          "delay": 316,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 764",
-          "board": "DEP",
-          "direction": "Salzburg Hbf",
-          "planned": "21:28",
-          "expected": "22:18",
-          "delay": 50,
+          "direction": "Hamburg-Altona",
+          "planned": "23:49",
+          "expected": "00:01",
+          "delay": 12,
           "cancelled": false
         },
         {
@@ -129,21 +39,39 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "22:00",
-          "expected": "23:04",
-          "delay": 64,
+          "expected": "23:06",
+          "delay": 66,
           "cancelled": false
         },
         {
-          "train": "RJX 768",
+          "train": "EN 40462",
+          "board": "DEP",
+          "direction": "Zürich HB",
+          "planned": "23:28",
+          "expected": "23:42",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "EC 462",
           "board": "DEP",
           "direction": "Salzburg Hbf",
-          "planned": "22:28",
-          "expected": "22:39",
-          "delay": 11,
+          "planned": "23:28",
+          "expected": "23:42",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "EN 50462",
+          "board": "DEP",
+          "direction": "Stuttgart Hbf",
+          "planned": "23:28",
+          "expected": "23:42",
+          "delay": 14,
           "cancelled": false
         }
       ],
-      "records": 98,
+      "records": 101,
       "errors": []
     },
     {
@@ -152,30 +80,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "WB 79221",
-          "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "20:52",
-          "expected": "22:37",
-          "delay": 105,
-          "cancelled": false
-        },
-        {
-          "train": "WB 969",
-          "board": "ARR",
-          "direction": "Stuttgart Hbf",
-          "planned": "21:52",
-          "expected": "22:28",
-          "delay": 36,
-          "cancelled": false
-        },
-        {
           "train": "EC 107",
           "board": "ARR",
           "direction": "Warszawa Wschodnia",
           "planned": "22:30",
-          "expected": "23:21",
-          "delay": 51,
+          "expected": "23:23",
+          "delay": 53,
           "cancelled": false
         }
       ],
@@ -188,84 +98,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 3 (Zug-Nr. 22244)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:12",
-          "expected": "22:05",
-          "delay": 353,
-          "cancelled": false
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22346)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:22",
-          "expected": "22:07",
-          "delay": 345,
-          "cancelled": false
-        },
-        {
-          "train": "S 3 (Zug-Nr. 25048)",
-          "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "16:50",
-          "expected": "22:08",
-          "delay": 318,
-          "cancelled": false
-        },
-        {
-          "train": "RJX13479",
-          "board": "ARR",
-          "direction": "Bregenz Bahnhof",
-          "planned": "19:25",
-          "expected": "22:08",
-          "delay": 163,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 69",
-          "board": "ARR",
-          "direction": "München Hbf",
-          "planned": "19:25",
-          "expected": "22:08",
-          "delay": 163,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 764",
-          "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "21:33",
-          "expected": "22:21",
-          "delay": 48,
-          "cancelled": false
-        },
-        {
-          "train": "EC 70",
-          "board": "ARR",
-          "direction": "Ljubljana",
-          "planned": "22:00",
-          "expected": "22:25",
-          "delay": 25,
-          "cancelled": false
-        },
-        {
           "train": "EC 107",
           "board": "ARR",
           "direction": "Warszawa Wschodnia",
           "planned": "22:06",
-          "expected": "23:08",
-          "delay": 62,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 169",
-          "board": "ARR",
-          "direction": "Sargans",
-          "planned": "22:25",
-          "expected": "22:40",
-          "delay": 15,
+          "expected": "23:11",
+          "delay": 65,
           "cancelled": false
         },
         {
@@ -273,71 +111,17 @@
           "board": "ARR",
           "direction": "Flughafen Wien Bahnhof",
           "planned": "22:33",
-          "expected": "22:47",
-          "delay": 14,
+          "expected": "23:02",
+          "delay": 29,
           "cancelled": false
         },
         {
-          "train": "REX 3 (Zug-Nr. 22244)",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "16:14",
-          "expected": "22:07",
-          "delay": 353,
-          "cancelled": false
-        },
-        {
-          "train": "REX 1 (Zug-Nr. 22346)",
-          "board": "DEP",
-          "direction": "Angern/March",
-          "planned": "16:24",
-          "expected": "22:08",
-          "delay": 344,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25048)",
-          "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "16:51",
-          "expected": "22:09",
-          "delay": 318,
-          "cancelled": false
-        },
-        {
-          "train": "RJX13479",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "19:27",
-          "expected": "22:09",
-          "delay": 162,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 69",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "19:27",
-          "expected": "22:09",
-          "delay": 162,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 764",
-          "board": "DEP",
-          "direction": "Salzburg Hbf",
-          "planned": "21:35",
-          "expected": "22:22",
-          "delay": 47,
-          "cancelled": false
-        },
-        {
-          "train": "EC 70",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "22:02",
-          "expected": "22:26",
-          "delay": 24,
+          "train": "EC 462",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "23:33",
+          "expected": "23:46",
+          "delay": 13,
           "cancelled": false
         },
         {
@@ -345,17 +129,8 @@
           "board": "DEP",
           "direction": "Wien Westbahnhof",
           "planned": "22:08",
-          "expected": "23:09",
-          "delay": 61,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 169",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "22:27",
-          "expected": "22:41",
-          "delay": 14,
+          "expected": "23:12",
+          "delay": 64,
           "cancelled": false
         },
         {
@@ -363,12 +138,39 @@
           "board": "DEP",
           "direction": "Salzburg Hbf",
           "planned": "22:35",
-          "expected": "22:48",
+          "expected": "23:02",
+          "delay": 27,
+          "cancelled": false
+        },
+        {
+          "train": "EN 40462",
+          "board": "DEP",
+          "direction": "Zürich HB",
+          "planned": "23:35",
+          "expected": "23:48",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "EC 462",
+          "board": "DEP",
+          "direction": "Salzburg Hbf",
+          "planned": "23:35",
+          "expected": "23:48",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "EN 50462",
+          "board": "DEP",
+          "direction": "Stuttgart Hbf",
+          "planned": "23:35",
+          "expected": "23:48",
           "delay": 13,
           "cancelled": false
         }
       ],
-      "records": 134,
+      "records": 132,
       "errors": []
     },
     {
@@ -386,27 +188,8 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "RJX19957",
-          "board": "ARR",
-          "direction": "Innsbruck Hbf",
-          "planned": "20:57",
-          "expected": "22:19",
-          "delay": 82,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 768",
-          "board": "DEP",
-          "direction": "Salzburg Hbf",
-          "planned": "22:02",
-          "expected": "22:26",
-          "delay": 24,
-          "cancelled": false
-        }
-      ],
-      "records": 29,
+      "alerts": [],
+      "records": 21,
       "errors": []
     }
   ]

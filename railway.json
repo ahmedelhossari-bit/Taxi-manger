@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-26T04:09:49.837563+00:00",
+  "updated": "2026-11-26T05:19:18.237994+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,42 +8,88 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 80 (Zug-Nr. 25002)",
+          "train": "RJ 821",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "05:26",
-          "expected": "05:38",
+          "direction": "Wels Hbf",
+          "planned": "05:35",
+          "expected": "06:20",
+          "delay": 45,
+          "cancelled": false
+        },
+        {
+          "train": "IC 847",
+          "board": "ARR",
+          "direction": "Linz/Donau Hbf",
+          "planned": "06:03",
+          "expected": "06:19",
+          "delay": 16,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22204)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "06:19",
+          "expected": "06:31",
           "delay": 12,
           "cancelled": false
         },
         {
-          "train": "REX 6 (Zug-Nr. 7701)",
-          "board": "DEP",
-          "direction": "Bratislava-Petrzalka",
-          "planned": "04:45",
-          "expected": "05:13",
-          "delay": 28,
+          "train": "EC 463",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "06:32",
+          "expected": "06:46",
+          "delay": 14,
           "cancelled": false
         },
         {
-          "train": "S 80 (Zug-Nr. 25002)",
+          "train": "R 95 (Zug-Nr. 7402)",
+          "board": "ARR",
+          "direction": "Traiskirchen Aspangbahn Bahnhof",
+          "planned": "06:33",
+          "expected": "06:50",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "RJ 821",
           "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "05:28",
-          "expected": "05:39",
-          "delay": 11,
+          "direction": "Flughafen Wien",
+          "planned": "05:42",
+          "expected": "06:22",
+          "delay": 40,
           "cancelled": false
         }
       ],
-      "records": 93,
+      "records": 95,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 71,
+      "alerts": [
+        {
+          "train": "CJX 5 (Zug-Nr. 1903)",
+          "board": "ARR",
+          "direction": "St.Valentin Bahnhof",
+          "planned": "06:12",
+          "expected": "06:22",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 5 (Zug-Nr. 1904)",
+          "board": "DEP",
+          "direction": "Amstetten",
+          "planned": "06:18",
+          "expected": "06:30",
+          "delay": 12,
+          "cancelled": false
+        }
+      ],
+      "records": 78,
       "errors": []
     },
     {
@@ -52,25 +98,61 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 3 (Zug-Nr. 25002)",
+          "train": "REX 1 (Zug-Nr. 22204)",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "05:20",
-          "expected": "05:33",
-          "delay": 13,
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "06:12",
+          "expected": "06:26",
+          "delay": 14,
           "cancelled": false
         },
         {
-          "train": "S 80 (Zug-Nr. 25002)",
+          "train": "REX 93 (Zug-Nr. 7104)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "06:16",
+          "expected": "06:27",
+          "delay": 11,
+          "cancelled": false
+        },
+        {
+          "train": "EC 463",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "06:24",
+          "expected": "06:41",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "CJX 9 (Zug-Nr. 22907)",
           "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "05:21",
-          "expected": "05:33",
-          "delay": 12,
+          "direction": "Payerbach-Reichenau",
+          "planned": "06:04",
+          "expected": "06:21",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22204)",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "06:14",
+          "expected": "06:28",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "EC 463",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "06:27",
+          "expected": "06:42",
+          "delay": 15,
           "cancelled": false
         }
       ],
-      "records": 122,
+      "records": 127,
       "errors": []
     },
     {
@@ -88,8 +170,18 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 29,
+      "alerts": [
+        {
+          "train": "RJ 821",
+          "board": "ARR",
+          "direction": "Wels Hbf",
+          "planned": "05:57",
+          "expected": "06:36",
+          "delay": 39,
+          "cancelled": false
+        }
+      ],
+      "records": 33,
       "errors": []
     }
   ]

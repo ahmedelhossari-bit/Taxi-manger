@@ -1,13 +1,23 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-27T02:02:16.887465+00:00",
+  "updated": "2026-11-27T03:04:14.129871+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
       "id": "8103000",
       "status": "OK",
-      "alerts": [],
-      "records": 22,
+      "alerts": [
+        {
+          "train": "REX 7 (Zug-Nr. 22703)",
+          "board": "ARR",
+          "direction": "Wien Meidling Bahnhof",
+          "planned": "04:20",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 92,
       "errors": []
     },
     {
@@ -15,15 +25,43 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 12,
+      "records": 59,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
       "status": "OK",
-      "alerts": [],
-      "records": 40,
+      "alerts": [
+        {
+          "train": "REX 3 (Zug-Nr. 22202)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "05:42",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "REX 7 (Zug-Nr. 22703)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "04:15",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22303)",
+          "board": "DEP",
+          "direction": "Felixdorf",
+          "planned": "05:07",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 137,
       "errors": []
     },
     {
@@ -42,7 +80,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 8,
+      "records": 20,
       "errors": []
     }
   ]

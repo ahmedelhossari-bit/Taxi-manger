@@ -1,49 +1,96 @@
 {
   "source": "Stadt Wien - Wiener Linien",
-  "updated": "2026-11-28T10:17:42.650213+00:00",
+  "updated": "2026-11-28T11:13:18.075678+00:00",
   "events": [
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 14,
+      "alertCause": "emergency medical services",
+      "reasonId": 9,
+      "reasonName": "Rettungseinsatz",
+      "name": "I20261128-0015",
+      "parentName": "I20261128-0015",
+      "priority": "1",
+      "owner": "WL",
+      "title": "18: Rettungseinsatz",
+      "description": "Linie 18: Fahrtbehinderung in Richtung Stadion U. Voraussichtliche Dauer: 11:55 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Stadionbad.",
+      "descriptionHTML": "<p><strong>Linie 18:</strong><br>Fahrtbehinderung in Richtung Stadion U.</p><p>Voraussichtliche Dauer: 11:55 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Stadionbad.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "18: Rettungseinsatz",
+            "descriptionPlain": "Linie 18: Fahrtbehinderung in Richtung Stadion U. Voraussichtliche Dauer: 11:55 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Stadionbad.",
+            "descriptionHtml": "<p><strong>Linie 18:</strong><br>Fahrtbehinderung in Richtung Stadion U.</p><p>Voraussichtliche Dauer: 11:55 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Stadionbad.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-28T11:27:00.000+0100",
+        "created": "2026-11-28T11:28:00.000+0100",
+        "lastUpdate": "2026-11-28T11:28:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "18": "ptTram"
+        }
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 118,
+          "lineName": "18",
+          "vehicleType": "ptTram"
+        }
+      ],
+      "relatedStops": [
+        2632
+      ]
+    },
     {
       "refTrafficInfoCategoryId": 2,
       "alertCauseId": 71,
       "alertCause": "vehicle on the line",
       "reasonId": 25,
       "reasonName": "Falschparker",
-      "name": "I20261128-0011-F01",
-      "parentName": "I20261128-0011",
+      "name": "I20261128-0016-F01-F01",
+      "parentName": "I20261128-0016",
       "priority": "1",
       "owner": "WL",
-      "title": "40: Falschparker",
-      "description": "Linie 40: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 40: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
+      "title": "10: Falschparker",
+      "description": "Linie 10: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie 10: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
       "languages": [
         {
           "de": {
-            "title": "40: Falschparker",
-            "descriptionPlain": "Linie 40: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 40: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
+            "title": "10: Falschparker",
+            "descriptionPlain": "Linie 10: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie 10: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
           }
         }
       ],
       "time": {
-        "start": "2026-11-28T09:16:00.000+0100",
-        "resume": "2026-11-28T09:48:00.000+0100",
-        "created": "2026-11-28T09:48:00.000+0100",
-        "lastUpdate": "2026-11-28T09:48:00.000+0100"
+        "start": "2026-11-28T11:39:00.000+0100",
+        "resume": "2026-11-28T11:48:00.000+0100",
+        "created": "2026-11-28T11:48:00.000+0100",
+        "lastUpdate": "2026-11-28T11:48:00.000+0100"
       },
-      "location": "Herbeckstraße 24",
+      "location": "Reinlgasse 44",
       "status": "active",
       "attributes": {
         "relatedLineTypes": {
-          "40": "ptTram"
+          "10": "ptTram"
         }
       },
       "relatedLines": [
-        "40"
+        "10"
       ],
       "relatedLinesDetails": [
         {
-          "lineId": 140,
-          "lineName": "40",
+          "lineId": 110,
+          "lineName": "10",
           "vehicleType": "ptTram"
         }
       ]
@@ -54,26 +101,27 @@
       "alertCause": "emergency medical services",
       "reasonId": 9,
       "reasonName": "Rettungseinsatz",
-      "name": "I20261128-0014",
+      "name": "I20261128-0014-F01",
       "parentName": "I20261128-0014",
       "priority": "1",
       "owner": "WL",
       "title": "U6: Rettungseinsatz",
-      "description": "Die Linie U6 fährt derzeit zwischen den Stationen Handelskai und Dresdner Straße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig. Voraussichtliche Dauer: 11:30 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Handelskai.",
-      "descriptionHTML": "<p>Die Linie U6 fährt derzeit zwischen den Stationen Handelskai und Dresdner Straße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig.</p><p>Voraussichtliche Dauer: 11:30 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Handelskai.</p>",
+      "description": "Linie U6: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+      "descriptionHTML": "<p>Linie U6: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
       "languages": [
         {
           "de": {
             "title": "U6: Rettungseinsatz",
-            "descriptionPlain": "Die Linie U6 fährt derzeit zwischen den Stationen Handelskai und Dresdner Straße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig. Voraussichtliche Dauer: 11:30 Uhr. Grund: Rettungseinsatz im Haltestellenbereich Handelskai.",
-            "descriptionHtml": "<p>Die Linie U6 fährt derzeit zwischen den Stationen Handelskai und Dresdner Straße in beiden Richtungen über Gleis 1 und fährt daher unregelmäßig.</p><p>Voraussichtliche Dauer: 11:30 Uhr.</p><p>Grund: Rettungseinsatz im Haltestellenbereich Handelskai.</p>"
+            "descriptionPlain": "Linie U6: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
+            "descriptionHtml": "<p>Linie U6: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
           }
         }
       ],
       "time": {
         "start": "2026-11-28T11:03:00.000+0100",
-        "created": "2026-11-28T11:04:00.000+0100",
-        "lastUpdate": "2026-11-28T11:05:00.000+0100"
+        "end": "2026-11-28T12:30:00.000+0100",
+        "created": "2026-11-28T11:18:00.000+0100",
+        "lastUpdate": "2026-11-28T11:30:00.000+0100"
       },
       "status": "active",
       "attributes": {
@@ -93,55 +141,6 @@
       ],
       "relatedStops": [
         4643
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 2,
-      "alertCauseId": 71,
-      "alertCause": "vehicle on the line",
-      "reasonId": 25,
-      "reasonName": "Falschparker",
-      "name": "I20261128-0013-F01",
-      "parentName": "I20261128-0013",
-      "priority": "1",
-      "owner": "WL",
-      "title": "54B: Falschparker",
-      "description": "Linie 54B: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-      "descriptionHTML": "<p>Linie 54B: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>",
-      "languages": [
-        {
-          "de": {
-            "title": "54B: Falschparker",
-            "descriptionPlain": "Linie 54B: Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.",
-            "descriptionHtml": "<p>Linie 54B: <br>Nach einer Fahrtbehinderung kommt es zu unterschiedlichen Intervallen.</p>"
-          }
-        }
-      ],
-      "time": {
-        "start": "2026-11-28T10:47:00.000+0100",
-        "end": "2026-11-28T11:15:00.000+0100",
-        "resume": "2026-11-28T11:15:00.000+0100",
-        "created": "2026-11-28T11:08:00.000+0100",
-        "lastUpdate": "2026-11-28T11:15:00.000+0100"
-      },
-      "status": "resolved",
-      "attributes": {
-        "relatedLineTypes": {
-          "54B": "ptBusCity"
-        }
-      },
-      "relatedLines": [
-        "54B"
-      ],
-      "relatedLinesDetails": [
-        {
-          "lineId": 254,
-          "lineName": "54B",
-          "vehicleType": "ptBusCity"
-        }
-      ],
-      "relatedStops": [
-        8108
       ]
     },
     {
@@ -188,6 +187,55 @@
           "lineName": "1",
           "vehicleType": "ptTram"
         }
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 2,
+      "alertCauseId": 53,
+      "alertCause": "defective vehicle",
+      "reasonId": 20,
+      "reasonName": "Schadhaftes Fahrzeug",
+      "name": "I20261128-0017",
+      "parentName": "I20261128-0017",
+      "priority": "1",
+      "owner": "WL",
+      "title": "U3: Verspätungen",
+      "description": "Linie U3: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+      "descriptionHTML": "<p>Linie U3:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>",
+      "languages": [
+        {
+          "de": {
+            "title": "U3: Verspätungen",
+            "descriptionPlain": "Linie U3: Unregelmäßige Intervalle in beiden Richtungen. Grund: Schadhaftes Fahrzeug.",
+            "descriptionHtml": "<p>Linie U3:<br>Unregelmäßige Intervalle in beiden Richtungen. <br><br>Grund: Schadhaftes Fahrzeug.</p>"
+          }
+        }
+      ],
+      "time": {
+        "start": "2026-11-28T11:53:00.000+0100",
+        "end": "2026-11-28T12:54:00.000+0100",
+        "resume": "2026-11-28T11:53:00.000+0100",
+        "created": "2026-11-28T11:54:00.000+0100",
+        "lastUpdate": "2026-11-28T11:55:00.000+0100"
+      },
+      "status": "active",
+      "attributes": {
+        "relatedLineTypes": {
+          "U3": "ptMetro"
+        }
+      },
+      "relatedLines": [
+        "U3"
+      ],
+      "relatedLinesDetails": [
+        {
+          "lineId": 303,
+          "lineName": "U3",
+          "vehicleType": "ptMetro"
+        }
+      ],
+      "relatedStops": [
+        4931
       ]
     },
     {
@@ -434,29 +482,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R1880-101",
-      "parentName": "R1880-101",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
-      "time": {
-        "start": "2026-11-28T00:00:07.000+0100",
-        "end": "2026-11-28T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "1"
-      ],
-      "relatedStops": [
-        1880
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R1881-101",
       "parentName": "R1881-101",
       "priority": "1",
@@ -472,6 +497,29 @@
       ],
       "relatedStops": [
         1881
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R1880-101",
+      "parentName": "R1880-101",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "description": "Gleisbauarbeiten\nBetrieb ab Knöllgasse",
+      "time": {
+        "start": "2026-11-28T00:00:07.000+0100",
+        "end": "2026-11-28T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "1"
+      ],
+      "relatedStops": [
+        1880
       ]
     },
     {
@@ -541,6 +589,75 @@
       ],
       "relatedStops": [
         401
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2378-627",
+      "parentName": "R2378-627",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Busse halten\nSatzingerweg 41",
+      "description": "Busse halten\nSatzingerweg 41",
+      "time": {
+        "start": "2026-11-28T00:00:08.000+0100",
+        "end": "2026-11-28T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2378
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-125",
+      "parentName": "R2343-125",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
+      "time": {
+        "start": "2026-11-28T00:00:08.000+0100",
+        "end": "2026-11-28T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "25"
+      ],
+      "relatedStops": [
+        2343
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2343-626",
+      "parentName": "R2343-626",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
+      "time": {
+        "start": "2026-11-28T00:00:08.000+0100",
+        "end": "2026-11-28T23:59:59.000+0100"
+      },
+      "relatedLines": [
+        "26E"
+      ],
+      "relatedStops": [
+        2343
       ]
     },
     {
@@ -779,75 +896,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R2378-627",
-      "parentName": "R2378-627",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Busse halten\nSatzingerweg 41",
-      "description": "Busse halten\nSatzingerweg 41",
-      "time": {
-        "start": "2026-11-28T00:00:08.000+0100",
-        "end": "2026-11-28T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2378
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-125",
-      "parentName": "R2343-125",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "description": "Linien 25 und 26\nBetrieb ab Josef-Baumann-Gasse",
-      "time": {
-        "start": "2026-11-28T00:00:08.000+0100",
-        "end": "2026-11-28T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "25"
-      ],
-      "relatedStops": [
-        2343
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
-      "name": "R2343-626",
-      "parentName": "R2343-626",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "description": "Ersatzbus\nhält Karl-Waldbrunner-Platz vor Schloßhofer Straße",
-      "time": {
-        "start": "2026-11-28T00:00:08.000+0100",
-        "end": "2026-11-28T23:59:59.000+0100"
-      },
-      "relatedLines": [
-        "26E"
-      ],
-      "relatedStops": [
-        2343
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R3886-480",
       "parentName": "R3886-480",
       "priority": "1",
@@ -940,29 +988,6 @@
       "alertCause": "undefined alert cause",
       "reasonId": 0,
       "reasonName": "undefined",
-      "name": "R3527-413",
-      "parentName": "R3527-413",
-      "priority": "1",
-      "owner": "WL",
-      "title": "Veranstaltung\nBetrieb ab Neubaugasse / Burggasse",
-      "description": "Veranstaltung\nBetrieb ab Neubaugasse / Burggasse",
-      "time": {
-        "start": "2026-11-28T09:05:49.000+0100",
-        "end": "2026-11-28T19:45:00.000+0100"
-      },
-      "relatedLines": [
-        "13A"
-      ],
-      "relatedStops": [
-        3527
-      ]
-    },
-    {
-      "refTrafficInfoCategoryId": 3,
-      "alertCauseId": 255,
-      "alertCause": "undefined alert cause",
-      "reasonId": 0,
-      "reasonName": "undefined",
       "name": "R3529-413",
       "parentName": "R3529-413",
       "priority": "1",
@@ -978,6 +1003,29 @@
       ],
       "relatedStops": [
         3529
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3527-413",
+      "parentName": "R3527-413",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Veranstaltung\nBetrieb ab Neubaugasse / Burggasse",
+      "description": "Veranstaltung\nBetrieb ab Neubaugasse / Burggasse",
+      "time": {
+        "start": "2026-11-28T09:05:49.000+0100",
+        "end": "2026-11-28T19:45:00.000+0100"
+      },
+      "relatedLines": [
+        "13A"
+      ],
+      "relatedStops": [
+        3527
       ]
     },
     {
@@ -1070,6 +1118,489 @@
       ],
       "relatedStops": [
         665
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2632-118",
+      "parentName": "R2632-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:27:01.000+0100",
+        "end": "2026-11-28T12:26:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        2632
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2420-118",
+      "parentName": "R2420-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:27:01.000+0100",
+        "end": "2026-11-28T12:26:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        2420
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3605-118",
+      "parentName": "R3605-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:27:03.000+0100",
+        "end": "2026-11-28T12:26:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        3605
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3604-118",
+      "parentName": "R3604-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:27:03.000+0100",
+        "end": "2026-11-28T12:26:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        3604
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2422-118",
+      "parentName": "R2422-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:29:31.000+0100",
+        "end": "2026-11-28T12:28:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        2422
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3606-118",
+      "parentName": "R3606-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:29:34.000+0100",
+        "end": "2026-11-28T12:28:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        3606
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2750-118",
+      "parentName": "R2750-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:34:03.000+0100",
+        "end": "2026-11-28T12:33:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        2750
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3607-118",
+      "parentName": "R3607-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:34:04.000+0100",
+        "end": "2026-11-28T12:33:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        3607
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3608-118",
+      "parentName": "R3608-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:34:04.000+0100",
+        "end": "2026-11-28T12:33:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        3608
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3568-118",
+      "parentName": "R3568-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:37:34.000+0100",
+        "end": "2026-11-28T12:37:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        3568
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R3609-118",
+      "parentName": "R3609-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:37:34.000+0100",
+        "end": "2026-11-28T12:37:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        3609
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R581-110",
+      "parentName": "R581-110",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-28T11:40:00.000+0100",
+        "end": "2026-11-28T12:39:00.000+0100"
+      },
+      "relatedLines": [
+        "10"
+      ],
+      "relatedStops": [
+        581
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R584-110",
+      "parentName": "R584-110",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-28T11:40:00.000+0100",
+        "end": "2026-11-28T12:39:00.000+0100"
+      },
+      "relatedLines": [
+        "10"
+      ],
+      "relatedStops": [
+        584
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R585-110",
+      "parentName": "R585-110",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-28T11:40:00.000+0100",
+        "end": "2026-11-28T12:39:00.000+0100"
+      },
+      "relatedLines": [
+        "10"
+      ],
+      "relatedStops": [
+        585
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R586-110",
+      "parentName": "R586-110",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-28T11:40:00.000+0100",
+        "end": "2026-11-28T12:39:00.000+0100"
+      },
+      "relatedLines": [
+        "10"
+      ],
+      "relatedStops": [
+        586
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R587-110",
+      "parentName": "R587-110",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-28T11:40:00.000+0100",
+        "end": "2026-11-28T12:39:00.000+0100"
+      },
+      "relatedLines": [
+        "10"
+      ],
+      "relatedStops": [
+        587
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R588-110",
+      "parentName": "R588-110",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-28T11:40:00.000+0100",
+        "end": "2026-11-28T12:39:00.000+0100"
+      },
+      "relatedLines": [
+        "10"
+      ],
+      "relatedStops": [
+        588
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R583-110",
+      "parentName": "R583-110",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nFalschparker",
+      "description": "Fahrtbehinderung\nFalschparker",
+      "time": {
+        "start": "2026-11-28T11:40:00.000+0100",
+        "end": "2026-11-28T12:39:00.000+0100"
+      },
+      "relatedLines": [
+        "10"
+      ],
+      "relatedStops": [
+        583
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R284-118",
+      "parentName": "R284-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:42:01.000+0100",
+        "end": "2026-11-28T12:40:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        284
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R844-118",
+      "parentName": "R844-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:42:02.000+0100",
+        "end": "2026-11-28T12:40:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        844
+      ]
+    },
+    {
+      "refTrafficInfoCategoryId": 3,
+      "alertCauseId": 255,
+      "alertCause": "undefined alert cause",
+      "reasonId": 0,
+      "reasonName": "undefined",
+      "name": "R2620-118",
+      "parentName": "R2620-118",
+      "priority": "1",
+      "owner": "WL",
+      "title": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "description": "Fahrtbehinderung\nwegen Rettungseinsatz",
+      "time": {
+        "start": "2026-11-28T11:42:03.000+0100",
+        "end": "2026-11-28T12:40:00.000+0100"
+      },
+      "relatedLines": [
+        "18"
+      ],
+      "relatedStops": [
+        2620
       ]
     },
     {

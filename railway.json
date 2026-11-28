@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T12:20:09.764201+00:00",
+  "updated": "2026-11-28T13:30:59.659974+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,81 +8,179 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 142",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "13:20",
-          "expected": "13:32",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
           "train": "EC 103",
           "board": "ARR",
           "direction": "Warszawa Wschodnia",
           "planned": "13:49",
-          "expected": "14:54",
-          "delay": 65,
+          "expected": "15:00",
+          "delay": 71,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25038)",
+          "board": "ARR",
+          "direction": "Mödling Bahnhof",
+          "planned": "14:26",
+          "expected": "14:36",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 186",
+          "board": "ARR",
+          "direction": "Bolzano/Bozen",
+          "planned": "14:32",
+          "expected": "14:55",
+          "delay": 23,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 161",
+          "board": "ARR",
+          "direction": "Zürich HB",
+          "planned": "14:32",
+          "expected": "14:55",
+          "delay": 23,
+          "cancelled": false
+        },
+        {
+          "train": "EC 103",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "14:00",
+          "expected": "15:04",
+          "delay": 64,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7620)",
+          "board": "DEP",
+          "direction": "Deutschkreutz",
+          "planned": "14:23",
+          "expected": "14:33",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7820)",
+          "board": "DEP",
+          "direction": "Wulkaprodersdorf",
+          "planned": "14:23",
+          "expected": "14:33",
+          "delay": 10,
           "cancelled": false
         }
       ],
-      "records": 88,
+      "records": 93,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 95,
+      "alerts": [
+        {
+          "train": "EC 103",
+          "board": "ARR",
+          "direction": "Warszawa Wschodnia",
+          "planned": "14:30",
+          "expected": "15:20",
+          "delay": 50,
+          "cancelled": false
+        }
+      ],
+      "records": 91,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
-      "status": "PARTIAL",
+      "status": "OK",
       "alerts": [
         {
-          "train": "BB",
+          "train": "EC 103",
           "board": "ARR",
-          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
-          "planned": "13:04",
-          "expected": "13:22",
-          "delay": 18,
+          "direction": "Warszawa Wschodnia",
+          "planned": "14:06",
+          "expected": "15:08",
+          "delay": 62,
           "cancelled": false
         },
         {
-          "train": "BB",
+          "train": "S 3 (Zug-Nr. 25038)",
           "board": "ARR",
-          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
-          "planned": "13:19",
-          "expected": "13:38",
-          "delay": 19,
+          "direction": "Mödling Bahnhof",
+          "planned": "14:20",
+          "expected": "14:30",
+          "delay": 10,
           "cancelled": false
         },
         {
-          "train": "BB",
+          "train": "RJX 186",
           "board": "ARR",
-          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
-          "planned": "13:26",
-          "expected": "13:38",
-          "delay": 12,
+          "direction": "Bolzano/Bozen",
+          "planned": "14:25",
+          "expected": "14:50",
+          "delay": 25,
           "cancelled": false
         },
         {
-          "train": "BB",
+          "train": "RJX 161",
           "board": "ARR",
-          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
-          "planned": "13:34",
-          "expected": "13:54",
-          "delay": 20,
+          "direction": "Zürich HB",
+          "planned": "14:25",
+          "expected": "14:50",
+          "delay": 25,
+          "cancelled": false
+        },
+        {
+          "train": "IC 645",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "14:56",
+          "expected": "15:06",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "EC 103",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "14:08",
+          "expected": "15:09",
+          "delay": 61,
+          "cancelled": false
+        },
+        {
+          "train": "S 80 (Zug-Nr. 25038)",
+          "board": "DEP",
+          "direction": "Wien Aspern Nord",
+          "planned": "14:21",
+          "expected": "14:31",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 186",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "14:27",
+          "expected": "14:51",
+          "delay": 24,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 161",
+          "board": "DEP",
+          "direction": "Wien Hbf",
+          "planned": "14:27",
+          "expected": "14:51",
+          "delay": 24,
           "cancelled": false
         }
       ],
-      "records": 64,
-      "errors": [
-        "{'meth': 'StationBoard', 'err': 'FAIL', 'errTxt': 'HCI Service: request failed', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
-      ]
+      "records": 125,
+      "errors": []
     },
     {
       "name": "Wien Mitte",
@@ -99,17 +197,7 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "RJ 858",
-          "board": "DEP",
-          "direction": "Villach Hbf",
-          "planned": "14:02",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        }
-      ],
+      "alerts": [],
       "records": 28,
       "errors": []
     }

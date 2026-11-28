@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T02:43:33.369625+00:00",
+  "updated": "2026-11-28T03:39:03.665775+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 263",
+          "train": "REX 7 (Zug-Nr. 22704)",
           "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "03:20",
-          "expected": "04:21",
-          "delay": 61,
-          "cancelled": false
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "05:06",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22704)",
+          "board": "DEP",
+          "direction": "Mödling",
+          "planned": "05:12",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 118,
+      "records": 112,
       "errors": []
     },
     {
@@ -25,7 +34,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 75,
+      "records": 76,
       "errors": []
     },
     {
@@ -34,25 +43,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 263",
+          "train": "S 2 (Zug-Nr. 22704)",
           "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "03:13",
-          "expected": "04:17",
-          "delay": 64,
-          "cancelled": false
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "05:17",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         },
         {
-          "train": "RJ 263",
+          "train": "S 2 (Zug-Nr. 22704)",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "03:15",
-          "expected": "04:18",
-          "delay": 63,
-          "cancelled": false
+          "direction": "Mödling",
+          "planned": "05:19",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 137,
+      "records": 144,
       "errors": []
     },
     {
@@ -70,8 +79,18 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 10,
+      "alerts": [
+        {
+          "train": "REX 7 (Zug-Nr. 22704)",
+          "board": "DEP",
+          "direction": "Mödling",
+          "planned": "04:46",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 21,
       "errors": []
     }
   ]

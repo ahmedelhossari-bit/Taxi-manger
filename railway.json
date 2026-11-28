@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T00:16:29.967913+00:00",
+  "updated": "2026-11-28T01:47:42.197437+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 367",
+          "train": "RJ 263",
           "board": "ARR",
-          "direction": "Sargans",
-          "planned": "00:35",
-          "expected": "01:55",
-          "delay": 80,
+          "direction": "Salzburg Hbf",
+          "planned": "03:20",
+          "expected": "04:03",
+          "delay": 43,
           "cancelled": false
         }
       ],
-      "records": 77,
+      "records": 79,
       "errors": []
     },
     {
@@ -25,7 +25,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 67,
+      "records": 66,
       "errors": []
     },
     {
@@ -34,30 +34,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJX 367",
-          "board": "ARR",
-          "direction": "Sargans",
-          "planned": "00:28",
-          "expected": "01:51",
-          "delay": 83,
-          "cancelled": false
-        },
-        {
           "train": "RJ 263",
           "board": "ARR",
           "direction": "Salzburg Hbf",
           "planned": "03:13",
-          "expected": "03:46",
-          "delay": 33,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 367",
-          "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "00:30",
-          "expected": "01:52",
-          "delay": 82,
+          "expected": "03:59",
+          "delay": 46,
           "cancelled": false
         },
         {
@@ -65,12 +47,12 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "03:15",
-          "expected": "03:47",
-          "delay": 32,
+          "expected": "04:00",
+          "delay": 45,
           "cancelled": false
         }
       ],
-      "records": 85,
+      "records": 87,
       "errors": []
     },
     {
@@ -89,7 +71,7 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [],
-      "records": 4,
+      "records": 3,
       "errors": []
     }
   ]

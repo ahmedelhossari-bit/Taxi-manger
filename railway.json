@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T11:29:58.854733+00:00",
+  "updated": "2026-11-28T12:20:09.764201+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,16 +8,25 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "RJ 659",
-          "board": "DEP",
-          "direction": "Flughafen Wien",
-          "planned": "12:42",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "train": "EC 142",
+          "board": "ARR",
+          "direction": "Budapest-Keleti",
+          "planned": "13:20",
+          "expected": "13:32",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "EC 103",
+          "board": "ARR",
+          "direction": "Warszawa Wschodnia",
+          "planned": "13:49",
+          "expected": "14:54",
+          "delay": 65,
+          "cancelled": false
         }
       ],
-      "records": 86,
+      "records": 88,
       "errors": []
     },
     {
@@ -25,26 +34,55 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 92,
+      "records": 95,
       "errors": []
     },
     {
       "name": "Wien Meidling",
       "id": "8100514",
-      "status": "OK",
+      "status": "PARTIAL",
       "alerts": [
         {
-          "train": "RJX19975",
+          "train": "BB",
           "board": "ARR",
-          "direction": "Bregenz Bahnhof",
-          "planned": "12:25",
-          "expected": "12:35",
-          "delay": 10,
+          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
+          "planned": "13:04",
+          "expected": "13:22",
+          "delay": 18,
+          "cancelled": false
+        },
+        {
+          "train": "BB",
+          "board": "ARR",
+          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
+          "planned": "13:19",
+          "expected": "13:38",
+          "delay": 19,
+          "cancelled": false
+        },
+        {
+          "train": "BB",
+          "board": "ARR",
+          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
+          "planned": "13:26",
+          "expected": "13:38",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "BB",
+          "board": "ARR",
+          "direction": "Wien Oper (Kärntner Ring/Lokalbahn)",
+          "planned": "13:34",
+          "expected": "13:54",
+          "delay": 20,
           "cancelled": false
         }
       ],
-      "records": 128,
-      "errors": []
+      "records": 64,
+      "errors": [
+        "{'meth': 'StationBoard', 'err': 'FAIL', 'errTxt': 'HCI Service: request failed', 'errTxtOut': 'Während der Suche ist ein interner Fehler aufgetreten'}"
+      ]
     },
     {
       "name": "Wien Mitte",
@@ -63,24 +101,6 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 7 (Zug-Nr. 22735)",
-          "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "12:15",
-          "expected": "12:34",
-          "delay": 19,
-          "cancelled": false
-        },
-        {
-          "train": "RJ 659",
-          "board": "ARR",
-          "direction": "Salzburg Hbf",
-          "planned": "12:57",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
-        {
           "train": "RJ 858",
           "board": "DEP",
           "direction": "Villach Hbf",
@@ -90,7 +110,7 @@
           "cancelled": true
         }
       ],
-      "records": 30,
+      "records": 28,
       "errors": []
     }
   ]

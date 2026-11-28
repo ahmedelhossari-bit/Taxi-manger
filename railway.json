@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T03:39:03.665775+00:00",
+  "updated": "2026-11-28T04:41:26.044235+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,25 +8,52 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 7 (Zug-Nr. 22704)",
+          "train": "REX 8 (Zug-Nr. 2501)",
           "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "05:06",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Bratislava hl.st.",
+          "planned": "05:46",
+          "expected": "06:25",
+          "delay": 39,
+          "cancelled": false
         },
         {
-          "train": "S 2 (Zug-Nr. 22704)",
+          "train": "REX 6 (Zug-Nr. 7784)",
+          "board": "ARR",
+          "direction": "Bratislava-Petrzalka",
+          "planned": "06:15",
+          "expected": "06:29",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "EC 463",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "06:32",
+          "expected": "07:13",
+          "delay": 41,
+          "cancelled": false
+        },
+        {
+          "train": "IC 558",
           "board": "DEP",
-          "direction": "Mödling",
-          "planned": "05:12",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Graz Hbf",
+          "planned": "05:24",
+          "expected": "05:41",
+          "delay": 17,
+          "cancelled": false
+        },
+        {
+          "train": "EC 463",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "06:40",
+          "expected": "07:16",
+          "delay": 36,
+          "cancelled": false
         }
       ],
-      "records": 112,
+      "records": 102,
       "errors": []
     },
     {
@@ -34,7 +61,7 @@
       "id": "8100003",
       "status": "OK",
       "alerts": [],
-      "records": 76,
+      "records": 79,
       "errors": []
     },
     {
@@ -43,25 +70,43 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 2 (Zug-Nr. 22704)",
+          "train": "IC 558",
           "board": "ARR",
-          "direction": "Flughafen Wien Bahnhof",
-          "planned": "05:17",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "05:29",
+          "expected": "05:45",
+          "delay": 16,
+          "cancelled": false
         },
         {
-          "train": "S 2 (Zug-Nr. 22704)",
+          "train": "EC 463",
+          "board": "ARR",
+          "direction": "Salzburg Hbf",
+          "planned": "06:24",
+          "expected": "07:08",
+          "delay": 44,
+          "cancelled": false
+        },
+        {
+          "train": "IC 558",
           "board": "DEP",
-          "direction": "Mödling",
-          "planned": "05:19",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Graz Hbf",
+          "planned": "05:31",
+          "expected": "05:46",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "EC 463",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "06:27",
+          "expected": "07:09",
+          "delay": 42,
+          "cancelled": false
         }
       ],
-      "records": 144,
+      "records": 139,
       "errors": []
     },
     {
@@ -79,18 +124,8 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "REX 7 (Zug-Nr. 22704)",
-          "board": "DEP",
-          "direction": "Mödling",
-          "planned": "04:46",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        }
-      ],
-      "records": 21,
+      "alerts": [],
+      "records": 29,
       "errors": []
     }
   ]

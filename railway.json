@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T06:38:59.404307+00:00",
+  "updated": "2026-11-28T07:55:27.982848+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,43 +8,52 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 8 (Zug-Nr. 2505)",
+          "train": "EC 342",
           "board": "ARR",
-          "direction": "Bratislava hl.st.",
-          "planned": "07:46",
-          "expected": "08:15",
-          "delay": 29,
+          "direction": "Budapest-Keleti",
+          "planned": "08:20",
+          "expected": "08:56",
+          "delay": 36,
           "cancelled": false
         },
         {
-          "train": "S 80 (Zug-Nr. 25012)",
+          "train": "RJX 761",
           "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "07:56",
-          "expected": "08:08",
-          "delay": 12,
+          "direction": "Linz/Donau Hbf",
+          "planned": "08:32",
+          "expected": "08:56",
+          "delay": 24,
           "cancelled": false
         },
         {
-          "train": "EC 1218",
+          "train": "REX 1 (Zug-Nr. 22316)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "09:00",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "EC 342",
           "board": "DEP",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "07:13",
-          "expected": "07:38",
-          "delay": 25,
+          "direction": "Wien Westbahnhof",
+          "planned": "08:30",
+          "expected": "09:01",
+          "delay": 31,
           "cancelled": false
         },
         {
-          "train": "S 80 (Zug-Nr. 25012)",
+          "train": "REX 1 (Zug-Nr. 22316)",
           "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "07:58",
-          "expected": "08:09",
-          "delay": 11,
-          "cancelled": false
+          "direction": "Gänserndorf",
+          "planned": "09:02",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 92,
+      "records": 93,
       "errors": []
     },
     {
@@ -53,16 +62,16 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "S 50 (Zug-Nr. 20015)",
+          "train": "EC 342",
           "board": "ARR",
-          "direction": "Eichgraben NÖ-Altlengbach Bahnhst",
-          "planned": "08:03",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
+          "direction": "Budapest-Keleti",
+          "planned": "09:00",
+          "expected": "09:17",
+          "delay": 17,
+          "cancelled": false
         }
       ],
-      "records": 89,
+      "records": 85,
       "errors": []
     },
     {
@@ -71,66 +80,12 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 1218",
+          "train": "EC 342",
           "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "07:18",
-          "expected": "07:42",
-          "delay": 24,
-          "cancelled": false
-        },
-        {
-          "train": "S 3 (Zug-Nr. 25012)",
-          "board": "ARR",
-          "direction": "Mödling Bahnhof",
-          "planned": "07:50",
-          "expected": "08:03",
-          "delay": 13,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 40236",
-          "board": "ARR",
-          "direction": "Venezia Santa Lucia",
-          "planned": "07:51",
-          "expected": "08:03",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "NJ 467",
-          "board": "ARR",
-          "direction": "Zürich HB",
-          "planned": "07:51",
-          "expected": "08:03",
-          "delay": 12,
-          "cancelled": false
-        },
-        {
-          "train": "RJX 761",
-          "board": "ARR",
-          "direction": "Linz/Donau Hbf",
-          "planned": "08:25",
-          "expected": "08:42",
-          "delay": 17,
-          "cancelled": false
-        },
-        {
-          "train": "EC 1218",
-          "board": "DEP",
-          "direction": "München Hbf Gl.5-10",
-          "planned": "07:20",
-          "expected": "07:42",
-          "delay": 22,
-          "cancelled": false
-        },
-        {
-          "train": "S 80 (Zug-Nr. 25012)",
-          "board": "DEP",
-          "direction": "Wien Aspern Nord",
-          "planned": "07:51",
-          "expected": "08:04",
-          "delay": 13,
+          "direction": "Budapest-Keleti",
+          "planned": "08:36",
+          "expected": "09:05",
+          "delay": 29,
           "cancelled": false
         },
         {
@@ -138,12 +93,30 @@
           "board": "DEP",
           "direction": "Wien Hbf",
           "planned": "08:27",
-          "expected": "08:43",
-          "delay": 16,
+          "expected": "08:55",
+          "delay": 28,
           "cancelled": false
+        },
+        {
+          "train": "EC 342",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "08:38",
+          "expected": "09:06",
+          "delay": 28,
+          "cancelled": false
+        },
+        {
+          "train": "REX 1 (Zug-Nr. 22321)",
+          "board": "DEP",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "09:37",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 122,
+      "records": 133,
       "errors": []
     },
     {
@@ -163,19 +136,19 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 7 (Zug-Nr. 22717)",
+          "train": "REX 7 (Zug-Nr. 22724)",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "07:45",
+          "direction": "Wolfsthal Bahnhof",
+          "planned": "09:40",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "REX 7 (Zug-Nr. 22717)",
+          "train": "REX 7 (Zug-Nr. 22724)",
           "board": "DEP",
-          "direction": "Wolfsthal",
-          "planned": "07:49",
+          "direction": "Mödling",
+          "planned": "09:46",
           "expected": null,
           "delay": null,
           "cancelled": true

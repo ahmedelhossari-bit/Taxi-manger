@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T07:55:27.982848+00:00",
+  "updated": "2026-11-28T08:42:56.748717+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,46 +8,100 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 342",
+          "train": "NJ 40421",
           "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "08:20",
-          "expected": "08:56",
-          "delay": 36,
+          "direction": "Amsterdam Centraal",
+          "planned": "09:48",
+          "expected": "10:41",
+          "delay": 53,
           "cancelled": false
         },
         {
-          "train": "RJX 761",
+          "train": "NJ 493",
           "board": "ARR",
-          "direction": "Linz/Donau Hbf",
-          "planned": "08:32",
-          "expected": "08:56",
-          "delay": 24,
+          "direction": "Hamburg-Altona",
+          "planned": "09:48",
+          "expected": "10:41",
+          "delay": 53,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22316)",
+          "train": "REX 7 (Zug-Nr. 22724)",
           "board": "ARR",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "09:00",
+          "direction": "Wolfsthal Bahnhof",
+          "planned": "10:06",
           "expected": null,
           "delay": null,
           "cancelled": true
         },
         {
-          "train": "EC 342",
-          "board": "DEP",
-          "direction": "Wien Westbahnhof",
-          "planned": "08:30",
-          "expected": "09:01",
-          "delay": 31,
+          "train": "NJ 469",
+          "board": "ARR",
+          "direction": "Bruxelles Midi",
+          "planned": "10:13",
+          "expected": "11:24",
+          "delay": 71,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22316)",
+          "train": "RJX19952",
           "board": "DEP",
-          "direction": "Gänserndorf",
-          "planned": "09:02",
+          "direction": "Feldkirch",
+          "planned": "09:28",
+          "expected": "09:42",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 162",
+          "board": "DEP",
+          "direction": "Sargans",
+          "planned": "09:28",
+          "expected": "09:42",
+          "delay": 14,
+          "cancelled": false
+        },
+        {
+          "train": "D 346",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "09:45",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "09:45",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "D 40007",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:30",
+          "expected": "09:45",
+          "delay": 15,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 269",
+          "board": "DEP",
+          "direction": "Budapest-Keleti",
+          "planned": "09:40",
+          "expected": "09:50",
+          "delay": 10,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22724)",
+          "board": "DEP",
+          "direction": "Mödling",
+          "planned": "10:12",
           "expected": null,
           "delay": null,
           "cancelled": true
@@ -60,18 +114,8 @@
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [
-        {
-          "train": "EC 342",
-          "board": "ARR",
-          "direction": "Budapest-Keleti",
-          "planned": "09:00",
-          "expected": "09:17",
-          "delay": 17,
-          "cancelled": false
-        }
-      ],
-      "records": 85,
+      "alerts": [],
+      "records": 90,
       "errors": []
     },
     {
@@ -80,43 +124,142 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "EC 342",
+          "train": "RJX19952",
+          "board": "ARR",
+          "direction": "Flughafen Wien Bahnhof",
+          "planned": "09:33",
+          "expected": "09:46",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "RJX 162",
           "board": "ARR",
           "direction": "Budapest-Keleti",
-          "planned": "08:36",
-          "expected": "09:05",
-          "delay": 29,
+          "planned": "09:33",
+          "expected": "09:46",
+          "delay": 13,
           "cancelled": false
         },
         {
-          "train": "RJX 761",
+          "train": "D 346",
+          "board": "ARR",
+          "direction": "Bucuresti Nord Gara A",
+          "planned": "09:36",
+          "expected": "09:49",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "D 40749",
+          "board": "ARR",
+          "direction": "Kyiv Pasazhyrskyi",
+          "planned": "09:36",
+          "expected": "09:49",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "D 40007",
+          "board": "ARR",
+          "direction": "Uzhhorod",
+          "planned": "09:36",
+          "expected": "09:49",
+          "delay": 13,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 40421",
+          "board": "ARR",
+          "direction": "Amsterdam Centraal",
+          "planned": "09:39",
+          "expected": "10:37",
+          "delay": 58,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 493",
+          "board": "ARR",
+          "direction": "Hamburg-Altona",
+          "planned": "09:39",
+          "expected": "10:37",
+          "delay": 58,
+          "cancelled": false
+        },
+        {
+          "train": "NJ 469",
+          "board": "ARR",
+          "direction": "Bruxelles Midi",
+          "planned": "10:05",
+          "expected": "11:20",
+          "delay": 75,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22724)",
+          "board": "ARR",
+          "direction": "Wolfsthal Bahnhof",
+          "planned": "10:17",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "RJX19952",
           "board": "DEP",
-          "direction": "Wien Hbf",
-          "planned": "08:27",
-          "expected": "08:55",
-          "delay": 28,
+          "direction": "Feldkirch",
+          "planned": "09:35",
+          "expected": "09:47",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "EC 342",
+          "train": "RJX 162",
+          "board": "DEP",
+          "direction": "Sargans",
+          "planned": "09:35",
+          "expected": "09:47",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "D 346",
           "board": "DEP",
           "direction": "Wien Westbahnhof",
-          "planned": "08:38",
-          "expected": "09:06",
-          "delay": 28,
+          "planned": "09:38",
+          "expected": "09:50",
+          "delay": 12,
           "cancelled": false
         },
         {
-          "train": "REX 1 (Zug-Nr. 22321)",
+          "train": "D 40749",
           "board": "DEP",
-          "direction": "Wr.Neustadt Hbf",
-          "planned": "09:37",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:38",
+          "expected": "09:50",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "D 40007",
+          "board": "DEP",
+          "direction": "Wien Westbahnhof",
+          "planned": "09:38",
+          "expected": "09:50",
+          "delay": 12,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22724)",
+          "board": "DEP",
+          "direction": "Mödling",
+          "planned": "10:19",
           "expected": null,
           "delay": null,
           "cancelled": true
         }
       ],
-      "records": 133,
+      "records": 127,
       "errors": []
     },
     {
@@ -135,15 +278,6 @@
       "id": "1293001",
       "status": "OK",
       "alerts": [
-        {
-          "train": "REX 7 (Zug-Nr. 22724)",
-          "board": "ARR",
-          "direction": "Wolfsthal Bahnhof",
-          "planned": "09:40",
-          "expected": null,
-          "delay": null,
-          "cancelled": true
-        },
         {
           "train": "REX 7 (Zug-Nr. 22724)",
           "board": "DEP",

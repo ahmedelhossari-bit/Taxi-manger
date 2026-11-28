@@ -1,6 +1,6 @@
 {
   "source": "OEBB SCOTTY",
-  "updated": "2026-11-28T04:41:26.044235+00:00",
+  "updated": "2026-11-28T05:38:49.367310+00:00",
   "stations": [
     {
       "name": "Wien Hauptbahnhof",
@@ -8,39 +8,66 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "REX 8 (Zug-Nr. 2501)",
-          "board": "ARR",
-          "direction": "Bratislava hl.st.",
-          "planned": "05:46",
-          "expected": "06:25",
-          "delay": 39,
-          "cancelled": false
-        },
-        {
-          "train": "REX 6 (Zug-Nr. 7784)",
-          "board": "ARR",
-          "direction": "Bratislava-Petrzalka",
-          "planned": "06:15",
-          "expected": "06:29",
-          "delay": 14,
-          "cancelled": false
-        },
-        {
           "train": "EC 463",
           "board": "ARR",
           "direction": "Salzburg Hbf",
           "planned": "06:32",
-          "expected": "07:13",
-          "delay": 41,
+          "expected": "07:20",
+          "delay": 48,
           "cancelled": false
         },
         {
-          "train": "IC 558",
+          "train": "S 2 (Zug-Nr. 22717)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "07:15",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "REX 8 (Zug-Nr. 2504)",
           "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "05:24",
-          "expected": "05:41",
-          "delay": 17,
+          "direction": "Bratislava hl.st.",
+          "planned": "06:14",
+          "expected": "06:42",
+          "delay": 28,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7604)",
+          "board": "DEP",
+          "direction": "Deutschkreutz",
+          "planned": "06:23",
+          "expected": "07:24",
+          "delay": 61,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7804)",
+          "board": "DEP",
+          "direction": "Wulkaprodersdorf",
+          "planned": "06:23",
+          "expected": "07:24",
+          "delay": 61,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7604)",
+          "board": "DEP",
+          "direction": "Deutschkreutz",
+          "planned": "06:23",
+          "expected": "07:24",
+          "delay": 61,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7804)",
+          "board": "DEP",
+          "direction": "Wulkaprodersdorf",
+          "planned": "06:23",
+          "expected": "07:24",
+          "delay": 61,
           "cancelled": false
         },
         {
@@ -48,20 +75,39 @@
           "board": "DEP",
           "direction": "Budapest-Keleti",
           "planned": "06:40",
-          "expected": "07:16",
-          "delay": 36,
+          "expected": "07:23",
+          "delay": 43,
           "cancelled": false
+        },
+        {
+          "train": "REX 7 (Zug-Nr. 22717)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "07:23",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 102,
+      "records": 95,
       "errors": []
     },
     {
       "name": "Wien Westbahnhof",
       "id": "8100003",
       "status": "OK",
-      "alerts": [],
-      "records": 79,
+      "alerts": [
+        {
+          "train": "S 50 (Zug-Nr. 20008)",
+          "board": "DEP",
+          "direction": "Eichgraben-Altlengbach",
+          "planned": "06:26",
+          "expected": "06:41",
+          "delay": 15,
+          "cancelled": false
+        }
+      ],
+      "records": 80,
       "errors": []
     },
     {
@@ -70,43 +116,115 @@
       "status": "OK",
       "alerts": [
         {
-          "train": "IC 558",
-          "board": "ARR",
-          "direction": "Wien Hbf (Bahnsteige 3-12)",
-          "planned": "05:29",
-          "expected": "05:45",
-          "delay": 16,
-          "cancelled": false
-        },
-        {
           "train": "EC 463",
           "board": "ARR",
           "direction": "Salzburg Hbf",
           "planned": "06:24",
-          "expected": "07:08",
-          "delay": 44,
+          "expected": "07:14",
+          "delay": 50,
           "cancelled": false
         },
         {
-          "train": "IC 558",
-          "board": "DEP",
-          "direction": "Graz Hbf",
-          "planned": "05:31",
-          "expected": "05:46",
-          "delay": 15,
+          "train": "REX 6 (Zug-Nr. 7604)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "06:29",
+          "expected": "07:28",
+          "delay": 59,
           "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7804)",
+          "board": "ARR",
+          "direction": "Wien Hbf (Bahnsteige 3-12)",
+          "planned": "06:29",
+          "expected": "07:28",
+          "delay": 59,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7604)",
+          "board": "ARR",
+          "direction": "Bratislava-Petrzalka",
+          "planned": "06:29",
+          "expected": "07:28",
+          "delay": 59,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7804)",
+          "board": "ARR",
+          "direction": "Bratislava-Petrzalka",
+          "planned": "06:29",
+          "expected": "07:28",
+          "delay": 59,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22717)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "07:08",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         },
         {
           "train": "EC 463",
           "board": "DEP",
           "direction": "Budapest-Keleti",
           "planned": "06:27",
-          "expected": "07:09",
-          "delay": 42,
+          "expected": "07:16",
+          "delay": 49,
           "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7604)",
+          "board": "DEP",
+          "direction": "Deutschkreutz",
+          "planned": "06:31",
+          "expected": "07:29",
+          "delay": 58,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7804)",
+          "board": "DEP",
+          "direction": "Wulkaprodersdorf",
+          "planned": "06:31",
+          "expected": "07:29",
+          "delay": 58,
+          "cancelled": false
+        },
+        {
+          "train": "REX 6 (Zug-Nr. 7604)",
+          "board": "DEP",
+          "direction": "Deutschkreutz",
+          "planned": "06:31",
+          "expected": "07:29",
+          "delay": 58,
+          "cancelled": false
+        },
+        {
+          "train": "REX 65 (Zug-Nr. 7804)",
+          "board": "DEP",
+          "direction": "Wulkaprodersdorf",
+          "planned": "06:31",
+          "expected": "07:29",
+          "delay": 58,
+          "cancelled": false
+        },
+        {
+          "train": "S 2 (Zug-Nr. 22717)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "07:10",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
         }
       ],
-      "records": 139,
+      "records": 131,
       "errors": []
     },
     {
@@ -124,8 +242,27 @@
       "name": "Flughafen Wien",
       "id": "1293001",
       "status": "OK",
-      "alerts": [],
-      "records": 29,
+      "alerts": [
+        {
+          "train": "REX 7 (Zug-Nr. 22717)",
+          "board": "ARR",
+          "direction": "Wr.Neustadt Hbf",
+          "planned": "07:45",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        },
+        {
+          "train": "REX 7 (Zug-Nr. 22717)",
+          "board": "DEP",
+          "direction": "Wolfsthal",
+          "planned": "07:49",
+          "expected": null,
+          "delay": null,
+          "cancelled": true
+        }
+      ],
+      "records": 28,
       "errors": []
     }
   ]
